@@ -1,0 +1,191 @@
+openapi: 3.0.3
+info:
+  title: Guardian Benchmark Inventory API
+  version: 2.0.0
+paths:
+  /stock/primary:
+    get:
+      operationId: getPrimaryStock
+      responses:
+        '200':
+          description: Stock
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - sku
+                - quantity
+                - status
+                properties:
+                  id:
+                    type: string
+                  sku:
+                    type: string
+                  quantity:
+                    type: integer
+                  status:
+                    type: string
+                    enum:
+                    - available
+                    - reserved
+  /stock:
+    get:
+      operationId: listStock
+      responses:
+        '200':
+          description: Stock list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  required:
+                  - id
+                  - sku
+                  - quantity
+                  - status
+                  properties:
+                    id:
+                      type: string
+                    sku:
+                      type: string
+                    quantity:
+                      type: integer
+                    status:
+                      type: string
+                      enum:
+                      - available
+                      - reserved
+  /warehouses/primary:
+    get:
+      operationId: getPrimaryWarehouse
+      responses:
+        '200':
+          description: Warehouse
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - name
+                - capacity
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  capacity:
+                    type: integer
+  /warehouses:
+    get:
+      operationId: listWarehouses
+      responses:
+        '200':
+          description: Warehouses
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  required:
+                  - id
+                  - name
+                  - capacity
+                  properties:
+                    id:
+                      type: integer
+                    name:
+                      type: string
+                    capacity:
+                      type: integer
+  /reservations/primary:
+    get:
+      operationId: getPrimaryReservation
+      responses:
+        '200':
+          description: Reservation
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - sku
+                - quantity
+                properties:
+                  id:
+                    type: string
+                  sku:
+                    type: string
+                  quantity:
+                    type: integer
+  /movements/latest:
+    get:
+      operationId: getLatestMovement
+      responses:
+        '200':
+          description: Movement
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - quantity
+                - direction
+                properties:
+                  id:
+                    type: string
+                  quantity:
+                    type: integer
+                  direction:
+                    type: string
+                    enum:
+                    - in
+                    - out
+  /suppliers/primary:
+    get:
+      operationId: getPrimarySupplier
+      responses:
+        '200':
+          description: Supplier
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - name
+                - lead_days
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  lead_days:
+                    type: integer
+  /status:
+    get:
+      operationId: getInventoryStatus
+      responses:
+        '200':
+          description: Status
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - status
+                - region
+                properties:
+                  status:
+                    type: string
+                    enum:
+                    - ok
+                  region:
+                    type: string

@@ -1,0 +1,39 @@
+{
+  "ambiguity_reason": null,
+  "base_commit": "5e88d3f87afd6debab57e149bae754a3c46dcb75",
+  "base_openapi_version": "3.1.0",
+  "base_operation_count": 237,
+  "base_spec_bytes": 489769,
+  "base_spec_path": "shared/management/http/api/openapi.yml",
+  "base_spec_sha256": "ec76ce4b2b70efa271fa3845f7377900de7e9c9c0047f3de99cb444822b7703c",
+  "breaking_changes": [],
+  "case_id": "rw_netbird_002_bundle_parameters_fields_added",
+  "change_types": [
+    "request_schema_changed",
+    "response_property_added",
+    "shared_component_changed"
+  ],
+  "commit_date_head": "2026-09-01T11:45:20+02:00",
+  "commit_message_head": "[management,client] Add anonymize level and upload URL to remote debug bundle jobs (#7147)",
+  "contract_affected_operations": [],
+  "evidence": [
+    "BundleParameters adds optional anonymize_level and upload_url properties without changing its required list.",
+    "The shared component is referenced by three peer-job operations, but no formerly valid request or response member is removed."
+  ],
+  "external_refs": [],
+  "ground_truth_contract_verdict": "pass",
+  "head_commit": "1081ca006d46f26ea770602e2936012465d7163c",
+  "head_openapi_version": "3.1.0",
+  "head_operation_count": 237,
+  "head_spec_bytes": 490215,
+  "head_spec_path": "shared/management/http/api/openapi.yml",
+  "head_spec_sha256": "02d7be15e054e6681e169e769af2d1bcf635c9f4a7ee0b2bf7efbf28c1e284a8",
+  "license": "BSD-3-Clause for shared/",
+  "notes": [],
+  "repo": "netbirdio/netbird",
+  "review_confidence": "high",
+  "review_status": "confirmed",
+  "reviewer": "ai_assisted_initial_review",
+  "runtime_executable_operations": [],
+  "schema_version": "guardian-e3-b-pre-system-review-v1"
+}

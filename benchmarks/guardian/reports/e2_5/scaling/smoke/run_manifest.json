@@ -1,0 +1,112 @@
+{
+  "cases": [
+    {
+      "affected_operations": [
+        "GET /resources/0001"
+      ],
+      "base_spec": "benchmarks/guardian/datasets/scaling/generated/scale_8_s1_one_operation_base.json",
+      "base_spec_sha256": "71b2e83fd01a2635f7a8049fd6117962aa009ebf121cfb1c1e6397b6d9243310",
+      "case_id": "scale_8_s1_one_operation",
+      "generator_version": "guardian_scaling_generator_v1",
+      "head_spec": "benchmarks/guardian/datasets/scaling/generated/scale_8_s1_one_operation_head.json",
+      "head_spec_sha256": "4bf8b2dbdc4dc54052a1105d678b82dd5c5a489dd7af489d0f94a279e0c04ba1",
+      "scenario": "s1_one_operation",
+      "total_operations": 8
+    },
+    {
+      "affected_operations": [
+        "GET /resources/0001"
+      ],
+      "base_spec": "benchmarks/guardian/datasets/scaling/generated/scale_8_s2_five_percent_base.json",
+      "base_spec_sha256": "71b2e83fd01a2635f7a8049fd6117962aa009ebf121cfb1c1e6397b6d9243310",
+      "case_id": "scale_8_s2_five_percent",
+      "generator_version": "guardian_scaling_generator_v1",
+      "head_spec": "benchmarks/guardian/datasets/scaling/generated/scale_8_s2_five_percent_head.json",
+      "head_spec_sha256": "4bf8b2dbdc4dc54052a1105d678b82dd5c5a489dd7af489d0f94a279e0c04ba1",
+      "scenario": "s2_five_percent",
+      "total_operations": 8
+    }
+  ],
+  "command_contracts": {
+    "full_schemathesis": "st run HEAD --url TARGET [fixed settings; no include filter]",
+    "oasdiff": "oasdiff breaking --format json --allow-external-refs=false --fail-on ERR -- BASE HEAD",
+    "scoped_schemathesis": "st run HEAD --url TARGET --include-operation-id ID [same fixed settings]"
+  },
+  "completed_at": "2026-09-06T09:12:32.155196+00:00",
+  "configuration": {
+    "max_artifact_bytes": 52428800,
+    "max_case_runtime_seconds": 180.0,
+    "max_examples": 1,
+    "max_scale_operations": 128,
+    "max_scan_artifact_bytes": 104857600,
+    "random_seed": 20260906,
+    "repetitions": 5,
+    "request_timeout_seconds": 2.0,
+    "sizes": [
+      8
+    ],
+    "subprocess_timeout_seconds": 60.0,
+    "total_benchmark_budget_seconds": 10800.0,
+    "warmup_runs": 1
+  },
+  "dataset_sha256": "0d4e72382891816308f4f5b475e0c0c2951e7c4170cffa61ab0acb8ac54d7aa4",
+  "frozen_e2_raw_hashes_after": {
+    "benchmarks/guardian/reports/e2/latest/contract_raw_results.jsonl": "349023d9464935fcc6ec9006189bf59d124bf3df79f870bcbb4fddaf3aca957a",
+    "benchmarks/guardian/reports/e2/latest/raw_results.jsonl": "f93f33a01a6d97f92a162eca5b41b2f11746c76f8ab7785e23d839e5f08ad196"
+  },
+  "frozen_e2_raw_hashes_before": {
+    "benchmarks/guardian/reports/e2/latest/contract_raw_results.jsonl": "349023d9464935fcc6ec9006189bf59d124bf3df79f870bcbb4fddaf3aca957a",
+    "benchmarks/guardian/reports/e2/latest/raw_results.jsonl": "f93f33a01a6d97f92a162eca5b41b2f11746c76f8ab7785e23d839e5f08ad196"
+  },
+  "generator_version": "guardian_scaling_generator_v1",
+  "git_commit": "bcc2c8c1303a1eaae9a99dce73c0fe72dc2fc46d",
+  "hardware": {
+    "cpu_logical_count": 16,
+    "ram_bytes": null
+  },
+  "metadata": {
+    "benchmark_version": "E2.5-scaling-v1",
+    "cpu_logical_count": 16,
+    "deepseek_model": null,
+    "guardian_git_commit": "bcc2c8c1303a1eaae9a99dce73c0fe72dc2fc46d",
+    "guardian_worktree_dirty": true,
+    "oasdiff_archive_sha256": "cef8ec7cdd32ab4ce9c188f9dbb50452a91fa36cc11c8e1dcf340b19282c3ce1",
+    "oasdiff_version": "1.28.0",
+    "operating_system": "Windows 11 AMD64",
+    "python_version": "3.13.12",
+    "random_seed": 20260906,
+    "schemathesis_parameters": {
+      "checks": "response_schema_conformance",
+      "generation_deterministic": true,
+      "max_examples": 1,
+      "max_redirects": 0,
+      "phases": "examples,coverage",
+      "request_timeout_seconds": 2.0
+    },
+    "schemathesis_version": "4.24.3"
+  },
+  "production_core_hashes_after": {
+    "app/services/guardian/graph.py": "9151a5cf7616902bb6201041b3d7c547ca737b5763601d1c7b38abce69c307fd",
+    "app/services/guardian/nodes.py": "5bb6868a9d32c1c80fda5adc5b8d5f1def9f6fac8d2408bda96fba7b22142001",
+    "app/services/guardian/oasdiff.py": "f2628a647de1fe7e9bc20796f49fb2df0c673b258c6fd0d9ee58d55b00a77043",
+    "app/services/guardian/schemathesis.py": "6ab64de45e57ddb2e02dca7ad250059df1fef64b7c4add3fdbbcb5cde1af39e5",
+    "app/services/guardian/scope.py": "9c93058ec5b3d358f5dfe2ddc81415cd276fe7cf448b527124cd629e856f2787"
+  },
+  "production_core_hashes_before": {
+    "app/services/guardian/graph.py": "9151a5cf7616902bb6201041b3d7c547ca737b5763601d1c7b38abce69c307fd",
+    "app/services/guardian/nodes.py": "5bb6868a9d32c1c80fda5adc5b8d5f1def9f6fac8d2408bda96fba7b22142001",
+    "app/services/guardian/oasdiff.py": "f2628a647de1fe7e9bc20796f49fb2df0c673b258c6fd0d9ee58d55b00a77043",
+    "app/services/guardian/schemathesis.py": "6ab64de45e57ddb2e02dca7ad250059df1fef64b7c4add3fdbbcb5cde1af39e5",
+    "app/services/guardian/scope.py": "9c93058ec5b3d358f5dfe2ddc81415cd276fe7cf448b527124cd629e856f2787"
+  },
+  "run_id": "guardian-e2-5-scaling-20260906T090958Z-b015c7cc",
+  "secret_fields_recorded": [],
+  "stage": "E2.5-scaling",
+  "started_at": "2026-09-06T09:09:58.340957+00:00",
+  "systems": [
+    "full_schemathesis",
+    "oasdiff_plus_full_schemathesis",
+    "oracle_scope",
+    "guardian_deterministic"
+  ]
+}

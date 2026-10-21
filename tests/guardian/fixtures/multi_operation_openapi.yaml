@@ -1,0 +1,41 @@
+openapi: 3.0.3
+info:
+  title: API Guardian Phase 2 Operation Filter Fixture
+  version: 1.0.0
+paths:
+  /items/{item_id}:
+    get:
+      operationId: getItem
+      parameters:
+        - name: item_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Item found
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [id]
+                properties:
+                  id:
+                    type: string
+  /unrelated:
+    get:
+      operationId: getUnrelated
+      responses:
+        "200":
+          description: Unrelated response
+          content:
+            application/json:
+              schema:
+                type: object
+  /admin:
+    delete:
+      operationId: deleteAdmin
+      responses:
+        "204":
+          description: Admin entry deleted

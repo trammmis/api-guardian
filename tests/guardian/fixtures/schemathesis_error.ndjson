@@ -1,0 +1,7 @@
+{"Initialize":{"schemathesis_version":"4.24.3"}}
+{"LoadingFinished":{"statistic":{"operations":{"total":1,"selected":1}}}}
+{"NonFatalError":{"value":{"type":"ConnectTimeout","message":"raw-network-detail"},"phase":"Coverage","label":"GET /items/{item_id}","related_to_operation":true}}
+{"ScenarioFinished":{"phase":"Coverage","status":"error","elapsed_time":2.0,"recorder":{"label":"GET /items/{item_id}","checks":{},"interactions":{}}}}
+{"SuiteFinished":{"phase":"Coverage","status":"error"}}
+{"PhaseFinished":{"phase":{"name":"Coverage","is_enabled":true},"status":"error"}}
+{"EngineFinished":{"stop_reason":"completed"}}

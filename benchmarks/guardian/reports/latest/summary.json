@@ -1,0 +1,228 @@
+{
+  "benchmark": "API Guardian Effectiveness Benchmark",
+  "completed_at": "2026-09-03T08:29:58.152518+00:00",
+  "configuration": {
+    "generation_deterministic": true,
+    "max_artifact_bytes": 52428800,
+    "max_examples": 1,
+    "max_redirects": 0,
+    "max_scan_artifact_bytes": 104857600,
+    "random_seed": 20260903,
+    "repetitions": 5,
+    "request_timeout_seconds": 2.0,
+    "schemathesis_check": "response_schema_conformance",
+    "schemathesis_phases": "examples,coverage",
+    "subprocess_timeout_seconds": 30.0,
+    "warmup_runs": 1
+  },
+  "dataset": {
+    "case_count": 10,
+    "detectable_case_count": 8,
+    "negative_control_count": 2,
+    "sut_count": 2
+  },
+  "metadata": {
+    "benchmark_version": "E1.0",
+    "cpu_logical_count": 16,
+    "deepseek_model": null,
+    "guardian_git_commit": "bcc2c8c1303a1eaae9a99dce73c0fe72dc2fc46d",
+    "guardian_worktree_dirty": true,
+    "oasdiff_archive_sha256": "cef8ec7cdd32ab4ce9c188f9dbb50452a91fa36cc11c8e1dcf340b19282c3ce1",
+    "oasdiff_version": "1.28.0",
+    "operating_system": "Windows 11 AMD64",
+    "python_version": "3.13.12",
+    "random_seed": 20260903,
+    "schemathesis_parameters": {
+      "checks": "response_schema_conformance",
+      "generation_deterministic": true,
+      "max_examples": 1,
+      "max_redirects": 0,
+      "phases": "examples,coverage",
+      "request_timeout_seconds": 2.0
+    },
+    "schemathesis_version": "4.24.3"
+  },
+  "metrics": {
+    "contract_verdict_accuracy": {
+      "denominator": 10,
+      "numerator": 10,
+      "value": 1.0
+    },
+    "missed_case_count": 2,
+    "paired_guardian_vs_full": {
+      "paired_sample_size": 50,
+      "runtime_reduction": {
+        "mean": 0.8498714834709024,
+        "median": 0.8481293701192294,
+        "p95": 0.8832349724799113,
+        "sample_size": 50,
+        "std": 0.019244200737769467
+      }
+    },
+    "performance": {
+      "full_schemathesis": {
+        "http_requests_issued": {
+          "mean": 72.0,
+          "median": 72.0,
+          "p95": 72.0,
+          "sample_size": 50,
+          "std": 0.0
+        },
+        "operations_tested": {
+          "mean": 8.0,
+          "median": 8.0,
+          "p95": 8.0,
+          "sample_size": 50,
+          "std": 0.0
+        },
+        "wall_clock_duration_seconds": {
+          "mean": 29.848850844000044,
+          "median": 29.464145650001228,
+          "p95": 35.876289145000555,
+          "sample_size": 50,
+          "std": 3.0536736384498617
+        }
+      },
+      "guardian_deterministic": {
+        "http_requests_issued": {
+          "mean": 9.0,
+          "median": 9.0,
+          "p95": 9.0,
+          "sample_size": 50,
+          "std": 0.0
+        },
+        "operations_tested": {
+          "mean": 1.0,
+          "median": 1.0,
+          "p95": 1.0,
+          "sample_size": 50,
+          "std": 0.0
+        },
+        "wall_clock_duration_seconds": {
+          "mean": 4.480042844000418,
+          "median": 4.561333450001257,
+          "p95": 5.49805063499989,
+          "sample_size": 50,
+          "std": 0.6885837187650214
+        }
+      },
+      "oracle_scope": {
+        "http_requests_issued": {
+          "mean": 9.0,
+          "median": 9.0,
+          "p95": 9.0,
+          "sample_size": 50,
+          "std": 0.0
+        },
+        "operations_tested": {
+          "mean": 1.0,
+          "median": 1.0,
+          "p95": 1.0,
+          "sample_size": 50,
+          "std": 0.0
+        },
+        "wall_clock_duration_seconds": {
+          "mean": 4.3182944220001085,
+          "median": 4.3898386000000755,
+          "p95": 5.307113830000526,
+          "sample_size": 50,
+          "std": 0.6572523568314398
+        }
+      }
+    },
+    "reliability": {
+      "deterministic_reproducibility": {
+        "denominator": 150,
+        "numerator": 150,
+        "value": 1.0
+      }
+    },
+    "scope": {
+      "mean_oracle_overhead_operations": 0.0,
+      "mean_scope_reduction": 0.875,
+      "oracle_efficiency_ratio": 1.0,
+      "precision": {
+        "denominator": 10,
+        "numerator": 10,
+        "value": 1.0
+      },
+      "recall": {
+        "denominator": 10,
+        "numerator": 10,
+        "value": 1.0
+      }
+    },
+    "systems": {
+      "full_schemathesis": {
+        "bug_detection_precision": {
+          "denominator": 8,
+          "numerator": 8,
+          "value": 1.0
+        },
+        "bug_detection_recall": {
+          "denominator": 10,
+          "numerator": 8,
+          "value": 0.8
+        },
+        "in_scope_mutation_recall": {
+          "denominator": 8,
+          "numerator": 8,
+          "value": 1.0
+        },
+        "overall_mutation_recall": {
+          "denominator": 10,
+          "numerator": 8,
+          "value": 0.8
+        }
+      },
+      "guardian_deterministic": {
+        "bug_detection_precision": {
+          "denominator": 8,
+          "numerator": 8,
+          "value": 1.0
+        },
+        "bug_detection_recall": {
+          "denominator": 10,
+          "numerator": 8,
+          "value": 0.8
+        },
+        "in_scope_mutation_recall": {
+          "denominator": 8,
+          "numerator": 8,
+          "value": 1.0
+        },
+        "overall_mutation_recall": {
+          "denominator": 10,
+          "numerator": 8,
+          "value": 0.8
+        }
+      },
+      "oracle_scope": {
+        "bug_detection_precision": {
+          "denominator": 8,
+          "numerator": 8,
+          "value": 1.0
+        },
+        "bug_detection_recall": {
+          "denominator": 10,
+          "numerator": 8,
+          "value": 0.8
+        },
+        "in_scope_mutation_recall": {
+          "denominator": 8,
+          "numerator": 8,
+          "value": 1.0
+        },
+        "overall_mutation_recall": {
+          "denominator": 10,
+          "numerator": 8,
+          "value": 0.8
+        }
+      }
+    }
+  },
+  "production_guardian_core_unchanged_during_run": true,
+  "run_id": "guardian-e1-20260903T075056Z-5e2ede67",
+  "stage": "E1",
+  "started_at": "2026-09-03T07:50:56.845152+00:00"
+}

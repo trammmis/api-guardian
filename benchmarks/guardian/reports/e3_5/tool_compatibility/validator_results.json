@@ -1,0 +1,883 @@
+{
+  "openapi_spec_validator": {
+    "command": "uv run --with openapi-spec-validator==0.9.0 python -m benchmarks.guardian.run_e3_5 ...",
+    "execution_environment": "isolated uv --with; not added to production dependencies",
+    "results": [
+      {
+        "case_id": "rw_supabase_001_oauth_grants_endpoints_added",
+        "commit": "6296a5a226b3c60bcd9d20786750a808af9cd529",
+        "external_ref_count": 0,
+        "local_fragment_ref_count": 165,
+        "openapi_version": "3.0.3",
+        "safe_error": "Dict key must be str or str enum. Got 'int'",
+        "side": "base",
+        "spec_bytes": 108612,
+        "spec_sha256": "66dfc674e7eb9dfed2b79de2ab5b57b0e8a28aee9e3e78ab4639d0782cc7d82b",
+        "valid": false
+      },
+      {
+        "case_id": "rw_supabase_001_oauth_grants_endpoints_added",
+        "commit": "cc640b277989d57b39f3805cd9433ef4fe16bf83",
+        "external_ref_count": 0,
+        "local_fragment_ref_count": 171,
+        "openapi_version": "3.0.3",
+        "safe_error": "Dict key must be str or str enum. Got 'int'",
+        "side": "head",
+        "spec_bytes": 112407,
+        "spec_sha256": "0d4e9964e6caff5b85e6d4d1ab81fc3ca9cb16daf4a466977b962bb6a7a681c4",
+        "valid": false
+      },
+      {
+        "case_id": "rw_supabase_002_oauth_client_update_endpoint_added",
+        "commit": "cf39a8ae2cc386f2672f0ecbb8d84dd77f04e56f",
+        "external_ref_count": 0,
+        "local_fragment_ref_count": 160,
+        "openapi_version": "3.0.3",
+        "safe_error": "Dict key must be str or str enum. Got 'int'",
+        "side": "base",
+        "spec_bytes": 106370,
+        "spec_sha256": "9111cd4c70ebdf1c97717d2017397814e80eb49390c0d0cbb3e38e58dd36b19f",
+        "valid": false
+      },
+      {
+        "case_id": "rw_supabase_002_oauth_client_update_endpoint_added",
+        "commit": "6296a5a226b3c60bcd9d20786750a808af9cd529",
+        "external_ref_count": 0,
+        "local_fragment_ref_count": 165,
+        "openapi_version": "3.0.3",
+        "safe_error": "Dict key must be str or str enum. Got 'int'",
+        "side": "head",
+        "spec_bytes": 108612,
+        "spec_sha256": "66dfc674e7eb9dfed2b79de2ab5b57b0e8a28aee9e3e78ab4639d0782cc7d82b",
+        "valid": false
+      },
+      {
+        "case_id": "rw_supabase_003_oauth_client_optional_fields_added",
+        "commit": "68cb8d2ba3ded878c68d7cb76465bfaaac58436a",
+        "external_ref_count": 0,
+        "local_fragment_ref_count": 160,
+        "openapi_version": "3.0.3",
+        "safe_error": "Dict key must be str or str enum. Got 'int'",
+        "side": "base",
+        "spec_bytes": 103153,
+        "spec_sha256": "a222d9459767fe262ed50daab76b9f3dd455524e8168bd32e49142fa24408b69",
+        "valid": false
+      },
+      {
+        "case_id": "rw_supabase_003_oauth_client_optional_fields_added",
+        "commit": "cf39a8ae2cc386f2672f0ecbb8d84dd77f04e56f",
+        "external_ref_count": 0,
+        "local_fragment_ref_count": 160,
+        "openapi_version": "3.0.3",
+        "safe_error": "Dict key must be str or str enum. Got 'int'",
+        "side": "head",
+        "spec_bytes": 106370,
+        "spec_sha256": "9111cd4c70ebdf1c97717d2017397814e80eb49390c0d0cbb3e38e58dd36b19f",
+        "valid": false
+      },
+      {
+        "case_id": "rw_supabase_004_webauthn_schema_rework",
+        "commit": "1f804a2795012a1a165ff07afdb9dd98ad8ff291",
+        "external_ref_count": 0,
+        "local_fragment_ref_count": 161,
+        "openapi_version": "3.0.3",
+        "safe_error": "Dict key must be str or str enum. Got 'int'",
+        "side": "base",
+        "spec_bytes": 102091,
+        "spec_sha256": "f782805361eda42f763008a37671ab05d1270b67168f828575ed04d05aba627f",
+        "valid": false
+      },
+      {
+        "case_id": "rw_supabase_004_webauthn_schema_rework",
+        "commit": "68cb8d2ba3ded878c68d7cb76465bfaaac58436a",
+        "external_ref_count": 0,
+        "local_fragment_ref_count": 160,
+        "openapi_version": "3.0.3",
+        "safe_error": "Dict key must be str or str enum. Got 'int'",
+        "side": "head",
+        "spec_bytes": 103153,
+        "spec_sha256": "a222d9459767fe262ed50daab76b9f3dd455524e8168bd32e49142fa24408b69",
+        "valid": false
+      },
+      {
+        "case_id": "minimal_reproducer",
+        "commit": "benchmark-only",
+        "external_ref_count": 0,
+        "local_fragment_ref_count": 2,
+        "openapi_version": "3.0.3",
+        "safe_error": null,
+        "side": "base",
+        "spec_bytes": 877,
+        "spec_sha256": "b4d90567e0ebe70fd47953f14d7b01707532c6ccb1d1db63b6891c968941ab0e",
+        "valid": true
+      },
+      {
+        "case_id": "minimal_reproducer",
+        "commit": "benchmark-only",
+        "external_ref_count": 0,
+        "local_fragment_ref_count": 2,
+        "openapi_version": "3.0.3",
+        "safe_error": null,
+        "side": "head",
+        "spec_bytes": 877,
+        "spec_sha256": "df8ddda46dfd4e862efc77c688a17285d5c23a6731764c5ad48e32e28c7a7bf9",
+        "valid": true
+      }
+    ],
+    "tool": "openapi-spec-validator",
+    "version": "0.9.0"
+  },
+  "redocly": {
+    "command": "npx --yes @redocly/cli@2.51.2 lint SPEC --format json",
+    "execution_environment": "isolated npx; not added to production dependencies",
+    "results": [
+      {
+        "case_id": "rw_supabase_001_oauth_grants_endpoints_added",
+        "exit_code": 1,
+        "recommended_lint_pass": false,
+        "safe_parse_error": null,
+        "side": "base",
+        "status": "completed",
+        "structural_problems": [
+          {
+            "location_pointers": [
+              "#/components/responses/UnauthorizedResponse/content"
+            ],
+            "message": "Property `content` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": "#/paths/~1user~1identities~1{identityId}/delete/responses/401/content/application~1json/schema"
+          },
+          {
+            "location_pointers": [
+              "#/components/responses/ForbiddenResponse/content"
+            ],
+            "message": "Property `content` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": "#/paths/~1user~1identities~1{identityId}/delete/responses/403/content/application~1json/schema"
+          },
+          {
+            "location_pointers": [
+              "#/components/schemas/SAMLAttributeMappingSchema/properties/keys/patternProperties"
+            ],
+            "message": "Property `patternProperties` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": null
+          },
+          {
+            "location_pointers": [
+              "#/paths/~1settings/get/responses/200/content/application~1json/schema/properties/sms_provider/optional"
+            ],
+            "message": "Property `optional` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": null
+          },
+          {
+            "location_pointers": [
+              "#/paths/~1settings/get/responses/200/content/application~1json/schema/properties/external/patternProperties"
+            ],
+            "message": "Property `patternProperties` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": null
+          }
+        ],
+        "structural_valid": false,
+        "totals": {
+          "errors": 9,
+          "ignored": 0,
+          "warnings": 73
+        }
+      },
+      {
+        "case_id": "rw_supabase_001_oauth_grants_endpoints_added",
+        "exit_code": 1,
+        "recommended_lint_pass": false,
+        "safe_parse_error": null,
+        "side": "head",
+        "status": "completed",
+        "structural_problems": [
+          {
+            "location_pointers": [
+              "#/components/responses/UnauthorizedResponse/content"
+            ],
+            "message": "Property `content` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": "#/paths/~1user~1identities~1{identityId}/delete/responses/401/content/application~1json/schema"
+          },
+          {
+            "location_pointers": [
+              "#/components/responses/ForbiddenResponse/content"
+            ],
+            "message": "Property `content` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": "#/paths/~1user~1identities~1{identityId}/delete/responses/403/content/application~1json/schema"
+          },
+          {
+            "location_pointers": [
+              "#/components/schemas/SAMLAttributeMappingSchema/properties/keys/patternProperties"
+            ],
+            "message": "Property `patternProperties` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": null
+          },
+          {
+            "location_pointers": [
+              "#/paths/~1settings/get/responses/200/content/application~1json/schema/properties/sms_provider/optional"
+            ],
+            "message": "Property `optional` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": null
+          },
+          {
+            "location_pointers": [
+              "#/paths/~1settings/get/responses/200/content/application~1json/schema/properties/external/patternProperties"
+            ],
+            "message": "Property `patternProperties` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": null
+          }
+        ],
+        "structural_valid": false,
+        "totals": {
+          "errors": 9,
+          "ignored": 0,
+          "warnings": 75
+        }
+      },
+      {
+        "case_id": "rw_supabase_002_oauth_client_update_endpoint_added",
+        "exit_code": 1,
+        "recommended_lint_pass": false,
+        "safe_parse_error": null,
+        "side": "base",
+        "status": "completed",
+        "structural_problems": [
+          {
+            "location_pointers": [
+              "#/components/responses/UnauthorizedResponse/content"
+            ],
+            "message": "Property `content` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": "#/paths/~1user~1identities~1{identityId}/delete/responses/401/content/application~1json/schema"
+          },
+          {
+            "location_pointers": [
+              "#/components/responses/ForbiddenResponse/content"
+            ],
+            "message": "Property `content` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": "#/paths/~1user~1identities~1{identityId}/delete/responses/403/content/application~1json/schema"
+          },
+          {
+            "location_pointers": [
+              "#/components/schemas/SAMLAttributeMappingSchema/properties/keys/patternProperties"
+            ],
+            "message": "Property `patternProperties` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": null
+          },
+          {
+            "location_pointers": [
+              "#/paths/~1settings/get/responses/200/content/application~1json/schema/properties/sms_provider/optional"
+            ],
+            "message": "Property `optional` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": null
+          },
+          {
+            "location_pointers": [
+              "#/paths/~1settings/get/responses/200/content/application~1json/schema/properties/external/patternProperties"
+            ],
+            "message": "Property `patternProperties` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": null
+          }
+        ],
+        "structural_valid": false,
+        "totals": {
+          "errors": 9,
+          "ignored": 0,
+          "warnings": 72
+        }
+      },
+      {
+        "case_id": "rw_supabase_002_oauth_client_update_endpoint_added",
+        "exit_code": 1,
+        "recommended_lint_pass": false,
+        "safe_parse_error": null,
+        "side": "head",
+        "status": "completed",
+        "structural_problems": [
+          {
+            "location_pointers": [
+              "#/components/responses/UnauthorizedResponse/content"
+            ],
+            "message": "Property `content` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": "#/paths/~1user~1identities~1{identityId}/delete/responses/401/content/application~1json/schema"
+          },
+          {
+            "location_pointers": [
+              "#/components/responses/ForbiddenResponse/content"
+            ],
+            "message": "Property `content` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": "#/paths/~1user~1identities~1{identityId}/delete/responses/403/content/application~1json/schema"
+          },
+          {
+            "location_pointers": [
+              "#/components/schemas/SAMLAttributeMappingSchema/properties/keys/patternProperties"
+            ],
+            "message": "Property `patternProperties` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": null
+          },
+          {
+            "location_pointers": [
+              "#/paths/~1settings/get/responses/200/content/application~1json/schema/properties/sms_provider/optional"
+            ],
+            "message": "Property `optional` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": null
+          },
+          {
+            "location_pointers": [
+              "#/paths/~1settings/get/responses/200/content/application~1json/schema/properties/external/patternProperties"
+            ],
+            "message": "Property `patternProperties` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": null
+          }
+        ],
+        "structural_valid": false,
+        "totals": {
+          "errors": 9,
+          "ignored": 0,
+          "warnings": 73
+        }
+      },
+      {
+        "case_id": "rw_supabase_003_oauth_client_optional_fields_added",
+        "exit_code": 1,
+        "recommended_lint_pass": false,
+        "safe_parse_error": null,
+        "side": "base",
+        "status": "completed",
+        "structural_problems": [
+          {
+            "location_pointers": [
+              "#/components/responses/UnauthorizedResponse/content"
+            ],
+            "message": "Property `content` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": "#/paths/~1user~1identities~1{identityId}/delete/responses/401/content/application~1json/schema"
+          },
+          {
+            "location_pointers": [
+              "#/components/responses/ForbiddenResponse/content"
+            ],
+            "message": "Property `content` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": "#/paths/~1user~1identities~1{identityId}/delete/responses/403/content/application~1json/schema"
+          },
+          {
+            "location_pointers": [
+              "#/components/schemas/SAMLAttributeMappingSchema/properties/keys/patternProperties"
+            ],
+            "message": "Property `patternProperties` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": null
+          },
+          {
+            "location_pointers": [
+              "#/paths/~1settings/get/responses/200/content/application~1json/schema/properties/sms_provider/optional"
+            ],
+            "message": "Property `optional` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": null
+          },
+          {
+            "location_pointers": [
+              "#/paths/~1settings/get/responses/200/content/application~1json/schema/properties/external/patternProperties"
+            ],
+            "message": "Property `patternProperties` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": null
+          }
+        ],
+        "structural_valid": false,
+        "totals": {
+          "errors": 9,
+          "ignored": 0,
+          "warnings": 72
+        }
+      },
+      {
+        "case_id": "rw_supabase_003_oauth_client_optional_fields_added",
+        "exit_code": 1,
+        "recommended_lint_pass": false,
+        "safe_parse_error": null,
+        "side": "head",
+        "status": "completed",
+        "structural_problems": [
+          {
+            "location_pointers": [
+              "#/components/responses/UnauthorizedResponse/content"
+            ],
+            "message": "Property `content` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": "#/paths/~1user~1identities~1{identityId}/delete/responses/401/content/application~1json/schema"
+          },
+          {
+            "location_pointers": [
+              "#/components/responses/ForbiddenResponse/content"
+            ],
+            "message": "Property `content` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": "#/paths/~1user~1identities~1{identityId}/delete/responses/403/content/application~1json/schema"
+          },
+          {
+            "location_pointers": [
+              "#/components/schemas/SAMLAttributeMappingSchema/properties/keys/patternProperties"
+            ],
+            "message": "Property `patternProperties` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": null
+          },
+          {
+            "location_pointers": [
+              "#/paths/~1settings/get/responses/200/content/application~1json/schema/properties/sms_provider/optional"
+            ],
+            "message": "Property `optional` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": null
+          },
+          {
+            "location_pointers": [
+              "#/paths/~1settings/get/responses/200/content/application~1json/schema/properties/external/patternProperties"
+            ],
+            "message": "Property `patternProperties` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": null
+          }
+        ],
+        "structural_valid": false,
+        "totals": {
+          "errors": 9,
+          "ignored": 0,
+          "warnings": 72
+        }
+      },
+      {
+        "case_id": "rw_supabase_004_webauthn_schema_rework",
+        "exit_code": 1,
+        "recommended_lint_pass": false,
+        "safe_parse_error": null,
+        "side": "base",
+        "status": "completed",
+        "structural_problems": [
+          {
+            "location_pointers": [
+              "#/components/responses/UnauthorizedResponse/content"
+            ],
+            "message": "Property `content` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": "#/paths/~1user~1identities~1{identityId}/delete/responses/401/content/application~1json/schema"
+          },
+          {
+            "location_pointers": [
+              "#/components/responses/ForbiddenResponse/content"
+            ],
+            "message": "Property `content` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": "#/paths/~1user~1identities~1{identityId}/delete/responses/403/content/application~1json/schema"
+          },
+          {
+            "location_pointers": [
+              "#/components/schemas/SAMLAttributeMappingSchema/properties/keys/patternProperties"
+            ],
+            "message": "Property `patternProperties` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": null
+          },
+          {
+            "location_pointers": [
+              "#/paths/~1settings/get/responses/200/content/application~1json/schema/properties/sms_provider/optional"
+            ],
+            "message": "Property `optional` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": null
+          },
+          {
+            "location_pointers": [
+              "#/paths/~1settings/get/responses/200/content/application~1json/schema/properties/external/patternProperties"
+            ],
+            "message": "Property `patternProperties` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": null
+          }
+        ],
+        "structural_valid": false,
+        "totals": {
+          "errors": 9,
+          "ignored": 0,
+          "warnings": 72
+        }
+      },
+      {
+        "case_id": "rw_supabase_004_webauthn_schema_rework",
+        "exit_code": 1,
+        "recommended_lint_pass": false,
+        "safe_parse_error": null,
+        "side": "head",
+        "status": "completed",
+        "structural_problems": [
+          {
+            "location_pointers": [
+              "#/components/responses/UnauthorizedResponse/content"
+            ],
+            "message": "Property `content` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": "#/paths/~1user~1identities~1{identityId}/delete/responses/401/content/application~1json/schema"
+          },
+          {
+            "location_pointers": [
+              "#/components/responses/ForbiddenResponse/content"
+            ],
+            "message": "Property `content` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": "#/paths/~1user~1identities~1{identityId}/delete/responses/403/content/application~1json/schema"
+          },
+          {
+            "location_pointers": [
+              "#/components/schemas/SAMLAttributeMappingSchema/properties/keys/patternProperties"
+            ],
+            "message": "Property `patternProperties` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": null
+          },
+          {
+            "location_pointers": [
+              "#/paths/~1settings/get/responses/200/content/application~1json/schema/properties/sms_provider/optional"
+            ],
+            "message": "Property `optional` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": null
+          },
+          {
+            "location_pointers": [
+              "#/paths/~1settings/get/responses/200/content/application~1json/schema/properties/external/patternProperties"
+            ],
+            "message": "Property `patternProperties` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": null
+          }
+        ],
+        "structural_valid": false,
+        "totals": {
+          "errors": 9,
+          "ignored": 0,
+          "warnings": 72
+        }
+      },
+      {
+        "case_id": "minimal_reproducer",
+        "exit_code": 1,
+        "recommended_lint_pass": false,
+        "safe_parse_error": null,
+        "side": "base",
+        "status": "completed",
+        "structural_problems": [
+          {
+            "location_pointers": [
+              "#/components/responses/UnauthorizedResponse/content"
+            ],
+            "message": "Property `content` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": "#/paths/~1identities~1{identityId}/delete/responses/401/content/application~1json/schema"
+          }
+        ],
+        "structural_valid": false,
+        "totals": {
+          "errors": 4,
+          "ignored": 0,
+          "warnings": 2
+        }
+      },
+      {
+        "case_id": "minimal_reproducer",
+        "exit_code": 1,
+        "recommended_lint_pass": false,
+        "safe_parse_error": null,
+        "side": "head",
+        "status": "completed",
+        "structural_problems": [
+          {
+            "location_pointers": [
+              "#/components/responses/UnauthorizedResponse/content"
+            ],
+            "message": "Property `content` is not expected here.",
+            "rule_id": "struct",
+            "severity": "error",
+            "source_pointer": "#/paths/~1identities~1{identityId}/delete/responses/401/content/application~1json/schema"
+          }
+        ],
+        "structural_valid": false,
+        "totals": {
+          "errors": 4,
+          "ignored": 0,
+          "warnings": 2
+        }
+      },
+      {
+        "case_id": "corrected_control",
+        "exit_code": 1,
+        "recommended_lint_pass": false,
+        "safe_parse_error": null,
+        "side": "base",
+        "status": "completed",
+        "structural_problems": [],
+        "structural_valid": true,
+        "totals": {
+          "errors": 3,
+          "ignored": 0,
+          "warnings": 3
+        }
+      }
+    ],
+    "tool": "@redocly/cli",
+    "version": "2.51.2"
+  },
+  "representative_response_reference_chains": [
+    {
+      "all_reference_locations": [
+        "paths./token.post.responses.403.$ref",
+        "paths./logout.post.responses.401.$ref",
+        "paths./user/identities/{identityId}.delete.responses.401.content.application/json.schema.$ref",
+        "paths./admin/generate_link.post.responses.401.$ref",
+        "paths./admin/audit.get.responses.401.$ref",
+        "paths./admin/users.get.responses.401.$ref",
+        "paths./admin/users/{userId}.get.responses.401.$ref",
+        "paths./admin/users/{userId}.put.responses.401.$ref",
+        "paths./admin/users/{userId}.delete.responses.401.$ref",
+        "paths./admin/users/{userId}/factors.get.responses.401.$ref",
+        "paths./admin/users/{userId}/factors/{factorId}.put.responses.401.$ref",
+        "paths./admin/users/{userId}/factors/{factorId}.delete.responses.401.$ref",
+        "paths./admin/sso/providers.post.responses.401.$ref",
+        "paths./admin/sso/providers/{ssoProviderId}.get.responses.401.$ref",
+        "paths./admin/sso/providers/{ssoProviderId}.put.responses.401.$ref",
+        "paths./admin/sso/providers/{ssoProviderId}.delete.responses.401.$ref",
+        "paths./admin/oauth/clients.get.responses.401.$ref",
+        "paths./admin/oauth/clients.post.responses.401.$ref",
+        "paths./admin/oauth/clients/{client_id}.get.responses.401.$ref",
+        "paths./admin/oauth/clients/{client_id}.put.responses.401.$ref",
+        "paths./admin/oauth/clients/{client_id}.delete.responses.401.$ref",
+        "paths./admin/oauth/clients/{client_id}/regenerate_secret.post.responses.401.$ref",
+        "paths./oauth/token.post.responses.401.$ref",
+        "paths./oauth/authorizations/{authorization_id}.get.responses.401.$ref",
+        "paths./oauth/authorizations/{authorization_id}/consent.post.responses.401.$ref"
+      ],
+      "component_name": "UnauthorizedResponse",
+      "component_section": "components.responses",
+      "definition": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/ErrorSchema"
+            }
+          }
+        },
+        "description": "HTTP Unauthorized response.\n"
+      },
+      "reference_count": 25,
+      "schema_slot_reference_count": 1,
+      "schema_slot_reference_locations": [
+        "paths./user/identities/{identityId}.delete.responses.401.content.application/json.schema.$ref"
+      ]
+    },
+    {
+      "all_reference_locations": [
+        "paths./token.post.responses.401.$ref",
+        "paths./user/identities/{identityId}.delete.responses.403.content.application/json.schema.$ref",
+        "paths./admin/generate_link.post.responses.403.$ref",
+        "paths./admin/audit.get.responses.403.$ref",
+        "paths./admin/users.get.responses.403.$ref",
+        "paths./admin/users/{userId}.get.responses.403.$ref",
+        "paths./admin/users/{userId}.put.responses.403.$ref",
+        "paths./admin/users/{userId}.delete.responses.403.$ref",
+        "paths./admin/users/{userId}/factors.get.responses.403.$ref",
+        "paths./admin/users/{userId}/factors/{factorId}.put.responses.403.$ref",
+        "paths./admin/users/{userId}/factors/{factorId}.delete.responses.403.$ref",
+        "paths./admin/sso/providers.post.responses.403.$ref",
+        "paths./admin/sso/providers/{ssoProviderId}.get.responses.403.$ref",
+        "paths./admin/sso/providers/{ssoProviderId}.put.responses.403.$ref",
+        "paths./admin/sso/providers/{ssoProviderId}.delete.responses.403.$ref",
+        "paths./admin/oauth/clients.get.responses.403.$ref",
+        "paths./admin/oauth/clients.post.responses.403.$ref",
+        "paths./admin/oauth/clients/{client_id}.get.responses.403.$ref",
+        "paths./admin/oauth/clients/{client_id}.put.responses.403.$ref",
+        "paths./admin/oauth/clients/{client_id}.delete.responses.403.$ref",
+        "paths./admin/oauth/clients/{client_id}/regenerate_secret.post.responses.403.$ref"
+      ],
+      "component_name": "ForbiddenResponse",
+      "component_section": "components.responses",
+      "definition": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/ErrorSchema"
+            }
+          }
+        },
+        "description": "HTTP Forbidden response.\n"
+      },
+      "reference_count": 21,
+      "schema_slot_reference_count": 1,
+      "schema_slot_reference_locations": [
+        "paths./user/identities/{identityId}.delete.responses.403.content.application/json.schema.$ref"
+      ]
+    }
+  ],
+  "validator_disagreement": {
+    "details": "openapi-spec-validator accepts the minimal typed-reference mismatch but rejects full YAML on integer response keys; Redocly identifies the cross-object reference as a struct error.",
+    "present": true
+  },
+  "wrong_schema_slot_references": [
+    {
+      "case_id": "rw_supabase_001_oauth_grants_endpoints_added",
+      "json_path": "paths./user/identities/{identityId}.delete.responses.401.content.application/json.schema.$ref",
+      "ref": "#/components/responses/UnauthorizedResponse",
+      "side": "base"
+    },
+    {
+      "case_id": "rw_supabase_001_oauth_grants_endpoints_added",
+      "json_path": "paths./user/identities/{identityId}.delete.responses.403.content.application/json.schema.$ref",
+      "ref": "#/components/responses/ForbiddenResponse",
+      "side": "base"
+    },
+    {
+      "case_id": "rw_supabase_001_oauth_grants_endpoints_added",
+      "json_path": "paths./user/identities/{identityId}.delete.responses.401.content.application/json.schema.$ref",
+      "ref": "#/components/responses/UnauthorizedResponse",
+      "side": "head"
+    },
+    {
+      "case_id": "rw_supabase_001_oauth_grants_endpoints_added",
+      "json_path": "paths./user/identities/{identityId}.delete.responses.403.content.application/json.schema.$ref",
+      "ref": "#/components/responses/ForbiddenResponse",
+      "side": "head"
+    },
+    {
+      "case_id": "rw_supabase_002_oauth_client_update_endpoint_added",
+      "json_path": "paths./user/identities/{identityId}.delete.responses.401.content.application/json.schema.$ref",
+      "ref": "#/components/responses/UnauthorizedResponse",
+      "side": "base"
+    },
+    {
+      "case_id": "rw_supabase_002_oauth_client_update_endpoint_added",
+      "json_path": "paths./user/identities/{identityId}.delete.responses.403.content.application/json.schema.$ref",
+      "ref": "#/components/responses/ForbiddenResponse",
+      "side": "base"
+    },
+    {
+      "case_id": "rw_supabase_002_oauth_client_update_endpoint_added",
+      "json_path": "paths./user/identities/{identityId}.delete.responses.401.content.application/json.schema.$ref",
+      "ref": "#/components/responses/UnauthorizedResponse",
+      "side": "head"
+    },
+    {
+      "case_id": "rw_supabase_002_oauth_client_update_endpoint_added",
+      "json_path": "paths./user/identities/{identityId}.delete.responses.403.content.application/json.schema.$ref",
+      "ref": "#/components/responses/ForbiddenResponse",
+      "side": "head"
+    },
+    {
+      "case_id": "rw_supabase_003_oauth_client_optional_fields_added",
+      "json_path": "paths./user/identities/{identityId}.delete.responses.401.content.application/json.schema.$ref",
+      "ref": "#/components/responses/UnauthorizedResponse",
+      "side": "base"
+    },
+    {
+      "case_id": "rw_supabase_003_oauth_client_optional_fields_added",
+      "json_path": "paths./user/identities/{identityId}.delete.responses.403.content.application/json.schema.$ref",
+      "ref": "#/components/responses/ForbiddenResponse",
+      "side": "base"
+    },
+    {
+      "case_id": "rw_supabase_003_oauth_client_optional_fields_added",
+      "json_path": "paths./user/identities/{identityId}.delete.responses.401.content.application/json.schema.$ref",
+      "ref": "#/components/responses/UnauthorizedResponse",
+      "side": "head"
+    },
+    {
+      "case_id": "rw_supabase_003_oauth_client_optional_fields_added",
+      "json_path": "paths./user/identities/{identityId}.delete.responses.403.content.application/json.schema.$ref",
+      "ref": "#/components/responses/ForbiddenResponse",
+      "side": "head"
+    },
+    {
+      "case_id": "rw_supabase_004_webauthn_schema_rework",
+      "json_path": "paths./user/identities/{identityId}.delete.responses.401.content.application/json.schema.$ref",
+      "ref": "#/components/responses/UnauthorizedResponse",
+      "side": "base"
+    },
+    {
+      "case_id": "rw_supabase_004_webauthn_schema_rework",
+      "json_path": "paths./user/identities/{identityId}.delete.responses.403.content.application/json.schema.$ref",
+      "ref": "#/components/responses/ForbiddenResponse",
+      "side": "base"
+    },
+    {
+      "case_id": "rw_supabase_004_webauthn_schema_rework",
+      "json_path": "paths./user/identities/{identityId}.delete.responses.401.content.application/json.schema.$ref",
+      "ref": "#/components/responses/UnauthorizedResponse",
+      "side": "head"
+    },
+    {
+      "case_id": "rw_supabase_004_webauthn_schema_rework",
+      "json_path": "paths./user/identities/{identityId}.delete.responses.403.content.application/json.schema.$ref",
+      "ref": "#/components/responses/ForbiddenResponse",
+      "side": "head"
+    }
+  ]
+}

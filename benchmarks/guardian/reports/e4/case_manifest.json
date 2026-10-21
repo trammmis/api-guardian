@@ -1,0 +1,150 @@
+{
+  "stage": "E4_PRE_HUMAN",
+  "study_case_count": 13,
+  "selection_rule": "Purposeful maximum-variation sample from frozen E2, E3-B/P1-I, E3-C, and the frozen contract dataset; no LLM output was used for selection or labeling.",
+  "cases": [
+    {
+      "case_id": "e4_001_users_id_type_lag",
+      "source_case_id": "users_id_type_lag",
+      "source_stage": "E2",
+      "change_type": "response_schema_breaking",
+      "deterministic_verdict": "fail",
+      "runtime_verdict": "fail",
+      "difficulty": "easy",
+      "expected_root_cause": "implementation_contract_mismatch",
+      "expected_next_action": "update_implementation_to_head_schema"
+    },
+    {
+      "case_id": "e4_002_users_required_email_missing",
+      "source_case_id": "users_required_email_missing",
+      "source_stage": "E2",
+      "change_type": "response_schema_breaking",
+      "deterministic_verdict": "fail",
+      "runtime_verdict": "fail",
+      "difficulty": "easy",
+      "expected_root_cause": "implementation_contract_mismatch",
+      "expected_next_action": "update_implementation_to_head_schema"
+    },
+    {
+      "case_id": "e4_003_orders_status_enum_lag",
+      "source_case_id": "orders_status_enum_lag",
+      "source_stage": "E2",
+      "change_type": "response_schema_breaking",
+      "deterministic_verdict": "fail",
+      "runtime_verdict": "fail",
+      "difficulty": "medium",
+      "expected_root_cause": "implementation_contract_mismatch",
+      "expected_next_action": "update_implementation_to_head_schema"
+    },
+    {
+      "case_id": "e4_004_required_query_added",
+      "source_case_id": "booking_api_required_query_added",
+      "source_stage": "E2_CONTRACT",
+      "change_type": "request_schema_breaking",
+      "deterministic_verdict": "fail",
+      "runtime_verdict": "not_run",
+      "difficulty": "easy",
+      "expected_root_cause": "client_migration_required",
+      "expected_next_action": "plan_consumer_migration_or_versioning"
+    },
+    {
+      "case_id": "e4_005_wrong_user_semantic_control",
+      "source_case_id": "users_wrong_user_semantic",
+      "source_stage": "E2",
+      "change_type": "semantic_negative_control",
+      "deterministic_verdict": "fail",
+      "runtime_verdict": "pass",
+      "difficulty": "hard",
+      "expected_root_cause": "insufficient_evidence",
+      "expected_next_action": "do_not_claim_runtime_root_cause"
+    },
+    {
+      "case_id": "e4_006_clean_aligned_breaking_contract",
+      "source_case_id": "users_clean_control",
+      "source_stage": "E2",
+      "change_type": "implementation_aligned_breaking_contract",
+      "deterministic_verdict": "fail",
+      "runtime_verdict": "pass",
+      "difficulty": "medium",
+      "expected_root_cause": "client_migration_required",
+      "expected_next_action": "plan_consumer_migration_or_versioning"
+    },
+    {
+      "case_id": "e4_007_documentation_only_pass",
+      "source_case_id": "booking_api_documentation_only",
+      "source_stage": "E2_CONTRACT",
+      "change_type": "documentation_only",
+      "deterministic_verdict": "pass",
+      "runtime_verdict": "not_run",
+      "difficulty": "easy",
+      "expected_root_cause": "no_actionable_regression",
+      "expected_next_action": "no_corrective_action"
+    },
+    {
+      "case_id": "e4_008_immich_endpoint_removed",
+      "source_case_id": "rw_immich_005_server_theme_endpoint_removed",
+      "source_stage": "E3_B_P1_I",
+      "change_type": "removed_operation",
+      "deterministic_verdict": "fail",
+      "runtime_verdict": "not_run_empty_scope",
+      "difficulty": "medium",
+      "expected_root_cause": "client_migration_required",
+      "expected_next_action": "plan_consumer_migration_or_versioning"
+    },
+    {
+      "case_id": "e4_009_netbird_shared_component",
+      "source_case_id": "rw_netbird_004_agent_network_settings_rework",
+      "source_stage": "E3_B_P1_I",
+      "change_type": "shared_component",
+      "deterministic_verdict": "fail",
+      "runtime_verdict": "not_run",
+      "difficulty": "hard",
+      "expected_root_cause": "mixed_contract_change",
+      "expected_next_action": "review_all_affected_operations"
+    },
+    {
+      "case_id": "e4_010_appwrite_mixed_cutover",
+      "source_case_id": "rw_appwrite_002_migration_cutover_replaced",
+      "source_stage": "E3_B_P1_I",
+      "change_type": "mixed_change",
+      "deterministic_verdict": "fail",
+      "runtime_verdict": "not_run",
+      "difficulty": "hard",
+      "expected_root_cause": "mixed_contract_change",
+      "expected_next_action": "review_all_affected_operations"
+    },
+    {
+      "case_id": "e4_011_supabase_policy_disagreement",
+      "source_case_id": "rw_supabase_005_authorize_flow_type_removed",
+      "source_stage": "E3_B_E3_C",
+      "change_type": "oasdiff_policy_disagreement",
+      "deterministic_verdict": "pass",
+      "runtime_verdict": "pass",
+      "difficulty": "medium",
+      "expected_root_cause": "contract_policy_disagreement",
+      "expected_next_action": "manual_compatibility_review"
+    },
+    {
+      "case_id": "e4_012_supabase_runtime_tool_error",
+      "source_case_id": "runtime_supabase_006_id_token_request_fields_removed",
+      "source_stage": "E3_C",
+      "change_type": "runtime_error",
+      "deterministic_verdict": "error",
+      "runtime_verdict": "error",
+      "difficulty": "medium",
+      "expected_root_cause": "tool_execution_error",
+      "expected_next_action": "investigate_schemathesis_execution"
+    },
+    {
+      "case_id": "e4_013_supabase_oasdiff_load_error",
+      "source_case_id": "rw_supabase_001_oauth_grants_endpoints_added",
+      "source_stage": "E3_B_E3_5",
+      "change_type": "tool_error",
+      "deterministic_verdict": "error",
+      "runtime_verdict": "not_run",
+      "difficulty": "medium",
+      "expected_root_cause": "contract_tool_compatibility",
+      "expected_next_action": "validate_spec_and_tool_compatibility"
+    }
+  ]
+}

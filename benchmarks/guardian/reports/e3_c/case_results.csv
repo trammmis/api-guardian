@@ -1,0 +1,9 @@
+case_id,system,measured_runs,completed_runs,non_error_verdict_runs,operations_tested,median_http_requests,median_runtime_seconds,p95_runtime_seconds,verdict_tuples,deterministic_agreement
+rw_supabase_005_authorize_flow_type_removed,full_schemathesis,5,5,0,39,1431.0,16.88256000000183,17.13898586000214,n/a/error/error,True
+rw_supabase_005_authorize_flow_type_removed,oasdiff_plus_full,5,5,0,39,1431.0,17.16864330000317,17.43699416000236,pass/error/error,True
+rw_supabase_005_authorize_flow_type_removed,oracle_scope,5,5,5,1,66.0,11.374213499999314,11.505346760000975,n/a/pass/pass,True
+rw_supabase_005_authorize_flow_type_removed,api_guardian,5,5,5,1,66.0,11.779253099997732,11.875139480001234,pass/pass/pass,True
+runtime_supabase_006_id_token_request_fields_removed,full_schemathesis,5,5,0,38,1260.0,16.909306199999264,19.912860980001277,n/a/error/error,True
+runtime_supabase_006_id_token_request_fields_removed,oasdiff_plus_full,5,5,0,38,1260.0,16.560262799997872,16.968953319999855,pass/error/error,True
+runtime_supabase_006_id_token_request_fields_removed,oracle_scope,5,5,0,1,82.0,5.526574399998935,5.598750539999309,n/a/error/error,True
+runtime_supabase_006_id_token_request_fields_removed,api_guardian,5,5,0,1,82.0,5.991417200002616,6.19529862000054,pass/error/error,True

@@ -1,0 +1,332 @@
+[
+  {
+    "case_id": "booking_availability_rooms_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "booking_clean_control",
+    "actual": "pass",
+    "expected": "pass",
+    "error_codes": []
+  },
+  {
+    "case_id": "booking_guest_id_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "booking_guest_missing",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "booking_id_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "booking_list_id_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "booking_payment_amount_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "booking_room_list_id_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "booking_room_name_missing",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "booking_wrong_booking_semantic",
+    "actual": "pass",
+    "expected": "pass",
+    "error_codes": []
+  },
+  {
+    "case_id": "booking_wrong_payment_semantic",
+    "actual": "pass",
+    "expected": "pass",
+    "error_codes": []
+  },
+  {
+    "case_id": "inventory_clean_control",
+    "actual": "pass",
+    "expected": "pass",
+    "error_codes": []
+  },
+  {
+    "case_id": "inventory_movement_quantity_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "inventory_reservation_id_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "inventory_stock_id_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "inventory_stock_list_id_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "inventory_stock_sku_missing",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "inventory_supplier_days_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "inventory_warehouse_list_id_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "inventory_warehouse_name_missing",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "inventory_wrong_movement_semantic",
+    "actual": "pass",
+    "expected": "pass",
+    "error_codes": []
+  },
+  {
+    "case_id": "inventory_wrong_stock_semantic",
+    "actual": "pass",
+    "expected": "pass",
+    "error_codes": []
+  },
+  {
+    "case_id": "orders_clean_control",
+    "actual": "pass",
+    "expected": "pass",
+    "error_codes": []
+  },
+  {
+    "case_id": "orders_currency_symbol_missing",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "orders_customer_id_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "orders_invoice_amount_semantic",
+    "actual": "pass",
+    "expected": "pass",
+    "error_codes": []
+  },
+  {
+    "case_id": "orders_invoice_currency_missing",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "orders_list_id_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "orders_shipment_tracking_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "orders_status_enum_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "orders_summary_count_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "orders_total_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "orders_wrong_total_semantic",
+    "actual": "pass",
+    "expected": "pass",
+    "error_codes": []
+  },
+  {
+    "case_id": "products_brand_id_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "products_category_list_id_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "products_category_name_missing",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "products_clean_control",
+    "actual": "pass",
+    "expected": "pass",
+    "error_codes": []
+  },
+  {
+    "case_id": "products_id_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "products_list_id_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "products_name_missing",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "products_price_amount_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "products_review_rating_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "products_wrong_price_semantic",
+    "actual": "pass",
+    "expected": "pass",
+    "error_codes": []
+  },
+  {
+    "case_id": "products_wrong_product_semantic",
+    "actual": "pass",
+    "expected": "pass",
+    "error_codes": []
+  },
+  {
+    "case_id": "users_clean_control",
+    "actual": "pass",
+    "expected": "pass",
+    "error_codes": []
+  },
+  {
+    "case_id": "users_id_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "users_list_id_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "users_permission_id_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "users_profile_age_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "users_required_email_missing",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "users_role_description_missing",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "users_status_region_semantic",
+    "actual": "pass",
+    "expected": "pass",
+    "error_codes": []
+  },
+  {
+    "case_id": "users_team_id_type_lag",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "users_team_name_missing",
+    "actual": "fail",
+    "expected": "fail",
+    "error_codes": []
+  },
+  {
+    "case_id": "users_wrong_user_semantic",
+    "actual": "pass",
+    "expected": "pass",
+    "error_codes": []
+  }
+]

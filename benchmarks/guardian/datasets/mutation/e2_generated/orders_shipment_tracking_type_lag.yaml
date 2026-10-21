@@ -1,0 +1,206 @@
+openapi: 3.0.3
+info:
+  title: Guardian Benchmark Orders API
+  version: 2.0.0
+paths:
+  /orders:
+    get:
+      operationId: listOrders
+      responses:
+        '200':
+          description: Orders
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  required:
+                  - id
+                  - total
+                  - status
+                  properties:
+                    id:
+                      type: string
+                    total:
+                      type: number
+                    status:
+                      type: string
+  /orders/{order_id}:
+    get:
+      operationId: getOrder
+      parameters:
+      - name: order_id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Order
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - total
+                - status
+                properties:
+                  id:
+                    type: string
+                  total:
+                    type: number
+                  status:
+                    type: string
+                    enum:
+                    - pending
+                    - shipped
+                    - cancelled
+  /orders/{order_id}/summary:
+    get:
+      operationId: getOrderSummary
+      parameters:
+      - name: order_id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Order summary
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - order_id
+                - item_count
+                - total
+                properties:
+                  order_id:
+                    type: string
+                  item_count:
+                    type: integer
+                  total:
+                    type: number
+  /customers/{customer_id}/orders:
+    get:
+      operationId: listCustomerOrders
+      parameters:
+      - name: customer_id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Customer orders
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  required:
+                  - id
+                  - customer_id
+                  - total
+                  properties:
+                    id:
+                      type: string
+                    customer_id:
+                      type: string
+                    total:
+                      type: number
+  /invoices/{invoice_id}:
+    get:
+      operationId: getInvoice
+      parameters:
+      - name: invoice_id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Invoice
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - amount
+                properties:
+                  id:
+                    type: string
+                  amount:
+                    type: number
+                  currency:
+                    type: string
+  /shipments/{shipment_id}:
+    get:
+      operationId: getShipment
+      parameters:
+      - name: shipment_id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Shipment
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - tracking_number
+                - status
+                properties:
+                  id:
+                    type: string
+                  tracking_number:
+                    type: integer
+                  status:
+                    type: string
+  /currencies:
+    get:
+      operationId: listCurrencies
+      responses:
+        '200':
+          description: Currencies
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  required:
+                  - code
+                  - name
+                  properties:
+                    code:
+                      type: string
+                    name:
+                      type: string
+  /status:
+    get:
+      operationId: getOrdersServiceStatus
+      responses:
+        '200':
+          description: Status
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - status
+                - region
+                properties:
+                  status:
+                    type: string
+                  region:
+                    type: string

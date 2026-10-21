@@ -1,0 +1,40 @@
+{
+  "stage": "E4_A_HUMAN_STUDY_EXECUTION_FREEZE",
+  "frozen_at_utc": "2026-09-15T00:00:00+08:00",
+  "protocol_status": "PROTOCOL_APPROVED_WITH_EXECUTION_GATES",
+  "immutable_inputs": {
+    "case_manifest_sha256": "c661f11b70a2ec7b61cc3390d7c17b23f565cc17322a4327024989d37e86b478",
+    "ground_truth_sha256": "d481accc96a31ae175048ba8e8175ca37fe917143a29f228ae7df23423c22f4e",
+    "analysis_plan_sha256": "471521783890577179eab9c16dc82736ce4d1744ce40742ea521737819a47fc5",
+    "scoring_rules_sha256": "852e949c808c2804cdc103a39bfd81d62547ad3e08f8e172906e73ab35ac92a3",
+    "root_cause_options_sha256": "45a2851f506c4a06509afaaac2145e94a39f7687171be0323ddc19d67aace21b",
+    "next_action_options_sha256": "5ae1419ead5b39fd0c1a44549285b9068cd7163922f5c47f4224a848f07b97d3"
+  },
+  "primary_endpoints": ["RootCauseAccuracy", "NextActionAccuracy", "TriageTimeSeconds"],
+  "secondary_objective_endpoint": "ConfidenceCalibration",
+  "subjective_secondary_endpoints": ["Clarity", "Actionability", "Helpfulness", "Trust"],
+  "itt_rule": "All pre-frozen assignments remain in primary analysis, including B==A cases. LLM_PRESENT_SUBGROUP is supplemental only.",
+  "timing": {"t0":"first complete report render", "t1":"objective answers and confidence submitted", "subjective_time_excluded":true},
+  "production_llm": {
+    "model":"deepseek-v4-flash",
+    "temperature":0,
+    "structured_output_method":"function_calling",
+    "thinking":"disabled",
+    "fallback_enabled":false,
+    "max_retry_attempts":3,
+    "retry_wait":"exponential 2-10 seconds",
+    "retryable_errors":["RateLimitError", "APITimeoutError", "APIError"],
+    "total_call_timeout_seconds":60,
+    "analysis_node_timeout_seconds":30
+  },
+  "regeneration_policy": "No cherry-pick, manual rewrite, polish, or outcome-driven regeneration. Provider failures remain frozen safe outcomes.",
+  "frozen_invocation": "uv run python -m benchmarks.guardian.e4_execute",
+  "execution_inputs": {
+    "condition_b_inputs_sha256": "7dd0426bf26b8dde221907bcefa1ac5bc8f62c4f99dda19650907d2f6750e435",
+    "automated_eval_cases_sha256": "b61b1d3c6c61893dd893605e488abbe474c4e1c3458555d8af8da9798e5b9497",
+    "one_shot_runner_sha256": "5589dc41b1778eb5e7be1668cfe4ae6849ad73cf278d4d4ce459c996558492f8",
+    "superseded_pre_provider_runner_sha256": "d1fe9443a8436eb4aa8b7ada4aaf2bdfe721c6a81d32a36c7b94222c6abf31fa"
+  },
+  "human_collection_started": false,
+  "retention_status": "PENDING_USER_CONFIRMATION"
+}

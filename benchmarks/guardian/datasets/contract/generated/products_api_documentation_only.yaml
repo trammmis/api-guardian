@@ -1,0 +1,276 @@
+openapi: 3.0.3
+info:
+  title: Guardian Contract products_api
+  version: 2.0.0
+paths:
+  /products/primary:
+    get:
+      operationId: products_api_0
+      description: Updated documentation only
+      parameters:
+      - name: mode
+        in: query
+        required: false
+        schema:
+          type: string
+          enum:
+          - a
+          - b
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - label
+                properties:
+                  id:
+                    type: string
+                  label:
+                    type: string
+                  status:
+                    type: string
+                    enum:
+                    - active
+                    - inactive
+        '404':
+          description: Not found
+  /products:
+    get:
+      operationId: products_api_1
+      description: Controlled contract operation 1
+      parameters:
+      - name: mode
+        in: query
+        required: false
+        schema:
+          type: string
+          enum:
+          - a
+          - b
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - label
+                properties:
+                  id:
+                    type: string
+                  label:
+                    type: string
+                  status:
+                    type: string
+                    enum:
+                    - active
+                    - inactive
+        '404':
+          description: Not found
+  /categories/primary:
+    get:
+      operationId: products_api_2
+      description: Controlled contract operation 2
+      parameters:
+      - name: mode
+        in: query
+        required: false
+        schema:
+          type: string
+          enum:
+          - a
+          - b
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - label
+                properties:
+                  id:
+                    type: string
+                  label:
+                    type: string
+                  status:
+                    type: string
+                    enum:
+                    - active
+                    - inactive
+        '404':
+          description: Not found
+  /categories:
+    get:
+      operationId: products_api_3
+      description: Controlled contract operation 3
+      parameters:
+      - name: mode
+        in: query
+        required: false
+        schema:
+          type: string
+          enum:
+          - a
+          - b
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - label
+                properties:
+                  id:
+                    type: string
+                  label:
+                    type: string
+                  status:
+                    type: string
+                    enum:
+                    - active
+                    - inactive
+        '404':
+          description: Not found
+  /brands/primary:
+    get:
+      operationId: products_api_4
+      description: Controlled contract operation 4
+      parameters:
+      - name: mode
+        in: query
+        required: false
+        schema:
+          type: string
+          enum:
+          - a
+          - b
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - label
+                properties:
+                  id:
+                    type: string
+                  label:
+                    type: string
+                  status:
+                    type: string
+                    enum:
+                    - active
+                    - inactive
+        '404':
+          description: Not found
+  /prices/current:
+    get:
+      operationId: products_api_5
+      description: Controlled contract operation 5
+      parameters:
+      - name: mode
+        in: query
+        required: false
+        schema:
+          type: string
+          enum:
+          - a
+          - b
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - label
+                properties:
+                  id:
+                    type: string
+                  label:
+                    type: string
+                  status:
+                    type: string
+                    enum:
+                    - active
+                    - inactive
+        '404':
+          description: Not found
+  /reviews/latest:
+    get:
+      operationId: products_api_6
+      description: Controlled contract operation 6
+      parameters:
+      - name: mode
+        in: query
+        required: false
+        schema:
+          type: string
+          enum:
+          - a
+          - b
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SharedEntity'
+        '404':
+          description: Not found
+  /status:
+    get:
+      operationId: products_api_7
+      description: Controlled contract operation 7
+      parameters:
+      - name: mode
+        in: query
+        required: false
+        schema:
+          type: string
+          enum:
+          - a
+          - b
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SharedEntity'
+        '404':
+          description: Not found
+components:
+  schemas:
+    SharedEntity:
+      type: object
+      required:
+      - id
+      - label
+      properties:
+        id:
+          type: string
+        label:
+          type: string
+        status:
+          type: string
+          enum:
+          - active
+          - inactive

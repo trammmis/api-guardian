@@ -1,0 +1,11 @@
+{
+  "captured_for": "E4_PRE_HUMAN",
+  "model": "deepseek-v4-flash",
+  "provider_host": "api.deepseek.com",
+  "guardian_llm_enabled": true,
+  "temperature": 0,
+  "structured_output_method": "function_calling",
+  "thinking_disabled": true,
+  "api_key_recorded": false,
+  "provider_called": false
+}

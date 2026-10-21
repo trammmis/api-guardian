@@ -1,0 +1,75 @@
+{
+  "stage": "PROJECT_CLOSURE",
+  "recorded_at_utc": "2026-09-15T06:56:33.2929771Z",
+  "project_status": [
+    "PRODUCT_CORE_COMPLETE",
+    "EVALUATION_COMPLETE_FOR_PERSONAL_PROJECT",
+    "HUMAN_UTILITY_NOT_EVALUATED",
+    "REAL_WORLD_RUNTIME_PARTIALLY_VALIDATED",
+    "FROZEN_FOR_RESUME_AND_INTERVIEW"
+  ],
+  "pytest": {
+    "scope": "full_repository",
+    "status": "passed",
+    "passed": 147,
+    "skipped": 19,
+    "warnings": 2,
+    "duration_seconds": 88.01
+  },
+  "guardian_ruff_check": {
+    "scope": "app/services/guardian, Guardian route/models/schemas, tests/guardian, benchmarks/guardian",
+    "status": "passed"
+  },
+  "guardian_ruff_format_check": {
+    "scope": "app/services/guardian, Guardian route/models/schemas, tests/guardian, benchmarks/guardian",
+    "status": "passed",
+    "files_already_formatted": 115
+  },
+  "guardian_pyright": {
+    "scope": "app/services/guardian, Guardian route/models/schemas, tests/guardian",
+    "status": "passed",
+    "errors": 0,
+    "warnings": 0
+  },
+  "full_repository_ruff_check": {
+    "status": "existing_upstream_baseline_not_green",
+    "errors": 8,
+    "guardian_introduced_errors": 0,
+    "summary": "Failures are in .claude daily-report skill, app/core/limiter.py, tests/__init__.py, and tests/test_mcp_with_llm.py; they were not changed during project closure."
+  },
+  "full_repository_ruff_format_check": {
+    "status": "existing_upstream_baseline_not_green",
+    "files_would_be_reformatted": 12,
+    "guardian_introduced_files": 0,
+    "summary": "The listed files are upstream chatbot/core/MCP/daily-report files outside this closure scope."
+  },
+  "full_repository_pyright": {
+    "status": "existing_upstream_baseline_not_green",
+    "errors": 5,
+    "warnings": 0,
+    "guardian_introduced_errors": 0,
+    "summary": "All five errors are in app/core/langgraph/tools/mcp_client.py."
+  },
+  "production_core_integrity": {
+    "baseline": "benchmarks/guardian/reports/e4/production_freeze_preflight.json",
+    "files_checked": 14,
+    "hash_mismatches": 0,
+    "production_code_changed_during_closure": false
+  },
+  "e4_freeze_integrity": {
+    "case_manifest_sha256": "c661f11b70a2ec7b61cc3390d7c17b23f565cc17322a4327024989d37e86b478",
+    "ground_truth_sha256": "d481accc96a31ae175048ba8e8175ca37fe917143a29f228ae7df23423c22f4e",
+    "hashes_match_frozen_values": true
+  },
+  "human_study": {
+    "status": "NOT_CONDUCTED",
+    "reason": "OUT_OF_SCOPE_FOR_PERSONAL_PROJECT",
+    "participant_count": 0,
+    "participant_data_fabricated": false,
+    "protocol_status": "PROTOCOL_PREPARED_NOT_EXECUTED"
+  },
+  "notes": [
+    "One stale E3 integrity test was updated to preserve the original E3 hashes while accepting only the audited P1-I successor hashes for the three approved production files.",
+    "No Guardian production behavior, prompt, schema, model, verdict, benchmark Ground Truth, or frozen result was modified during closure."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "ambiguity_reason": null,
+  "base_commit": "2feb889b9cdb189b08ef55fb94904315fdac04be",
+  "base_openapi_version": "3.0.0",
+  "base_operation_count": 274,
+  "base_spec_bytes": 832963,
+  "base_spec_path": "open-api/immich-openapi-specs.json",
+  "base_spec_sha256": "f6b42ebfe64915af3e2821949e20b1075cefbea5010edcf02c1919202cbf3e5f",
+  "breaking_changes": [
+    {
+      "base_fact": "TagCreateDto.name is a required string without a pattern.",
+      "change_type": "request_pattern_added",
+      "compatibility_reason": "Previously valid tag names containing '/' no longer satisfy the request contract.",
+      "head_fact": "TagCreateDto.name adds pattern ^[^/]*$.",
+      "operation": null,
+      "schema_name": "TagCreateDto"
+    }
+  ],
+  "case_id": "rw_immich_004_tag_name_pattern_narrowed",
+  "change_types": [
+    "request_schema_changed",
+    "shared_component_changed"
+  ],
+  "commit_date_head": "2026-08-24T08:57:32-07:00",
+  "commit_message_head": "fix(server): correct tag create operations (#30877)",
+  "contract_affected_operations": [
+    "POST /tags"
+  ],
+  "evidence": [
+    "The only semantic schema delta is the new TagCreateDto.name pattern.",
+    "A fragment-reference closure from POST /tags reaches TagCreateDto; no other operation does."
+  ],
+  "external_refs": [],
+  "ground_truth_contract_verdict": "fail",
+  "head_commit": "1b3aa9cd512a01a44ffe807ac509c456310c7750",
+  "head_openapi_version": "3.0.0",
+  "head_operation_count": 274,
+  "head_spec_bytes": 832997,
+  "head_spec_path": "open-api/immich-openapi-specs.json",
+  "head_spec_sha256": "b8670635ee3a9fe1b9e08ce37e1f178ea503e6d939e605b062b21ff03c0e192b",
+  "license": "AGPL-3.0",
+  "notes": [],
+  "repo": "immich-app/immich",
+  "review_confidence": "high",
+  "review_status": "confirmed",
+  "reviewer": "ai_assisted_initial_review",
+  "runtime_executable_operations": [
+    "POST /tags"
+  ],
+  "schema_version": "guardian-e3-b-pre-system-review-v1"
+}

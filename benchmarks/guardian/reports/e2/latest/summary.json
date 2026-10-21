@@ -1,0 +1,320 @@
+{
+  "benchmark": "API Guardian Effectiveness Benchmark",
+  "completed_at": "2026-09-06T08:17:46.351399+00:00",
+  "configuration": {
+    "generation_deterministic": true,
+    "max_artifact_bytes": 52428800,
+    "max_examples": 1,
+    "max_redirects": 0,
+    "max_scan_artifact_bytes": 104857600,
+    "random_seed": 20260903,
+    "repetitions": 5,
+    "request_timeout_seconds": 2.0,
+    "schemathesis_check": "response_schema_conformance",
+    "schemathesis_phases": "examples,coverage",
+    "subprocess_timeout_seconds": 30.0,
+    "warmup_runs": 1
+  },
+  "dataset": {
+    "clean_control_count": 5,
+    "contract_case_count": 60,
+    "detectable_mutation_count": 40,
+    "mutation_count": 50,
+    "runtime_case_count": 55,
+    "semantic_negative_control_count": 10,
+    "sut_count": 5
+  },
+  "metadata": {
+    "benchmark_version": "E2.0",
+    "cpu_logical_count": 16,
+    "deepseek_model": null,
+    "guardian_git_commit": "bcc2c8c1303a1eaae9a99dce73c0fe72dc2fc46d",
+    "guardian_worktree_dirty": true,
+    "oasdiff_archive_sha256": "cef8ec7cdd32ab4ce9c188f9dbb50452a91fa36cc11c8e1dcf340b19282c3ce1",
+    "oasdiff_version": "1.28.0",
+    "operating_system": "Windows 11 AMD64",
+    "python_version": "3.13.12",
+    "random_seed": 20260903,
+    "schemathesis_parameters": {
+      "checks": "response_schema_conformance",
+      "generation_deterministic": true,
+      "max_examples": 1,
+      "max_redirects": 0,
+      "phases": "examples,coverage",
+      "request_timeout_seconds": 2.0
+    },
+    "schemathesis_version": "4.24.3"
+  },
+  "metrics": {
+    "contract_or_scope_miss_count": 15,
+    "contract_scope": {
+      "fallback_to_all_cases": 10,
+      "mean_oracle_overhead_operations": 1.2,
+      "mean_scope_reduction": 0.7,
+      "oracle_efficiency_ratio": 0.5,
+      "precision": {
+        "denominator": 110,
+        "numerator": 40,
+        "value": 0.36363636363636365
+      },
+      "recall": {
+        "denominator": 55,
+        "numerator": 40,
+        "value": 0.7272727272727273
+      }
+    },
+    "contract_verdict_accuracy": {
+      "denominator": 60,
+      "numerator": 55,
+      "value": 0.9166666666666666
+    },
+    "missed_mutation_count": 10,
+    "paired_guardian_vs_full": {
+      "runtime_reduction": {
+        "mean": -0.04004492456601203,
+        "median": -0.00820326413101835,
+        "p95": 0.26971844467460837,
+        "sample_size": 275,
+        "std": 0.17170944818174824
+      }
+    },
+    "paired_guardian_vs_full_pipeline": {
+      "runtime_reduction": {
+        "mean": -0.005771796316833976,
+        "median": 0.020376530481208244,
+        "p95": 0.28120891948004045,
+        "sample_size": 275,
+        "std": 0.17438820570070035
+      }
+    },
+    "performance": {
+      "full_schemathesis": {
+        "http_requests_issued": {
+          "mean": 65.0,
+          "median": 65.0,
+          "p95": 65.0,
+          "sample_size": 275,
+          "std": 0.0
+        },
+        "operations_tested": {
+          "mean": 8.0,
+          "median": 8.0,
+          "p95": 8.0,
+          "sample_size": 275,
+          "std": 0.0
+        },
+        "wall_clock_duration_seconds": {
+          "mean": 2.8189416963636624,
+          "median": 2.604717300000175,
+          "p95": 3.8470088699996268,
+          "sample_size": 275,
+          "std": 0.4827982682362052
+        }
+      },
+      "guardian_deterministic": {
+        "http_requests_issued": {
+          "mean": 9.0,
+          "median": 9.0,
+          "p95": 9.0,
+          "sample_size": 275,
+          "std": 0.0
+        },
+        "operations_tested": {
+          "mean": 1.0,
+          "median": 1.0,
+          "p95": 1.0,
+          "sample_size": 275,
+          "std": 0.0
+        },
+        "wall_clock_duration_seconds": {
+          "mean": 2.8999908690909035,
+          "median": 2.636868499999764,
+          "p95": 3.863201350000054,
+          "sample_size": 275,
+          "std": 0.5269844986431016
+        }
+      },
+      "oasdiff_plus_full_schemathesis": {
+        "http_requests_issued": {
+          "mean": 65.0,
+          "median": 65.0,
+          "p95": 65.0,
+          "sample_size": 275,
+          "std": 0.0
+        },
+        "operations_tested": {
+          "mean": 8.0,
+          "median": 8.0,
+          "p95": 8.0,
+          "sample_size": 275,
+          "std": 0.0
+        },
+        "wall_clock_duration_seconds": {
+          "mean": 2.916540115999988,
+          "median": 2.7052789999997913,
+          "p95": 3.91395532000015,
+          "sample_size": 275,
+          "std": 0.4842086196929314
+        }
+      },
+      "oracle_scope": {
+        "http_requests_issued": {
+          "mean": 9.0,
+          "median": 9.0,
+          "p95": 9.0,
+          "sample_size": 275,
+          "std": 0.0
+        },
+        "operations_tested": {
+          "mean": 1.0,
+          "median": 1.0,
+          "p95": 1.0,
+          "sample_size": 275,
+          "std": 0.0
+        },
+        "wall_clock_duration_seconds": {
+          "mean": 2.7902894345454596,
+          "median": 2.530658499999845,
+          "p95": 3.7407958599999804,
+          "sample_size": 275,
+          "std": 0.5200798276302884
+        }
+      }
+    },
+    "reliability": {
+      "deterministic_reproducibility": {
+        "denominator": 1100,
+        "numerator": 1100,
+        "value": 1.0
+      },
+      "error_record_count": 0
+    },
+    "runtime_scope": {
+      "mean_scope_reduction": 0.875,
+      "precision": {
+        "denominator": 55,
+        "numerator": 55,
+        "value": 1.0
+      },
+      "recall": {
+        "denominator": 55,
+        "numerator": 55,
+        "value": 1.0
+      }
+    },
+    "systems": {
+      "full_schemathesis": {
+        "bug_detection_precision": {
+          "denominator": 40,
+          "numerator": 40,
+          "value": 1.0
+        },
+        "bug_detection_recall": {
+          "denominator": 50,
+          "numerator": 40,
+          "value": 0.8
+        },
+        "false_positive_rate": {
+          "denominator": 5,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "in_scope_mutation_recall": {
+          "denominator": 40,
+          "numerator": 40,
+          "value": 1.0
+        },
+        "overall_mutation_recall": {
+          "denominator": 50,
+          "numerator": 40,
+          "value": 0.8
+        }
+      },
+      "guardian_deterministic": {
+        "bug_detection_precision": {
+          "denominator": 40,
+          "numerator": 40,
+          "value": 1.0
+        },
+        "bug_detection_recall": {
+          "denominator": 50,
+          "numerator": 40,
+          "value": 0.8
+        },
+        "false_positive_rate": {
+          "denominator": 5,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "in_scope_mutation_recall": {
+          "denominator": 40,
+          "numerator": 40,
+          "value": 1.0
+        },
+        "overall_mutation_recall": {
+          "denominator": 50,
+          "numerator": 40,
+          "value": 0.8
+        }
+      },
+      "oasdiff_plus_full_schemathesis": {
+        "bug_detection_precision": {
+          "denominator": 40,
+          "numerator": 40,
+          "value": 1.0
+        },
+        "bug_detection_recall": {
+          "denominator": 50,
+          "numerator": 40,
+          "value": 0.8
+        },
+        "false_positive_rate": {
+          "denominator": 5,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "in_scope_mutation_recall": {
+          "denominator": 40,
+          "numerator": 40,
+          "value": 1.0
+        },
+        "overall_mutation_recall": {
+          "denominator": 50,
+          "numerator": 40,
+          "value": 0.8
+        }
+      },
+      "oracle_scope": {
+        "bug_detection_precision": {
+          "denominator": 40,
+          "numerator": 40,
+          "value": 1.0
+        },
+        "bug_detection_recall": {
+          "denominator": 50,
+          "numerator": 40,
+          "value": 0.8
+        },
+        "false_positive_rate": {
+          "denominator": 5,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "in_scope_mutation_recall": {
+          "denominator": 40,
+          "numerator": 40,
+          "value": 1.0
+        },
+        "overall_mutation_recall": {
+          "denominator": 50,
+          "numerator": 40,
+          "value": 0.8
+        }
+      }
+    }
+  },
+  "production_guardian_core_unchanged_during_run": true,
+  "run_id": "guardian-e2-20260906T071336Z-2eacf61c",
+  "stage": "E2",
+  "started_at": "2026-09-06T07:13:36.222214+00:00"
+}

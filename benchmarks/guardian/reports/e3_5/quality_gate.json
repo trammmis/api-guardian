@@ -1,0 +1,32 @@
+{
+  "completed_at": "2026-09-08T15:46:15.8122461+08:00",
+  "e3_5_artifact_tests": {
+    "command": "uv run --with openapi-spec-validator==0.9.0 pytest -q benchmarks/guardian/test_e3_5_diagnostic.py",
+    "passed": 6,
+    "failed": 0
+  },
+  "guardian_non_slow_regression": {
+    "command": "uv run pytest -q -m \"not slow\" tests/guardian",
+    "passed": 85,
+    "skipped": 10,
+    "deselected_slow": 6,
+    "failed": 0,
+    "note": "slow tests were deliberately excluded because E3.5 forbids Schemathesis and real LLM execution"
+  },
+  "ruff": {
+    "format": "pass",
+    "check": "pass"
+  },
+  "pyright": {
+    "benchmark_errors": 0,
+    "guardian_errors": 0
+  },
+  "deterministic_evaluation": {
+    "contract_verdict_accuracy": 1.0,
+    "scope_recall": 1.0,
+    "scope_precision": 0.6,
+    "regression_verdict_accuracy": 1.0,
+    "final_verdict_accuracy": 1.0,
+    "error_classification_accuracy": 1.0
+  }
+}

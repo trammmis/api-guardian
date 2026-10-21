@@ -1,0 +1,38 @@
+{
+  "ambiguity_reason": null,
+  "base_commit": "d788169bf3333cb5f075482c4eb66ee16c262e16",
+  "base_openapi_version": "3.0.0",
+  "base_operation_count": 240,
+  "base_spec_bytes": 720410,
+  "base_spec_path": "open-api/immich-openapi-specs.json",
+  "base_spec_sha256": "b6d53c37b0d70ed859936316173e4987da5fc160027d83edb703e0bfa02d8c51",
+  "breaking_changes": [],
+  "case_id": "rw_immich_007_upload_duration_maximum_widened",
+  "change_types": [
+    "request_schema_changed",
+    "shared_component_changed"
+  ],
+  "commit_date_head": "2026-05-11T15:46:00-05:00",
+  "commit_message_head": "fix: mobile upload duration type (#28362)",
+  "contract_affected_operations": [],
+  "evidence": [
+    "AssetMediaCreateDto.duration maximum increases from 2147483647 to 9007199254740991.",
+    "The integer type and minimum are unchanged, so every previously valid request remains valid."
+  ],
+  "external_refs": [],
+  "ground_truth_contract_verdict": "pass",
+  "head_commit": "a278c10c7594746bbc99cccacdf9eb51ac228436",
+  "head_openapi_version": "3.0.0",
+  "head_operation_count": 240,
+  "head_spec_bytes": 720416,
+  "head_spec_path": "open-api/immich-openapi-specs.json",
+  "head_spec_sha256": "00c117b47fba118b9edfbb55718759ca83be2b10b121d423af0748b1d48beaf3",
+  "license": "AGPL-3.0",
+  "notes": [],
+  "repo": "immich-app/immich",
+  "review_confidence": "high",
+  "review_status": "confirmed",
+  "reviewer": "ai_assisted_initial_review",
+  "runtime_executable_operations": [],
+  "schema_version": "guardian-e3-b-pre-system-review-v1"
+}

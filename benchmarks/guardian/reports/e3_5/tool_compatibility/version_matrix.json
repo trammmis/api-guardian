@@ -1,0 +1,129 @@
+{
+  "diagnostic_versions": [
+    {
+      "corrected_control": {
+        "exit_code": 0,
+        "load_succeeded": true,
+        "safe_error_summary": null,
+        "safe_stdout_summary": "valid JSON",
+        "structured_output": []
+      },
+      "executable_sha256": "35eedc4028380ce538583a09e015c4289da17d7898867a17364a6d940245e7fe",
+      "full_supabase_cases": [
+        {
+          "case_id": "rw_supabase_001_oauth_grants_endpoints_added",
+          "exit_code": 102,
+          "load_succeeded": false,
+          "safe_error_summary": "Error: failed to load base spec from \"<temporary-spec>\": bad data in \"#/components/responses/UnauthorizedResponse\" (expecting ref to schema object)",
+          "safe_stdout_summary": "",
+          "structured_output": null
+        },
+        {
+          "case_id": "rw_supabase_002_oauth_client_update_endpoint_added",
+          "exit_code": 102,
+          "load_succeeded": false,
+          "safe_error_summary": "Error: failed to load base spec from \"<temporary-spec>\": bad data in \"#/components/responses/UnauthorizedResponse\" (expecting ref to schema object)",
+          "safe_stdout_summary": "",
+          "structured_output": null
+        },
+        {
+          "case_id": "rw_supabase_003_oauth_client_optional_fields_added",
+          "exit_code": 102,
+          "load_succeeded": false,
+          "safe_error_summary": "Error: failed to load base spec from \"<temporary-spec>\": bad data in \"#/components/responses/UnauthorizedResponse\" (expecting ref to schema object)",
+          "safe_stdout_summary": "",
+          "structured_output": null
+        },
+        {
+          "case_id": "rw_supabase_004_webauthn_schema_rework",
+          "exit_code": 102,
+          "load_succeeded": false,
+          "safe_error_summary": "Error: failed to load base spec from \"<temporary-spec>\": bad data in \"#/components/responses/UnauthorizedResponse\" (expecting ref to schema object)",
+          "safe_stdout_summary": "",
+          "structured_output": null
+        }
+      ],
+      "minimal_reproducer": {
+        "exit_code": 102,
+        "load_succeeded": false,
+        "safe_error_summary": "Error: failed to load base spec from \"<temporary-spec>\": bad data in \"#/components/responses/UnauthorizedResponse\" (expecting ref to schema object)",
+        "safe_stdout_summary": "",
+        "structured_output": null
+      },
+      "release_provenance": {
+        "archive": "oasdiff_1.28.0_windows_amd64.tar.gz",
+        "archive_sha256": "cef8ec7cdd32ab4ce9c188f9dbb50452a91fa36cc11c8e1dcf340b19282c3ce1",
+        "checksum_verified": true,
+        "official_checksum_sha256": "cef8ec7cdd32ab4ce9c188f9dbb50452a91fa36cc11c8e1dcf340b19282c3ce1",
+        "release_url": "https://github.com/oasdiff/oasdiff/releases/tag/v1.28.0"
+      },
+      "reported_version": "oasdiff version 1.28.0"
+    },
+    {
+      "corrected_control": {
+        "exit_code": 0,
+        "load_succeeded": true,
+        "safe_error_summary": null,
+        "safe_stdout_summary": "valid JSON",
+        "structured_output": []
+      },
+      "executable_sha256": "8a6393ef7daee536fc5c054fbb7eb14f362d5849b7bd7633826acf8f39b50dc5",
+      "full_supabase_cases": [
+        {
+          "case_id": "rw_supabase_001_oauth_grants_endpoints_added",
+          "exit_code": 102,
+          "load_succeeded": false,
+          "safe_error_summary": "Error: failed to load base spec from \"<temporary-spec>\": bad data in \"#/components/responses/UnauthorizedResponse\" (expecting ref to schema object)",
+          "safe_stdout_summary": "",
+          "structured_output": null
+        },
+        {
+          "case_id": "rw_supabase_002_oauth_client_update_endpoint_added",
+          "exit_code": 102,
+          "load_succeeded": false,
+          "safe_error_summary": "Error: failed to load base spec from \"<temporary-spec>\": bad data in \"#/components/responses/UnauthorizedResponse\" (expecting ref to schema object)",
+          "safe_stdout_summary": "",
+          "structured_output": null
+        },
+        {
+          "case_id": "rw_supabase_003_oauth_client_optional_fields_added",
+          "exit_code": 102,
+          "load_succeeded": false,
+          "safe_error_summary": "Error: failed to load base spec from \"<temporary-spec>\": bad data in \"#/components/responses/UnauthorizedResponse\" (expecting ref to schema object)",
+          "safe_stdout_summary": "",
+          "structured_output": null
+        },
+        {
+          "case_id": "rw_supabase_004_webauthn_schema_rework",
+          "exit_code": 102,
+          "load_succeeded": false,
+          "safe_error_summary": "Error: failed to load base spec from \"<temporary-spec>\": bad data in \"#/components/responses/UnauthorizedResponse\" (expecting ref to schema object)",
+          "safe_stdout_summary": "",
+          "structured_output": null
+        }
+      ],
+      "minimal_reproducer": {
+        "exit_code": 102,
+        "load_succeeded": false,
+        "safe_error_summary": "Error: failed to load base spec from \"<temporary-spec>\": bad data in \"#/components/responses/UnauthorizedResponse\" (expecting ref to schema object)",
+        "safe_stdout_summary": "",
+        "structured_output": null
+      },
+      "release_provenance": {
+        "archive": "oasdiff_1.27.0_windows_amd64.tar.gz",
+        "archive_sha256": "80992b6918da9b9b341deb07112e9ca1fd94f985e1af1d0fb9a863bd85afe35a",
+        "checksum_verified": true,
+        "official_checksum_sha256": "80992b6918da9b9b341deb07112e9ca1fd94f985e1af1d0fb9a863bd85afe35a",
+        "release_url": "https://github.com/oasdiff/oasdiff/releases/tag/v1.27.0"
+      },
+      "reported_version": "oasdiff version 1.27.0"
+    }
+  ],
+  "headline_metrics_changed": false,
+  "newer_stable_version": {
+    "evidence": "The official oasdiff releases page lists v1.28.0 as the latest stable release at diagnostic time.",
+    "status": "not_available",
+    "url": "https://github.com/oasdiff/oasdiff/releases"
+  },
+  "production_version_frozen": "1.28.0"
+}

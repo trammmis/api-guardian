@@ -1,0 +1,91 @@
+{
+  "cpu_logical_count": 16,
+  "ended_at": "2026-09-08T07:43:58.404235+00:00",
+  "guardian_git_commit": "bcc2c8c1303a1eaae9a99dce73c0fe72dc2fc46d",
+  "guardian_worktree_dirty": true,
+  "attempt_log": "benchmarks/guardian/reports/e3_5/run_attempts.jsonl",
+  "integrity": {
+    "e2_e2_5_frozen_artifacts_unchanged": true,
+    "e3_b_raw_unchanged": true,
+    "e3_v1_unchanged": true,
+    "e3_v2_unchanged": true,
+    "postflight": {
+      "e3_raw_results": "7737e3abe046f76105c35607c9f815a4d95df404c9968147dc47a0a3725b0389",
+      "e3_v1_freeze": "65576075bc38149e5105106fc9401e1ad8f88b0a0f474144fad7185c3431194d",
+      "e3_v2_aggregate": "7791a45bc20103f86ecfc099591035a476bfb414c3db08b4f6201284cd4ddb94",
+      "e3_v2_freeze": "917c21c4c5eb642c00e6d3399c40b73dc8b9432c328eae7c85f1d7039dd6bf54",
+      "frozen_prior_artifacts": {
+        "benchmarks/guardian/reports/e2/latest/contract_raw_results.jsonl": "349023d9464935fcc6ec9006189bf59d124bf3df79f870bcbb4fddaf3aca957a",
+        "benchmarks/guardian/reports/e2/latest/raw_results.jsonl": "f93f33a01a6d97f92a162eca5b41b2f11746c76f8ab7785e23d839e5f08ad196",
+        "benchmarks/guardian/reports/e2_5/miss_analysis/miss_summary.json": "6c29218475ca29a0cfbd648a287806b3da43e59973d92ae748989fad972cede5",
+        "benchmarks/guardian/reports/e2_5/scaling/raw_results.jsonl": "ec2426b72dd927ae1ae04f7ee59c17081ee164f04964e2a842f4f1bd17bca858",
+        "benchmarks/guardian/reports/e2_5/scaling/summary.json": "bfb088d25f9739f2ddd4fbb10738ebb5fb3cf664f00f46c46b9f4f44acad0b3f"
+      },
+      "production_core": {
+        "app/services/guardian/errors.py": "137cfd87b19484cb5fed3d4f3763e35e92f07be143f7b036ccfe5b65f2fcbce4",
+        "app/services/guardian/graph.py": "9151a5cf7616902bb6201041b3d7c547ca737b5763601d1c7b38abce69c307fd",
+        "app/services/guardian/models.py": "b75110edb4ca89bf4a012a7831078b209983145e96915ade767042e8b92d925c",
+        "app/services/guardian/nodes.py": "5bb6868a9d32c1c80fda5adc5b8d5f1def9f6fac8d2408bda96fba7b22142001",
+        "app/services/guardian/oasdiff.py": "f2628a647de1fe7e9bc20796f49fb2df0c673b258c6fd0d9ee58d55b00a77043",
+        "app/services/guardian/schemathesis.py": "6ab64de45e57ddb2e02dca7ad250059df1fef64b7c4add3fdbbcb5cde1af39e5",
+        "app/services/guardian/scope.py": "9c93058ec5b3d358f5dfe2ddc81415cd276fe7cf448b527124cd629e856f2787",
+        "app/services/guardian/security.py": "0c7e2ce96e0b8e7e8573085f72d13ae2161c6874c1db653a323087a860d01527"
+      }
+    },
+    "preflight": {
+      "e3_raw_results": "7737e3abe046f76105c35607c9f815a4d95df404c9968147dc47a0a3725b0389",
+      "e3_v1_freeze": "65576075bc38149e5105106fc9401e1ad8f88b0a0f474144fad7185c3431194d",
+      "e3_v2_aggregate": "7791a45bc20103f86ecfc099591035a476bfb414c3db08b4f6201284cd4ddb94",
+      "e3_v2_freeze": "917c21c4c5eb642c00e6d3399c40b73dc8b9432c328eae7c85f1d7039dd6bf54",
+      "frozen_prior_artifacts": {
+        "benchmarks/guardian/reports/e2/latest/contract_raw_results.jsonl": "349023d9464935fcc6ec9006189bf59d124bf3df79f870bcbb4fddaf3aca957a",
+        "benchmarks/guardian/reports/e2/latest/raw_results.jsonl": "f93f33a01a6d97f92a162eca5b41b2f11746c76f8ab7785e23d839e5f08ad196",
+        "benchmarks/guardian/reports/e2_5/miss_analysis/miss_summary.json": "6c29218475ca29a0cfbd648a287806b3da43e59973d92ae748989fad972cede5",
+        "benchmarks/guardian/reports/e2_5/scaling/raw_results.jsonl": "ec2426b72dd927ae1ae04f7ee59c17081ee164f04964e2a842f4f1bd17bca858",
+        "benchmarks/guardian/reports/e2_5/scaling/summary.json": "bfb088d25f9739f2ddd4fbb10738ebb5fb3cf664f00f46c46b9f4f44acad0b3f"
+      },
+      "production_core": {
+        "app/services/guardian/errors.py": "137cfd87b19484cb5fed3d4f3763e35e92f07be143f7b036ccfe5b65f2fcbce4",
+        "app/services/guardian/graph.py": "9151a5cf7616902bb6201041b3d7c547ca737b5763601d1c7b38abce69c307fd",
+        "app/services/guardian/models.py": "b75110edb4ca89bf4a012a7831078b209983145e96915ade767042e8b92d925c",
+        "app/services/guardian/nodes.py": "5bb6868a9d32c1c80fda5adc5b8d5f1def9f6fac8d2408bda96fba7b22142001",
+        "app/services/guardian/oasdiff.py": "f2628a647de1fe7e9bc20796f49fb2df0c673b258c6fd0d9ee58d55b00a77043",
+        "app/services/guardian/schemathesis.py": "6ab64de45e57ddb2e02dca7ad250059df1fef64b7c4add3fdbbcb5cde1af39e5",
+        "app/services/guardian/scope.py": "9c93058ec5b3d358f5dfe2ddc81415cd276fe7cf448b527124cd629e856f2787",
+        "app/services/guardian/security.py": "0c7e2ce96e0b8e7e8573085f72d13ae2161c6874c1db653a323087a860d01527"
+      }
+    },
+    "production_core_unchanged": true
+  },
+  "not_run": [
+    "Schemathesis",
+    "LLM",
+    "E3-C runtime",
+    "product fixes",
+    "performance optimization"
+  ],
+  "output_root": "benchmarks/guardian/reports/e3_5",
+  "os": "Windows-11-10.0.22621-SP0",
+  "production_core_preflight": {
+    "app/services/guardian/errors.py": "137cfd87b19484cb5fed3d4f3763e35e92f07be143f7b036ccfe5b65f2fcbce4",
+    "app/services/guardian/graph.py": "9151a5cf7616902bb6201041b3d7c547ca737b5763601d1c7b38abce69c307fd",
+    "app/services/guardian/models.py": "b75110edb4ca89bf4a012a7831078b209983145e96915ade767042e8b92d925c",
+    "app/services/guardian/nodes.py": "5bb6868a9d32c1c80fda5adc5b8d5f1def9f6fac8d2408bda96fba7b22142001",
+    "app/services/guardian/oasdiff.py": "f2628a647de1fe7e9bc20796f49fb2df0c673b258c6fd0d9ee58d55b00a77043",
+    "app/services/guardian/schemathesis.py": "6ab64de45e57ddb2e02dca7ad250059df1fef64b7c4add3fdbbcb5cde1af39e5",
+    "app/services/guardian/scope.py": "9c93058ec5b3d358f5dfe2ddc81415cd276fe7cf448b527124cd629e856f2787",
+    "app/services/guardian/security.py": "0c7e2ce96e0b8e7e8573085f72d13ae2161c6874c1db653a323087a860d01527"
+  },
+  "public_production_api_called": false,
+  "quality_gate": "benchmarks/guardian/reports/e3_5/quality_gate.json",
+  "python": "3.13.12",
+  "source_materialization": "local git show at frozen 40-character commits",
+  "stage": "E3.5 Tool Compatibility & Fallback Root-Cause Diagnostic",
+  "started_at": "2026-09-08T07:42:51.151289+00:00",
+  "tools": {
+    "oasdiff_diagnostic": "oasdiff version 1.27.0",
+    "oasdiff_production": "oasdiff version 1.28.0",
+    "openapi_spec_validator": "0.9.0",
+    "redocly": "2.51.2"
+  }
+}

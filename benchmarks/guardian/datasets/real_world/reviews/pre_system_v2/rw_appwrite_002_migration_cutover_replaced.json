@@ -1,0 +1,67 @@
+{
+  "ambiguity_reason": null,
+  "base_commit": "0aff819e4744849f2cb12a4fdf58cde50d3ad8ac",
+  "base_openapi_version": "3.0.0",
+  "base_operation_count": 781,
+  "base_spec_bytes": 5051479,
+  "base_spec_path": "specs/1.9.x/open-api3-1.9.x-server.json",
+  "base_spec_sha256": "f7f057edbab748c9ec90a88a6de206d8bd8ceb7e226bcece720798426b429c88",
+  "breaking_changes": [
+    {
+      "base_fact": "POST /tablesdb/{databaseId}/migrations/{migrationId}/cutover exists.",
+      "change_type": "endpoint_removed",
+      "compatibility_reason": "Adding a replacement path does not preserve existing callers of the removed path.",
+      "head_fact": "The singular /cutover operation is removed and a plural /cutovers operation is added.",
+      "operation": "POST /tablesdb/{databaseId}/migrations/{migrationId}/cutover",
+      "schema_name": null
+    },
+    {
+      "base_fact": "frameworkAdapter requires fallbackFile and does not allow null.",
+      "change_type": "response_required_changed",
+      "compatibility_reason": "GET /sites/frameworks may now return a response shape that old clients did not account for.",
+      "head_fact": "fallbackFile is no longer required and becomes nullable.",
+      "operation": null,
+      "schema_name": "frameworkAdapter"
+    }
+  ],
+  "case_id": "rw_appwrite_002_migration_cutover_replaced",
+  "change_types": [
+    "endpoint_removed",
+    "endpoint_added",
+    "response_schema_changed",
+    "shared_component_changed",
+    "mixed_change"
+  ],
+  "commit_date_head": "2026-09-02T20:37:29Z",
+  "commit_message_head": "chore: update API specs and SDK examples",
+  "contract_affected_operations": [
+    "POST /tablesdb/{databaseId}/migrations/{migrationId}/cutover",
+    "GET /sites/frameworks"
+  ],
+  "evidence": [
+    "The OpenAPI path diff removes singular /cutover and adds plural /cutovers.",
+    "The component diff removes fallbackFile from frameworkAdapter.required and adds nullable=true.",
+    "Independent fragment-reference review maps frameworkAdapter to GET /sites/frameworks."
+  ],
+  "external_refs": [],
+  "ground_truth_contract_verdict": "fail",
+  "head_commit": "7e76b048625236d2cfd129b4d66f899c7010f551",
+  "head_openapi_version": "3.0.0",
+  "head_operation_count": 783,
+  "head_spec_bytes": 5127762,
+  "head_spec_path": "specs/1.9.x/open-api3-1.9.x-server.json",
+  "head_spec_sha256": "5649e526ecf4dbf8ce3120988ed53ee99823a7174bf1259f99408ef54056ea5b",
+  "license": "BSD-3-Clause",
+  "notes": [
+    "The Head artifact is 5,127,762 bytes, below but close to the 5,242,880-byte limit.",
+    "Probable/medium reflects a mixed generated-spec commit even though the two cited breaking facts are explicit."
+  ],
+  "repo": "appwrite/specs",
+  "review_confidence": "medium",
+  "review_status": "probable",
+  "reviewer": "ai_assisted_initial_review",
+  "runtime_executable_operations": [
+    "GET /sites/frameworks"
+  ],
+  "schema_version": "guardian-e3-b-pre-system-review-v1"
+}

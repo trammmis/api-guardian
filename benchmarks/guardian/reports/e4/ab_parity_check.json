@@ -1,0 +1,88 @@
+{
+  "all_passed": true,
+  "canonicalization": "UTF-8 JSON, sorted keys, compact separators, ensure_ascii=false",
+  "cases_checked": 13,
+  "cases_matched": 13,
+  "comparison_unit": "shared deterministic_evidence block",
+  "records": [
+    {
+      "case_id": "e4_001_users_id_type_lag",
+      "condition_a_deterministic_sha256": "2a5a39c44c717ceaaa8a6868ac32a26bc1efed71e44203d027bc365505c1e8ac",
+      "condition_b_deterministic_sha256": "2a5a39c44c717ceaaa8a6868ac32a26bc1efed71e44203d027bc365505c1e8ac",
+      "match": true
+    },
+    {
+      "case_id": "e4_002_users_required_email_missing",
+      "condition_a_deterministic_sha256": "c76219e1de631246de36c9d454da2d6a9613107e36a61b4bd67cb0b102c6497f",
+      "condition_b_deterministic_sha256": "c76219e1de631246de36c9d454da2d6a9613107e36a61b4bd67cb0b102c6497f",
+      "match": true
+    },
+    {
+      "case_id": "e4_003_orders_status_enum_lag",
+      "condition_a_deterministic_sha256": "1317c3460c9828a320efa1ce6ca5f548dcbb0e4c547804fc79c1915d466472a7",
+      "condition_b_deterministic_sha256": "1317c3460c9828a320efa1ce6ca5f548dcbb0e4c547804fc79c1915d466472a7",
+      "match": true
+    },
+    {
+      "case_id": "e4_004_required_query_added",
+      "condition_a_deterministic_sha256": "d43fd341bd8a74c797ccb3cf3d53cec37d80ceb99c9e3060b1e58b16ae5fe87a",
+      "condition_b_deterministic_sha256": "d43fd341bd8a74c797ccb3cf3d53cec37d80ceb99c9e3060b1e58b16ae5fe87a",
+      "match": true
+    },
+    {
+      "case_id": "e4_005_wrong_user_semantic_control",
+      "condition_a_deterministic_sha256": "37f328858902a0959c8179eeb89ded2ee9563624bb9c7ee2be6bda2fd23454b3",
+      "condition_b_deterministic_sha256": "37f328858902a0959c8179eeb89ded2ee9563624bb9c7ee2be6bda2fd23454b3",
+      "match": true
+    },
+    {
+      "case_id": "e4_006_clean_aligned_breaking_contract",
+      "condition_a_deterministic_sha256": "37f328858902a0959c8179eeb89ded2ee9563624bb9c7ee2be6bda2fd23454b3",
+      "condition_b_deterministic_sha256": "37f328858902a0959c8179eeb89ded2ee9563624bb9c7ee2be6bda2fd23454b3",
+      "match": true
+    },
+    {
+      "case_id": "e4_007_documentation_only_pass",
+      "condition_a_deterministic_sha256": "539f5b2a9a815ac7d56da7c5d7da49c51628b7aae7d694702f82002fd4f05c58",
+      "condition_b_deterministic_sha256": "539f5b2a9a815ac7d56da7c5d7da49c51628b7aae7d694702f82002fd4f05c58",
+      "match": true
+    },
+    {
+      "case_id": "e4_008_immich_endpoint_removed",
+      "condition_a_deterministic_sha256": "b6d11bd7c647ac70d6e79d2c6c3a378968b443c265deaab5f7f76759cdc68a7c",
+      "condition_b_deterministic_sha256": "b6d11bd7c647ac70d6e79d2c6c3a378968b443c265deaab5f7f76759cdc68a7c",
+      "match": true
+    },
+    {
+      "case_id": "e4_009_netbird_shared_component",
+      "condition_a_deterministic_sha256": "d2277c1120a29c164d2f2d7bd04a73f4f9081a33588fb9d9e53b79c838468e1b",
+      "condition_b_deterministic_sha256": "d2277c1120a29c164d2f2d7bd04a73f4f9081a33588fb9d9e53b79c838468e1b",
+      "match": true
+    },
+    {
+      "case_id": "e4_010_appwrite_mixed_cutover",
+      "condition_a_deterministic_sha256": "f0452beb12f16a54c36c3e475db93e6ca6b26c72f67ab0312b6f27122ce037ca",
+      "condition_b_deterministic_sha256": "f0452beb12f16a54c36c3e475db93e6ca6b26c72f67ab0312b6f27122ce037ca",
+      "match": true
+    },
+    {
+      "case_id": "e4_011_supabase_policy_disagreement",
+      "condition_a_deterministic_sha256": "a928b720af9dcc5c172808a7b54154a1ffe3394c22e38df36b32757b427937d4",
+      "condition_b_deterministic_sha256": "a928b720af9dcc5c172808a7b54154a1ffe3394c22e38df36b32757b427937d4",
+      "match": true
+    },
+    {
+      "case_id": "e4_012_supabase_runtime_tool_error",
+      "condition_a_deterministic_sha256": "2ac9826a93785d7613ac673fe6ac4bdca66ec051e6f1742214bdafa097ed28ed",
+      "condition_b_deterministic_sha256": "2ac9826a93785d7613ac673fe6ac4bdca66ec051e6f1742214bdafa097ed28ed",
+      "match": true
+    },
+    {
+      "case_id": "e4_013_supabase_oasdiff_load_error",
+      "condition_a_deterministic_sha256": "017458c156d6113f920e17d260574f416dd0a65414aa4b762e31b4930f15a0c9",
+      "condition_b_deterministic_sha256": "017458c156d6113f920e17d260574f416dd0a65414aa4b762e31b4930f15a0c9",
+      "match": true
+    }
+  ],
+  "stage": "E4_A_AB_DETERMINISTIC_PARITY"
+}

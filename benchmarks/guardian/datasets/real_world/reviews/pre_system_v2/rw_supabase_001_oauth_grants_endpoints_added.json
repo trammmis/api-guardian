@@ -1,0 +1,39 @@
+{
+  "ambiguity_reason": null,
+  "base_commit": "6296a5a226b3c60bcd9d20786750a808af9cd529",
+  "base_openapi_version": "3.0.3",
+  "base_operation_count": 52,
+  "base_spec_bytes": 108612,
+  "base_spec_path": "openapi.yaml",
+  "base_spec_sha256": "66dfc674e7eb9dfed2b79de2ab5b57b0e8a28aee9e3e78ab4639d0782cc7d82b",
+  "breaking_changes": [],
+  "case_id": "rw_supabase_001_oauth_grants_endpoints_added",
+  "change_types": [
+    "endpoint_added"
+  ],
+  "commit_date_head": "2025-11-05T12:23:17+03:00",
+  "commit_message_head": "feat(oauthserver): add authorization list and revoke endpoints (#2232)",
+  "contract_affected_operations": [],
+  "evidence": [
+    "GET and DELETE /user/oauth/grants are added; no operation or existing schema member is removed.",
+    "Operation count increases from 52 to 54."
+  ],
+  "external_refs": [],
+  "ground_truth_contract_verdict": "pass",
+  "head_commit": "cc640b277989d57b39f3805cd9433ef4fe16bf83",
+  "head_openapi_version": "3.0.3",
+  "head_operation_count": 54,
+  "head_spec_bytes": 112407,
+  "head_spec_path": "openapi.yaml",
+  "head_spec_sha256": "0d4e9964e6caff5b85e6d4d1ab81fc3ca9cb16daf4a466977b962bb6a7a681c4",
+  "license": "MIT",
+  "notes": [
+    "Marked runtime_candidate for a later separately approved E3-C review."
+  ],
+  "repo": "supabase/auth",
+  "review_confidence": "high",
+  "review_status": "confirmed",
+  "reviewer": "ai_assisted_initial_review",
+  "runtime_executable_operations": [],
+  "schema_version": "guardian-e3-b-pre-system-review-v1"
+}

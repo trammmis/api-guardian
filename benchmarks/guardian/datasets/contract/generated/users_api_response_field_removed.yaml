@@ -1,0 +1,289 @@
+openapi: 3.0.3
+info:
+  title: Guardian Contract users_api
+  version: 2.0.0
+paths:
+  /users:
+    get:
+      operationId: users_api_0
+      description: Controlled contract operation 0
+      parameters:
+      - name: mode
+        in: query
+        required: false
+        schema:
+          type: string
+          enum:
+          - a
+          - b
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - label
+                properties:
+                  id:
+                    type: string
+                  label:
+                    type: string
+                  status:
+                    type: string
+                    enum:
+                    - active
+                    - inactive
+        '404':
+          description: Not found
+  /users/{user_id}:
+    get:
+      operationId: users_api_1
+      description: Controlled contract operation 1
+      parameters:
+      - name: user_id
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: mode
+        in: query
+        required: false
+        schema:
+          type: string
+          enum:
+          - a
+          - b
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - label
+                properties:
+                  id:
+                    type: string
+                  label:
+                    type: string
+                  status:
+                    type: string
+                    enum:
+                    - active
+                    - inactive
+        '404':
+          description: Not found
+  /profiles/{user_id}:
+    get:
+      operationId: users_api_2
+      description: Controlled contract operation 2
+      parameters:
+      - name: user_id
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: mode
+        in: query
+        required: false
+        schema:
+          type: string
+          enum:
+          - a
+          - b
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - label
+                properties:
+                  id:
+                    type: string
+                  status:
+                    type: string
+                    enum:
+                    - active
+                    - inactive
+        '404':
+          description: Not found
+  /teams:
+    get:
+      operationId: users_api_3
+      description: Controlled contract operation 3
+      parameters:
+      - name: mode
+        in: query
+        required: false
+        schema:
+          type: string
+          enum:
+          - a
+          - b
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - label
+                properties:
+                  id:
+                    type: string
+                  label:
+                    type: string
+                  status:
+                    type: string
+                    enum:
+                    - active
+                    - inactive
+        '404':
+          description: Not found
+  /teams/{team_id}:
+    get:
+      operationId: users_api_4
+      description: Controlled contract operation 4
+      parameters:
+      - name: team_id
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: mode
+        in: query
+        required: false
+        schema:
+          type: string
+          enum:
+          - a
+          - b
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - label
+                properties:
+                  id:
+                    type: string
+                  label:
+                    type: string
+                  status:
+                    type: string
+                    enum:
+                    - active
+                    - inactive
+        '404':
+          description: Not found
+  /roles:
+    get:
+      operationId: users_api_5
+      description: Controlled contract operation 5
+      parameters:
+      - name: mode
+        in: query
+        required: false
+        schema:
+          type: string
+          enum:
+          - a
+          - b
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - label
+                properties:
+                  id:
+                    type: string
+                  label:
+                    type: string
+                  status:
+                    type: string
+                    enum:
+                    - active
+                    - inactive
+        '404':
+          description: Not found
+  /permissions:
+    get:
+      operationId: users_api_6
+      description: Controlled contract operation 6
+      parameters:
+      - name: mode
+        in: query
+        required: false
+        schema:
+          type: string
+          enum:
+          - a
+          - b
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SharedEntity'
+        '404':
+          description: Not found
+  /status:
+    get:
+      operationId: users_api_7
+      description: Controlled contract operation 7
+      parameters:
+      - name: mode
+        in: query
+        required: false
+        schema:
+          type: string
+          enum:
+          - a
+          - b
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SharedEntity'
+        '404':
+          description: Not found
+components:
+  schemas:
+    SharedEntity:
+      type: object
+      required:
+      - id
+      - label
+      properties:
+        id:
+          type: string
+        label:
+          type: string
+        status:
+          type: string
+          enum:
+          - active
+          - inactive

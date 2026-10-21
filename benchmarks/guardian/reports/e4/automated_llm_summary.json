@@ -1,0 +1,60 @@
+{
+  "case_count": 50,
+  "combined_category_accuracy": {
+    "denominator": 50,
+    "numerator": 44,
+    "rate": 0.88
+  },
+  "diagnosis_case_count": 25,
+  "diagnosis_category_accuracy": {
+    "denominator": 25,
+    "numerator": 19,
+    "rate": 0.76
+  },
+  "evidence_grounding": {
+    "denominator": 50,
+    "numerator": 50,
+    "rate": 1.0
+  },
+  "latency_seconds": {
+    "mean": 2.686048448000006,
+    "median": 2.689944999999909,
+    "p95": 3.1822869000000082
+  },
+  "provider_failure_rate": {
+    "denominator": 50,
+    "numerator": 0,
+    "rate": 0.0
+  },
+  "raw_results_sha256": "d4b4d393288725bd8dbab862f890214713eabcd7ed322f0534049b523f6f95d4",
+  "recommendation_grounding": {
+    "denominator": 50,
+    "numerator": 50,
+    "rate": 1.0
+  },
+  "reviewer": "codex_ai_assisted_postfreeze_review_not_human",
+  "risk_case_count": 25,
+  "risk_category_accuracy": {
+    "denominator": 25,
+    "numerator": 25,
+    "rate": 1.0
+  },
+  "serious_hallucination_rate": {
+    "denominator": 50,
+    "numerator": 0,
+    "rate": 0.0
+  },
+  "stage": "E4_A_AUTOMATED_LLM_EVAL_FINAL",
+  "structured_output_success": {
+    "denominator": 50,
+    "numerator": 50,
+    "rate": 1.0
+  },
+  "token_usage": null,
+  "token_usage_reason": "Production structured-output abstraction does not expose provider usage metadata.",
+  "unsupported_claim_rate": {
+    "denominator": 50,
+    "numerator": 0,
+    "rate": 0.0
+  }
+}

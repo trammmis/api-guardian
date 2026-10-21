@@ -1,0 +1,22 @@
+[
+  {
+    "id": "info-change",
+    "text": "informational change",
+    "level": 1,
+    "section": "paths"
+  },
+  {
+    "id": "warning-change",
+    "text": "potentially breaking change",
+    "level": 2,
+    "operation": "GET",
+    "path": "/items/{item_id}"
+  },
+  {
+    "id": "error-change",
+    "text": "definite breaking change",
+    "level": 3,
+    "operation": "GET",
+    "path": "/items/{item_id}"
+  }
+]

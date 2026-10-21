@@ -1,0 +1,131 @@
+{
+  "stage": "E4_PRE_HUMAN",
+  "label_source_policy": "Frozen deterministic evidence, known controlled mutations, pre-system E3 reviews, and E3.5 tool diagnostics only. LLM output is never a label source.",
+  "root_cause_categories": [
+    "implementation_contract_mismatch",
+    "client_migration_required",
+    "mixed_contract_change",
+    "contract_policy_disagreement",
+    "contract_tool_compatibility",
+    "tool_execution_error",
+    "insufficient_evidence",
+    "no_actionable_regression"
+  ],
+  "next_action_categories": [
+    "update_implementation_to_head_schema",
+    "plan_consumer_migration_or_versioning",
+    "review_all_affected_operations",
+    "manual_compatibility_review",
+    "validate_spec_and_tool_compatibility",
+    "investigate_schemathesis_execution",
+    "do_not_claim_runtime_root_cause",
+    "no_corrective_action"
+  ],
+  "cases": [
+    {
+      "case_id": "e4_001_users_id_type_lag",
+      "root_cause_category": "implementation_contract_mismatch",
+      "recommended_next_action": "update_implementation_to_head_schema",
+      "critical_evidence": ["GET /users/{user_id}", "Head response.id type is integer", "runtime response.id remains string", "response_schema_conformance failed"],
+      "acceptable_alternative_answer": ["implementation has not caught up with the Head response contract", "align the endpoint response type or deliberately version/revert the contract"],
+      "source_evidence": ["benchmarks/guardian/datasets/mutation/e2_users.jsonl:users_id_type_lag"]
+    },
+    {
+      "case_id": "e4_002_users_required_email_missing",
+      "root_cause_category": "implementation_contract_mismatch",
+      "recommended_next_action": "update_implementation_to_head_schema",
+      "critical_evidence": ["GET /users/{user_id}", "Head requires response.email", "runtime response omits email", "response_schema_conformance failed"],
+      "acceptable_alternative_answer": ["required response field is absent", "return email or change/version the Head schema"],
+      "source_evidence": ["benchmarks/guardian/datasets/mutation/e2_users.jsonl:users_required_email_missing"]
+    },
+    {
+      "case_id": "e4_003_orders_status_enum_lag",
+      "root_cause_category": "implementation_contract_mismatch",
+      "recommended_next_action": "update_implementation_to_head_schema",
+      "critical_evidence": ["GET /orders/{order_id}", "Head status enum allows shipped or cancelled", "runtime status is pending", "response_schema_conformance failed"],
+      "acceptable_alternative_answer": ["runtime emits a value outside the Head enum", "align implementation enum or revise/version the contract"],
+      "source_evidence": ["benchmarks/guardian/datasets/mutation/e2_orders.jsonl:orders_status_enum_lag"]
+    },
+    {
+      "case_id": "e4_004_required_query_added",
+      "root_cause_category": "client_migration_required",
+      "recommended_next_action": "plan_consumer_migration_or_versioning",
+      "critical_evidence": ["GET /guests/primary", "Head adds required query parameter limit", "previous clients could omit limit", "contract verdict is fail"],
+      "acceptable_alternative_answer": ["existing callers may become invalid", "make the parameter optional/defaulted or coordinate a versioned migration"],
+      "source_evidence": ["benchmarks/guardian/datasets/contract/cases.jsonl:booking_api_required_query_added"]
+    },
+    {
+      "case_id": "e4_005_wrong_user_semantic_control",
+      "root_cause_category": "insufficient_evidence",
+      "recommended_next_action": "do_not_claim_runtime_root_cause",
+      "critical_evidence": ["GET /users/{user_id}", "regression verdict is pass", "schema conformance does not establish entity identity", "the deterministic report contains no runtime failure evidence"],
+      "acceptable_alternative_answer": ["no runtime root cause is supported by this report", "add a business invariant or identity assertion outside the current schema oracle"],
+      "hidden_dataset_fact_not_shown_to_participants": "The controlled target returns the wrong user while remaining schema-valid.",
+      "source_evidence": ["benchmarks/guardian/datasets/mutation/e2_users.jsonl:users_wrong_user_semantic"]
+    },
+    {
+      "case_id": "e4_006_clean_aligned_breaking_contract",
+      "root_cause_category": "client_migration_required",
+      "recommended_next_action": "plan_consumer_migration_or_versioning",
+      "critical_evidence": ["GET /users/{user_id}", "response.id contract changed from string to integer", "runtime conforms to Head", "contract fail and regression pass are not contradictory"],
+      "acceptable_alternative_answer": ["implementation is aligned but existing consumers may still break", "coordinate consumer migration or version the API"],
+      "source_evidence": ["benchmarks/guardian/datasets/mutation/e2_users.jsonl:users_clean_control"]
+    },
+    {
+      "case_id": "e4_007_documentation_only_pass",
+      "root_cause_category": "no_actionable_regression",
+      "recommended_next_action": "no_corrective_action",
+      "critical_evidence": ["only the description changes", "no request or response contract changes", "contract verdict is pass"],
+      "acceptable_alternative_answer": ["documentation-only change", "no compatibility remediation is indicated"],
+      "source_evidence": ["benchmarks/guardian/datasets/contract/cases.jsonl:booking_api_documentation_only"]
+    },
+    {
+      "case_id": "e4_008_immich_endpoint_removed",
+      "root_cause_category": "client_migration_required",
+      "recommended_next_action": "plan_consumer_migration_or_versioning",
+      "critical_evidence": ["GET /server/theme exists in Base", "GET /server/theme is absent in Head", "contract verdict remains fail", "P1 runtime executable scope is empty"],
+      "acceptable_alternative_answer": ["existing callers lose the endpoint", "provide a replacement/deprecation path or coordinate a versioned removal"],
+      "source_evidence": ["benchmarks/guardian/reports/e3/review_records_v2.jsonl:rw_immich_005_server_theme_endpoint_removed", "benchmarks/guardian/reports/p1_integration/e3_b_before_after.json"]
+    },
+    {
+      "case_id": "e4_009_netbird_shared_component",
+      "root_cause_category": "mixed_contract_change",
+      "recommended_next_action": "review_all_affected_operations",
+      "critical_evidence": ["shared request and response components changed", "required response properties cluster and subdomain were removed", "new required request properties were added", "four existing operations reference the affected components"],
+      "acceptable_alternative_answer": ["shared component evolution affects multiple existing endpoints", "review and migrate all four mapped operations and their consumers"],
+      "source_evidence": ["benchmarks/guardian/reports/e3/review_records_v2.jsonl:rw_netbird_004_agent_network_settings_rework"]
+    },
+    {
+      "case_id": "e4_010_appwrite_mixed_cutover",
+      "root_cause_category": "mixed_contract_change",
+      "recommended_next_action": "review_all_affected_operations",
+      "critical_evidence": ["POST singular /cutover was removed", "POST plural /cutovers was added", "frameworkAdapter compatibility changed", "GET /sites/frameworks remains executable and affected"],
+      "acceptable_alternative_answer": ["the commit combines an operation replacement with a shared response change", "migrate removed-operation callers and inspect GET /sites/frameworks consumers"],
+      "source_evidence": ["benchmarks/guardian/reports/e3/review_records_v2.jsonl:rw_appwrite_002_migration_cutover_replaced", "benchmarks/guardian/reports/p1_integration/e3_b_before_after.json"]
+    },
+    {
+      "case_id": "e4_011_supabase_policy_disagreement",
+      "root_cause_category": "contract_policy_disagreement",
+      "recommended_next_action": "manual_compatibility_review",
+      "critical_evidence": ["GET /authorize query parameter flow_type is removed", "frozen independent review labels the change breaking", "oasdiff 1.28.0 assigns no ERROR-level breaking basis", "production contract and runtime verdicts are pass"],
+      "acceptable_alternative_answer": ["the deterministic tool policy disagrees with the review convention", "manually review compatibility and evaluate a separately controlled oasdiff policy/upgrade experiment"],
+      "source_evidence": ["benchmarks/guardian/reports/e3/review_records_v2.jsonl:rw_supabase_005_authorize_flow_type_removed", "benchmarks/guardian/reports/e3_c/summary.json"]
+    },
+    {
+      "case_id": "e4_012_supabase_runtime_tool_error",
+      "root_cause_category": "tool_execution_error",
+      "recommended_next_action": "investigate_schemathesis_execution",
+      "critical_evidence": ["POST /token is selected", "contract verdict is pass", "Schemathesis reports a stable execution error in the Examples phase", "final verdict is error rather than fail"],
+      "acceptable_alternative_answer": ["testing infrastructure/tool execution failed; API nonconformance is not established", "reproduce and diagnose the Schemathesis error before changing the API"],
+      "source_evidence": ["benchmarks/guardian/reports/e3_c/summary.json:runtime_supabase_006_id_token_request_fields_removed"]
+    },
+    {
+      "case_id": "e4_013_supabase_oasdiff_load_error",
+      "root_cause_category": "contract_tool_compatibility",
+      "recommended_next_action": "validate_spec_and_tool_compatibility",
+      "critical_evidence": ["the OpenAPI diff stage fails before runtime testing", "the safe error points to a schema-slot reference resolving to a Response Object", "Guardian materialization is byte-identical", "final deterministic verdict is error"],
+      "acceptable_alternative_answer": ["input/tool compatibility prevents contract evaluation", "validate the OpenAPI reference structure and reproduce with an isolated tool diagnostic"],
+      "source_evidence": ["benchmarks/guardian/reports/e3_5/tool_compatibility/supabase_error_analysis.md", "benchmarks/guardian/reports/e3/raw_guardian_results.jsonl:rw_supabase_001_oauth_grants_endpoints_added"]
+    }
+  ]
+}

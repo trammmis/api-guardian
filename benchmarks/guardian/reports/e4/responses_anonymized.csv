@@ -1,0 +1,1 @@
+participant_id,sequence_id,case_id,case_position,report_label,main_problem,root_cause_category,next_action,confidence_0_to_100,triage_time_seconds,clarity_1_to_5,actionability_1_to_5,helpfulness_1_to_5,trust_1_to_5,optional_comment

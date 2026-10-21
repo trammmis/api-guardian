@@ -1,0 +1,1388 @@
+{
+  "after": {
+    "breaking_change_precision": {
+      "denominator": 45,
+      "numerator": 45,
+      "percentage": 100.0,
+      "value": 1.0
+    },
+    "breaking_change_recall": {
+      "denominator": 50,
+      "numerator": 45,
+      "percentage": 90.0,
+      "value": 0.9
+    },
+    "contract_verdict_accuracy": {
+      "denominator": 60,
+      "numerator": 55,
+      "percentage": 91.66666666666666,
+      "value": 0.9166666666666666
+    },
+    "executable_scope_precision": {
+      "denominator": 40,
+      "numerator": 40,
+      "percentage": 100.0,
+      "value": 1.0
+    },
+    "executable_scope_recall": {
+      "denominator": 45,
+      "numerator": 40,
+      "percentage": 88.88888888888889,
+      "value": 0.8888888888888888
+    },
+    "extra_selected_operations": 0,
+    "fallback_precision": {
+      "denominator": 0,
+      "numerator": 0,
+      "percentage": null,
+      "value": null
+    },
+    "fallback_rate": {
+      "denominator": 60,
+      "numerator": 0,
+      "percentage": 0.0,
+      "value": 0.0
+    },
+    "false_negative_cases": 5,
+    "selected_operations": 40
+  },
+  "before": {
+    "breaking_change_precision": {
+      "denominator": 45,
+      "numerator": 45,
+      "percentage": 100.0,
+      "value": 1.0
+    },
+    "breaking_change_recall": {
+      "denominator": 50,
+      "numerator": 45,
+      "percentage": 90.0,
+      "value": 0.9
+    },
+    "contract_verdict_accuracy": {
+      "denominator": 60,
+      "numerator": 55,
+      "percentage": 91.66666666666666,
+      "value": 0.9166666666666666
+    },
+    "executable_scope_precision": {
+      "denominator": 110,
+      "numerator": 40,
+      "percentage": 36.36363636363637,
+      "value": 0.36363636363636365
+    },
+    "executable_scope_recall": {
+      "denominator": 45,
+      "numerator": 40,
+      "percentage": 88.88888888888889,
+      "value": 0.8888888888888888
+    },
+    "extra_selected_operations": 70,
+    "fallback_precision": {
+      "denominator": 70,
+      "numerator": 0,
+      "percentage": 0.0,
+      "value": 0.0
+    },
+    "fallback_rate": {
+      "denominator": 60,
+      "numerator": 10,
+      "percentage": 16.666666666666664,
+      "value": 0.16666666666666666
+    },
+    "false_negative_cases": 5,
+    "selected_operations": 110
+  },
+  "case_count": 60,
+  "cases": [
+    {
+      "after_contract_verdict": "pass",
+      "after_fallback": false,
+      "after_selected_operations": [],
+      "before_contract_verdict": "pass",
+      "before_fallback": false,
+      "before_selected_operations": [],
+      "case_id": "booking_api_compatible_field_added",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "pass",
+      "normalized_change_count_after": 0,
+      "normalized_change_count_before": 0,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [],
+      "subgroup": "compatible_response_field_added"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /availability/current",
+        "GET /status"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /availability/current",
+        "GET /status"
+      ],
+      "case_id": "booking_api_component_type_changed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 2,
+      "normalized_change_count_before": 2,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /availability/current",
+        "GET /status"
+      ],
+      "subgroup": "multi_operation_component_change"
+    },
+    {
+      "after_contract_verdict": "pass",
+      "after_fallback": false,
+      "after_selected_operations": [],
+      "before_contract_verdict": "pass",
+      "before_fallback": false,
+      "before_selected_operations": [],
+      "case_id": "booking_api_documentation_only",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "pass",
+      "normalized_change_count_after": 0,
+      "normalized_change_count_before": 0,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [],
+      "subgroup": "documentation_only"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [],
+      "before_contract_verdict": "fail",
+      "before_fallback": true,
+      "before_selected_operations": [
+        "GET /bookings",
+        "GET /rooms/primary",
+        "GET /rooms",
+        "GET /guests/primary",
+        "GET /payments/latest",
+        "GET /availability/current",
+        "GET /status"
+      ],
+      "case_id": "booking_api_endpoint_removed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [],
+      "subgroup": "endpoint_removed"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [],
+      "before_contract_verdict": "fail",
+      "before_fallback": true,
+      "before_selected_operations": [
+        "GET /bookings/primary",
+        "GET /rooms/primary",
+        "GET /rooms",
+        "GET /guests/primary",
+        "GET /payments/latest",
+        "GET /availability/current",
+        "GET /status"
+      ],
+      "case_id": "booking_api_method_removed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [],
+      "subgroup": "method_removed"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /payments/latest"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /payments/latest"
+      ],
+      "case_id": "booking_api_optional_to_required",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /payments/latest"
+      ],
+      "subgroup": "optional_request_parameter_became_required"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /rooms"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /rooms"
+      ],
+      "case_id": "booking_api_request_enum_narrowed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /rooms"
+      ],
+      "subgroup": "request_enum_narrowed"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /guests/primary"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /guests/primary"
+      ],
+      "case_id": "booking_api_request_type_changed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 3,
+      "normalized_change_count_before": 3,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /guests/primary"
+      ],
+      "subgroup": "request_type_changed"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /guests/primary"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /guests/primary"
+      ],
+      "case_id": "booking_api_required_query_added",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /guests/primary"
+      ],
+      "subgroup": "required_request_parameter_added"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /rooms/primary"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /rooms/primary"
+      ],
+      "case_id": "booking_api_response_field_removed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /rooms/primary"
+      ],
+      "subgroup": "response_field_removed"
+    },
+    {
+      "after_contract_verdict": "pass",
+      "after_fallback": false,
+      "after_selected_operations": [],
+      "before_contract_verdict": "pass",
+      "before_fallback": false,
+      "before_selected_operations": [],
+      "case_id": "booking_api_response_status_removed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 0,
+      "normalized_change_count_before": 0,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /rooms/primary"
+      ],
+      "subgroup": "response_status_removed"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /rooms"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /rooms"
+      ],
+      "case_id": "booking_api_response_type_changed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /rooms"
+      ],
+      "subgroup": "response_type_changed"
+    },
+    {
+      "after_contract_verdict": "pass",
+      "after_fallback": false,
+      "after_selected_operations": [],
+      "before_contract_verdict": "pass",
+      "before_fallback": false,
+      "before_selected_operations": [],
+      "case_id": "inventory_api_compatible_field_added",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "pass",
+      "normalized_change_count_after": 0,
+      "normalized_change_count_before": 0,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [],
+      "subgroup": "compatible_response_field_added"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /suppliers/primary",
+        "GET /status"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /suppliers/primary",
+        "GET /status"
+      ],
+      "case_id": "inventory_api_component_type_changed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 2,
+      "normalized_change_count_before": 2,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /suppliers/primary",
+        "GET /status"
+      ],
+      "subgroup": "multi_operation_component_change"
+    },
+    {
+      "after_contract_verdict": "pass",
+      "after_fallback": false,
+      "after_selected_operations": [],
+      "before_contract_verdict": "pass",
+      "before_fallback": false,
+      "before_selected_operations": [],
+      "case_id": "inventory_api_documentation_only",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "pass",
+      "normalized_change_count_after": 0,
+      "normalized_change_count_before": 0,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [],
+      "subgroup": "documentation_only"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [],
+      "before_contract_verdict": "fail",
+      "before_fallback": true,
+      "before_selected_operations": [
+        "GET /stock",
+        "GET /warehouses/primary",
+        "GET /warehouses",
+        "GET /reservations/primary",
+        "GET /movements/latest",
+        "GET /suppliers/primary",
+        "GET /status"
+      ],
+      "case_id": "inventory_api_endpoint_removed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [],
+      "subgroup": "endpoint_removed"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [],
+      "before_contract_verdict": "fail",
+      "before_fallback": true,
+      "before_selected_operations": [
+        "GET /stock/primary",
+        "GET /warehouses/primary",
+        "GET /warehouses",
+        "GET /reservations/primary",
+        "GET /movements/latest",
+        "GET /suppliers/primary",
+        "GET /status"
+      ],
+      "case_id": "inventory_api_method_removed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [],
+      "subgroup": "method_removed"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /movements/latest"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /movements/latest"
+      ],
+      "case_id": "inventory_api_optional_to_required",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /movements/latest"
+      ],
+      "subgroup": "optional_request_parameter_became_required"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /warehouses"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /warehouses"
+      ],
+      "case_id": "inventory_api_request_enum_narrowed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /warehouses"
+      ],
+      "subgroup": "request_enum_narrowed"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /reservations/primary"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /reservations/primary"
+      ],
+      "case_id": "inventory_api_request_type_changed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 3,
+      "normalized_change_count_before": 3,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /reservations/primary"
+      ],
+      "subgroup": "request_type_changed"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /reservations/primary"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /reservations/primary"
+      ],
+      "case_id": "inventory_api_required_query_added",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /reservations/primary"
+      ],
+      "subgroup": "required_request_parameter_added"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /warehouses/primary"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /warehouses/primary"
+      ],
+      "case_id": "inventory_api_response_field_removed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /warehouses/primary"
+      ],
+      "subgroup": "response_field_removed"
+    },
+    {
+      "after_contract_verdict": "pass",
+      "after_fallback": false,
+      "after_selected_operations": [],
+      "before_contract_verdict": "pass",
+      "before_fallback": false,
+      "before_selected_operations": [],
+      "case_id": "inventory_api_response_status_removed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 0,
+      "normalized_change_count_before": 0,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /warehouses/primary"
+      ],
+      "subgroup": "response_status_removed"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /warehouses"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /warehouses"
+      ],
+      "case_id": "inventory_api_response_type_changed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /warehouses"
+      ],
+      "subgroup": "response_type_changed"
+    },
+    {
+      "after_contract_verdict": "pass",
+      "after_fallback": false,
+      "after_selected_operations": [],
+      "before_contract_verdict": "pass",
+      "before_fallback": false,
+      "before_selected_operations": [],
+      "case_id": "orders_api_compatible_field_added",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "pass",
+      "normalized_change_count_after": 0,
+      "normalized_change_count_before": 0,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [],
+      "subgroup": "compatible_response_field_added"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /currencies",
+        "GET /status"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /currencies",
+        "GET /status"
+      ],
+      "case_id": "orders_api_component_type_changed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 2,
+      "normalized_change_count_before": 2,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /currencies",
+        "GET /status"
+      ],
+      "subgroup": "multi_operation_component_change"
+    },
+    {
+      "after_contract_verdict": "pass",
+      "after_fallback": false,
+      "after_selected_operations": [],
+      "before_contract_verdict": "pass",
+      "before_fallback": false,
+      "before_selected_operations": [],
+      "case_id": "orders_api_documentation_only",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "pass",
+      "normalized_change_count_after": 0,
+      "normalized_change_count_before": 0,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [],
+      "subgroup": "documentation_only"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [],
+      "before_contract_verdict": "fail",
+      "before_fallback": true,
+      "before_selected_operations": [
+        "GET /orders/{order_id}",
+        "GET /orders/{order_id}/summary",
+        "GET /customers/{customer_id}/orders",
+        "GET /invoices/{invoice_id}",
+        "GET /shipments/{shipment_id}",
+        "GET /currencies",
+        "GET /status"
+      ],
+      "case_id": "orders_api_endpoint_removed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [],
+      "subgroup": "endpoint_removed"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [],
+      "before_contract_verdict": "fail",
+      "before_fallback": true,
+      "before_selected_operations": [
+        "GET /orders",
+        "GET /orders/{order_id}/summary",
+        "GET /customers/{customer_id}/orders",
+        "GET /invoices/{invoice_id}",
+        "GET /shipments/{shipment_id}",
+        "GET /currencies",
+        "GET /status"
+      ],
+      "case_id": "orders_api_method_removed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [],
+      "subgroup": "method_removed"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /shipments/{shipment_id}"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /shipments/{shipment_id}"
+      ],
+      "case_id": "orders_api_optional_to_required",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /shipments/{shipment_id}"
+      ],
+      "subgroup": "optional_request_parameter_became_required"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /customers/{customer_id}/orders"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /customers/{customer_id}/orders"
+      ],
+      "case_id": "orders_api_request_enum_narrowed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /customers/{customer_id}/orders"
+      ],
+      "subgroup": "request_enum_narrowed"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /invoices/{invoice_id}"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /invoices/{invoice_id}"
+      ],
+      "case_id": "orders_api_request_type_changed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 3,
+      "normalized_change_count_before": 3,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /invoices/{invoice_id}"
+      ],
+      "subgroup": "request_type_changed"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /invoices/{invoice_id}"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /invoices/{invoice_id}"
+      ],
+      "case_id": "orders_api_required_query_added",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /invoices/{invoice_id}"
+      ],
+      "subgroup": "required_request_parameter_added"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /orders/{order_id}/summary"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /orders/{order_id}/summary"
+      ],
+      "case_id": "orders_api_response_field_removed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /orders/{order_id}/summary"
+      ],
+      "subgroup": "response_field_removed"
+    },
+    {
+      "after_contract_verdict": "pass",
+      "after_fallback": false,
+      "after_selected_operations": [],
+      "before_contract_verdict": "pass",
+      "before_fallback": false,
+      "before_selected_operations": [],
+      "case_id": "orders_api_response_status_removed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 0,
+      "normalized_change_count_before": 0,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /orders/{order_id}/summary"
+      ],
+      "subgroup": "response_status_removed"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /customers/{customer_id}/orders"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /customers/{customer_id}/orders"
+      ],
+      "case_id": "orders_api_response_type_changed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /customers/{customer_id}/orders"
+      ],
+      "subgroup": "response_type_changed"
+    },
+    {
+      "after_contract_verdict": "pass",
+      "after_fallback": false,
+      "after_selected_operations": [],
+      "before_contract_verdict": "pass",
+      "before_fallback": false,
+      "before_selected_operations": [],
+      "case_id": "products_api_compatible_field_added",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "pass",
+      "normalized_change_count_after": 0,
+      "normalized_change_count_before": 0,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [],
+      "subgroup": "compatible_response_field_added"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /reviews/latest",
+        "GET /status"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /reviews/latest",
+        "GET /status"
+      ],
+      "case_id": "products_api_component_type_changed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 2,
+      "normalized_change_count_before": 2,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /reviews/latest",
+        "GET /status"
+      ],
+      "subgroup": "multi_operation_component_change"
+    },
+    {
+      "after_contract_verdict": "pass",
+      "after_fallback": false,
+      "after_selected_operations": [],
+      "before_contract_verdict": "pass",
+      "before_fallback": false,
+      "before_selected_operations": [],
+      "case_id": "products_api_documentation_only",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "pass",
+      "normalized_change_count_after": 0,
+      "normalized_change_count_before": 0,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [],
+      "subgroup": "documentation_only"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [],
+      "before_contract_verdict": "fail",
+      "before_fallback": true,
+      "before_selected_operations": [
+        "GET /products",
+        "GET /categories/primary",
+        "GET /categories",
+        "GET /brands/primary",
+        "GET /prices/current",
+        "GET /reviews/latest",
+        "GET /status"
+      ],
+      "case_id": "products_api_endpoint_removed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [],
+      "subgroup": "endpoint_removed"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [],
+      "before_contract_verdict": "fail",
+      "before_fallback": true,
+      "before_selected_operations": [
+        "GET /products/primary",
+        "GET /categories/primary",
+        "GET /categories",
+        "GET /brands/primary",
+        "GET /prices/current",
+        "GET /reviews/latest",
+        "GET /status"
+      ],
+      "case_id": "products_api_method_removed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [],
+      "subgroup": "method_removed"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /prices/current"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /prices/current"
+      ],
+      "case_id": "products_api_optional_to_required",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /prices/current"
+      ],
+      "subgroup": "optional_request_parameter_became_required"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /categories"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /categories"
+      ],
+      "case_id": "products_api_request_enum_narrowed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /categories"
+      ],
+      "subgroup": "request_enum_narrowed"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /brands/primary"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /brands/primary"
+      ],
+      "case_id": "products_api_request_type_changed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 3,
+      "normalized_change_count_before": 3,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /brands/primary"
+      ],
+      "subgroup": "request_type_changed"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /brands/primary"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /brands/primary"
+      ],
+      "case_id": "products_api_required_query_added",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /brands/primary"
+      ],
+      "subgroup": "required_request_parameter_added"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /categories/primary"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /categories/primary"
+      ],
+      "case_id": "products_api_response_field_removed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /categories/primary"
+      ],
+      "subgroup": "response_field_removed"
+    },
+    {
+      "after_contract_verdict": "pass",
+      "after_fallback": false,
+      "after_selected_operations": [],
+      "before_contract_verdict": "pass",
+      "before_fallback": false,
+      "before_selected_operations": [],
+      "case_id": "products_api_response_status_removed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 0,
+      "normalized_change_count_before": 0,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /categories/primary"
+      ],
+      "subgroup": "response_status_removed"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /categories"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /categories"
+      ],
+      "case_id": "products_api_response_type_changed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /categories"
+      ],
+      "subgroup": "response_type_changed"
+    },
+    {
+      "after_contract_verdict": "pass",
+      "after_fallback": false,
+      "after_selected_operations": [],
+      "before_contract_verdict": "pass",
+      "before_fallback": false,
+      "before_selected_operations": [],
+      "case_id": "users_api_compatible_field_added",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "pass",
+      "normalized_change_count_after": 0,
+      "normalized_change_count_before": 0,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [],
+      "subgroup": "compatible_response_field_added"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /permissions",
+        "GET /status"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /permissions",
+        "GET /status"
+      ],
+      "case_id": "users_api_component_type_changed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 2,
+      "normalized_change_count_before": 2,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /permissions",
+        "GET /status"
+      ],
+      "subgroup": "multi_operation_component_change"
+    },
+    {
+      "after_contract_verdict": "pass",
+      "after_fallback": false,
+      "after_selected_operations": [],
+      "before_contract_verdict": "pass",
+      "before_fallback": false,
+      "before_selected_operations": [],
+      "case_id": "users_api_documentation_only",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "pass",
+      "normalized_change_count_after": 0,
+      "normalized_change_count_before": 0,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [],
+      "subgroup": "documentation_only"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [],
+      "before_contract_verdict": "fail",
+      "before_fallback": true,
+      "before_selected_operations": [
+        "GET /users/{user_id}",
+        "GET /profiles/{user_id}",
+        "GET /teams",
+        "GET /teams/{team_id}",
+        "GET /roles",
+        "GET /permissions",
+        "GET /status"
+      ],
+      "case_id": "users_api_endpoint_removed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [],
+      "subgroup": "endpoint_removed"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [],
+      "before_contract_verdict": "fail",
+      "before_fallback": true,
+      "before_selected_operations": [
+        "GET /users",
+        "GET /profiles/{user_id}",
+        "GET /teams",
+        "GET /teams/{team_id}",
+        "GET /roles",
+        "GET /permissions",
+        "GET /status"
+      ],
+      "case_id": "users_api_method_removed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [],
+      "subgroup": "method_removed"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /roles"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /roles"
+      ],
+      "case_id": "users_api_optional_to_required",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /roles"
+      ],
+      "subgroup": "optional_request_parameter_became_required"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /teams"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /teams"
+      ],
+      "case_id": "users_api_request_enum_narrowed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /teams"
+      ],
+      "subgroup": "request_enum_narrowed"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /teams/{team_id}"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /teams/{team_id}"
+      ],
+      "case_id": "users_api_request_type_changed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 3,
+      "normalized_change_count_before": 3,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /teams/{team_id}"
+      ],
+      "subgroup": "request_type_changed"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /teams/{team_id}"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /teams/{team_id}"
+      ],
+      "case_id": "users_api_required_query_added",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /teams/{team_id}"
+      ],
+      "subgroup": "required_request_parameter_added"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /profiles/{user_id}"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /profiles/{user_id}"
+      ],
+      "case_id": "users_api_response_field_removed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /profiles/{user_id}"
+      ],
+      "subgroup": "response_field_removed"
+    },
+    {
+      "after_contract_verdict": "pass",
+      "after_fallback": false,
+      "after_selected_operations": [],
+      "before_contract_verdict": "pass",
+      "before_fallback": false,
+      "before_selected_operations": [],
+      "case_id": "users_api_response_status_removed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 0,
+      "normalized_change_count_before": 0,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /profiles/{user_id}"
+      ],
+      "subgroup": "response_status_removed"
+    },
+    {
+      "after_contract_verdict": "fail",
+      "after_fallback": false,
+      "after_selected_operations": [
+        "GET /teams"
+      ],
+      "before_contract_verdict": "fail",
+      "before_fallback": false,
+      "before_selected_operations": [
+        "GET /teams"
+      ],
+      "case_id": "users_api_response_type_changed",
+      "dataset": "e2_e2_5",
+      "expected_contract_verdict": "fail",
+      "normalized_change_count_after": 1,
+      "normalized_change_count_before": 1,
+      "oasdiff_output_stable": true,
+      "oracle_operations": [
+        "GET /teams"
+      ],
+      "subgroup": "response_type_changed"
+    }
+  ],
+  "contract_verdict_agreement": {
+    "denominator": 60,
+    "numerator": 60,
+    "percentage": 100.0,
+    "value": 1.0
+  },
+  "oasdiff_replay_stability": {
+    "denominator": 60,
+    "numerator": 60,
+    "percentage": 100.0,
+    "value": 1.0
+  },
+  "oasdiff_version": "1.28.0",
+  "schema_version": "guardian-p1-integration-e2-replay-v1"
+}

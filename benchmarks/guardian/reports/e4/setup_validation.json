@@ -1,0 +1,29 @@
+{
+  "validated_at_utc": "2026-09-14T12:30:51.9426752Z",
+  "status": "pass",
+  "checks": {
+    "case_manifest_json_valid": true,
+    "ground_truth_json_valid": true,
+    "manifest_ground_truth_ids_equal": true,
+    "study_cases": 13,
+    "participant_case_cards": 13,
+    "automated_eval_cases": 50,
+    "automated_risk_cases": 25,
+    "automated_diagnosis_cases": 25,
+    "automated_case_ids_unique": true,
+    "assignment_sequences": 10,
+    "each_case_condition_balance": "A=5,B=5",
+    "ground_truth_hash_matches_freeze": true,
+    "human_response_rows": 0,
+    "human_result_rows": 0,
+    "provider_called": false,
+    "production_hash_mismatches": 0
+  },
+  "artifact_hashes": {
+    "case_manifest": "c661f11b70a2ec7b61cc3390d7c17b23f565cc17322a4327024989d37e86b478",
+    "ground_truth": "d481accc96a31ae175048ba8e8175ca37fe917143a29f228ae7df23423c22f4e",
+    "ground_truth_freeze_manifest": "e2447eb05099ee64197758877e47a391e4363bcb9d2745d909b977c6cc8a3fbf",
+    "automated_eval_cases": "b61b1d3c6c61893dd893605e488abbe474c4e1c3458555d8af8da9798e5b9497",
+    "participant_case_cards": "99da8c5f8184ff511d7539fa069a9ef0f81693506122aa197fb2fb2a8aa3307f"
+  }
+}

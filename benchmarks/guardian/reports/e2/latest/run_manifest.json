@@ -1,0 +1,643 @@
+{
+  "command_contracts": {
+    "full_schemathesis": "st run HEAD --url TARGET [fixed production settings; no include filter]",
+    "oasdiff": "oasdiff breaking --format json --allow-external-refs=false --fail-on ERR -- BASE HEAD",
+    "scoped_schemathesis": "st run HEAD --url TARGET --include-operation-id ID [same fixed settings]"
+  },
+  "completed_at": "2026-09-06T08:17:46.351399+00:00",
+  "configuration": {
+    "generation_deterministic": true,
+    "max_artifact_bytes": 52428800,
+    "max_examples": 1,
+    "max_redirects": 0,
+    "max_scan_artifact_bytes": 104857600,
+    "random_seed": 20260903,
+    "repetitions": 5,
+    "request_timeout_seconds": 2.0,
+    "schemathesis_check": "response_schema_conformance",
+    "schemathesis_phases": "examples,coverage",
+    "subprocess_timeout_seconds": 30.0,
+    "warmup_runs": 1
+  },
+  "contract_cases": [
+    {
+      "base_spec_sha256": "27de906e654136689f355c7f4c544a095b8a75682dd72380ed54ee7482614dbd",
+      "case_id": "booking_api_compatible_field_added",
+      "head_spec_sha256": "82084b4a24a04fbea01ec68a80b784c7fb8e4edc2c04062f179e16f6441554ae"
+    },
+    {
+      "base_spec_sha256": "27de906e654136689f355c7f4c544a095b8a75682dd72380ed54ee7482614dbd",
+      "case_id": "booking_api_component_type_changed",
+      "head_spec_sha256": "0afbd4ed761867588edc51d5c9b2a5d496982165fd14fba5e83e9868fbd83a3f"
+    },
+    {
+      "base_spec_sha256": "27de906e654136689f355c7f4c544a095b8a75682dd72380ed54ee7482614dbd",
+      "case_id": "booking_api_documentation_only",
+      "head_spec_sha256": "ea3f810fee8f4f669e8ad820bccd1620940a5385b20c07f385da2415241e8c8d"
+    },
+    {
+      "base_spec_sha256": "27de906e654136689f355c7f4c544a095b8a75682dd72380ed54ee7482614dbd",
+      "case_id": "booking_api_endpoint_removed",
+      "head_spec_sha256": "a072660439101e66fc36c4973dd82d28d90d12d2d6be3e6ff2a277ca0dea9943"
+    },
+    {
+      "base_spec_sha256": "27de906e654136689f355c7f4c544a095b8a75682dd72380ed54ee7482614dbd",
+      "case_id": "booking_api_method_removed",
+      "head_spec_sha256": "acbc0de2a97fbc725da6d702c84611c0c9d73961d955a1b95509dc022b3a0fe1"
+    },
+    {
+      "base_spec_sha256": "27de906e654136689f355c7f4c544a095b8a75682dd72380ed54ee7482614dbd",
+      "case_id": "booking_api_optional_to_required",
+      "head_spec_sha256": "199920a77c1dd0af2b3eed7f7b96a24c0c8cfa06ab337a874b0d7527b6dde740"
+    },
+    {
+      "base_spec_sha256": "27de906e654136689f355c7f4c544a095b8a75682dd72380ed54ee7482614dbd",
+      "case_id": "booking_api_request_enum_narrowed",
+      "head_spec_sha256": "9546f51df1fb46f3dc9dcaf22d4de61cad2fcceebe5b755938a9c8d5e224c62a"
+    },
+    {
+      "base_spec_sha256": "27de906e654136689f355c7f4c544a095b8a75682dd72380ed54ee7482614dbd",
+      "case_id": "booking_api_request_type_changed",
+      "head_spec_sha256": "6682624de7966a905db92547141cbeb9f5bdb9ec0cc2b35de1b98bdb02c20751"
+    },
+    {
+      "base_spec_sha256": "27de906e654136689f355c7f4c544a095b8a75682dd72380ed54ee7482614dbd",
+      "case_id": "booking_api_required_query_added",
+      "head_spec_sha256": "e6d00648487cb510a144ac6d79a6ec648c75fc754e2cb1cb04ca27f6e9335daa"
+    },
+    {
+      "base_spec_sha256": "27de906e654136689f355c7f4c544a095b8a75682dd72380ed54ee7482614dbd",
+      "case_id": "booking_api_response_field_removed",
+      "head_spec_sha256": "e85959b4d84ec80d1787400c515d8f46722f277368e04342fcad2d460503514c"
+    },
+    {
+      "base_spec_sha256": "27de906e654136689f355c7f4c544a095b8a75682dd72380ed54ee7482614dbd",
+      "case_id": "booking_api_response_status_removed",
+      "head_spec_sha256": "81c57d929cc13fb94d46d01c74336f5d7bcf49ca5f74feb1e1a8ae823084640f"
+    },
+    {
+      "base_spec_sha256": "27de906e654136689f355c7f4c544a095b8a75682dd72380ed54ee7482614dbd",
+      "case_id": "booking_api_response_type_changed",
+      "head_spec_sha256": "aed6dcd8155ff1053fa33a225115762e205e55ccb05a486e1eff2c8f40ed6f83"
+    },
+    {
+      "base_spec_sha256": "b64302db4039edbf8875dcfc74cd0f59e393d806d803ae72255cadb4aab85b64",
+      "case_id": "inventory_api_compatible_field_added",
+      "head_spec_sha256": "1f36adc807ec3bbb100ac8bf6461503d5e939de0a966fda73bf347fc667c7d43"
+    },
+    {
+      "base_spec_sha256": "b64302db4039edbf8875dcfc74cd0f59e393d806d803ae72255cadb4aab85b64",
+      "case_id": "inventory_api_component_type_changed",
+      "head_spec_sha256": "f3622aa1358a77236005671665daedd9bdcb7346763eff5b14ff85ef0042819b"
+    },
+    {
+      "base_spec_sha256": "b64302db4039edbf8875dcfc74cd0f59e393d806d803ae72255cadb4aab85b64",
+      "case_id": "inventory_api_documentation_only",
+      "head_spec_sha256": "e2329a79efb6fb466abdd6ef10bbf6f1b2cd1d7ecc41e933ed9871a4bc8cdee7"
+    },
+    {
+      "base_spec_sha256": "b64302db4039edbf8875dcfc74cd0f59e393d806d803ae72255cadb4aab85b64",
+      "case_id": "inventory_api_endpoint_removed",
+      "head_spec_sha256": "cd4b040affcfaa48fa108e28a064f3dd4b9e5762f0d9abbe133461ce00afed57"
+    },
+    {
+      "base_spec_sha256": "b64302db4039edbf8875dcfc74cd0f59e393d806d803ae72255cadb4aab85b64",
+      "case_id": "inventory_api_method_removed",
+      "head_spec_sha256": "8cc1d2bb609676e14eb92c2f071922ab6ff8e43c72214e1fc4cf5f26d2e3a243"
+    },
+    {
+      "base_spec_sha256": "b64302db4039edbf8875dcfc74cd0f59e393d806d803ae72255cadb4aab85b64",
+      "case_id": "inventory_api_optional_to_required",
+      "head_spec_sha256": "e46de5e06f14b96f867bd2ae18b26913190da95b7a69721f1ce176ab168bb0ce"
+    },
+    {
+      "base_spec_sha256": "b64302db4039edbf8875dcfc74cd0f59e393d806d803ae72255cadb4aab85b64",
+      "case_id": "inventory_api_request_enum_narrowed",
+      "head_spec_sha256": "955a5fcecbf7c931b67861eb96c67660781d34b96ddc4fa9473a16deefb72567"
+    },
+    {
+      "base_spec_sha256": "b64302db4039edbf8875dcfc74cd0f59e393d806d803ae72255cadb4aab85b64",
+      "case_id": "inventory_api_request_type_changed",
+      "head_spec_sha256": "ffb2204080d377e7173595aa0a8745c18efd87375f534a5ea447bfc2f10fae22"
+    },
+    {
+      "base_spec_sha256": "b64302db4039edbf8875dcfc74cd0f59e393d806d803ae72255cadb4aab85b64",
+      "case_id": "inventory_api_required_query_added",
+      "head_spec_sha256": "a5cefb24d73e0faf26d1283b893f6e9aa3d19a1d6f35a6d8fb1b3b1ad6c1c1e5"
+    },
+    {
+      "base_spec_sha256": "b64302db4039edbf8875dcfc74cd0f59e393d806d803ae72255cadb4aab85b64",
+      "case_id": "inventory_api_response_field_removed",
+      "head_spec_sha256": "429625a89f04fadf96eb6dd082e4fd16a379b40c0ddfc3dce3e0c648f0a87445"
+    },
+    {
+      "base_spec_sha256": "b64302db4039edbf8875dcfc74cd0f59e393d806d803ae72255cadb4aab85b64",
+      "case_id": "inventory_api_response_status_removed",
+      "head_spec_sha256": "f4f9372302ec52008841c53f9053aa0972d74962f061612046057f0661d7899c"
+    },
+    {
+      "base_spec_sha256": "b64302db4039edbf8875dcfc74cd0f59e393d806d803ae72255cadb4aab85b64",
+      "case_id": "inventory_api_response_type_changed",
+      "head_spec_sha256": "3acd946cbdd5c918a6d5dafb24d70d5b9b4e3067458656ae0376eef0fff19d20"
+    },
+    {
+      "base_spec_sha256": "0d35c2006628f57ed39dbfe142012fc25a25abaa0fb1bcd8a304aa0a340dd2ce",
+      "case_id": "orders_api_compatible_field_added",
+      "head_spec_sha256": "15a0289417f7f24bb6a9d25c0f03997f5a28907a5b0caa23147a725f242b8b02"
+    },
+    {
+      "base_spec_sha256": "0d35c2006628f57ed39dbfe142012fc25a25abaa0fb1bcd8a304aa0a340dd2ce",
+      "case_id": "orders_api_component_type_changed",
+      "head_spec_sha256": "28f74ef6135fda8f6b6043c7281a53122ce5c0ce2d425d878126ea4594f1aedd"
+    },
+    {
+      "base_spec_sha256": "0d35c2006628f57ed39dbfe142012fc25a25abaa0fb1bcd8a304aa0a340dd2ce",
+      "case_id": "orders_api_documentation_only",
+      "head_spec_sha256": "7bbb09f32099a3bd9453d4989d4fd3443c458c8b4b2051bbf3105ef24b61f645"
+    },
+    {
+      "base_spec_sha256": "0d35c2006628f57ed39dbfe142012fc25a25abaa0fb1bcd8a304aa0a340dd2ce",
+      "case_id": "orders_api_endpoint_removed",
+      "head_spec_sha256": "a59dcf0f0e14296fa0d60a8a2ee782f7684f5eb549136ff29cc7226187107221"
+    },
+    {
+      "base_spec_sha256": "0d35c2006628f57ed39dbfe142012fc25a25abaa0fb1bcd8a304aa0a340dd2ce",
+      "case_id": "orders_api_method_removed",
+      "head_spec_sha256": "e5aefa80b9c19decdee15d6589d6f42b96587a37d43903eede7d706f885ba518"
+    },
+    {
+      "base_spec_sha256": "0d35c2006628f57ed39dbfe142012fc25a25abaa0fb1bcd8a304aa0a340dd2ce",
+      "case_id": "orders_api_optional_to_required",
+      "head_spec_sha256": "54fc66f533cad918bcf479dec47bc5f46d4d319f5a125aa2ed8744a73f3bca1d"
+    },
+    {
+      "base_spec_sha256": "0d35c2006628f57ed39dbfe142012fc25a25abaa0fb1bcd8a304aa0a340dd2ce",
+      "case_id": "orders_api_request_enum_narrowed",
+      "head_spec_sha256": "91842de2bf90c3b66047d0efde2681be7e856e59915d3a798492cb7359b9a368"
+    },
+    {
+      "base_spec_sha256": "0d35c2006628f57ed39dbfe142012fc25a25abaa0fb1bcd8a304aa0a340dd2ce",
+      "case_id": "orders_api_request_type_changed",
+      "head_spec_sha256": "8ef40b9f1cf3fc61fb95a4c5ed1a0f4d4da06aed88671955f9dfb19cec66a579"
+    },
+    {
+      "base_spec_sha256": "0d35c2006628f57ed39dbfe142012fc25a25abaa0fb1bcd8a304aa0a340dd2ce",
+      "case_id": "orders_api_required_query_added",
+      "head_spec_sha256": "18a701d8e2f8cdbda16e3ac0b43bdf1190dd81f65a6528839979fe608bf80007"
+    },
+    {
+      "base_spec_sha256": "0d35c2006628f57ed39dbfe142012fc25a25abaa0fb1bcd8a304aa0a340dd2ce",
+      "case_id": "orders_api_response_field_removed",
+      "head_spec_sha256": "898c354fe949d82dc676dbc731a1054f16f9a3913d416d48b99e5483918fab32"
+    },
+    {
+      "base_spec_sha256": "0d35c2006628f57ed39dbfe142012fc25a25abaa0fb1bcd8a304aa0a340dd2ce",
+      "case_id": "orders_api_response_status_removed",
+      "head_spec_sha256": "a9b4d8626674128056e2fd8deb45bc0cac4d6982857b07b88d20d3bac80ebebf"
+    },
+    {
+      "base_spec_sha256": "0d35c2006628f57ed39dbfe142012fc25a25abaa0fb1bcd8a304aa0a340dd2ce",
+      "case_id": "orders_api_response_type_changed",
+      "head_spec_sha256": "3d976e7a05e1641f9166101ce5675b748ea3110ae5e6fec608c5a897a821a251"
+    },
+    {
+      "base_spec_sha256": "1263277a11a935b7704f26267eef97e3207426397e8105c76a0aa17cdff1db39",
+      "case_id": "products_api_compatible_field_added",
+      "head_spec_sha256": "695520679de215ce3182b0a23de5594c581d5aea1cc59b32d5a102724dcd86c5"
+    },
+    {
+      "base_spec_sha256": "1263277a11a935b7704f26267eef97e3207426397e8105c76a0aa17cdff1db39",
+      "case_id": "products_api_component_type_changed",
+      "head_spec_sha256": "6ea3b6b3d8fa4019e14061b19ce0dbea138baef6878e2d13e93399198cc98fcf"
+    },
+    {
+      "base_spec_sha256": "1263277a11a935b7704f26267eef97e3207426397e8105c76a0aa17cdff1db39",
+      "case_id": "products_api_documentation_only",
+      "head_spec_sha256": "ae5cceb2c581b731c59c6aef5f80a29d4b15ed98270996412faacd58d5589436"
+    },
+    {
+      "base_spec_sha256": "1263277a11a935b7704f26267eef97e3207426397e8105c76a0aa17cdff1db39",
+      "case_id": "products_api_endpoint_removed",
+      "head_spec_sha256": "33230c577042ff3e52a2e9b8b3dfdc99d8cdeb0ec7a4c0b308029e2f4210b849"
+    },
+    {
+      "base_spec_sha256": "1263277a11a935b7704f26267eef97e3207426397e8105c76a0aa17cdff1db39",
+      "case_id": "products_api_method_removed",
+      "head_spec_sha256": "b9acc1a4dc89057978dec12532bdf9b16a57778fc67f8093dd2847eaeafe8e67"
+    },
+    {
+      "base_spec_sha256": "1263277a11a935b7704f26267eef97e3207426397e8105c76a0aa17cdff1db39",
+      "case_id": "products_api_optional_to_required",
+      "head_spec_sha256": "e312c7412c82fca5b8146e64dfb0d3b9fa03343a6a53bf5a820b66db3a63fbda"
+    },
+    {
+      "base_spec_sha256": "1263277a11a935b7704f26267eef97e3207426397e8105c76a0aa17cdff1db39",
+      "case_id": "products_api_request_enum_narrowed",
+      "head_spec_sha256": "45e48aa1aaebe62d3c75917642ecc8155eef5f8f121bae97bd8e7dcaffe3e026"
+    },
+    {
+      "base_spec_sha256": "1263277a11a935b7704f26267eef97e3207426397e8105c76a0aa17cdff1db39",
+      "case_id": "products_api_request_type_changed",
+      "head_spec_sha256": "a1a73c666a8f77219a9d4e69daf966c4a6ffe7ebbe3a437ec8f5bae55de6fed6"
+    },
+    {
+      "base_spec_sha256": "1263277a11a935b7704f26267eef97e3207426397e8105c76a0aa17cdff1db39",
+      "case_id": "products_api_required_query_added",
+      "head_spec_sha256": "bf2fb36b75798f38a320442fe6381f324bac81c90c622e1404c35a43ab25d503"
+    },
+    {
+      "base_spec_sha256": "1263277a11a935b7704f26267eef97e3207426397e8105c76a0aa17cdff1db39",
+      "case_id": "products_api_response_field_removed",
+      "head_spec_sha256": "7308826e701e8a4107c646c475bc55b3ce310717803fff0e5e3736373d1f66aa"
+    },
+    {
+      "base_spec_sha256": "1263277a11a935b7704f26267eef97e3207426397e8105c76a0aa17cdff1db39",
+      "case_id": "products_api_response_status_removed",
+      "head_spec_sha256": "8fd0efcaedd8e3cc9ff42aea42ddcabe0792a0c1a6f471a922dff084b8f20bc0"
+    },
+    {
+      "base_spec_sha256": "1263277a11a935b7704f26267eef97e3207426397e8105c76a0aa17cdff1db39",
+      "case_id": "products_api_response_type_changed",
+      "head_spec_sha256": "934b1a81304cb666eaed9e76ae670d70557e09fc30d4f79a04b11d29af612809"
+    },
+    {
+      "base_spec_sha256": "9712b9b74e6a5a2ad57e5b2264014c970b9b5eb91952638a176e897ad4e3b519",
+      "case_id": "users_api_compatible_field_added",
+      "head_spec_sha256": "f0586b290e10f420ca7a39bcc5ddf628731e00248ff9ba591524a0de3b73b185"
+    },
+    {
+      "base_spec_sha256": "9712b9b74e6a5a2ad57e5b2264014c970b9b5eb91952638a176e897ad4e3b519",
+      "case_id": "users_api_component_type_changed",
+      "head_spec_sha256": "5c1348cb14e4c228c0cc9cf976d3af264b8367c3f7078be8ec6ed844b2977b42"
+    },
+    {
+      "base_spec_sha256": "9712b9b74e6a5a2ad57e5b2264014c970b9b5eb91952638a176e897ad4e3b519",
+      "case_id": "users_api_documentation_only",
+      "head_spec_sha256": "1333c92b552569036e30cbef6129e5a03e366a64f982da14288eb9bb7eeaa50e"
+    },
+    {
+      "base_spec_sha256": "9712b9b74e6a5a2ad57e5b2264014c970b9b5eb91952638a176e897ad4e3b519",
+      "case_id": "users_api_endpoint_removed",
+      "head_spec_sha256": "0509b94173c991560300b96aba1be02dc9f52f365f817b1b74b80f205ed87df7"
+    },
+    {
+      "base_spec_sha256": "9712b9b74e6a5a2ad57e5b2264014c970b9b5eb91952638a176e897ad4e3b519",
+      "case_id": "users_api_method_removed",
+      "head_spec_sha256": "cf3854dcf4d0c15306b80bc5ce99ee2947f1be5f4f2f33f7fc392f4c4b357a1e"
+    },
+    {
+      "base_spec_sha256": "9712b9b74e6a5a2ad57e5b2264014c970b9b5eb91952638a176e897ad4e3b519",
+      "case_id": "users_api_optional_to_required",
+      "head_spec_sha256": "d55b1704c39423fc6c248058052bc841353f9f61d2e9788909f434ddd9564115"
+    },
+    {
+      "base_spec_sha256": "9712b9b74e6a5a2ad57e5b2264014c970b9b5eb91952638a176e897ad4e3b519",
+      "case_id": "users_api_request_enum_narrowed",
+      "head_spec_sha256": "dd6df9e7470a16c8bc9e9c0bfb9aebf4d072d00e912a6967ed3ccd175831fc7b"
+    },
+    {
+      "base_spec_sha256": "9712b9b74e6a5a2ad57e5b2264014c970b9b5eb91952638a176e897ad4e3b519",
+      "case_id": "users_api_request_type_changed",
+      "head_spec_sha256": "451180754d403e1012137cf283514f3c8a0e1ecadf8be9ccb3a5449ef4af5f50"
+    },
+    {
+      "base_spec_sha256": "9712b9b74e6a5a2ad57e5b2264014c970b9b5eb91952638a176e897ad4e3b519",
+      "case_id": "users_api_required_query_added",
+      "head_spec_sha256": "06515f69180176a176e7180f8cb7bdf5a59610775fc1a7381d732e7a5cb1222a"
+    },
+    {
+      "base_spec_sha256": "9712b9b74e6a5a2ad57e5b2264014c970b9b5eb91952638a176e897ad4e3b519",
+      "case_id": "users_api_response_field_removed",
+      "head_spec_sha256": "f02026899524af5dc42971f5cc7d94b3ed8b9746eaceb1407d10df22148222a7"
+    },
+    {
+      "base_spec_sha256": "9712b9b74e6a5a2ad57e5b2264014c970b9b5eb91952638a176e897ad4e3b519",
+      "case_id": "users_api_response_status_removed",
+      "head_spec_sha256": "f84d560332c8bc41ab78773d4a48a18260224468801608a0a173610e68b49932"
+    },
+    {
+      "base_spec_sha256": "9712b9b74e6a5a2ad57e5b2264014c970b9b5eb91952638a176e897ad4e3b519",
+      "case_id": "users_api_response_type_changed",
+      "head_spec_sha256": "79c35150845d241329211828f8fe41e8923fee8c88bdfa6b497c5f20770b5b12"
+    }
+  ],
+  "contract_dataset_sha256": "c3a41b2097a25bb8736f04bc43bec205233ed5156b4e752462a6d6394e09a153",
+  "executed_systems": [
+    "full_schemathesis",
+    "oasdiff_plus_full_schemathesis",
+    "oracle_scope",
+    "guardian_deterministic"
+  ],
+  "metadata": {
+    "benchmark_version": "E2.0",
+    "cpu_logical_count": 16,
+    "deepseek_model": null,
+    "guardian_git_commit": "bcc2c8c1303a1eaae9a99dce73c0fe72dc2fc46d",
+    "guardian_worktree_dirty": true,
+    "oasdiff_archive_sha256": "cef8ec7cdd32ab4ce9c188f9dbb50452a91fa36cc11c8e1dcf340b19282c3ce1",
+    "oasdiff_version": "1.28.0",
+    "operating_system": "Windows 11 AMD64",
+    "python_version": "3.13.12",
+    "random_seed": 20260903,
+    "schemathesis_parameters": {
+      "checks": "response_schema_conformance",
+      "generation_deterministic": true,
+      "max_examples": 1,
+      "max_redirects": 0,
+      "phases": "examples,coverage",
+      "request_timeout_seconds": 2.0
+    },
+    "schemathesis_version": "4.24.3"
+  },
+  "mutation_cases": [
+    {
+      "base_spec_sha256": "8b5eb46bbc82b31c9dd1e9094f6b748c74ea8869407d0e47a45e6df4cbb53da0",
+      "case_id": "booking_availability_rooms_type_lag",
+      "head_spec_sha256": "0f9d4d1f334377cfbdf1054e8a5a2caf4223419918d88aea7437306d565329b7"
+    },
+    {
+      "base_spec_sha256": "8b5eb46bbc82b31c9dd1e9094f6b748c74ea8869407d0e47a45e6df4cbb53da0",
+      "case_id": "booking_clean_control",
+      "head_spec_sha256": "6c2d6dabb6a4261c59c2a8380e32d39ed5a1a2882be7df5dba41f3a5dee0335f"
+    },
+    {
+      "base_spec_sha256": "8b5eb46bbc82b31c9dd1e9094f6b748c74ea8869407d0e47a45e6df4cbb53da0",
+      "case_id": "booking_guest_id_type_lag",
+      "head_spec_sha256": "be58a5adf57e74512367917875d0fa3a28a4b9c422522b1c63175d5639dc963d"
+    },
+    {
+      "base_spec_sha256": "8b5eb46bbc82b31c9dd1e9094f6b748c74ea8869407d0e47a45e6df4cbb53da0",
+      "case_id": "booking_guest_missing",
+      "head_spec_sha256": "6c2d6dabb6a4261c59c2a8380e32d39ed5a1a2882be7df5dba41f3a5dee0335f"
+    },
+    {
+      "base_spec_sha256": "8b5eb46bbc82b31c9dd1e9094f6b748c74ea8869407d0e47a45e6df4cbb53da0",
+      "case_id": "booking_id_type_lag",
+      "head_spec_sha256": "6c2d6dabb6a4261c59c2a8380e32d39ed5a1a2882be7df5dba41f3a5dee0335f"
+    },
+    {
+      "base_spec_sha256": "8b5eb46bbc82b31c9dd1e9094f6b748c74ea8869407d0e47a45e6df4cbb53da0",
+      "case_id": "booking_list_id_type_lag",
+      "head_spec_sha256": "d02bf3ae3cae32b0ceaf4ca05c06af926e6a12987373946d0fe20fd4406b5ac8"
+    },
+    {
+      "base_spec_sha256": "8b5eb46bbc82b31c9dd1e9094f6b748c74ea8869407d0e47a45e6df4cbb53da0",
+      "case_id": "booking_payment_amount_type_lag",
+      "head_spec_sha256": "aa542163fb5564f611892b9591d43b06e89394f0783744ada9f8ebd8384fad5c"
+    },
+    {
+      "base_spec_sha256": "8b5eb46bbc82b31c9dd1e9094f6b748c74ea8869407d0e47a45e6df4cbb53da0",
+      "case_id": "booking_room_list_id_type_lag",
+      "head_spec_sha256": "975749a231137c7c6ef9bd48f2c7ba57307c4f506d732f3a5409a3a78e994e80"
+    },
+    {
+      "base_spec_sha256": "8b5eb46bbc82b31c9dd1e9094f6b748c74ea8869407d0e47a45e6df4cbb53da0",
+      "case_id": "booking_room_name_missing",
+      "head_spec_sha256": "3970d4cf47a1a58ef4e1427fb94132e8e7f57a1b4f3cd791d01bf6665014c6e2"
+    },
+    {
+      "base_spec_sha256": "8b5eb46bbc82b31c9dd1e9094f6b748c74ea8869407d0e47a45e6df4cbb53da0",
+      "case_id": "booking_wrong_booking_semantic",
+      "head_spec_sha256": "6c2d6dabb6a4261c59c2a8380e32d39ed5a1a2882be7df5dba41f3a5dee0335f"
+    },
+    {
+      "base_spec_sha256": "8b5eb46bbc82b31c9dd1e9094f6b748c74ea8869407d0e47a45e6df4cbb53da0",
+      "case_id": "booking_wrong_payment_semantic",
+      "head_spec_sha256": "0ba93f779aac4a496d7d94a1be0b861e03477ebec4a45cdc039e42fc348e1c16"
+    },
+    {
+      "base_spec_sha256": "960d88a50781ad723a0a6ede60bfa41d04d9fa117b295465243924ccee3cb753",
+      "case_id": "inventory_clean_control",
+      "head_spec_sha256": "cf1862b7b87f2685c371f46a59d9fd1c4f1f2f79dc69abcc2dada867e96c5922"
+    },
+    {
+      "base_spec_sha256": "960d88a50781ad723a0a6ede60bfa41d04d9fa117b295465243924ccee3cb753",
+      "case_id": "inventory_movement_quantity_type_lag",
+      "head_spec_sha256": "37f9f93e35d0a766ef885949a9b72720d08540e9181033f9ba661e9fa5958703"
+    },
+    {
+      "base_spec_sha256": "960d88a50781ad723a0a6ede60bfa41d04d9fa117b295465243924ccee3cb753",
+      "case_id": "inventory_reservation_id_type_lag",
+      "head_spec_sha256": "2d69e1f23f75e452b5a21953f28da11b5840055eaf281025becaa2dddae8e013"
+    },
+    {
+      "base_spec_sha256": "960d88a50781ad723a0a6ede60bfa41d04d9fa117b295465243924ccee3cb753",
+      "case_id": "inventory_stock_id_type_lag",
+      "head_spec_sha256": "cf1862b7b87f2685c371f46a59d9fd1c4f1f2f79dc69abcc2dada867e96c5922"
+    },
+    {
+      "base_spec_sha256": "960d88a50781ad723a0a6ede60bfa41d04d9fa117b295465243924ccee3cb753",
+      "case_id": "inventory_stock_list_id_type_lag",
+      "head_spec_sha256": "be49fbcb04791d72e553124aa29e720b613ded24fa4a6640e83d2cf62ce0ccaa"
+    },
+    {
+      "base_spec_sha256": "960d88a50781ad723a0a6ede60bfa41d04d9fa117b295465243924ccee3cb753",
+      "case_id": "inventory_stock_sku_missing",
+      "head_spec_sha256": "cf1862b7b87f2685c371f46a59d9fd1c4f1f2f79dc69abcc2dada867e96c5922"
+    },
+    {
+      "base_spec_sha256": "960d88a50781ad723a0a6ede60bfa41d04d9fa117b295465243924ccee3cb753",
+      "case_id": "inventory_supplier_days_type_lag",
+      "head_spec_sha256": "ef5424f55e862db69b899defe8c218ce841a5890be607d66e0827ce117024017"
+    },
+    {
+      "base_spec_sha256": "960d88a50781ad723a0a6ede60bfa41d04d9fa117b295465243924ccee3cb753",
+      "case_id": "inventory_warehouse_list_id_type_lag",
+      "head_spec_sha256": "239d67e696fa9258ff495fd027629235fc4fa640bf11fce3c29847ea3dfbc680"
+    },
+    {
+      "base_spec_sha256": "960d88a50781ad723a0a6ede60bfa41d04d9fa117b295465243924ccee3cb753",
+      "case_id": "inventory_warehouse_name_missing",
+      "head_spec_sha256": "36fbbf9c787dfa83eb6e88b1a8a119e640fff8373ff8e76e8aef48434742252b"
+    },
+    {
+      "base_spec_sha256": "960d88a50781ad723a0a6ede60bfa41d04d9fa117b295465243924ccee3cb753",
+      "case_id": "inventory_wrong_movement_semantic",
+      "head_spec_sha256": "e7f23da65966b5cf9ac15d267f3936f5cf149baa9d413d7f67057815ebcf6bf8"
+    },
+    {
+      "base_spec_sha256": "960d88a50781ad723a0a6ede60bfa41d04d9fa117b295465243924ccee3cb753",
+      "case_id": "inventory_wrong_stock_semantic",
+      "head_spec_sha256": "cf1862b7b87f2685c371f46a59d9fd1c4f1f2f79dc69abcc2dada867e96c5922"
+    },
+    {
+      "base_spec_sha256": "532fd702e7f1550366160b0530d1aac0a791cf3581c762dc2bec63f5c53c1e5d",
+      "case_id": "orders_clean_control",
+      "head_spec_sha256": "ae735702be0018c8c408030f99be9ce9cea64fcdc7e8e187af6a867c0905cfea"
+    },
+    {
+      "base_spec_sha256": "532fd702e7f1550366160b0530d1aac0a791cf3581c762dc2bec63f5c53c1e5d",
+      "case_id": "orders_currency_symbol_missing",
+      "head_spec_sha256": "ce5f0ef5895a78e245a694ddfeee4ab685f3925eb90992738fd294119a492e3e"
+    },
+    {
+      "base_spec_sha256": "532fd702e7f1550366160b0530d1aac0a791cf3581c762dc2bec63f5c53c1e5d",
+      "case_id": "orders_customer_id_type_lag",
+      "head_spec_sha256": "73760e179e8eba82b312f22cea7ad6b44e48d4e2e5def1eebef3a9bb31241041"
+    },
+    {
+      "base_spec_sha256": "532fd702e7f1550366160b0530d1aac0a791cf3581c762dc2bec63f5c53c1e5d",
+      "case_id": "orders_invoice_amount_semantic",
+      "head_spec_sha256": "1f6b482ecebf8619334665e18814364366ed29817e0bb0bfe3b12f62ccfe4837"
+    },
+    {
+      "base_spec_sha256": "532fd702e7f1550366160b0530d1aac0a791cf3581c762dc2bec63f5c53c1e5d",
+      "case_id": "orders_invoice_currency_missing",
+      "head_spec_sha256": "dbd82349a2cc8366422a59b44f02ff1a6d54d635bcf38f6081b933647c99fa7f"
+    },
+    {
+      "base_spec_sha256": "532fd702e7f1550366160b0530d1aac0a791cf3581c762dc2bec63f5c53c1e5d",
+      "case_id": "orders_list_id_type_lag",
+      "head_spec_sha256": "4c0a435dce7542f920f8cc6be5a86c21c98411269c06fd20080c258dc228a888"
+    },
+    {
+      "base_spec_sha256": "532fd702e7f1550366160b0530d1aac0a791cf3581c762dc2bec63f5c53c1e5d",
+      "case_id": "orders_shipment_tracking_type_lag",
+      "head_spec_sha256": "bbfbed17616767c2bf8f50b7131dd5f3fa845fe43d0b0ae6270e81c5daf493a9"
+    },
+    {
+      "base_spec_sha256": "532fd702e7f1550366160b0530d1aac0a791cf3581c762dc2bec63f5c53c1e5d",
+      "case_id": "orders_status_enum_lag",
+      "head_spec_sha256": "e7007523f7a23e992b1d1a51a69a26d2fb94d269bdaf594b7339aab3b569faf1"
+    },
+    {
+      "base_spec_sha256": "532fd702e7f1550366160b0530d1aac0a791cf3581c762dc2bec63f5c53c1e5d",
+      "case_id": "orders_summary_count_type_lag",
+      "head_spec_sha256": "774ba1a058c7b9724f511baa0995b9dcbaedd2ba7244aef050733aa525c5424b"
+    },
+    {
+      "base_spec_sha256": "532fd702e7f1550366160b0530d1aac0a791cf3581c762dc2bec63f5c53c1e5d",
+      "case_id": "orders_total_type_lag",
+      "head_spec_sha256": "e75fe5e15b642cdb8e726c80d04304fb8ac64893d16ac712fa3ec11d67b4c6af"
+    },
+    {
+      "base_spec_sha256": "532fd702e7f1550366160b0530d1aac0a791cf3581c762dc2bec63f5c53c1e5d",
+      "case_id": "orders_wrong_total_semantic",
+      "head_spec_sha256": "e75fe5e15b642cdb8e726c80d04304fb8ac64893d16ac712fa3ec11d67b4c6af"
+    },
+    {
+      "base_spec_sha256": "6daf320a1f5755b543b38a935d8ea16a8fabed22e955667fd593354438c909f6",
+      "case_id": "products_brand_id_type_lag",
+      "head_spec_sha256": "26e707544d36c2d08348774f10b717523a73d4d817acc1ffdeaee794824298ff"
+    },
+    {
+      "base_spec_sha256": "6daf320a1f5755b543b38a935d8ea16a8fabed22e955667fd593354438c909f6",
+      "case_id": "products_category_list_id_type_lag",
+      "head_spec_sha256": "c6fe97c6878702f0e07f34a0aafbe03b61ac488fded6074d6d91699faf93aaad"
+    },
+    {
+      "base_spec_sha256": "6daf320a1f5755b543b38a935d8ea16a8fabed22e955667fd593354438c909f6",
+      "case_id": "products_category_name_missing",
+      "head_spec_sha256": "6210495f0af61cacf18f4f4568b435d103ad3db1b6a997a52ba34d1423389ed3"
+    },
+    {
+      "base_spec_sha256": "6daf320a1f5755b543b38a935d8ea16a8fabed22e955667fd593354438c909f6",
+      "case_id": "products_clean_control",
+      "head_spec_sha256": "321c63a4ee12e21c0bf69281c1754cf317fbc959e1918cd235c5cbe37eed2463"
+    },
+    {
+      "base_spec_sha256": "6daf320a1f5755b543b38a935d8ea16a8fabed22e955667fd593354438c909f6",
+      "case_id": "products_id_type_lag",
+      "head_spec_sha256": "321c63a4ee12e21c0bf69281c1754cf317fbc959e1918cd235c5cbe37eed2463"
+    },
+    {
+      "base_spec_sha256": "6daf320a1f5755b543b38a935d8ea16a8fabed22e955667fd593354438c909f6",
+      "case_id": "products_list_id_type_lag",
+      "head_spec_sha256": "b9d501a65306608c707bb2df6c50c50e20ce3a97ab654d9d81a5ddca383225b1"
+    },
+    {
+      "base_spec_sha256": "6daf320a1f5755b543b38a935d8ea16a8fabed22e955667fd593354438c909f6",
+      "case_id": "products_name_missing",
+      "head_spec_sha256": "321c63a4ee12e21c0bf69281c1754cf317fbc959e1918cd235c5cbe37eed2463"
+    },
+    {
+      "base_spec_sha256": "6daf320a1f5755b543b38a935d8ea16a8fabed22e955667fd593354438c909f6",
+      "case_id": "products_price_amount_type_lag",
+      "head_spec_sha256": "38ce6380e9e692a559110ae98c7b390b0157636b40f437293ea096df3dafb5af"
+    },
+    {
+      "base_spec_sha256": "6daf320a1f5755b543b38a935d8ea16a8fabed22e955667fd593354438c909f6",
+      "case_id": "products_review_rating_type_lag",
+      "head_spec_sha256": "1dc82c4f4c7d3a9643219de6571105d757d48351af574c8b7e0eabb9a3b0cea0"
+    },
+    {
+      "base_spec_sha256": "6daf320a1f5755b543b38a935d8ea16a8fabed22e955667fd593354438c909f6",
+      "case_id": "products_wrong_price_semantic",
+      "head_spec_sha256": "c398d050a213c5232d336bb213200e3cc9ea6e6692f5ccac4ca57f967676073b"
+    },
+    {
+      "base_spec_sha256": "6daf320a1f5755b543b38a935d8ea16a8fabed22e955667fd593354438c909f6",
+      "case_id": "products_wrong_product_semantic",
+      "head_spec_sha256": "321c63a4ee12e21c0bf69281c1754cf317fbc959e1918cd235c5cbe37eed2463"
+    },
+    {
+      "base_spec_sha256": "5e18263156a741f77c1eae1ff9951cf970eb9cf8727e475d4ab4dc63784e3d3c",
+      "case_id": "users_clean_control",
+      "head_spec_sha256": "a0602595346db8e3458e241844f7f8a6acb4d040abf5f1533208f67b5e7cdede"
+    },
+    {
+      "base_spec_sha256": "5e18263156a741f77c1eae1ff9951cf970eb9cf8727e475d4ab4dc63784e3d3c",
+      "case_id": "users_id_type_lag",
+      "head_spec_sha256": "a0602595346db8e3458e241844f7f8a6acb4d040abf5f1533208f67b5e7cdede"
+    },
+    {
+      "base_spec_sha256": "5e18263156a741f77c1eae1ff9951cf970eb9cf8727e475d4ab4dc63784e3d3c",
+      "case_id": "users_list_id_type_lag",
+      "head_spec_sha256": "971269b9aff85032653e0851402703b2abe142b0fe77ed509c15deb3b3d8e716"
+    },
+    {
+      "base_spec_sha256": "5e18263156a741f77c1eae1ff9951cf970eb9cf8727e475d4ab4dc63784e3d3c",
+      "case_id": "users_permission_id_type_lag",
+      "head_spec_sha256": "d014d561dd6db1ab8696c7439c608ed4eecad905800e7e56a229ca247523ef21"
+    },
+    {
+      "base_spec_sha256": "5e18263156a741f77c1eae1ff9951cf970eb9cf8727e475d4ab4dc63784e3d3c",
+      "case_id": "users_profile_age_type_lag",
+      "head_spec_sha256": "ead3a7dda5ed78ec199d65be48917060634df8ca6e01c0369954e78833fcb65f"
+    },
+    {
+      "base_spec_sha256": "5e18263156a741f77c1eae1ff9951cf970eb9cf8727e475d4ab4dc63784e3d3c",
+      "case_id": "users_required_email_missing",
+      "head_spec_sha256": "010339ddbe5ff7ddf5ea0a005c11debe76e51a964b7e2b3263675d3f727b2372"
+    },
+    {
+      "base_spec_sha256": "5e18263156a741f77c1eae1ff9951cf970eb9cf8727e475d4ab4dc63784e3d3c",
+      "case_id": "users_role_description_missing",
+      "head_spec_sha256": "eb9fff3d010f40b878d8269af93b5f77e4110557e3bc3fd05f72d228d21b0d71"
+    },
+    {
+      "base_spec_sha256": "5e18263156a741f77c1eae1ff9951cf970eb9cf8727e475d4ab4dc63784e3d3c",
+      "case_id": "users_status_region_semantic",
+      "head_spec_sha256": "a2e77e8d45429e2d39eb127ad59ece7e7a7b72f74fb69abd843477e723c81033"
+    },
+    {
+      "base_spec_sha256": "5e18263156a741f77c1eae1ff9951cf970eb9cf8727e475d4ab4dc63784e3d3c",
+      "case_id": "users_team_id_type_lag",
+      "head_spec_sha256": "094099263058728c09aa6a5f9b853a54bbf5bd48dd6d4d1b4578a3c54e109ea4"
+    },
+    {
+      "base_spec_sha256": "5e18263156a741f77c1eae1ff9951cf970eb9cf8727e475d4ab4dc63784e3d3c",
+      "case_id": "users_team_name_missing",
+      "head_spec_sha256": "9515a651d26be40d9b48065ef516ff1e6adb8c0159141c1a053737dd2b9fa6a4"
+    },
+    {
+      "base_spec_sha256": "5e18263156a741f77c1eae1ff9951cf970eb9cf8727e475d4ab4dc63784e3d3c",
+      "case_id": "users_wrong_user_semantic",
+      "head_spec_sha256": "a0602595346db8e3458e241844f7f8a6acb4d040abf5f1533208f67b5e7cdede"
+    }
+  ],
+  "mutation_dataset_files": {
+    "e2_booking.jsonl": "9e3f3c9b70c99764816e6c98ba631873a5dc159d232fc8f51e3f4d6816fd9288",
+    "e2_inventory.jsonl": "476fe11687ebcff34526dcdcc305f10e2adc89ce76f348f73cde407cb66b0be7",
+    "e2_orders.jsonl": "ed1f9ecd43faadfb8d2e0ba9281b3369b60bb1b715d1e5a50f3ac36f247ff555",
+    "e2_products.jsonl": "b13bb98ec68ed7d0f095ff0a9a618e140ab72f24f33ba15560be4b1efa81cdb8",
+    "e2_users.jsonl": "c540a90c319f6b56b98791866bb37fe599f1ab406de425308fb4cfea53a3b316"
+  },
+  "production_guardian_core_sha256_after": "3818225ecda14a644b91ce2404f63e52c142cfff49a7100ded0587dc9433fde3",
+  "production_guardian_core_sha256_before": "3818225ecda14a644b91ce2404f63e52c142cfff49a7100ded0587dc9433fde3",
+  "production_guardian_core_unchanged": true,
+  "run_id": "guardian-e2-20260906T071336Z-2eacf61c",
+  "secret_fields_recorded": [],
+  "stage": "E2",
+  "started_at": "2026-09-06T07:13:36.222214+00:00"
+}

@@ -1,0 +1,215 @@
+{
+  "aggregate_review_sha256": "3f59cb7e2ad535cfced0941a2847b87f402ef36b25bdc84cd5fa251471be9f36",
+  "frozen_at": "2026-09-07T06:14:24.132296+00:00",
+  "frozen_prior_artifact_hashes": {
+    "benchmarks/guardian/reports/e2/latest/contract_raw_results.jsonl": "349023d9464935fcc6ec9006189bf59d124bf3df79f870bcbb4fddaf3aca957a",
+    "benchmarks/guardian/reports/e2/latest/raw_results.jsonl": "f93f33a01a6d97f92a162eca5b41b2f11746c76f8ab7785e23d839e5f08ad196",
+    "benchmarks/guardian/reports/e2_5/miss_analysis/miss_summary.json": "6c29218475ca29a0cfbd648a287806b3da43e59973d92ae748989fad972cede5",
+    "benchmarks/guardian/reports/e2_5/scaling/raw_results.jsonl": "ec2426b72dd927ae1ae04f7ee59c17081ee164f04964e2a842f4f1bd17bca858",
+    "benchmarks/guardian/reports/e2_5/scaling/summary.json": "bfb088d25f9739f2ddd4fbb10738ebb5fb3cf664f00f46c46b9f4f44acad0b3f"
+  },
+  "guardian_execution_permitted": false,
+  "guardian_output_paths_absent_at_freeze": [
+    "benchmarks/guardian/reports/e3/raw_guardian_results.jsonl",
+    "benchmarks/guardian/reports/e3/real_world_misses.jsonl",
+    "benchmarks/guardian/reports/e3/summary.json",
+    "benchmarks/guardian/reports/e3/summary.csv",
+    "benchmarks/guardian/reports/e3/e3_contract_scope_report.md"
+  ],
+  "guardian_system_output_status": "not_generated_before_ground_truth_freeze",
+  "material_passport": {
+    "commit_metadata": "local partial Git clones; no GitHub REST",
+    "e2_path_note": "E3-A labeled the E2 runtime artifact runtime_raw_results.jsonl; the unchanged file on disk is latest/raw_results.jsonl and its expected SHA256 matches.",
+    "git_version": "git version 2.55.0.windows.5",
+    "ground_truth_sources": "Base OpenAPI, Head OpenAPI, Git diff facts, commit message",
+    "guardian_git_commit": "bcc2c8c1303a1eaae9a99dce73c0fe72dc2fc46d",
+    "guardian_worktree_status": "dirty",
+    "spec_materialization": "raw.githubusercontent.com exact 40-char commit URL",
+    "system_output_used": "none"
+  },
+  "production_core_hashes": {
+    "app/services/guardian/errors.py": "137cfd87b19484cb5fed3d4f3763e35e92f07be143f7b036ccfe5b65f2fcbce4",
+    "app/services/guardian/graph.py": "9151a5cf7616902bb6201041b3d7c547ca737b5763601d1c7b38abce69c307fd",
+    "app/services/guardian/models.py": "b75110edb4ca89bf4a012a7831078b209983145e96915ade767042e8b92d925c",
+    "app/services/guardian/nodes.py": "5bb6868a9d32c1c80fda5adc5b8d5f1def9f6fac8d2408bda96fba7b22142001",
+    "app/services/guardian/oasdiff.py": "f2628a647de1fe7e9bc20796f49fb2df0c673b258c6fd0d9ee58d55b00a77043",
+    "app/services/guardian/schemathesis.py": "6ab64de45e57ddb2e02dca7ad250059df1fef64b7c4add3fdbbcb5cde1af39e5",
+    "app/services/guardian/scope.py": "9c93058ec5b3d358f5dfe2ddc81415cd276fe7cf448b527124cd629e856f2787",
+    "app/services/guardian/security.py": "0c7e2ce96e0b8e7e8573085f72d13ae2161c6874c1db653a323087a860d01527"
+  },
+  "repositories": [
+    {
+      "clone_head_sha": "4c7b30c18b55e74224ad1a223a2058ea4a13cc1f",
+      "clone_timestamp": "2026-09-07T05:30:23.2776821Z",
+      "default_branch": "main",
+      "local_checkout_mode": "partial clone, blob:none, no checkout, single branch",
+      "remote_url": "https://github.com/immich-app/immich.git",
+      "repo": "immich-app/immich",
+      "runtime_candidate": false,
+      "selected_pairs": 7,
+      "spec_path": "open-api/immich-openapi-specs.json"
+    },
+    {
+      "clone_head_sha": "0907af9bd6be3c76f472c40a7dcc0dc34abeffaf",
+      "clone_timestamp": "2026-09-07T05:29:56.0319812Z",
+      "default_branch": "master",
+      "local_checkout_mode": "partial clone, blob:none, no checkout, single branch",
+      "remote_url": "https://github.com/supabase/auth.git",
+      "repo": "supabase/auth",
+      "runtime_candidate": true,
+      "selected_pairs": 5,
+      "spec_path": "openapi.yaml"
+    },
+    {
+      "clone_head_sha": "76ea72237f3346ff157aa8374b9fa800d6498976",
+      "clone_timestamp": "2026-09-07T05:30:44.6050953Z",
+      "default_branch": "main",
+      "local_checkout_mode": "partial clone, blob:none, no checkout, single branch",
+      "remote_url": "https://github.com/netbirdio/netbird.git",
+      "repo": "netbirdio/netbird",
+      "runtime_candidate": false,
+      "selected_pairs": 5,
+      "spec_path": "shared/management/http/api/openapi.yml"
+    },
+    {
+      "clone_head_sha": "e64b6e7eb364b029efe9302b8997ecf0afae6d65",
+      "clone_timestamp": "2026-09-07T05:30:07.9861117Z",
+      "default_branch": "main",
+      "local_checkout_mode": "partial clone, blob:none, no checkout, single branch",
+      "remote_url": "https://github.com/appwrite/specs.git",
+      "repo": "appwrite/specs",
+      "runtime_candidate": false,
+      "selected_pairs": 3,
+      "spec_path": "specs/1.9.x/open-api3-1.9.x-server.json"
+    }
+  ],
+  "repository_pair_counts": {
+    "appwrite/specs": 3,
+    "immich-app/immich": 7,
+    "netbirdio/netbird": 5,
+    "supabase/auth": 5
+  },
+  "review_artifacts": [
+    {
+      "bytes": 1608,
+      "path": "benchmarks/guardian/datasets/real_world/reviews/pre_system/rw_appwrite_001_empty_array_examples_preserved.json",
+      "sha256": "8412bce2c2aff0a778fd42685a5d78b7b5ba5d7a7cc829e2ccea8f03a182913e"
+    },
+    {
+      "bytes": 2918,
+      "path": "benchmarks/guardian/datasets/real_world/reviews/pre_system/rw_appwrite_002_migration_cutover_replaced.json",
+      "sha256": "acd56c6521765ab75e046f32306222ba9cc8209c200894a24ffd2156bb668e3f"
+    },
+    {
+      "bytes": 5288,
+      "path": "benchmarks/guardian/datasets/real_world/reviews/pre_system/rw_appwrite_003_usage_project_and_health_update.json",
+      "sha256": "137e5f23e447c7b3568d76092e7d7811342ca4398c3c32f3df79ee5c78c6dd38"
+    },
+    {
+      "bytes": 1597,
+      "path": "benchmarks/guardian/datasets/real_world/reviews/pre_system/rw_immich_001_cluster_group_regenerate_added.json",
+      "sha256": "2019869d2cbd28cf8975c3179d6354fa90bb8f8219b5db1e4846b9ee2222d19c"
+    },
+    {
+      "bytes": 1642,
+      "path": "benchmarks/guardian/datasets/real_world/reviews/pre_system/rw_immich_002_api_key_response_fields_added.json",
+      "sha256": "c910eedaf75a09cbe0b073dfa37b4c04d57ec6145d4a5960c063c3fbae0572f0"
+    },
+    {
+      "bytes": 1491,
+      "path": "benchmarks/guardian/datasets/real_world/reviews/pre_system/rw_immich_003_album_user_description_only.json",
+      "sha256": "192b47d96d0170a82d8ca4d510ad023505ed15dd0cdf2d85f71cacfc8dfe026e"
+    },
+    {
+      "bytes": 1931,
+      "path": "benchmarks/guardian/datasets/real_world/reviews/pre_system/rw_immich_004_tag_name_pattern_narrowed.json",
+      "sha256": "c34452133d681116f3dd94d2d5d9bb2b6cc3050576b15ffe97461c8a0f675985"
+    },
+    {
+      "bytes": 1882,
+      "path": "benchmarks/guardian/datasets/real_world/reviews/pre_system/rw_immich_005_server_theme_endpoint_removed.json",
+      "sha256": "10512687ea962477ee0b39e3eed3a34c18cef40c3776b5bcd932c9881916d2b7"
+    },
+    {
+      "bytes": 3435,
+      "path": "benchmarks/guardian/datasets/real_world/reviews/pre_system/rw_immich_006_asset_face_response_removed.json",
+      "sha256": "6af278a33c986e0dc0836c1516edb519e463f158ec45c3ad6db12d42d46d6ab0"
+    },
+    {
+      "bytes": 1524,
+      "path": "benchmarks/guardian/datasets/real_world/reviews/pre_system/rw_immich_007_upload_duration_maximum_widened.json",
+      "sha256": "45a9e8b33e1b4dbc92f5c8da81eba2cc92c935c6622d2ea6e51b364cafc74613"
+    },
+    {
+      "bytes": 2108,
+      "path": "benchmarks/guardian/datasets/real_world/reviews/pre_system/rw_netbird_001_provider_validation_422_ambiguous.json",
+      "sha256": "8e39d6dd6c7f1340b9c6b3a4d4e029a11f559933a3f527a31279e035366ca771"
+    },
+    {
+      "bytes": 1686,
+      "path": "benchmarks/guardian/datasets/real_world/reviews/pre_system/rw_netbird_002_bundle_parameters_fields_added.json",
+      "sha256": "ae3e337b3cbb6a735ea4f95d6b43c500e2d23962f2ecf991751a349f0fb98c5e"
+    },
+    {
+      "bytes": 1625,
+      "path": "benchmarks/guardian/datasets/real_world/reviews/pre_system/rw_netbird_003_policy_ports_documentation_only.json",
+      "sha256": "44c896af306b38115d2c95703b6dbdf45bff5619c268f55c5adf4ec4ef2caec5"
+    },
+    {
+      "bytes": 3592,
+      "path": "benchmarks/guardian/datasets/real_world/reviews/pre_system/rw_netbird_004_agent_network_settings_rework.json",
+      "sha256": "8e59a438f454ad5c45de6ad2d8b8dfbe7df9cfbf465c91214946b912068f7627"
+    },
+    {
+      "bytes": 2149,
+      "path": "benchmarks/guardian/datasets/real_world/reviews/pre_system/rw_netbird_005_proxy_cluster_response_reworked.json",
+      "sha256": "adf055014a14cd428367a80761b26047c2e9ed9a6b28f690339dd20fcc0da56b"
+    },
+    {
+      "bytes": 1496,
+      "path": "benchmarks/guardian/datasets/real_world/reviews/pre_system/rw_supabase_001_oauth_grants_endpoints_added.json",
+      "sha256": "40824aa6c6325b7ba0e8430c076d50e10c7918fa002b647f2715d6ad3c13e112"
+    },
+    {
+      "bytes": 1448,
+      "path": "benchmarks/guardian/datasets/real_world/reviews/pre_system/rw_supabase_002_oauth_client_update_endpoint_added.json",
+      "sha256": "7f86a2a0ff9fd0a9420f7ca0b940b31963af147ae42972dcc8c80c72dd075039"
+    },
+    {
+      "bytes": 1685,
+      "path": "benchmarks/guardian/datasets/real_world/reviews/pre_system/rw_supabase_003_oauth_client_optional_fields_added.json",
+      "sha256": "7ef370554202f3d671247bd11685732a5f0d14c5686294ae10d63c6a8d09484c"
+    },
+    {
+      "bytes": 3439,
+      "path": "benchmarks/guardian/datasets/real_world/reviews/pre_system/rw_supabase_004_webauthn_schema_rework.json",
+      "sha256": "9c82db628d08966c1e1b70e072de25c66eeac85a23a08a2aac61f89599e8a87f"
+    },
+    {
+      "bytes": 2003,
+      "path": "benchmarks/guardian/datasets/real_world/reviews/pre_system/rw_supabase_005_authorize_flow_type_removed.json",
+      "sha256": "78e6a9a0db5fee40141c8f744fcda9aafbe913500563179e11ef0f0a9905c766"
+    },
+    {
+      "bytes": 12587,
+      "path": "benchmarks/guardian/reports/e3/real_world_cases.jsonl",
+      "sha256": "a3c3d340b58d3f5ef20270542775573e2ccbe66a1a5627ef0e8ee112a2b30f3b"
+    },
+    {
+      "bytes": 41245,
+      "path": "benchmarks/guardian/reports/e3/review_records.jsonl",
+      "sha256": "cfd8a5781c6c44cee601a763774745374706a4c61cb325980192efe22bd8f4dd"
+    }
+  ],
+  "review_counts": {
+    "ambiguous": 1,
+    "confirmed": 17,
+    "excluded": 0,
+    "headline_eligible": 19,
+    "probable": 2,
+    "total": 20
+  },
+  "reviewer_basis": "AI-assisted initial review; no record is represented as human-confirmed at this checkpoint.",
+  "schema_version": "guardian-e3-b-ground-truth-freeze-v1",
+  "stage": "E3-B Phase GT"
+}

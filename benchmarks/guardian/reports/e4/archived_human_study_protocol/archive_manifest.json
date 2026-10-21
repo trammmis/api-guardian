@@ -1,0 +1,27 @@
+{
+  "archive_type": "logical_archive_preserving_original_paths",
+  "protocol_status": "PROTOCOL_PREPARED_NOT_EXECUTED",
+  "human_evaluation_status": "NOT_CONDUCTED",
+  "reason": "OUT_OF_SCOPE_FOR_PERSONAL_PROJECT",
+  "participant_count": 0,
+  "human_data_fabricated": false,
+  "execution": {
+    "recruitment": false,
+    "consent": false,
+    "excluded_dry_run": false,
+    "formal_collection": false,
+    "human_utility_statistical_analysis": false
+  },
+  "preserved_materials": [
+    {"path": "benchmarks/guardian/reports/e4/study_design.md", "sha256": "6d4f819798c819832e7969fde43c0bb997ccaeb57e144d4f0abc0a87ea15cf7b"},
+    {"path": "benchmarks/guardian/reports/e4/consent_draft.md", "sha256": "619d7e5e4e0c0e7c6ec82394760c4c44074f20f3bfb7185c58977b7d0bad2f51"},
+    {"path": "benchmarks/guardian/reports/e4/recruitment_text.md", "sha256": "67ceda15db1e7b440ac652476f6413ac34d02836091ab010b739e515423267bc"},
+    {"path": "benchmarks/guardian/reports/e4/participant_materials/assignment_matrix.csv", "sha256": "af2b8037e937daae01365afa76cea49bdcbb6fda746a41b781a210f1f3bb8010"},
+    {"path": "benchmarks/guardian/reports/e4/participant_packet_manifest.json", "sha256": "12de8013f9321e0bdf21419494b29a48c18e4ef133519cc1d7f9735d25a6e07b"},
+    {"path": "benchmarks/guardian/reports/e4/E4_PRE_HUMAN_CHECKPOINT.md", "sha256": "4a6f1dccf4759201233a4957be934b49b2399736c375cb2eaf71d68202792c89"},
+    {"path": "benchmarks/guardian/reports/e4/E4_PRE_COLLECTION_CHECKPOINT.md", "sha256": "853dfd829033b3815cd31d076b6e72f47e9075bb5c18b40c553854082d91f154"}
+  ],
+  "participant_packet_count": 10,
+  "case_manifest_sha256": "c661f11b70a2ec7b61cc3390d7c17b23f565cc17322a4327024989d37e86b478",
+  "ground_truth_sha256": "d481accc96a31ae175048ba8e8175ca37fe917143a29f228ae7df23423c22f4e"
+}

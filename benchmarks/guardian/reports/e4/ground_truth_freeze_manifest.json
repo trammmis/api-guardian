@@ -1,0 +1,26 @@
+{
+  "stage": "E4_PRE_HUMAN",
+  "status": "frozen_before_participant_material_generation",
+  "frozen_at_utc": "2026-09-14T12:20:50.2848348Z",
+  "case_manifest": {
+    "path": "benchmarks/guardian/reports/e4/case_manifest.json",
+    "sha256": "c661f11b70a2ec7b61cc3390d7c17b23f565cc17322a4327024989d37e86b478",
+    "case_count": 13
+  },
+  "ground_truth": {
+    "path": "benchmarks/guardian/reports/e4/ground_truth.json",
+    "sha256": "d481accc96a31ae175048ba8e8175ca37fe917143a29f228ae7df23423c22f4e",
+    "case_count": 13
+  },
+  "label_provenance": [
+    "frozen E2 controlled mutation definitions",
+    "frozen E2 contract definitions",
+    "E3-B pre-system review records v2",
+    "P1-I frozen replay",
+    "E3.5 tool diagnostics",
+    "E3-C frozen runtime results"
+  ],
+  "llm_output_used_as_ground_truth": false,
+  "human_response_data_present_at_freeze": false,
+  "amendment_policy": "Do not overwrite. Any correction requires a versioned manifest and explicit amendment record before participant exposure."
+}

@@ -1,0 +1,22 @@
+{
+  "analysis_calls_attempted": 18,
+  "analysis_calls_failed": 0,
+  "analysis_calls_succeeded": 18,
+  "case_count": 13,
+  "fallback_enabled": false,
+  "generation_finished_at_utc": "2026-09-15T05:23:57.962500+00:00",
+  "generation_started_at_utc": "2026-09-15T05:23:06.318970+00:00",
+  "input_sha256": "7dd0426bf26b8dde221907bcefa1ac5bc8f62c4f99dda19650907d2f6750e435",
+  "max_retry_attempts": 3,
+  "model": "deepseek-v4-flash",
+  "output_sha256": "65b099453a72768f72f06e6df86623f8031d0c3de151b7549dc53463fb444120",
+  "raw_provider_response_saved": false,
+  "regeneration_allowed": false,
+  "stage": "E4_A_CONDITION_B_FREEZE",
+  "structured_output_method": "function_calling",
+  "temperature": 0,
+  "thinking": "disabled",
+  "token_usage": null,
+  "token_usage_reason": "Production structured-output abstraction does not expose provider usage metadata.",
+  "total_timeout_seconds": 60
+}

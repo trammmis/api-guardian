@@ -1,0 +1,46 @@
+[
+  {
+    "clone_head_sha": "4c7b30c18b55e74224ad1a223a2058ea4a13cc1f",
+    "clone_timestamp": "2026-09-07T05:30:23.2776821Z",
+    "default_branch": "main",
+    "local_checkout_mode": "partial clone, blob:none, no checkout, single branch",
+    "remote_url": "https://github.com/immich-app/immich.git",
+    "repo": "immich-app/immich",
+    "runtime_candidate": false,
+    "selected_pairs": 7,
+    "spec_path": "open-api/immich-openapi-specs.json"
+  },
+  {
+    "clone_head_sha": "0907af9bd6be3c76f472c40a7dcc0dc34abeffaf",
+    "clone_timestamp": "2026-09-07T05:29:56.0319812Z",
+    "default_branch": "master",
+    "local_checkout_mode": "partial clone, blob:none, no checkout, single branch",
+    "remote_url": "https://github.com/supabase/auth.git",
+    "repo": "supabase/auth",
+    "runtime_candidate": true,
+    "selected_pairs": 5,
+    "spec_path": "openapi.yaml"
+  },
+  {
+    "clone_head_sha": "76ea72237f3346ff157aa8374b9fa800d6498976",
+    "clone_timestamp": "2026-09-07T05:30:44.6050953Z",
+    "default_branch": "main",
+    "local_checkout_mode": "partial clone, blob:none, no checkout, single branch",
+    "remote_url": "https://github.com/netbirdio/netbird.git",
+    "repo": "netbirdio/netbird",
+    "runtime_candidate": false,
+    "selected_pairs": 5,
+    "spec_path": "shared/management/http/api/openapi.yml"
+  },
+  {
+    "clone_head_sha": "e64b6e7eb364b029efe9302b8997ecf0afae6d65",
+    "clone_timestamp": "2026-09-07T05:30:07.9861117Z",
+    "default_branch": "main",
+    "local_checkout_mode": "partial clone, blob:none, no checkout, single branch",
+    "remote_url": "https://github.com/appwrite/specs.git",
+    "repo": "appwrite/specs",
+    "runtime_candidate": false,
+    "selected_pairs": 3,
+    "spec_path": "specs/1.9.x/open-api3-1.9.x-server.json"
+  }
+]

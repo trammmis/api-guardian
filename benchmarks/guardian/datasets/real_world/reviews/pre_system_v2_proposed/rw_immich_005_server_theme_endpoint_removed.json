@@ -1,0 +1,49 @@
+{
+  "ambiguity_reason": null,
+  "base_commit": "7d181f0686aa70f910bfa2f985a8d5471995b95b",
+  "base_openapi_version": "3.0.0",
+  "base_operation_count": 240,
+  "base_spec_bytes": 711121,
+  "base_spec_path": "open-api/immich-openapi-specs.json",
+  "base_spec_sha256": "26ede59e3684c8f7f2351d6f8add38b2f92f156432a2def7a22a9903d882d2f0",
+  "breaking_changes": [
+    {
+      "base_fact": "GET /server/theme exists.",
+      "change_type": "endpoint_removed",
+      "compatibility_reason": "Existing callers can no longer invoke the documented operation.",
+      "head_fact": "GET /server/theme and ServerThemeDto are absent.",
+      "operation": "GET /server/theme",
+      "schema_name": null
+    }
+  ],
+  "case_id": "rw_immich_005_server_theme_endpoint_removed",
+  "change_types": [
+    "endpoint_removed"
+  ],
+  "commit_date_head": "2026-04-17T08:30:03-04:00",
+  "commit_message_head": "chore!: remove /api/server/theme endpoint (#27880)",
+  "contract_affected_operations": [
+    "GET /server/theme"
+  ],
+  "evidence": [
+    "The OpenAPI operation count decreases from 240 to 239 and the removed operation is GET /server/theme."
+  ],
+  "external_refs": [],
+  "ground_truth_contract_verdict": "fail",
+  "head_commit": "2f8be45fe0fc2c343f6255cd3fed5c4cb3a4d4f2",
+  "head_openapi_version": "3.0.0",
+  "head_operation_count": 239,
+  "head_spec_bytes": 709973,
+  "head_spec_path": "open-api/immich-openapi-specs.json",
+  "head_spec_sha256": "eec93ca72a8f65525f31509783970a26ec14481bdd4924a1d76f7d8082e1edaf",
+  "license": "AGPL-3.0",
+  "notes": [
+    "The removed operation belongs to ContractAffectedScope but is not executable from the Head Spec."
+  ],
+  "repo": "immich-app/immich",
+  "review_confidence": "high",
+  "review_status": "confirmed",
+  "reviewer": "ai_assisted_initial_review",
+  "runtime_executable_operations": [],
+  "schema_version": "guardian-e3-b-pre-system-review-v1"
+}

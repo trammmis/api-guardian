@@ -1,0 +1,81 @@
+{
+  "ambiguity_reason": null,
+  "base_commit": "bc7a15ab71d9e9ed944fa3ec17952e77a696595d",
+  "base_openapi_version": "3.1.0",
+  "base_operation_count": 234,
+  "base_spec_bytes": 479388,
+  "base_spec_path": "shared/management/http/api/openapi.yml",
+  "base_spec_sha256": "71631e48dc4b30bd0dbc32b20b99ade6cef8c8b6df206542ac1dcc7f99e33294",
+  "breaking_changes": [
+    {
+      "base_fact": "AgentNetworkProviderRequest accepts bootstrap_cluster.",
+      "change_type": "request_property_removed",
+      "compatibility_reason": "Provider create/update callers can no longer rely on the documented request property.",
+      "head_fact": "bootstrap_cluster is removed.",
+      "operation": null,
+      "schema_name": "AgentNetworkProviderRequest"
+    },
+    {
+      "base_fact": "AgentNetworkSettings requires cluster and subdomain.",
+      "change_type": "response_property_removed",
+      "compatibility_reason": "Existing settings-response consumers lose two documented fields.",
+      "head_fact": "cluster and subdomain are removed and replaced by proxy_address and dedicated.",
+      "operation": null,
+      "schema_name": "AgentNetworkSettings"
+    },
+    {
+      "base_fact": "AgentNetworkSettingsRequest accepts cluster and requires only collection toggles.",
+      "change_type": "request_required_changed",
+      "compatibility_reason": "Existing valid settings updates may be rejected by the stricter request contract.",
+      "head_fact": "cluster is removed; endpoint, proxy_address, and access_log_retention_days become required.",
+      "operation": null,
+      "schema_name": "AgentNetworkSettingsRequest"
+    }
+  ],
+  "case_id": "rw_netbird_004_agent_network_settings_rework",
+  "change_types": [
+    "request_schema_changed",
+    "response_property_removed",
+    "shared_component_changed",
+    "endpoint_added",
+    "mixed_change"
+  ],
+  "commit_date_head": "2026-08-10T19:06:55+02:00",
+  "commit_message_head": "[management] Rework Agent Network endpoint identity and settings bootstrap (#7085)",
+  "contract_affected_operations": [
+    "POST /api/agent-network/providers",
+    "PUT /api/agent-network/providers/{providerId}",
+    "GET /api/agent-network/settings",
+    "POST /api/agent-network/settings",
+    "PUT /api/agent-network/settings"
+  ],
+  "evidence": [
+    "The component diff directly removes/renames request and response members.",
+    "Independent transitive fragment-reference review maps the three breaking components to five Head operations.",
+    "POST and DELETE /api/agent-network/settings are additions; only POST is also in scope because it uses changed settings components."
+  ],
+  "external_refs": [],
+  "ground_truth_contract_verdict": "fail",
+  "head_commit": "ebfdf7d7b8c6b475c66cd7790d2f2f2a5e9275e4",
+  "head_openapi_version": "3.1.0",
+  "head_operation_count": 236,
+  "head_spec_bytes": 483812,
+  "head_spec_path": "shared/management/http/api/openapi.yml",
+  "head_spec_sha256": "3470cede60e3263e715b42c37f0d4534efa5ac54ab81b0e87081ade26e6dbe83",
+  "license": "BSD-3-Clause for shared/",
+  "notes": [
+    "This is a mixed but localized adjacent commit, not a cross-release aggregate diff."
+  ],
+  "repo": "netbirdio/netbird",
+  "review_confidence": "high",
+  "review_status": "confirmed",
+  "reviewer": "ai_assisted_initial_review",
+  "runtime_executable_operations": [
+    "POST /api/agent-network/providers",
+    "PUT /api/agent-network/providers/{providerId}",
+    "GET /api/agent-network/settings",
+    "POST /api/agent-network/settings",
+    "PUT /api/agent-network/settings"
+  ],
+  "schema_version": "guardian-e3-b-pre-system-review-v1"
+}

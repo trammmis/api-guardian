@@ -1,0 +1,3977 @@
+{
+  "info": {
+    "title": "Guardian Scaling API",
+    "version": "1.0.0"
+  },
+  "openapi": "3.0.3",
+  "paths": {
+    "/resources/0001": {
+      "get": {
+        "description": "Controlled scaling operation 1",
+        "operationId": "getResource0001",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0002": {
+      "get": {
+        "description": "Controlled scaling operation 2",
+        "operationId": "getResource0002",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0003": {
+      "get": {
+        "description": "Controlled scaling operation 3",
+        "operationId": "getResource0003",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0004": {
+      "get": {
+        "description": "Controlled scaling operation 4",
+        "operationId": "getResource0004",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0005": {
+      "get": {
+        "description": "Controlled scaling operation 5",
+        "operationId": "getResource0005",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0006": {
+      "get": {
+        "description": "Controlled scaling operation 6",
+        "operationId": "getResource0006",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0007": {
+      "get": {
+        "description": "Controlled scaling operation 7",
+        "operationId": "getResource0007",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0008": {
+      "get": {
+        "description": "Controlled scaling operation 8",
+        "operationId": "getResource0008",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0009": {
+      "get": {
+        "description": "Controlled scaling operation 9",
+        "operationId": "getResource0009",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0010": {
+      "get": {
+        "description": "Controlled scaling operation 10",
+        "operationId": "getResource0010",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0011": {
+      "get": {
+        "description": "Controlled scaling operation 11",
+        "operationId": "getResource0011",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0012": {
+      "get": {
+        "description": "Controlled scaling operation 12",
+        "operationId": "getResource0012",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0013": {
+      "get": {
+        "description": "Controlled scaling operation 13",
+        "operationId": "getResource0013",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0014": {
+      "get": {
+        "description": "Controlled scaling operation 14",
+        "operationId": "getResource0014",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0015": {
+      "get": {
+        "description": "Controlled scaling operation 15",
+        "operationId": "getResource0015",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0016": {
+      "get": {
+        "description": "Controlled scaling operation 16",
+        "operationId": "getResource0016",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0017": {
+      "get": {
+        "description": "Controlled scaling operation 17",
+        "operationId": "getResource0017",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0018": {
+      "get": {
+        "description": "Controlled scaling operation 18",
+        "operationId": "getResource0018",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0019": {
+      "get": {
+        "description": "Controlled scaling operation 19",
+        "operationId": "getResource0019",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0020": {
+      "get": {
+        "description": "Controlled scaling operation 20",
+        "operationId": "getResource0020",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0021": {
+      "get": {
+        "description": "Controlled scaling operation 21",
+        "operationId": "getResource0021",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0022": {
+      "get": {
+        "description": "Controlled scaling operation 22",
+        "operationId": "getResource0022",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0023": {
+      "get": {
+        "description": "Controlled scaling operation 23",
+        "operationId": "getResource0023",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0024": {
+      "get": {
+        "description": "Controlled scaling operation 24",
+        "operationId": "getResource0024",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0025": {
+      "get": {
+        "description": "Controlled scaling operation 25",
+        "operationId": "getResource0025",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0026": {
+      "get": {
+        "description": "Controlled scaling operation 26",
+        "operationId": "getResource0026",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0027": {
+      "get": {
+        "description": "Controlled scaling operation 27",
+        "operationId": "getResource0027",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0028": {
+      "get": {
+        "description": "Controlled scaling operation 28",
+        "operationId": "getResource0028",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0029": {
+      "get": {
+        "description": "Controlled scaling operation 29",
+        "operationId": "getResource0029",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0030": {
+      "get": {
+        "description": "Controlled scaling operation 30",
+        "operationId": "getResource0030",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0031": {
+      "get": {
+        "description": "Controlled scaling operation 31",
+        "operationId": "getResource0031",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0032": {
+      "get": {
+        "description": "Controlled scaling operation 32",
+        "operationId": "getResource0032",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0033": {
+      "get": {
+        "description": "Controlled scaling operation 33",
+        "operationId": "getResource0033",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0034": {
+      "get": {
+        "description": "Controlled scaling operation 34",
+        "operationId": "getResource0034",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0035": {
+      "get": {
+        "description": "Controlled scaling operation 35",
+        "operationId": "getResource0035",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0036": {
+      "get": {
+        "description": "Controlled scaling operation 36",
+        "operationId": "getResource0036",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0037": {
+      "get": {
+        "description": "Controlled scaling operation 37",
+        "operationId": "getResource0037",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0038": {
+      "get": {
+        "description": "Controlled scaling operation 38",
+        "operationId": "getResource0038",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0039": {
+      "get": {
+        "description": "Controlled scaling operation 39",
+        "operationId": "getResource0039",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0040": {
+      "get": {
+        "description": "Controlled scaling operation 40",
+        "operationId": "getResource0040",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0041": {
+      "get": {
+        "description": "Controlled scaling operation 41",
+        "operationId": "getResource0041",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0042": {
+      "get": {
+        "description": "Controlled scaling operation 42",
+        "operationId": "getResource0042",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0043": {
+      "get": {
+        "description": "Controlled scaling operation 43",
+        "operationId": "getResource0043",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0044": {
+      "get": {
+        "description": "Controlled scaling operation 44",
+        "operationId": "getResource0044",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0045": {
+      "get": {
+        "description": "Controlled scaling operation 45",
+        "operationId": "getResource0045",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0046": {
+      "get": {
+        "description": "Controlled scaling operation 46",
+        "operationId": "getResource0046",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0047": {
+      "get": {
+        "description": "Controlled scaling operation 47",
+        "operationId": "getResource0047",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0048": {
+      "get": {
+        "description": "Controlled scaling operation 48",
+        "operationId": "getResource0048",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0049": {
+      "get": {
+        "description": "Controlled scaling operation 49",
+        "operationId": "getResource0049",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0050": {
+      "get": {
+        "description": "Controlled scaling operation 50",
+        "operationId": "getResource0050",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0051": {
+      "get": {
+        "description": "Controlled scaling operation 51",
+        "operationId": "getResource0051",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0052": {
+      "get": {
+        "description": "Controlled scaling operation 52",
+        "operationId": "getResource0052",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0053": {
+      "get": {
+        "description": "Controlled scaling operation 53",
+        "operationId": "getResource0053",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0054": {
+      "get": {
+        "description": "Controlled scaling operation 54",
+        "operationId": "getResource0054",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0055": {
+      "get": {
+        "description": "Controlled scaling operation 55",
+        "operationId": "getResource0055",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0056": {
+      "get": {
+        "description": "Controlled scaling operation 56",
+        "operationId": "getResource0056",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0057": {
+      "get": {
+        "description": "Controlled scaling operation 57",
+        "operationId": "getResource0057",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0058": {
+      "get": {
+        "description": "Controlled scaling operation 58",
+        "operationId": "getResource0058",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0059": {
+      "get": {
+        "description": "Controlled scaling operation 59",
+        "operationId": "getResource0059",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0060": {
+      "get": {
+        "description": "Controlled scaling operation 60",
+        "operationId": "getResource0060",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0061": {
+      "get": {
+        "description": "Controlled scaling operation 61",
+        "operationId": "getResource0061",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0062": {
+      "get": {
+        "description": "Controlled scaling operation 62",
+        "operationId": "getResource0062",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0063": {
+      "get": {
+        "description": "Controlled scaling operation 63",
+        "operationId": "getResource0063",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0064": {
+      "get": {
+        "description": "Controlled scaling operation 64",
+        "operationId": "getResource0064",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0065": {
+      "get": {
+        "description": "Controlled scaling operation 65",
+        "operationId": "getResource0065",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0066": {
+      "get": {
+        "description": "Controlled scaling operation 66",
+        "operationId": "getResource0066",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0067": {
+      "get": {
+        "description": "Controlled scaling operation 67",
+        "operationId": "getResource0067",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0068": {
+      "get": {
+        "description": "Controlled scaling operation 68",
+        "operationId": "getResource0068",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0069": {
+      "get": {
+        "description": "Controlled scaling operation 69",
+        "operationId": "getResource0069",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0070": {
+      "get": {
+        "description": "Controlled scaling operation 70",
+        "operationId": "getResource0070",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0071": {
+      "get": {
+        "description": "Controlled scaling operation 71",
+        "operationId": "getResource0071",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0072": {
+      "get": {
+        "description": "Controlled scaling operation 72",
+        "operationId": "getResource0072",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0073": {
+      "get": {
+        "description": "Controlled scaling operation 73",
+        "operationId": "getResource0073",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0074": {
+      "get": {
+        "description": "Controlled scaling operation 74",
+        "operationId": "getResource0074",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0075": {
+      "get": {
+        "description": "Controlled scaling operation 75",
+        "operationId": "getResource0075",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0076": {
+      "get": {
+        "description": "Controlled scaling operation 76",
+        "operationId": "getResource0076",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0077": {
+      "get": {
+        "description": "Controlled scaling operation 77",
+        "operationId": "getResource0077",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0078": {
+      "get": {
+        "description": "Controlled scaling operation 78",
+        "operationId": "getResource0078",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0079": {
+      "get": {
+        "description": "Controlled scaling operation 79",
+        "operationId": "getResource0079",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0080": {
+      "get": {
+        "description": "Controlled scaling operation 80",
+        "operationId": "getResource0080",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0081": {
+      "get": {
+        "description": "Controlled scaling operation 81",
+        "operationId": "getResource0081",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0082": {
+      "get": {
+        "description": "Controlled scaling operation 82",
+        "operationId": "getResource0082",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0083": {
+      "get": {
+        "description": "Controlled scaling operation 83",
+        "operationId": "getResource0083",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0084": {
+      "get": {
+        "description": "Controlled scaling operation 84",
+        "operationId": "getResource0084",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0085": {
+      "get": {
+        "description": "Controlled scaling operation 85",
+        "operationId": "getResource0085",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0086": {
+      "get": {
+        "description": "Controlled scaling operation 86",
+        "operationId": "getResource0086",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0087": {
+      "get": {
+        "description": "Controlled scaling operation 87",
+        "operationId": "getResource0087",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0088": {
+      "get": {
+        "description": "Controlled scaling operation 88",
+        "operationId": "getResource0088",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0089": {
+      "get": {
+        "description": "Controlled scaling operation 89",
+        "operationId": "getResource0089",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0090": {
+      "get": {
+        "description": "Controlled scaling operation 90",
+        "operationId": "getResource0090",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0091": {
+      "get": {
+        "description": "Controlled scaling operation 91",
+        "operationId": "getResource0091",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0092": {
+      "get": {
+        "description": "Controlled scaling operation 92",
+        "operationId": "getResource0092",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0093": {
+      "get": {
+        "description": "Controlled scaling operation 93",
+        "operationId": "getResource0093",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0094": {
+      "get": {
+        "description": "Controlled scaling operation 94",
+        "operationId": "getResource0094",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0095": {
+      "get": {
+        "description": "Controlled scaling operation 95",
+        "operationId": "getResource0095",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0096": {
+      "get": {
+        "description": "Controlled scaling operation 96",
+        "operationId": "getResource0096",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0097": {
+      "get": {
+        "description": "Controlled scaling operation 97",
+        "operationId": "getResource0097",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0098": {
+      "get": {
+        "description": "Controlled scaling operation 98",
+        "operationId": "getResource0098",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0099": {
+      "get": {
+        "description": "Controlled scaling operation 99",
+        "operationId": "getResource0099",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0100": {
+      "get": {
+        "description": "Controlled scaling operation 100",
+        "operationId": "getResource0100",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0101": {
+      "get": {
+        "description": "Controlled scaling operation 101",
+        "operationId": "getResource0101",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0102": {
+      "get": {
+        "description": "Controlled scaling operation 102",
+        "operationId": "getResource0102",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0103": {
+      "get": {
+        "description": "Controlled scaling operation 103",
+        "operationId": "getResource0103",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0104": {
+      "get": {
+        "description": "Controlled scaling operation 104",
+        "operationId": "getResource0104",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0105": {
+      "get": {
+        "description": "Controlled scaling operation 105",
+        "operationId": "getResource0105",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0106": {
+      "get": {
+        "description": "Controlled scaling operation 106",
+        "operationId": "getResource0106",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0107": {
+      "get": {
+        "description": "Controlled scaling operation 107",
+        "operationId": "getResource0107",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0108": {
+      "get": {
+        "description": "Controlled scaling operation 108",
+        "operationId": "getResource0108",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0109": {
+      "get": {
+        "description": "Controlled scaling operation 109",
+        "operationId": "getResource0109",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0110": {
+      "get": {
+        "description": "Controlled scaling operation 110",
+        "operationId": "getResource0110",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0111": {
+      "get": {
+        "description": "Controlled scaling operation 111",
+        "operationId": "getResource0111",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0112": {
+      "get": {
+        "description": "Controlled scaling operation 112",
+        "operationId": "getResource0112",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0113": {
+      "get": {
+        "description": "Controlled scaling operation 113",
+        "operationId": "getResource0113",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0114": {
+      "get": {
+        "description": "Controlled scaling operation 114",
+        "operationId": "getResource0114",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0115": {
+      "get": {
+        "description": "Controlled scaling operation 115",
+        "operationId": "getResource0115",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0116": {
+      "get": {
+        "description": "Controlled scaling operation 116",
+        "operationId": "getResource0116",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0117": {
+      "get": {
+        "description": "Controlled scaling operation 117",
+        "operationId": "getResource0117",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0118": {
+      "get": {
+        "description": "Controlled scaling operation 118",
+        "operationId": "getResource0118",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0119": {
+      "get": {
+        "description": "Controlled scaling operation 119",
+        "operationId": "getResource0119",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0120": {
+      "get": {
+        "description": "Controlled scaling operation 120",
+        "operationId": "getResource0120",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0121": {
+      "get": {
+        "description": "Controlled scaling operation 121",
+        "operationId": "getResource0121",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0122": {
+      "get": {
+        "description": "Controlled scaling operation 122",
+        "operationId": "getResource0122",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0123": {
+      "get": {
+        "description": "Controlled scaling operation 123",
+        "operationId": "getResource0123",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0124": {
+      "get": {
+        "description": "Controlled scaling operation 124",
+        "operationId": "getResource0124",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0125": {
+      "get": {
+        "description": "Controlled scaling operation 125",
+        "operationId": "getResource0125",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0126": {
+      "get": {
+        "description": "Controlled scaling operation 126",
+        "operationId": "getResource0126",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0127": {
+      "get": {
+        "description": "Controlled scaling operation 127",
+        "operationId": "getResource0127",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0128": {
+      "get": {
+        "description": "Controlled scaling operation 128",
+        "operationId": "getResource0128",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    }
+  }
+}

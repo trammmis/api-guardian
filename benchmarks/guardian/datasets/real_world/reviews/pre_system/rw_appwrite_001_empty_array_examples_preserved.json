@@ -1,0 +1,40 @@
+{
+  "ambiguity_reason": null,
+  "base_commit": "698f5834d5662e2608393e32a7e68a2d18d4eef2",
+  "base_openapi_version": "3.0.0",
+  "base_operation_count": 779,
+  "base_spec_bytes": 4336300,
+  "base_spec_path": "specs/1.9.x/open-api3-1.9.x-server.json",
+  "base_spec_sha256": "dd0bc5d865e14eb4f0d9f61d9af49404df3e5b9f563f9556e310a60486381866",
+  "breaking_changes": [],
+  "case_id": "rw_appwrite_001_empty_array_examples_preserved",
+  "change_types": [
+    "documentation_only",
+    "shared_component_changed"
+  ],
+  "commit_date_head": "2026-08-19T15:09:49+05:30",
+  "commit_message_head": "fix: preserve empty array examples",
+  "contract_affected_operations": [],
+  "evidence": [
+    "The adjacent commit changes empty-array examples across 72 list schemas and does not add/remove operations.",
+    "Schema types, properties, required lists, and validation constraints are unchanged."
+  ],
+  "external_refs": [],
+  "ground_truth_contract_verdict": "pass",
+  "head_commit": "6124ab004f417a4279fdc9943c11b0b7ae5f9e73",
+  "head_openapi_version": "3.0.0",
+  "head_operation_count": 779,
+  "head_spec_bytes": 4339108,
+  "head_spec_path": "specs/1.9.x/open-api3-1.9.x-server.json",
+  "head_spec_sha256": "7ab9bafc7f4a72a250dfb4893574b64bb8d9535fc2093a7623c1f2f2851035d6",
+  "license": "BSD-3-Clause",
+  "notes": [
+    "Both artifacts are below the 5 MiB Guardian input limit."
+  ],
+  "repo": "appwrite/specs",
+  "review_confidence": "high",
+  "review_status": "confirmed",
+  "reviewer": "ai_assisted_initial_review",
+  "runtime_executable_operations": [],
+  "schema_version": "guardian-e3-b-pre-system-review-v1"
+}

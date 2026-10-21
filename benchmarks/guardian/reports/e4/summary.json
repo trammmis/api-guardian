@@ -1,0 +1,35 @@
+{
+  "stage": "E4_A_HUMAN_STUDY_EXECUTION_FREEZE",
+  "human_evaluation_status": "NOT_CONDUCTED",
+  "human_evaluation_reason": "OUT_OF_SCOPE_FOR_PERSONAL_PROJECT",
+  "formal_participant_collection_started": false,
+  "participant_count": 0,
+  "study_case_count": 13,
+  "participant_packet_count": 10,
+  "condition_b_generation": {
+    "status": "frozen_one_shot_complete",
+    "analysis_calls_succeeded": 18,
+    "analysis_calls_failed": 0,
+    "output_sha256": "65b099453a72768f72f06e6df86623f8031d0c3de151b7549dc53463fb444120"
+  },
+  "ab_deterministic_parity": "13/13",
+  "automated_eval": {
+    "case_count": 50,
+    "structured_output_success": "50/50",
+    "risk_category_accuracy": "25/25",
+    "diagnosis_category_accuracy": "19/25",
+    "evidence_grounding": "50/50",
+    "unsupported_claim_rate": "0/50",
+    "serious_hallucination_rate": "0/50",
+    "recommendation_grounding": "50/50",
+    "provider_failure_rate": "0/50"
+  },
+  "failure_isolation": "4/4 passed",
+  "retention_status": "NOT_APPLICABLE_NO_PARTICIPANT_DATA",
+  "dry_run_status": "NOT_EXECUTED",
+  "case_manifest_sha256": "c661f11b70a2ec7b61cc3390d7c17b23f565cc17322a4327024989d37e86b478",
+  "ground_truth_sha256": "d481accc96a31ae175048ba8e8175ca37fe917143a29f228ae7df23423c22f4e",
+  "production_hash_mismatches": 0,
+  "human_data_fabricated": false,
+  "conclusion": "E4 is closed as an automated LLM quality and failure-isolation evaluation. Human study materials are archived as prepared but not executed; no human-utility claim is supported."
+}

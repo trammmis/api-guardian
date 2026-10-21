@@ -1,0 +1,188 @@
+openapi: 3.0.3
+info:
+  title: Guardian Benchmark Products API
+  version: 2.0.0
+paths:
+  /products/primary:
+    get:
+      operationId: getPrimaryProduct
+      responses:
+        '200':
+          description: Product
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - name
+                - stock
+                - status
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  stock:
+                    type: integer
+                  status:
+                    type: string
+                    enum:
+                    - active
+                    - inactive
+  /products:
+    get:
+      operationId: listProducts
+      responses:
+        '200':
+          description: Products
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  required:
+                  - id
+                  - name
+                  - stock
+                  - status
+                  properties:
+                    id:
+                      type: string
+                    name:
+                      type: string
+                    stock:
+                      type: integer
+                    status:
+                      type: string
+                      enum:
+                      - active
+                      - inactive
+  /categories/primary:
+    get:
+      operationId: getPrimaryCategory
+      responses:
+        '200':
+          description: Category
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - name
+                - count
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  count:
+                    type: integer
+  /categories:
+    get:
+      operationId: listCategories
+      responses:
+        '200':
+          description: Categories
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  required:
+                  - id
+                  - name
+                  - count
+                  properties:
+                    id:
+                      type: integer
+                    name:
+                      type: string
+                    count:
+                      type: integer
+  /brands/primary:
+    get:
+      operationId: getPrimaryBrand
+      responses:
+        '200':
+          description: Brand
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - name
+                - active
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  active:
+                    type: boolean
+  /prices/current:
+    get:
+      operationId: getCurrentPrice
+      responses:
+        '200':
+          description: Price
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - amount
+                - currency
+                properties:
+                  id:
+                    type: string
+                  amount:
+                    type: number
+                  currency:
+                    type: string
+  /reviews/latest:
+    get:
+      operationId: getLatestReview
+      responses:
+        '200':
+          description: Review
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - rating
+                - comment
+                properties:
+                  id:
+                    type: string
+                  rating:
+                    type: integer
+                  comment:
+                    type: string
+  /status:
+    get:
+      operationId: getProductsStatus
+      responses:
+        '200':
+          description: Status
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - status
+                - region
+                properties:
+                  status:
+                    type: string
+                    enum:
+                    - ok
+                  region:
+                    type: string

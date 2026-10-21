@@ -1,0 +1,36 @@
+openapi: 3.0.3
+info:
+  title: Supabase UnauthorizedResponse reference reproducer
+  version: 1.0.1
+paths:
+  /identities/{identityId}:
+    delete:
+      operationId: deleteIdentity
+      parameters:
+        - name: identityId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "401":
+          description: The user is not authenticated.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/responses/UnauthorizedResponse"
+components:
+  schemas:
+    ErrorSchema:
+      type: object
+      required: [message]
+      properties:
+        message:
+          type: string
+  responses:
+    UnauthorizedResponse:
+      description: HTTP Unauthorized response.
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorSchema"

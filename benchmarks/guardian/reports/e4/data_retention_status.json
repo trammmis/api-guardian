@@ -1,0 +1,12 @@
+{
+  "status": "NOT_APPLICABLE_NO_PARTICIPANT_DATA",
+  "formal_collection_allowed": false,
+  "human_evaluation_status": "NOT_CONDUCTED",
+  "reason": "OUT_OF_SCOPE_FOR_PERSONAL_PROJECT",
+  "public_report_policy": "aggregated_and_anonymized_only",
+  "options": [
+    {"id": "A", "retention": "3 months"},
+    {"id": "B", "retention": "6 months"},
+    {"id": "C", "retention": "until project evaluation is finalized, then delete raw participant data"}
+  ]
+}

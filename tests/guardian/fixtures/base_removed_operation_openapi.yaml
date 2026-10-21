@@ -1,0 +1,17 @@
+openapi: 3.0.3
+info:
+  title: API Guardian Removed Operation Fixture
+  version: 1.0.0
+paths:
+  /legacy:
+    get:
+      operationId: getLegacy
+      responses:
+        "200":
+          description: Legacy response
+  /health:
+    get:
+      operationId: getHealth
+      responses:
+        "200":
+          description: Healthy

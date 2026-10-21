@@ -1,0 +1,86 @@
+{
+  "cases": [
+    {
+      "affected_operation": "GET /authorize",
+      "base_commit": "19545601676675a923bb9850499717e89cf91a0b",
+      "base_spec_sha256": "c93e8e4ad65515e50b3babfc99cc07d5694249420e04858a64120c268a9238f4",
+      "binary_sha256": "920a366640cd742a0743f5423e16f79403bc8a3c3cc5a4f6decc7c38ce5fe4a7",
+      "case_id": "rw_supabase_005_authorize_flow_type_removed",
+      "head_commit": "f4c3cdb020e6808333ec460470f9e081f0d9bc93",
+      "head_spec_sha256": "2aee71c180222191e49fb3df2edea8820c0bb49ab1909f20fe9b408cc731e6b6",
+      "repo": "supabase/auth"
+    },
+    {
+      "affected_operation": "POST /token",
+      "base_commit": "80fd43270fdbcb79e7a2e0b5bce484bd29d9ab49",
+      "base_spec_sha256": "144a34ca6d74b3e50f7adedd46e94688e45755e8d518beb6be723587dc4a1e3f",
+      "binary_sha256": "9c3c39be1c0e4ac0974004e3813cb2a532d31178d6e2781c6ef33da5826fea71",
+      "case_id": "runtime_supabase_006_id_token_request_fields_removed",
+      "head_commit": "264696734fc922c8bbf563d44fcc59b26e7e6537",
+      "head_spec_sha256": "42a6d0897c39a510aba491349bfb92b47b2182be10080e073dea6ef68f732946",
+      "repo": "supabase/auth"
+    }
+  ],
+  "completed_at": "2026-09-14T11:39:04.734254+00:00",
+  "measured_repetitions": 5,
+  "production_core_hashes_after": {
+    "app/services/guardian/errors.py": "137cfd87b19484cb5fed3d4f3763e35e92f07be143f7b036ccfe5b65f2fcbce4",
+    "app/services/guardian/graph.py": "9151a5cf7616902bb6201041b3d7c547ca737b5763601d1c7b38abce69c307fd",
+    "app/services/guardian/models.py": "b75110edb4ca89bf4a012a7831078b209983145e96915ade767042e8b92d925c",
+    "app/services/guardian/nodes.py": "d08232832d556134dca05df94e2c466bd1bb4b753d3d143ddf184a975bbe61c7",
+    "app/services/guardian/oasdiff.py": "f2628a647de1fe7e9bc20796f49fb2df0c673b258c6fd0d9ee58d55b00a77043",
+    "app/services/guardian/schemathesis.py": "6ab64de45e57ddb2e02dca7ad250059df1fef64b7c4add3fdbbcb5cde1af39e5",
+    "app/services/guardian/scope.py": "0c0627bb1bb838b124fb0bc0d5fe80fd8aa2183a8dae60f73b86e5e84341b669",
+    "app/services/guardian/security.py": "0c7e2ce96e0b8e7e8573085f72d13ae2161c6874c1db653a323087a860d01527",
+    "app/services/guardian/state.py": "9c8325a56554e4588c009ab26952a039f55363e62d00cfefa5424bea1ece42c8"
+  },
+  "production_core_hashes_before": {
+    "app/services/guardian/errors.py": "137cfd87b19484cb5fed3d4f3763e35e92f07be143f7b036ccfe5b65f2fcbce4",
+    "app/services/guardian/graph.py": "9151a5cf7616902bb6201041b3d7c547ca737b5763601d1c7b38abce69c307fd",
+    "app/services/guardian/models.py": "b75110edb4ca89bf4a012a7831078b209983145e96915ade767042e8b92d925c",
+    "app/services/guardian/nodes.py": "d08232832d556134dca05df94e2c466bd1bb4b753d3d143ddf184a975bbe61c7",
+    "app/services/guardian/oasdiff.py": "f2628a647de1fe7e9bc20796f49fb2df0c673b258c6fd0d9ee58d55b00a77043",
+    "app/services/guardian/schemathesis.py": "6ab64de45e57ddb2e02dca7ad250059df1fef64b7c4add3fdbbcb5cde1af39e5",
+    "app/services/guardian/scope.py": "0c0627bb1bb838b124fb0bc0d5fe80fd8aa2183a8dae60f73b86e5e84341b669",
+    "app/services/guardian/security.py": "0c7e2ce96e0b8e7e8573085f72d13ae2161c6874c1db653a323087a860d01527",
+    "app/services/guardian/state.py": "9c8325a56554e4588c009ab26952a039f55363e62d00cfefa5424bea1ece42c8"
+  },
+  "production_core_unchanged": true,
+  "integrity": {
+    "raw_results_sha256": "48f825ac1306767e4eb0737bec6955cdd34ba66640ae776a25030b6d387f96ac",
+    "ground_truth_v2_aggregate_sha256": "7791a45bc20103f86ecfc099591035a476bfb414c3db08b4f6201284cd4ddb94",
+    "ground_truth_v2_file_sha256": "917c21c4c5eb642c00e6d3399c40b73dc8b9432c328eae7c85f1d7039dd6bf54",
+    "ground_truth_v2_review_records_sha256": "8a3523af0315d377fe30b59d29e6fe5efe7b3927bf354c6b2f4f1e699701d2ec"
+  },
+  "reset_policy": "fresh PostgreSQL container and exact Head service for every system run",
+  "run_id": "e3-c-20260914T112607Z-6867d86b",
+  "safety": {
+    "public_production_api_called": false,
+    "raw_ndjson_persisted": false,
+    "real_credentials_used": false,
+    "redirects_followed": false,
+    "response_bodies_persisted": false,
+    "targets": "127.0.0.1 dynamic ports only"
+  },
+  "schemathesis_parameters": {
+    "checks": "response_schema_conformance",
+    "generation_deterministic": true,
+    "max_examples": 1,
+    "max_redirects": 0,
+    "phases": "examples,coverage",
+    "request_timeout_seconds": 2.0
+  },
+  "stage": "E3-C",
+  "started_at": "2026-09-14T11:26:07.825056+00:00",
+  "systems": [
+    "full_schemathesis",
+    "oasdiff_plus_full",
+    "oracle_scope",
+    "api_guardian"
+  ],
+  "tools": {
+    "oasdiff": "1.28.0",
+    "schemathesis": "4.24.3"
+  },
+  "warmups": 1
+}

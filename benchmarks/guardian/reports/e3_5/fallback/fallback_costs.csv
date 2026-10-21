@@ -1,0 +1,4 @@
+case_id,selected_operations,oracle_executable_operations,extra_operations,over_selection_ratio
+rw_immich_005_server_theme_endpoint_removed,239,0,239,1.0
+rw_appwrite_002_migration_cutover_replaced,783,1,782,0.9987228607918263
+rw_appwrite_003_usage_project_and_health_update,637,26,611,0.9591836734693877

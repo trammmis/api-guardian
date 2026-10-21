@@ -1,0 +1,257 @@
+{
+  "info": {
+    "title": "Guardian Scaling API",
+    "version": "1.0.0"
+  },
+  "openapi": "3.0.3",
+  "paths": {
+    "/resources/0001": {
+      "get": {
+        "description": "Controlled scaling operation 1",
+        "operationId": "getResource0001",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0002": {
+      "get": {
+        "description": "Controlled scaling operation 2",
+        "operationId": "getResource0002",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0003": {
+      "get": {
+        "description": "Controlled scaling operation 3",
+        "operationId": "getResource0003",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0004": {
+      "get": {
+        "description": "Controlled scaling operation 4",
+        "operationId": "getResource0004",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0005": {
+      "get": {
+        "description": "Controlled scaling operation 5",
+        "operationId": "getResource0005",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0006": {
+      "get": {
+        "description": "Controlled scaling operation 6",
+        "operationId": "getResource0006",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0007": {
+      "get": {
+        "description": "Controlled scaling operation 7",
+        "operationId": "getResource0007",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/resources/0008": {
+      "get": {
+        "description": "Controlled scaling operation 8",
+        "operationId": "getResource0008",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Success"
+          }
+        }
+      }
+    }
+  }
+}

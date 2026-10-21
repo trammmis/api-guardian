@@ -1,0 +1,6 @@
+{"Initialize":{"schemathesis_version":"4.24.3"}}
+{"LoadingFinished":{"statistic":{"operations":{"total":1,"selected":1}}}}
+{"ScenarioFinished":{"phase":"Coverage","status":"failure","elapsed_time":0.25,"recorder":{"label":"GET /items/{item_id}","checks":{"case-dynamic":[{"name":"response_schema_conformance","status":"success"},{"name":"response_schema_conformance","status":"failure","failure_info":{"failure":{"type":"JsonSchemaError","message":"Response violates schema and includes raw value"}}}]},"interactions":{"case-dynamic":{"response":{"status_code":200}}}}}}
+{"SuiteFinished":{"phase":"Coverage","status":"failure"}}
+{"PhaseFinished":{"phase":{"name":"Coverage","is_enabled":true},"status":"failure"}}
+{"EngineFinished":{"stop_reason":"completed"}}

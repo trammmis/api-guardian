@@ -1,0 +1,493 @@
+{
+  "benchmark": "API Guardian Scaling and Break-even Benchmark",
+  "completed_at": "2026-09-06T09:12:32.155196+00:00",
+  "configuration": {
+    "max_artifact_bytes": 52428800,
+    "max_case_runtime_seconds": 180.0,
+    "max_examples": 1,
+    "max_scale_operations": 128,
+    "max_scan_artifact_bytes": 104857600,
+    "random_seed": 20260906,
+    "repetitions": 5,
+    "request_timeout_seconds": 2.0,
+    "sizes": [
+      8
+    ],
+    "subprocess_timeout_seconds": 60.0,
+    "total_benchmark_budget_seconds": 10800.0,
+    "warmup_runs": 1
+  },
+  "dataset": {
+    "case_count": 2,
+    "dataset_sha256": "0d4e72382891816308f4f5b475e0c0c2951e7c4170cffa61ab0acb8ac54d7aa4",
+    "scenarios": [
+      "s1_one_operation",
+      "s2_five_percent"
+    ],
+    "sizes": [
+      8
+    ]
+  },
+  "integrity": {
+    "frozen_e2_raw": {
+      "benchmarks/guardian/reports/e2/latest/contract_raw_results.jsonl": "349023d9464935fcc6ec9006189bf59d124bf3df79f870bcbb4fddaf3aca957a",
+      "benchmarks/guardian/reports/e2/latest/raw_results.jsonl": "f93f33a01a6d97f92a162eca5b41b2f11746c76f8ab7785e23d839e5f08ad196"
+    },
+    "production_core": {
+      "app/services/guardian/graph.py": "9151a5cf7616902bb6201041b3d7c547ca737b5763601d1c7b38abce69c307fd",
+      "app/services/guardian/nodes.py": "5bb6868a9d32c1c80fda5adc5b8d5f1def9f6fac8d2408bda96fba7b22142001",
+      "app/services/guardian/oasdiff.py": "f2628a647de1fe7e9bc20796f49fb2df0c673b258c6fd0d9ee58d55b00a77043",
+      "app/services/guardian/schemathesis.py": "6ab64de45e57ddb2e02dca7ad250059df1fef64b7c4add3fdbbcb5cde1af39e5",
+      "app/services/guardian/scope.py": "9c93058ec5b3d358f5dfe2ddc81415cd276fe7cf448b527124cd629e856f2787"
+    }
+  },
+  "metrics": {
+    "break_even": {
+      "s1_one_operation": {
+        "confirmed_through_operations": null,
+        "max_tested_operations": 8,
+        "observed": false,
+        "operational_definition": "first of at least two consecutive scale points where Guardian cell median < Full cell median",
+        "start_operations": null,
+        "statement": "No break-even observed up to 8 operations."
+      },
+      "s2_five_percent": {
+        "confirmed_through_operations": null,
+        "max_tested_operations": 8,
+        "observed": false,
+        "operational_definition": "first of at least two consecutive scale points where Guardian cell median < Full cell median",
+        "start_operations": null,
+        "statement": "No break-even observed up to 8 operations."
+      }
+    },
+    "by_scale": [
+      {
+        "affected_operations": 1,
+        "case_id": "scale_8_s1_one_operation",
+        "guardian_fixed_overhead_estimate_seconds": 0.0792717000022094,
+        "guardian_vs_full": {
+          "guardian_faster_by_cell_median": true,
+          "paired_difference_bootstrap_95_ci": {
+            "bootstrap_samples": 10000,
+            "lower": -0.3517491999991762,
+            "seed": 20260906,
+            "upper": 0.5887462999980926
+          },
+          "paired_difference_seconds": {
+            "mean": 0.03451043999993999,
+            "median": -0.12320779999936349,
+            "p95": 0.5410236799980339,
+            "sample_size": 5,
+            "std": 0.37069257466495364
+          },
+          "paired_sample_size": 5,
+          "runtime_reduction": {
+            "mean": -0.020652990212011925,
+            "median": 0.04915441408190302,
+            "p95": 0.12610707703366625,
+            "sample_size": 5,
+            "std": 0.15219952597405467
+          },
+          "runtime_reduction_bootstrap_95_ci": {
+            "bootstrap_samples": 10000,
+            "lower": -0.25772002731076005,
+            "seed": 20261906,
+            "upper": 0.1288309437867573
+          }
+        },
+        "http_request_reduction": 0.8615384615384616,
+        "scenario": "s1_one_operation",
+        "scope_reduction": 0.875,
+        "systems": {
+          "full_schemathesis": {
+            "error_count": 0,
+            "http_requests_issued": {
+              "mean": 65.0,
+              "median": 65.0,
+              "p95": 65.0,
+              "sample_size": 5,
+              "std": 0.0
+            },
+            "oasdiff_duration_seconds": null,
+            "operations_tested": {
+              "mean": 8.0,
+              "median": 8.0,
+              "p95": 8.0,
+              "sample_size": 5,
+              "std": 0.0
+            },
+            "process_count": {
+              "mean": 1.0,
+              "median": 1.0,
+              "p95": 1.0,
+              "sample_size": 5,
+              "std": 0.0
+            },
+            "report_orchestration_duration_seconds": null,
+            "schemathesis_duration_seconds": {
+              "mean": 2.5147532999999385,
+              "median": 2.5236014000001887,
+              "p95": 2.6900152600002913,
+              "sample_size": 5,
+              "std": 0.1413193916993835
+            },
+            "scope_selection_duration_seconds": null,
+            "total_duration_seconds": {
+              "mean": 2.51478694000034,
+              "median": 2.5236300000015035,
+              "p95": 2.69005311999972,
+              "sample_size": 5,
+              "std": 0.1413223581725814
+            }
+          },
+          "guardian_deterministic": {
+            "error_count": 0,
+            "http_requests_issued": {
+              "mean": 9.0,
+              "median": 9.0,
+              "p95": 9.0,
+              "sample_size": 5,
+              "std": 0.0
+            },
+            "oasdiff_duration_seconds": null,
+            "operations_tested": {
+              "mean": 1.0,
+              "median": 1.0,
+              "p95": 1.0,
+              "sample_size": 5,
+              "std": 0.0
+            },
+            "process_count": {
+              "mean": 2.0,
+              "median": 2.0,
+              "p95": 2.0,
+              "sample_size": 5,
+              "std": 0.0
+            },
+            "report_orchestration_duration_seconds": null,
+            "schemathesis_duration_seconds": null,
+            "scope_selection_duration_seconds": null,
+            "total_duration_seconds": {
+              "mean": 2.5492973800002803,
+              "median": 2.3833382000011625,
+              "p95": 2.8736480999992637,
+              "sample_size": 5,
+              "std": 0.26981858672765263
+            }
+          },
+          "oasdiff_plus_full_schemathesis": {
+            "error_count": 0,
+            "http_requests_issued": {
+              "mean": 65.0,
+              "median": 65.0,
+              "p95": 65.0,
+              "sample_size": 5,
+              "std": 0.0
+            },
+            "oasdiff_duration_seconds": {
+              "mean": 0.06497072000020125,
+              "median": 0.06518310000137717,
+              "p95": 0.07310567999993509,
+              "sample_size": 5,
+              "std": 0.005727633052658559
+            },
+            "operations_tested": {
+              "mean": 8.0,
+              "median": 8.0,
+              "p95": 8.0,
+              "sample_size": 5,
+              "std": 0.0
+            },
+            "process_count": {
+              "mean": 2.0,
+              "median": 2.0,
+              "p95": 2.0,
+              "sample_size": 5,
+              "std": 0.0
+            },
+            "report_orchestration_duration_seconds": null,
+            "schemathesis_duration_seconds": {
+              "mean": 2.5500210199999858,
+              "median": 2.492817800000921,
+              "p95": 2.907781619999878,
+              "sample_size": 5,
+              "std": 0.249087940333763
+            },
+            "scope_selection_duration_seconds": null,
+            "total_duration_seconds": {
+              "mean": 2.615048200000092,
+              "median": 2.551575999999841,
+              "p95": 2.980950920000032,
+              "sample_size": 5,
+              "std": 0.2537877195670866
+            }
+          },
+          "oracle_scope": {
+            "error_count": 0,
+            "http_requests_issued": {
+              "mean": 9.0,
+              "median": 9.0,
+              "p95": 9.0,
+              "sample_size": 5,
+              "std": 0.0
+            },
+            "oasdiff_duration_seconds": null,
+            "operations_tested": {
+              "mean": 1.0,
+              "median": 1.0,
+              "p95": 1.0,
+              "sample_size": 5,
+              "std": 0.0
+            },
+            "process_count": {
+              "mean": 1.0,
+              "median": 1.0,
+              "p95": 1.0,
+              "sample_size": 5,
+              "std": 0.0
+            },
+            "report_orchestration_duration_seconds": null,
+            "schemathesis_duration_seconds": {
+              "mean": 2.3084539999996196,
+              "median": 2.304040499999246,
+              "p95": 2.501154559999486,
+              "sample_size": 5,
+              "std": 0.1344161557003567
+            },
+            "scope_selection_duration_seconds": null,
+            "total_duration_seconds": {
+              "mean": 2.3084809199997833,
+              "median": 2.304066499998953,
+              "p95": 2.501180640000166,
+              "sample_size": 5,
+              "std": 0.13441533239104625
+            }
+          }
+        },
+        "total_operations": 8
+      },
+      {
+        "affected_operations": 1,
+        "case_id": "scale_8_s2_five_percent",
+        "guardian_fixed_overhead_estimate_seconds": 0.3666828000004898,
+        "guardian_vs_full": {
+          "guardian_faster_by_cell_median": false,
+          "paired_difference_bootstrap_95_ci": {
+            "bootstrap_samples": 10000,
+            "lower": -0.0757303000009415,
+            "seed": 20260907,
+            "upper": 1.3913200999995752
+          },
+          "paired_difference_seconds": {
+            "mean": 0.4064213399997243,
+            "median": 0.15689460000066902,
+            "p95": 1.215073939999638,
+            "sample_size": 5,
+            "std": 0.5296934393661856
+          },
+          "paired_sample_size": 5,
+          "runtime_reduction": {
+            "mean": -0.08134903351182265,
+            "median": -0.04484371940398768,
+            "p95": 0.018857322723468642,
+            "sample_size": 5,
+            "std": 0.09156547671542298
+          },
+          "runtime_reduction_bootstrap_95_ci": {
+            "bootstrap_samples": 10000,
+            "lower": -0.222974382403627,
+            "seed": 20261907,
+            "upper": 0.02811736340778992
+          }
+        },
+        "http_request_reduction": 0.8615384615384616,
+        "scenario": "s2_five_percent",
+        "scope_reduction": 0.875,
+        "systems": {
+          "full_schemathesis": {
+            "error_count": 0,
+            "http_requests_issued": {
+              "mean": 65.0,
+              "median": 65.0,
+              "p95": 65.0,
+              "sample_size": 5,
+              "std": 0.0
+            },
+            "oasdiff_duration_seconds": null,
+            "operations_tested": {
+              "mean": 8.0,
+              "median": 8.0,
+              "p95": 8.0,
+              "sample_size": 5,
+              "std": 0.0
+            },
+            "process_count": {
+              "mean": 1.0,
+              "median": 1.0,
+              "p95": 1.0,
+              "sample_size": 5,
+              "std": 0.0
+            },
+            "report_orchestration_duration_seconds": null,
+            "schemathesis_duration_seconds": {
+              "mean": 3.7164852800000516,
+              "median": 3.426539699999921,
+              "p95": 5.691544900001099,
+              "sample_size": 5,
+              "std": 1.3061452744184459
+            },
+            "scope_selection_duration_seconds": null,
+            "total_duration_seconds": {
+              "mean": 3.716529000000082,
+              "median": 3.426601200000732,
+              "p95": 5.691595779999988,
+              "sample_size": 5,
+              "std": 1.3061521302798786
+            }
+          },
+          "guardian_deterministic": {
+            "error_count": 0,
+            "http_requests_issued": {
+              "mean": 9.0,
+              "median": 9.0,
+              "p95": 9.0,
+              "sample_size": 5,
+              "std": 0.0
+            },
+            "oasdiff_duration_seconds": null,
+            "operations_tested": {
+              "mean": 1.0,
+              "median": 1.0,
+              "p95": 1.0,
+              "sample_size": 5,
+              "std": 0.0
+            },
+            "process_count": {
+              "mean": 2.0,
+              "median": 2.0,
+              "p95": 2.0,
+              "sample_size": 5,
+              "std": 0.0
+            },
+            "report_orchestration_duration_seconds": null,
+            "schemathesis_duration_seconds": null,
+            "scope_selection_duration_seconds": null,
+            "total_duration_seconds": {
+              "mean": 4.122950339999806,
+              "median": 3.6555919000002177,
+              "p95": 6.892250499999863,
+              "sample_size": 5,
+              "std": 1.8246634026615542
+            }
+          },
+          "oasdiff_plus_full_schemathesis": {
+            "error_count": 0,
+            "http_requests_issued": {
+              "mean": 65.0,
+              "median": 65.0,
+              "p95": 65.0,
+              "sample_size": 5,
+              "std": 0.0
+            },
+            "oasdiff_duration_seconds": {
+              "mean": 0.10946759999969799,
+              "median": 0.09050649999880989,
+              "p95": 0.18449081999970074,
+              "sample_size": 5,
+              "std": 0.048905243658290284
+            },
+            "operations_tested": {
+              "mean": 8.0,
+              "median": 8.0,
+              "p95": 8.0,
+              "sample_size": 5,
+              "std": 0.0
+            },
+            "process_count": {
+              "mean": 2.0,
+              "median": 2.0,
+              "p95": 2.0,
+              "sample_size": 5,
+              "std": 0.0
+            },
+            "report_orchestration_duration_seconds": null,
+            "schemathesis_duration_seconds": {
+              "mean": 3.48959623999981,
+              "median": 3.6448755000001256,
+              "p95": 3.9452993199996853,
+              "sample_size": 5,
+              "std": 0.5110254720485427
+            },
+            "scope_selection_duration_seconds": null,
+            "total_duration_seconds": {
+              "mean": 3.599144339999839,
+              "median": 3.748445699999138,
+              "p95": 4.123548839999421,
+              "sample_size": 5,
+              "std": 0.5359211877616636
+            }
+          },
+          "oracle_scope": {
+            "error_count": 0,
+            "http_requests_issued": {
+              "mean": 9.0,
+              "median": 9.0,
+              "p95": 9.0,
+              "sample_size": 5,
+              "std": 0.0
+            },
+            "oasdiff_duration_seconds": null,
+            "operations_tested": {
+              "mean": 1.0,
+              "median": 1.0,
+              "p95": 1.0,
+              "sample_size": 5,
+              "std": 0.0
+            },
+            "process_count": {
+              "mean": 1.0,
+              "median": 1.0,
+              "p95": 1.0,
+              "sample_size": 5,
+              "std": 0.0
+            },
+            "report_orchestration_duration_seconds": null,
+            "schemathesis_duration_seconds": {
+              "mean": 3.4642057199998817,
+              "median": 3.288875000000189,
+              "p95": 4.855006920000232,
+              "sample_size": 5,
+              "std": 0.9232592442366474
+            },
+            "scope_selection_duration_seconds": null,
+            "total_duration_seconds": {
+              "mean": 3.464244360000157,
+              "median": 3.288909099999728,
+              "p95": 4.855057520000991,
+              "sample_size": 5,
+              "std": 0.9232669162654514
+            }
+          }
+        },
+        "total_operations": 8
+      }
+    ],
+    "deterministic_reproducibility": {
+      "denominator": 40,
+      "numerator": 40,
+      "value": 1.0
+    },
+    "execution_error_count": 0,
+    "fixed_overhead_method": "Guardian median minus Oracle median; approximate combined oasdiff, LangGraph, normalization/scope/report overhead because Guardian component timings are wrapper-only",
+    "full_fixed_overhead_estimate": null,
+    "full_fixed_overhead_status": "unavailable_without_zero_operation_control"
+  },
+  "raw_sample_counts": {
+    "all": 48,
+    "measured": 40,
+    "warmup": 8
+  },
+  "run_id": "guardian-e2-5-scaling-20260906T090958Z-b015c7cc",
+  "stage": "E2.5-scaling",
+  "started_at": "2026-09-06T09:09:58.340957+00:00"
+}

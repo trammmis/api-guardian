@@ -1,0 +1,122 @@
+[
+  {
+    "affected_operations": [
+      "GET /bookings/primary"
+    ],
+    "case_id": "booking_wrong_booking_semantic",
+    "expected_detectable": false,
+    "mutation": "wrong_entity_schema_valid",
+    "selected_operations": [
+      "GET /bookings/primary"
+    ],
+    "why_not_selected_or_detected": "Schema-oriented oracle cannot detect this business-semantic regression"
+  },
+  {
+    "affected_operations": [
+      "GET /payments/latest"
+    ],
+    "case_id": "booking_wrong_payment_semantic",
+    "expected_detectable": false,
+    "mutation": "wrong_payment_amount_schema_valid",
+    "selected_operations": [
+      "GET /payments/latest"
+    ],
+    "why_not_selected_or_detected": "Schema-oriented oracle cannot detect this business-semantic regression"
+  },
+  {
+    "affected_operations": [
+      "GET /movements/latest"
+    ],
+    "case_id": "inventory_wrong_movement_semantic",
+    "expected_detectable": false,
+    "mutation": "wrong_direction_quantity_schema_valid",
+    "selected_operations": [
+      "GET /movements/latest"
+    ],
+    "why_not_selected_or_detected": "Schema-oriented oracle cannot detect this business-semantic regression"
+  },
+  {
+    "affected_operations": [
+      "GET /stock/primary"
+    ],
+    "case_id": "inventory_wrong_stock_semantic",
+    "expected_detectable": false,
+    "mutation": "wrong_quantity_schema_valid",
+    "selected_operations": [
+      "GET /stock/primary"
+    ],
+    "why_not_selected_or_detected": "Schema-oriented oracle cannot detect this business-semantic regression"
+  },
+  {
+    "affected_operations": [
+      "GET /invoices/{invoice_id}"
+    ],
+    "case_id": "orders_invoice_amount_semantic",
+    "expected_detectable": false,
+    "mutation": "wrong_invoice_amount_schema_valid",
+    "selected_operations": [
+      "GET /invoices/{invoice_id}"
+    ],
+    "why_not_selected_or_detected": "Schema-oriented oracle cannot detect this business-semantic regression"
+  },
+  {
+    "affected_operations": [
+      "GET /orders/{order_id}"
+    ],
+    "case_id": "orders_wrong_total_semantic",
+    "expected_detectable": false,
+    "mutation": "wrong_business_value_schema_valid",
+    "selected_operations": [
+      "GET /orders/{order_id}"
+    ],
+    "why_not_selected_or_detected": "Schema-oriented oracle cannot detect this business-semantic regression"
+  },
+  {
+    "affected_operations": [
+      "GET /prices/current"
+    ],
+    "case_id": "products_wrong_price_semantic",
+    "expected_detectable": false,
+    "mutation": "wrong_price_schema_valid",
+    "selected_operations": [
+      "GET /prices/current"
+    ],
+    "why_not_selected_or_detected": "Schema-oriented oracle cannot detect this business-semantic regression"
+  },
+  {
+    "affected_operations": [
+      "GET /products/primary"
+    ],
+    "case_id": "products_wrong_product_semantic",
+    "expected_detectable": false,
+    "mutation": "wrong_entity_schema_valid",
+    "selected_operations": [
+      "GET /products/primary"
+    ],
+    "why_not_selected_or_detected": "Schema-oriented oracle cannot detect this business-semantic regression"
+  },
+  {
+    "affected_operations": [
+      "GET /status"
+    ],
+    "case_id": "users_status_region_semantic",
+    "expected_detectable": false,
+    "mutation": "wrong_region_semantic_schema_valid",
+    "selected_operations": [
+      "GET /status"
+    ],
+    "why_not_selected_or_detected": "Schema-oriented oracle cannot detect this business-semantic regression"
+  },
+  {
+    "affected_operations": [
+      "GET /users/{user_id}"
+    ],
+    "case_id": "users_wrong_user_semantic",
+    "expected_detectable": false,
+    "mutation": "wrong_entity_schema_valid",
+    "selected_operations": [
+      "GET /users/{user_id}"
+    ],
+    "why_not_selected_or_detected": "Schema-oriented oracle cannot detect this business-semantic regression"
+  }
+]

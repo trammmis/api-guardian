@@ -1,0 +1,44 @@
+{
+  "stage": "E4_A_LLM_FAILURE_ISOLATION",
+  "test_command": "uv run pytest benchmarks/guardian/test_e4_failure_isolation.py -q",
+  "result": "passed",
+  "passed": 4,
+  "failed": 0,
+  "duration_seconds": 4.60,
+  "scenarios": [
+    {
+      "name": "timeout",
+      "fixture": "safe fake TimeoutError",
+      "contract_verdict": "fail",
+      "regression_verdict": "fail",
+      "final_verdict": "fail",
+      "analysis_degraded": true
+    },
+    {
+      "name": "invalid_structured_output",
+      "fixture": "safe fake incomplete RiskExplanation",
+      "contract_verdict": "fail",
+      "regression_verdict": "fail",
+      "final_verdict": "fail",
+      "analysis_degraded": true
+    },
+    {
+      "name": "provider_failure",
+      "fixture": "safe fake provider unavailable",
+      "contract_verdict": "fail",
+      "regression_verdict": "fail",
+      "final_verdict": "fail",
+      "analysis_degraded": true
+    },
+    {
+      "name": "provider_429",
+      "fixture": "safe fake provider returned 429",
+      "contract_verdict": "fail",
+      "regression_verdict": "fail",
+      "final_verdict": "fail",
+      "analysis_degraded": true
+    }
+  ],
+  "verdict_invariance": "4/4",
+  "notes": "No real provider call was made by these isolation tests. The provider_429 case validates Guardian graph isolation, not LLMService retry scheduling."
+}

@@ -1,0 +1,16 @@
+{
+  "analysis_degraded": false,
+  "case_id": "rw_supabase_005_authorize_flow_type_removed",
+  "checkpoint_rows": 12,
+  "contract_verdict": "pass",
+  "detail_status": "completed",
+  "final_verdict": "pass",
+  "passed": true,
+  "production_core_unchanged": true,
+  "regression_verdict": "pass",
+  "report_rows": 1,
+  "scan_id": "793e15b0-ca24-457f-8ed2-5af612fccea1",
+  "scan_rows": 1,
+  "secret_or_raw_artifact_leakage": [],
+  "status": "completed"
+}

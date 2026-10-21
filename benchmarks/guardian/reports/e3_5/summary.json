@@ -1,0 +1,399 @@
+{
+  "dependency_graph_diagnostic": {
+    "aggregate": {
+      "dependency_graph_precision": {
+        "denominator": 27,
+        "numerator": 27,
+        "percentage": 100.0,
+        "value": 1.0
+      },
+      "dependency_graph_recall": {
+        "denominator": 27,
+        "numerator": 27,
+        "percentage": 100.0,
+        "value": 1.0
+      }
+    },
+    "cases": [
+      {
+        "case_id": "rw_appwrite_002_migration_cutover_replaced",
+        "changed_components_from_pre_system_ground_truth": [
+          "frameworkAdapter"
+        ],
+        "diagnostic_operations": [
+          "GET /sites/frameworks"
+        ],
+        "ground_truth_executable_operations": [
+          "GET /sites/frameworks"
+        ],
+        "method": "benchmark-only transitive local-fragment $ref dependency graph",
+        "precision": {
+          "denominator": 1,
+          "numerator": 1,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "recall": {
+          "denominator": 1,
+          "numerator": 1,
+          "percentage": 100.0,
+          "value": 1.0
+        }
+      },
+      {
+        "case_id": "rw_appwrite_003_usage_project_and_health_update",
+        "changed_components_from_pre_system_ground_truth": [
+          "project",
+          "usageEventList",
+          "usageGaugeList"
+        ],
+        "diagnostic_operations": [
+          "GET /organization/projects",
+          "GET /organization/projects/{projectId}",
+          "GET /project",
+          "GET /usage/events",
+          "GET /usage/gauges",
+          "PATCH /organization/projects/{projectId}",
+          "PATCH /project/auth-methods/{methodId}",
+          "PATCH /project/policies/deny-aliased-email",
+          "PATCH /project/policies/deny-corporate-email",
+          "PATCH /project/policies/deny-disposable-email",
+          "PATCH /project/policies/deny-free-email",
+          "PATCH /project/policies/membership-privacy",
+          "PATCH /project/policies/password-dictionary",
+          "PATCH /project/policies/password-history",
+          "PATCH /project/policies/password-personal-data",
+          "PATCH /project/policies/session-alert",
+          "PATCH /project/policies/session-duration",
+          "PATCH /project/policies/session-invalidation",
+          "PATCH /project/policies/session-limit",
+          "PATCH /project/policies/user-limit",
+          "PATCH /project/protocols/{protocolId}",
+          "PATCH /project/services/{serviceId}",
+          "PATCH /project/smtp",
+          "POST /organization/projects",
+          "PUT /project/labels",
+          "PUT /project/oauth2-server"
+        ],
+        "ground_truth_executable_operations": [
+          "GET /organization/projects",
+          "GET /organization/projects/{projectId}",
+          "GET /project",
+          "GET /usage/events",
+          "GET /usage/gauges",
+          "PATCH /organization/projects/{projectId}",
+          "PATCH /project/auth-methods/{methodId}",
+          "PATCH /project/policies/deny-aliased-email",
+          "PATCH /project/policies/deny-corporate-email",
+          "PATCH /project/policies/deny-disposable-email",
+          "PATCH /project/policies/deny-free-email",
+          "PATCH /project/policies/membership-privacy",
+          "PATCH /project/policies/password-dictionary",
+          "PATCH /project/policies/password-history",
+          "PATCH /project/policies/password-personal-data",
+          "PATCH /project/policies/session-alert",
+          "PATCH /project/policies/session-duration",
+          "PATCH /project/policies/session-invalidation",
+          "PATCH /project/policies/session-limit",
+          "PATCH /project/policies/user-limit",
+          "PATCH /project/protocols/{protocolId}",
+          "PATCH /project/services/{serviceId}",
+          "PATCH /project/smtp",
+          "POST /organization/projects",
+          "PUT /project/labels",
+          "PUT /project/oauth2-server"
+        ],
+        "method": "benchmark-only transitive local-fragment $ref dependency graph",
+        "precision": {
+          "denominator": 26,
+          "numerator": 26,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "recall": {
+          "denominator": 26,
+          "numerator": 26,
+          "percentage": 100.0,
+          "value": 1.0
+        }
+      }
+    ],
+    "production_selector_modified": false,
+    "scope": "SUPPLEMENTAL DIAGNOSTIC ONLY"
+  },
+  "e3_b_headline_metrics_changed": false,
+  "fallback": {
+    "case_count": 3,
+    "costs": [
+      {
+        "case_id": "rw_immich_005_server_theme_endpoint_removed",
+        "extra_operations": 239,
+        "oracle_executable_operations": 0,
+        "over_selection_ratio": 1.0,
+        "selected_operations": 239
+      },
+      {
+        "case_id": "rw_appwrite_002_migration_cutover_replaced",
+        "extra_operations": 782,
+        "oracle_executable_operations": 1,
+        "over_selection_ratio": 0.9987228607918263,
+        "selected_operations": 783
+      },
+      {
+        "case_id": "rw_appwrite_003_usage_project_and_health_update",
+        "extra_operations": 611,
+        "oracle_executable_operations": 26,
+        "over_selection_ratio": 0.9591836734693877,
+        "selected_operations": 637
+      }
+    ],
+    "immediate_trigger": "removed operation cannot resolve against Head",
+    "narrowing_assessments": {
+      "rw_appwrite_002_migration_cutover_replaced": "POSSIBLY_SAFE_TO_NARROW",
+      "rw_appwrite_003_usage_project_and_health_update": "POSSIBLY_SAFE_TO_NARROW",
+      "rw_immich_005_server_theme_endpoint_removed": "SAFE_TO_NARROW"
+    }
+  },
+  "materialization": [
+    {
+      "byte_identical_to_e3_input": true,
+      "case_id": "rw_supabase_001_oauth_grants_endpoints_added",
+      "evidence": "E3-B wrote the fetched bytes directly to a temporary file; prepare_openapi_spec parsed but did not rewrite it.",
+      "expected_bytes": 108612,
+      "expected_sha256": "66dfc674e7eb9dfed2b79de2ab5b57b0e8a28aee9e3e78ab4639d0782cc7d82b",
+      "guardian_structural_transformation": false,
+      "materialized_bytes": 108612,
+      "materialized_sha256": "66dfc674e7eb9dfed2b79de2ab5b57b0e8a28aee9e3e78ab4639d0782cc7d82b",
+      "side": "base"
+    },
+    {
+      "byte_identical_to_e3_input": true,
+      "case_id": "rw_supabase_001_oauth_grants_endpoints_added",
+      "evidence": "E3-B wrote the fetched bytes directly to a temporary file; prepare_openapi_spec parsed but did not rewrite it.",
+      "expected_bytes": 112407,
+      "expected_sha256": "0d4e9964e6caff5b85e6d4d1ab81fc3ca9cb16daf4a466977b962bb6a7a681c4",
+      "guardian_structural_transformation": false,
+      "materialized_bytes": 112407,
+      "materialized_sha256": "0d4e9964e6caff5b85e6d4d1ab81fc3ca9cb16daf4a466977b962bb6a7a681c4",
+      "side": "head"
+    },
+    {
+      "byte_identical_to_e3_input": true,
+      "case_id": "rw_supabase_002_oauth_client_update_endpoint_added",
+      "evidence": "E3-B wrote the fetched bytes directly to a temporary file; prepare_openapi_spec parsed but did not rewrite it.",
+      "expected_bytes": 106370,
+      "expected_sha256": "9111cd4c70ebdf1c97717d2017397814e80eb49390c0d0cbb3e38e58dd36b19f",
+      "guardian_structural_transformation": false,
+      "materialized_bytes": 106370,
+      "materialized_sha256": "9111cd4c70ebdf1c97717d2017397814e80eb49390c0d0cbb3e38e58dd36b19f",
+      "side": "base"
+    },
+    {
+      "byte_identical_to_e3_input": true,
+      "case_id": "rw_supabase_002_oauth_client_update_endpoint_added",
+      "evidence": "E3-B wrote the fetched bytes directly to a temporary file; prepare_openapi_spec parsed but did not rewrite it.",
+      "expected_bytes": 108612,
+      "expected_sha256": "66dfc674e7eb9dfed2b79de2ab5b57b0e8a28aee9e3e78ab4639d0782cc7d82b",
+      "guardian_structural_transformation": false,
+      "materialized_bytes": 108612,
+      "materialized_sha256": "66dfc674e7eb9dfed2b79de2ab5b57b0e8a28aee9e3e78ab4639d0782cc7d82b",
+      "side": "head"
+    },
+    {
+      "byte_identical_to_e3_input": true,
+      "case_id": "rw_supabase_003_oauth_client_optional_fields_added",
+      "evidence": "E3-B wrote the fetched bytes directly to a temporary file; prepare_openapi_spec parsed but did not rewrite it.",
+      "expected_bytes": 103153,
+      "expected_sha256": "a222d9459767fe262ed50daab76b9f3dd455524e8168bd32e49142fa24408b69",
+      "guardian_structural_transformation": false,
+      "materialized_bytes": 103153,
+      "materialized_sha256": "a222d9459767fe262ed50daab76b9f3dd455524e8168bd32e49142fa24408b69",
+      "side": "base"
+    },
+    {
+      "byte_identical_to_e3_input": true,
+      "case_id": "rw_supabase_003_oauth_client_optional_fields_added",
+      "evidence": "E3-B wrote the fetched bytes directly to a temporary file; prepare_openapi_spec parsed but did not rewrite it.",
+      "expected_bytes": 106370,
+      "expected_sha256": "9111cd4c70ebdf1c97717d2017397814e80eb49390c0d0cbb3e38e58dd36b19f",
+      "guardian_structural_transformation": false,
+      "materialized_bytes": 106370,
+      "materialized_sha256": "9111cd4c70ebdf1c97717d2017397814e80eb49390c0d0cbb3e38e58dd36b19f",
+      "side": "head"
+    },
+    {
+      "byte_identical_to_e3_input": true,
+      "case_id": "rw_supabase_004_webauthn_schema_rework",
+      "evidence": "E3-B wrote the fetched bytes directly to a temporary file; prepare_openapi_spec parsed but did not rewrite it.",
+      "expected_bytes": 102091,
+      "expected_sha256": "f782805361eda42f763008a37671ab05d1270b67168f828575ed04d05aba627f",
+      "guardian_structural_transformation": false,
+      "materialized_bytes": 102091,
+      "materialized_sha256": "f782805361eda42f763008a37671ab05d1270b67168f828575ed04d05aba627f",
+      "side": "base"
+    },
+    {
+      "byte_identical_to_e3_input": true,
+      "case_id": "rw_supabase_004_webauthn_schema_rework",
+      "evidence": "E3-B wrote the fetched bytes directly to a temporary file; prepare_openapi_spec parsed but did not rewrite it.",
+      "expected_bytes": 103153,
+      "expected_sha256": "a222d9459767fe262ed50daab76b9f3dd455524e8168bd32e49142fa24408b69",
+      "guardian_structural_transformation": false,
+      "materialized_bytes": 103153,
+      "materialized_sha256": "a222d9459767fe262ed50daab76b9f3dd455524e8168bd32e49142fa24408b69",
+      "side": "head"
+    },
+    {
+      "byte_identical_to_e3_input": true,
+      "case_id": "rw_supabase_005_authorize_flow_type_removed",
+      "evidence": "E3-B wrote the fetched bytes directly to a temporary file; prepare_openapi_spec parsed but did not rewrite it.",
+      "expected_bytes": 64917,
+      "expected_sha256": "c93e8e4ad65515e50b3babfc99cc07d5694249420e04858a64120c268a9238f4",
+      "guardian_structural_transformation": false,
+      "materialized_bytes": 64917,
+      "materialized_sha256": "c93e8e4ad65515e50b3babfc99cc07d5694249420e04858a64120c268a9238f4",
+      "side": "base"
+    },
+    {
+      "byte_identical_to_e3_input": true,
+      "case_id": "rw_supabase_005_authorize_flow_type_removed",
+      "evidence": "E3-B wrote the fetched bytes directly to a temporary file; prepare_openapi_spec parsed but did not rewrite it.",
+      "expected_bytes": 64525,
+      "expected_sha256": "2aee71c180222191e49fb3df2edea8820c0bb49ab1909f20fe9b408cc731e6b6",
+      "guardian_structural_transformation": false,
+      "materialized_bytes": 64525,
+      "materialized_sha256": "2aee71c180222191e49fb3df2edea8820c0bb49ab1909f20fe9b408cc731e6b6",
+      "side": "head"
+    },
+    {
+      "byte_identical_to_e3_input": true,
+      "case_id": "rw_immich_005_server_theme_endpoint_removed",
+      "evidence": "E3-B wrote the fetched bytes directly to a temporary file; prepare_openapi_spec parsed but did not rewrite it.",
+      "expected_bytes": 711121,
+      "expected_sha256": "26ede59e3684c8f7f2351d6f8add38b2f92f156432a2def7a22a9903d882d2f0",
+      "guardian_structural_transformation": false,
+      "materialized_bytes": 711121,
+      "materialized_sha256": "26ede59e3684c8f7f2351d6f8add38b2f92f156432a2def7a22a9903d882d2f0",
+      "side": "base"
+    },
+    {
+      "byte_identical_to_e3_input": true,
+      "case_id": "rw_immich_005_server_theme_endpoint_removed",
+      "evidence": "E3-B wrote the fetched bytes directly to a temporary file; prepare_openapi_spec parsed but did not rewrite it.",
+      "expected_bytes": 709973,
+      "expected_sha256": "eec93ca72a8f65525f31509783970a26ec14481bdd4924a1d76f7d8082e1edaf",
+      "guardian_structural_transformation": false,
+      "materialized_bytes": 709973,
+      "materialized_sha256": "eec93ca72a8f65525f31509783970a26ec14481bdd4924a1d76f7d8082e1edaf",
+      "side": "head"
+    },
+    {
+      "byte_identical_to_e3_input": true,
+      "case_id": "rw_appwrite_002_migration_cutover_replaced",
+      "evidence": "E3-B wrote the fetched bytes directly to a temporary file; prepare_openapi_spec parsed but did not rewrite it.",
+      "expected_bytes": 5051479,
+      "expected_sha256": "f7f057edbab748c9ec90a88a6de206d8bd8ceb7e226bcece720798426b429c88",
+      "guardian_structural_transformation": false,
+      "materialized_bytes": 5051479,
+      "materialized_sha256": "f7f057edbab748c9ec90a88a6de206d8bd8ceb7e226bcece720798426b429c88",
+      "side": "base"
+    },
+    {
+      "byte_identical_to_e3_input": true,
+      "case_id": "rw_appwrite_002_migration_cutover_replaced",
+      "evidence": "E3-B wrote the fetched bytes directly to a temporary file; prepare_openapi_spec parsed but did not rewrite it.",
+      "expected_bytes": 5127762,
+      "expected_sha256": "5649e526ecf4dbf8ce3120988ed53ee99823a7174bf1259f99408ef54056ea5b",
+      "guardian_structural_transformation": false,
+      "materialized_bytes": 5127762,
+      "materialized_sha256": "5649e526ecf4dbf8ce3120988ed53ee99823a7174bf1259f99408ef54056ea5b",
+      "side": "head"
+    },
+    {
+      "byte_identical_to_e3_input": true,
+      "case_id": "rw_appwrite_003_usage_project_and_health_update",
+      "evidence": "E3-B wrote the fetched bytes directly to a temporary file; prepare_openapi_spec parsed but did not rewrite it.",
+      "expected_bytes": 3569318,
+      "expected_sha256": "da3e1e10b03d79784ad407d4b06b52a864babb29eb3fe87a48e44bd3ef62f63d",
+      "guardian_structural_transformation": false,
+      "materialized_bytes": 3569318,
+      "materialized_sha256": "da3e1e10b03d79784ad407d4b06b52a864babb29eb3fe87a48e44bd3ef62f63d",
+      "side": "base"
+    },
+    {
+      "byte_identical_to_e3_input": true,
+      "case_id": "rw_appwrite_003_usage_project_and_health_update",
+      "evidence": "E3-B wrote the fetched bytes directly to a temporary file; prepare_openapi_spec parsed but did not rewrite it.",
+      "expected_bytes": 3574279,
+      "expected_sha256": "2edbd2714da6e4430bb2e410519218d74f382197550487587de2d370b7e22bf6",
+      "guardian_structural_transformation": false,
+      "materialized_bytes": 3574279,
+      "materialized_sha256": "2edbd2714da6e4430bb2e410519218d74f382197550487587de2d370b7e22bf6",
+      "side": "head"
+    }
+  ],
+  "root_cause_count": 8,
+  "stage": "E3.5 Tool Compatibility & Fallback Root-Cause Diagnostic",
+  "status": "complete",
+  "supabase": {
+    "classification": "INVALID_OPENAPI_INPUT",
+    "error_case_classifications": [
+      {
+        "case_id": "rw_supabase_001_oauth_grants_endpoints_added",
+        "classification": "INVALID_OPENAPI_INPUT",
+        "evidence": "Redocly struct error resolves a components.responses object in a Schema slot; oasdiff 1.27.0 and 1.28.0 both reject; Guardian bytes match frozen input."
+      },
+      {
+        "case_id": "rw_supabase_002_oauth_client_update_endpoint_added",
+        "classification": "INVALID_OPENAPI_INPUT",
+        "evidence": "Redocly struct error resolves a components.responses object in a Schema slot; oasdiff 1.27.0 and 1.28.0 both reject; Guardian bytes match frozen input."
+      },
+      {
+        "case_id": "rw_supabase_003_oauth_client_optional_fields_added",
+        "classification": "INVALID_OPENAPI_INPUT",
+        "evidence": "Redocly struct error resolves a components.responses object in a Schema slot; oasdiff 1.27.0 and 1.28.0 both reject; Guardian bytes match frozen input."
+      },
+      {
+        "case_id": "rw_supabase_004_webauthn_schema_rework",
+        "classification": "INVALID_OPENAPI_INPUT",
+        "evidence": "Redocly struct error resolves a components.responses object in a Schema slot; oasdiff 1.27.0 and 1.28.0 both reject; Guardian bytes match frozen input."
+      }
+    ],
+    "error_case_count": 4,
+    "false_negative_root_cause": "optional request parameter removal emitted at level 2 WARNING",
+    "guardian_changed_input": false,
+    "minimal_reproducer_succeeded": true,
+    "newer_stable_tested": false,
+    "newer_stable_unavailable": true,
+    "validator_disagreement_retained": true,
+    "version_specific_to_1_28": false
+  },
+  "supplemental_metrics": {
+    "fallback_only_precision": {
+      "denominator": 1659,
+      "numerator": 27,
+      "percentage": 1.62748643761302,
+      "value": 0.0162748643761302
+    },
+    "fallback_over_selection_operations": 1632,
+    "label": "SUPPLEMENTAL DIAGNOSTIC ONLY — does not replace E3-B headline metrics",
+    "nonfallback_executable_precision": {
+      "denominator": 31,
+      "numerator": 31,
+      "percentage": 100.0,
+      "value": 1.0
+    },
+    "nonfallback_executable_recall": {
+      "denominator": 31,
+      "numerator": 31,
+      "percentage": 100.0,
+      "value": 1.0
+    },
+    "tool_compatible_conditional_contract_accuracy": {
+      "denominator": 15,
+      "numerator": 14,
+      "percentage": 93.33333333333333,
+      "value": 0.9333333333333333
+    }
+  }
+}

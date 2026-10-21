@@ -1,0 +1,14 @@
+{
+  "version": "e4_root_cause_options_v1",
+  "frozen_before_collection": true,
+  "options": [
+    {"id":"implementation_contract_mismatch","label":"运行实现与 Head 契约不一致","description":"运行响应或请求处理没有满足新的 OpenAPI 契约。"},
+    {"id":"client_migration_required","label":"既有调用方迁移问题","description":"服务可能已符合 Head，但公开契约变化会破坏依赖旧契约的调用方。"},
+    {"id":"mixed_contract_change","label":"多个契约变化共同影响","description":"同一 Case 同时包含删除、替换、共享组件或多个 operation 的变化。"},
+    {"id":"contract_policy_disagreement","label":"兼容性策略定义不一致","description":"工具的 breaking policy 与冻结的兼容性审查约定不同。"},
+    {"id":"contract_tool_compatibility","label":"Spec 与契约工具兼容性问题","description":"OpenAPI 结构或引用使契约工具无法完成加载/比较。"},
+    {"id":"tool_execution_error","label":"运行测试工具执行错误","description":"测试基础设施或工具执行失败，不能据此确认 API schema defect。"},
+    {"id":"insufficient_evidence","label":"证据不足","description":"报告不足以支持更具体的运行根因。"},
+    {"id":"no_actionable_regression","label":"没有可操作的回归问题","description":"当前证据只显示兼容或文档变化，没有需要修复的回归。"}
+  ]
+}

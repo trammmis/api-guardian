@@ -1,0 +1,12 @@
+[
+  {
+    "id": "operation-description-changed",
+    "text": "operation metadata changed",
+    "level": 2,
+    "operation": "GET",
+    "operationId": "getItem",
+    "path": "/items/{item_id}",
+    "section": "paths",
+    "fingerprint": "phase2warning"
+  }
+]

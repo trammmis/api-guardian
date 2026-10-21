@@ -1,0 +1,180 @@
+openapi: 3.0.3
+info:
+  title: Guardian Benchmark Users API
+  version: 2.0.0
+paths:
+  /users:
+    get:
+      operationId: listUsers
+      responses:
+        '200':
+          description: Users
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  required:
+                  - id
+                  - name
+                  properties:
+                    id:
+                      type: string
+                    name:
+                      type: string
+                    email:
+                      type: string
+  /users/{user_id}:
+    get:
+      operationId: getUser
+      parameters:
+      - name: user_id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: User
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - name
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  email:
+                    type: string
+  /profiles/{user_id}:
+    get:
+      operationId: getUserProfile
+      parameters:
+      - name: user_id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Profile
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - user_id
+                - bio
+                properties:
+                  user_id:
+                    type: string
+                  bio:
+                    type: string
+                  age:
+                    type: integer
+  /teams:
+    get:
+      operationId: listTeams
+      responses:
+        '200':
+          description: Teams
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  required:
+                  - id
+                  properties:
+                    id:
+                      type: string
+                    name:
+                      type: string
+  /teams/{team_id}:
+    get:
+      operationId: getTeam
+      parameters:
+      - name: team_id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Team
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - name
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+  /roles:
+    get:
+      operationId: listRoles
+      responses:
+        '200':
+          description: Roles
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  required:
+                  - id
+                  - name
+                  properties:
+                    id:
+                      type: string
+                    name:
+                      type: string
+  /permissions:
+    get:
+      operationId: listPermissions
+      responses:
+        '200':
+          description: Permissions
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  required:
+                  - id
+                  - name
+                  properties:
+                    id:
+                      type: string
+                    name:
+                      type: string
+  /status:
+    get:
+      operationId: getUsersServiceStatus
+      responses:
+        '200':
+          description: Status
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - status
+                - region
+                properties:
+                  status:
+                    type: string
+                  region:
+                    type: string

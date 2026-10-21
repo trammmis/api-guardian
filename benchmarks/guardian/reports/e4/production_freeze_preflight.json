@@ -1,0 +1,20 @@
+{
+  "stage": "E4_PRE_HUMAN",
+  "purpose": "Freeze deterministic and LLM production files before E4 material construction.",
+  "files": [
+    {"path": "app/services/guardian/oasdiff.py", "sha256": "f2628a647de1fe7e9bc20796f49fb2df0c673b258c6fd0d9ee58d55b00a77043"},
+    {"path": "app/services/guardian/scope.py", "sha256": "0c0627bb1bb838b124fb0bc0d5fe80fd8aa2183a8dae60f73b86e5e84341b669"},
+    {"path": "app/services/guardian/schemathesis.py", "sha256": "6ab64de45e57ddb2e02dca7ad250059df1fef64b7c4add3fdbbcb5cde1af39e5"},
+    {"path": "app/services/guardian/nodes.py", "sha256": "d08232832d556134dca05df94e2c466bd1bb4b753d3d143ddf184a975bbe61c7"},
+    {"path": "app/services/guardian/graph.py", "sha256": "9151a5cf7616902bb6201041b3d7c547ca737b5763601d1c7b38abce69c307fd"},
+    {"path": "app/services/guardian/models.py", "sha256": "b75110edb4ca89bf4a012a7831078b209983145e96915ade767042e8b92d925c"},
+    {"path": "app/services/guardian/security.py", "sha256": "0c7e2ce96e0b8e7e8573085f72d13ae2161c6874c1db653a323087a860d01527"},
+    {"path": "app/services/guardian/errors.py", "sha256": "137cfd87b19484cb5fed3d4f3763e35e92f07be143f7b036ccfe5b65f2fcbce4"},
+    {"path": "app/services/guardian/state.py", "sha256": "9c8325a56554e4588c009ab26952a039f55363e62d00cfefa5424bea1ece42c8"},
+    {"path": "app/services/guardian/risk.py", "sha256": "5b45442755af21d2a567e6fcd1c477e69a7ef29c7e3034ad51ba8f2fdd49aca1"},
+    {"path": "app/services/guardian/diagnosis.py", "sha256": "70182479ea4616de40951fd89f65b5458e06fdf4b4625abb125ec44f52edd966"},
+    {"path": "app/services/guardian/prompts/risk_explanation.md", "sha256": "6bffe350cc8ca382e7d6c59a6a7191aad3dcb827093e5b855c2e62a049fed229"},
+    {"path": "app/services/guardian/prompts/failure_diagnosis.md", "sha256": "529d9b4a974b9d741c788adddc48bb065e2670e0b63f6355148f189b0bab622b"},
+    {"path": "app/services/llm/service.py", "sha256": "6f0512ea781319400dd8c1be507b249a6149127f46d34c5b8fd324c22bddca96"}
+  ]
+}

@@ -1,0 +1,278 @@
+openapi: 3.0.3
+info:
+  title: Guardian Contract booking_api
+  version: 2.0.0
+paths:
+  /bookings/primary:
+    get:
+      operationId: booking_api_0
+      description: Controlled contract operation 0
+      parameters:
+      - name: mode
+        in: query
+        required: false
+        schema:
+          type: string
+          enum:
+          - a
+          - b
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - label
+                properties:
+                  id:
+                    type: string
+                  label:
+                    type: string
+                  status:
+                    type: string
+                    enum:
+                    - active
+                    - inactive
+        '404':
+          description: Not found
+  /bookings:
+    get:
+      operationId: booking_api_1
+      description: Controlled contract operation 1
+      parameters:
+      - name: mode
+        in: query
+        required: false
+        schema:
+          type: string
+          enum:
+          - a
+          - b
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - label
+                properties:
+                  id:
+                    type: string
+                  label:
+                    type: string
+                  status:
+                    type: string
+                    enum:
+                    - active
+                    - inactive
+        '404':
+          description: Not found
+  /rooms/primary:
+    get:
+      operationId: booking_api_2
+      description: Controlled contract operation 2
+      parameters:
+      - name: mode
+        in: query
+        required: false
+        schema:
+          type: string
+          enum:
+          - a
+          - b
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - label
+                properties:
+                  id:
+                    type: string
+                  label:
+                    type: string
+                  status:
+                    type: string
+                    enum:
+                    - active
+                    - inactive
+        '404':
+          description: Not found
+  /rooms:
+    get:
+      operationId: booking_api_3
+      description: Controlled contract operation 3
+      parameters:
+      - name: mode
+        in: query
+        required: false
+        schema:
+          type: string
+          enum:
+          - a
+          - b
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - label
+                properties:
+                  id:
+                    type: string
+                  label:
+                    type: string
+                  status:
+                    type: string
+                    enum:
+                    - active
+                    - inactive
+        '404':
+          description: Not found
+  /guests/primary:
+    get:
+      operationId: booking_api_4
+      description: Controlled contract operation 4
+      parameters:
+      - name: mode
+        in: query
+        required: false
+        schema:
+          type: string
+          enum:
+          - a
+          - b
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - label
+                properties:
+                  id:
+                    type: string
+                  label:
+                    type: string
+                  status:
+                    type: string
+                    enum:
+                    - active
+                    - inactive
+        '404':
+          description: Not found
+  /payments/latest:
+    get:
+      operationId: booking_api_5
+      description: Controlled contract operation 5
+      parameters:
+      - name: mode
+        in: query
+        required: false
+        schema:
+          type: string
+          enum:
+          - a
+          - b
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - id
+                - label
+                properties:
+                  id:
+                    type: string
+                  label:
+                    type: string
+                  status:
+                    type: string
+                    enum:
+                    - active
+                    - inactive
+                  note:
+                    type: string
+        '404':
+          description: Not found
+  /availability/current:
+    get:
+      operationId: booking_api_6
+      description: Controlled contract operation 6
+      parameters:
+      - name: mode
+        in: query
+        required: false
+        schema:
+          type: string
+          enum:
+          - a
+          - b
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SharedEntity'
+        '404':
+          description: Not found
+  /status:
+    get:
+      operationId: booking_api_7
+      description: Controlled contract operation 7
+      parameters:
+      - name: mode
+        in: query
+        required: false
+        schema:
+          type: string
+          enum:
+          - a
+          - b
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SharedEntity'
+        '404':
+          description: Not found
+components:
+  schemas:
+    SharedEntity:
+      type: object
+      required:
+      - id
+      - label
+      properties:
+        id:
+          type: string
+        label:
+          type: string
+        status:
+          type: string
+          enum:
+          - active
+          - inactive

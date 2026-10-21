@@ -1,0 +1,277 @@
+{
+  "category_counts": {
+    "component_change_attribution_limitation": 0,
+    "contract_vs_runtime_scope_mismatch": 0,
+    "dataset_ground_truth_error": 0,
+    "fallback_to_all_over_selection": 0,
+    "oasdiff_ground_truth_disagreement": 5,
+    "operation_id_mapping_limitation": 0,
+    "other": 0,
+    "removed_operation_not_executable": 10,
+    "true_scope_false_negative": 0,
+    "true_scope_false_positive": 0
+  },
+  "classified_miss_count": 15,
+  "dataset_ground_truth_error_count": 0,
+  "ground_truth_definition_issue_count": 10,
+  "ground_truth_semantics": {
+    "contract_affected_scope": "Operations affected in contract meaning, including operations removed from Head",
+    "original_dataset_rewritten": false,
+    "runtime_executable_scope": "Contract-affected operations that still exist in Head and can be selected for Schemathesis"
+  },
+  "integrity": {
+    "e2_raw_unchanged": true,
+    "preflight": {
+      "frozen_e2_raw": {
+        "benchmarks/guardian/reports/e2/latest/contract_raw_results.jsonl": "349023d9464935fcc6ec9006189bf59d124bf3df79f870bcbb4fddaf3aca957a",
+        "benchmarks/guardian/reports/e2/latest/raw_results.jsonl": "f93f33a01a6d97f92a162eca5b41b2f11746c76f8ab7785e23d839e5f08ad196"
+      },
+      "production_core": {
+        "app/services/guardian/graph.py": "9151a5cf7616902bb6201041b3d7c547ca737b5763601d1c7b38abce69c307fd",
+        "app/services/guardian/nodes.py": "5bb6868a9d32c1c80fda5adc5b8d5f1def9f6fac8d2408bda96fba7b22142001",
+        "app/services/guardian/oasdiff.py": "f2628a647de1fe7e9bc20796f49fb2df0c673b258c6fd0d9ee58d55b00a77043",
+        "app/services/guardian/schemathesis.py": "6ab64de45e57ddb2e02dca7ad250059df1fef64b7c4add3fdbbcb5cde1af39e5",
+        "app/services/guardian/scope.py": "9c93058ec5b3d358f5dfe2ddc81415cd276fe7cf448b527124cd629e856f2787"
+      },
+      "recorded_at": "2026-09-06T16:55:54.9061467+08:00"
+    },
+    "production_core_unchanged": true
+  },
+  "metrics": {
+    "component_change_precision": {
+      "denominator": 10,
+      "numerator": 10,
+      "value": 1.0
+    },
+    "component_change_recall": {
+      "denominator": 10,
+      "numerator": 10,
+      "value": 1.0
+    },
+    "contract_impact_precision": {
+      "denominator": 110,
+      "numerator": 40,
+      "value": 0.36363636363636365
+    },
+    "contract_impact_recall": {
+      "denominator": 55,
+      "numerator": 40,
+      "value": 0.7272727272727273
+    },
+    "executable_regression_scope_precision": {
+      "denominator": 110,
+      "numerator": 40,
+      "value": 0.36363636363636365
+    },
+    "executable_regression_scope_recall": {
+      "denominator": 45,
+      "numerator": 40,
+      "value": 0.8888888888888888
+    },
+    "executable_scope_reduction": {
+      "aggregation": "micro_operation_reduction",
+      "denominator": 390,
+      "mean_per_case": 0.7,
+      "numerator": 280,
+      "value": 0.717948717948718
+    },
+    "fallback_cases": [
+      {
+        "case_id": "booking_api_endpoint_removed",
+        "estimated_extra_http_requests": 63.0,
+        "estimated_runtime_cost_seconds": null,
+        "guardian_selected_operations": 7,
+        "head_total_operations": 7,
+        "oracle_executable_operations": 0,
+        "over_selection_operations": 7,
+        "precision": {
+          "denominator": 7,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "runtime_cost_status": "unavailable_non_linear_and_not_executed_in_e2"
+      },
+      {
+        "case_id": "booking_api_method_removed",
+        "estimated_extra_http_requests": 63.0,
+        "estimated_runtime_cost_seconds": null,
+        "guardian_selected_operations": 7,
+        "head_total_operations": 7,
+        "oracle_executable_operations": 0,
+        "over_selection_operations": 7,
+        "precision": {
+          "denominator": 7,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "runtime_cost_status": "unavailable_non_linear_and_not_executed_in_e2"
+      },
+      {
+        "case_id": "inventory_api_endpoint_removed",
+        "estimated_extra_http_requests": 63.0,
+        "estimated_runtime_cost_seconds": null,
+        "guardian_selected_operations": 7,
+        "head_total_operations": 7,
+        "oracle_executable_operations": 0,
+        "over_selection_operations": 7,
+        "precision": {
+          "denominator": 7,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "runtime_cost_status": "unavailable_non_linear_and_not_executed_in_e2"
+      },
+      {
+        "case_id": "inventory_api_method_removed",
+        "estimated_extra_http_requests": 63.0,
+        "estimated_runtime_cost_seconds": null,
+        "guardian_selected_operations": 7,
+        "head_total_operations": 7,
+        "oracle_executable_operations": 0,
+        "over_selection_operations": 7,
+        "precision": {
+          "denominator": 7,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "runtime_cost_status": "unavailable_non_linear_and_not_executed_in_e2"
+      },
+      {
+        "case_id": "orders_api_endpoint_removed",
+        "estimated_extra_http_requests": 63.0,
+        "estimated_runtime_cost_seconds": null,
+        "guardian_selected_operations": 7,
+        "head_total_operations": 7,
+        "oracle_executable_operations": 0,
+        "over_selection_operations": 7,
+        "precision": {
+          "denominator": 7,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "runtime_cost_status": "unavailable_non_linear_and_not_executed_in_e2"
+      },
+      {
+        "case_id": "orders_api_method_removed",
+        "estimated_extra_http_requests": 63.0,
+        "estimated_runtime_cost_seconds": null,
+        "guardian_selected_operations": 7,
+        "head_total_operations": 7,
+        "oracle_executable_operations": 0,
+        "over_selection_operations": 7,
+        "precision": {
+          "denominator": 7,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "runtime_cost_status": "unavailable_non_linear_and_not_executed_in_e2"
+      },
+      {
+        "case_id": "products_api_endpoint_removed",
+        "estimated_extra_http_requests": 63.0,
+        "estimated_runtime_cost_seconds": null,
+        "guardian_selected_operations": 7,
+        "head_total_operations": 7,
+        "oracle_executable_operations": 0,
+        "over_selection_operations": 7,
+        "precision": {
+          "denominator": 7,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "runtime_cost_status": "unavailable_non_linear_and_not_executed_in_e2"
+      },
+      {
+        "case_id": "products_api_method_removed",
+        "estimated_extra_http_requests": 63.0,
+        "estimated_runtime_cost_seconds": null,
+        "guardian_selected_operations": 7,
+        "head_total_operations": 7,
+        "oracle_executable_operations": 0,
+        "over_selection_operations": 7,
+        "precision": {
+          "denominator": 7,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "runtime_cost_status": "unavailable_non_linear_and_not_executed_in_e2"
+      },
+      {
+        "case_id": "users_api_endpoint_removed",
+        "estimated_extra_http_requests": 63.0,
+        "estimated_runtime_cost_seconds": null,
+        "guardian_selected_operations": 7,
+        "head_total_operations": 7,
+        "oracle_executable_operations": 0,
+        "over_selection_operations": 7,
+        "precision": {
+          "denominator": 7,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "runtime_cost_status": "unavailable_non_linear_and_not_executed_in_e2"
+      },
+      {
+        "case_id": "users_api_method_removed",
+        "estimated_extra_http_requests": 63.0,
+        "estimated_runtime_cost_seconds": null,
+        "guardian_selected_operations": 7,
+        "head_total_operations": 7,
+        "oracle_executable_operations": 0,
+        "over_selection_operations": 7,
+        "precision": {
+          "denominator": 7,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "runtime_cost_status": "unavailable_non_linear_and_not_executed_in_e2"
+      }
+    ],
+    "fallback_cost_estimated_requests": 630.0,
+    "fallback_cost_estimated_runtime_seconds": null,
+    "fallback_cost_operations": 70,
+    "fallback_precision": {
+      "denominator": 70,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "fallback_rate": {
+      "denominator": 60,
+      "numerator": 10,
+      "value": 0.16666666666666666
+    },
+    "removed_operation_coverage": {
+      "denominator": 10,
+      "numerator": 10,
+      "value": 1.0
+    }
+  },
+  "non_executable_removed_operation_case_count": 10,
+  "original_e2_metrics": {
+    "contract_scope": {
+      "fallback_to_all_cases": 10,
+      "mean_oracle_overhead_operations": 1.2,
+      "mean_scope_reduction": 0.7,
+      "oracle_efficiency_ratio": 0.5,
+      "precision": {
+        "denominator": 110,
+        "numerator": 40,
+        "value": 0.36363636363636365
+      },
+      "recall": {
+        "denominator": 55,
+        "numerator": 40,
+        "value": 0.7272727272727273
+      }
+    },
+    "contract_verdict_accuracy": {
+      "denominator": 60,
+      "numerator": 55,
+      "value": 0.9166666666666666
+    }
+  },
+  "source_e2_run_id": "guardian-e2-20260906T071336Z-2eacf61c",
+  "source_miss_count": 15,
+  "stage": "E2.5-miss-analysis",
+  "true_guardian_scope_miss_count": 0
+}

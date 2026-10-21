@@ -1,0 +1,111 @@
+{
+  "cases": [
+    {
+      "base_spec_sha256": "532fd702e7f1550366160b0530d1aac0a791cf3581c762dc2bec63f5c53c1e5d",
+      "case_id": "orders_invoice_currency_missing",
+      "head_spec_sha256": "dbd82349a2cc8366422a59b44f02ff1a6d54d635bcf38f6081b933647c99fa7f"
+    },
+    {
+      "base_spec_sha256": "532fd702e7f1550366160b0530d1aac0a791cf3581c762dc2bec63f5c53c1e5d",
+      "case_id": "orders_shipment_tracking_type_lag",
+      "head_spec_sha256": "bbfbed17616767c2bf8f50b7131dd5f3fa845fe43d0b0ae6270e81c5daf493a9"
+    },
+    {
+      "base_spec_sha256": "532fd702e7f1550366160b0530d1aac0a791cf3581c762dc2bec63f5c53c1e5d",
+      "case_id": "orders_status_enum_lag",
+      "head_spec_sha256": "e7007523f7a23e992b1d1a51a69a26d2fb94d269bdaf594b7339aab3b569faf1"
+    },
+    {
+      "base_spec_sha256": "532fd702e7f1550366160b0530d1aac0a791cf3581c762dc2bec63f5c53c1e5d",
+      "case_id": "orders_total_type_lag",
+      "head_spec_sha256": "e75fe5e15b642cdb8e726c80d04304fb8ac64893d16ac712fa3ec11d67b4c6af"
+    },
+    {
+      "base_spec_sha256": "532fd702e7f1550366160b0530d1aac0a791cf3581c762dc2bec63f5c53c1e5d",
+      "case_id": "orders_wrong_total_semantic",
+      "head_spec_sha256": "e75fe5e15b642cdb8e726c80d04304fb8ac64893d16ac712fa3ec11d67b4c6af"
+    },
+    {
+      "base_spec_sha256": "5e18263156a741f77c1eae1ff9951cf970eb9cf8727e475d4ab4dc63784e3d3c",
+      "case_id": "users_id_type_lag",
+      "head_spec_sha256": "a0602595346db8e3458e241844f7f8a6acb4d040abf5f1533208f67b5e7cdede"
+    },
+    {
+      "base_spec_sha256": "5e18263156a741f77c1eae1ff9951cf970eb9cf8727e475d4ab4dc63784e3d3c",
+      "case_id": "users_profile_age_type_lag",
+      "head_spec_sha256": "ead3a7dda5ed78ec199d65be48917060634df8ca6e01c0369954e78833fcb65f"
+    },
+    {
+      "base_spec_sha256": "5e18263156a741f77c1eae1ff9951cf970eb9cf8727e475d4ab4dc63784e3d3c",
+      "case_id": "users_required_email_missing",
+      "head_spec_sha256": "010339ddbe5ff7ddf5ea0a005c11debe76e51a964b7e2b3263675d3f727b2372"
+    },
+    {
+      "base_spec_sha256": "5e18263156a741f77c1eae1ff9951cf970eb9cf8727e475d4ab4dc63784e3d3c",
+      "case_id": "users_team_name_missing",
+      "head_spec_sha256": "9515a651d26be40d9b48065ef516ff1e6adb8c0159141c1a053737dd2b9fa6a4"
+    },
+    {
+      "base_spec_sha256": "5e18263156a741f77c1eae1ff9951cf970eb9cf8727e475d4ab4dc63784e3d3c",
+      "case_id": "users_wrong_user_semantic",
+      "head_spec_sha256": "a0602595346db8e3458e241844f7f8a6acb4d040abf5f1533208f67b5e7cdede"
+    }
+  ],
+  "command_contracts": {
+    "oasdiff": "oasdiff breaking --format json --allow-external-refs=false --fail-on ERR -- BASE HEAD",
+    "schemathesis": "st run HEAD --url TARGET --include-operation-id ID --checks response_schema_conformance --phases examples,coverage --max-examples 1 --generation-deterministic --max-redirects 0 --request-timeout 2.0 --report ndjson --report-ndjson-path REPORT --output-sanitize true --no-color"
+  },
+  "completed_at": "2026-09-03T08:29:58.152518+00:00",
+  "configuration": {
+    "generation_deterministic": true,
+    "max_artifact_bytes": 52428800,
+    "max_examples": 1,
+    "max_redirects": 0,
+    "max_scan_artifact_bytes": 104857600,
+    "random_seed": 20260903,
+    "repetitions": 5,
+    "request_timeout_seconds": 2.0,
+    "schemathesis_check": "response_schema_conformance",
+    "schemathesis_phases": "examples,coverage",
+    "subprocess_timeout_seconds": 30.0,
+    "warmup_runs": 1
+  },
+  "dataset_sha256": "88398e508315624541671558cae5b9dea2e4216e0ad22ebcc14f73f55f7e812f",
+  "executed_systems": [
+    "oasdiff_only",
+    "full_schemathesis",
+    "oracle_scope",
+    "guardian_deterministic"
+  ],
+  "implemented_not_repeated_in_e1": [
+    "oasdiff_plus_full_schemathesis"
+  ],
+  "metadata": {
+    "benchmark_version": "E1.0",
+    "cpu_logical_count": 16,
+    "deepseek_model": null,
+    "guardian_git_commit": "bcc2c8c1303a1eaae9a99dce73c0fe72dc2fc46d",
+    "guardian_worktree_dirty": true,
+    "oasdiff_archive_sha256": "cef8ec7cdd32ab4ce9c188f9dbb50452a91fa36cc11c8e1dcf340b19282c3ce1",
+    "oasdiff_version": "1.28.0",
+    "operating_system": "Windows 11 AMD64",
+    "python_version": "3.13.12",
+    "random_seed": 20260903,
+    "schemathesis_parameters": {
+      "checks": "response_schema_conformance",
+      "generation_deterministic": true,
+      "max_examples": 1,
+      "max_redirects": 0,
+      "phases": "examples,coverage",
+      "request_timeout_seconds": 2.0
+    },
+    "schemathesis_version": "4.24.3"
+  },
+  "production_guardian_core_sha256_after": "3818225ecda14a644b91ce2404f63e52c142cfff49a7100ded0587dc9433fde3",
+  "production_guardian_core_sha256_before": "3818225ecda14a644b91ce2404f63e52c142cfff49a7100ded0587dc9433fde3",
+  "production_guardian_core_unchanged": true,
+  "run_id": "guardian-e1-20260903T075056Z-5e2ede67",
+  "secret_fields_recorded": [],
+  "stage": "E1",
+  "started_at": "2026-09-03T07:50:56.845152+00:00"
+}

@@ -1,0 +1,2018 @@
+{
+  "by_change_type": {
+    "direct_operation": {
+      "breaking_cases": 2,
+      "cases": 5,
+      "metrics": {
+        "breaking_change_precision": {
+          "denominator": 2,
+          "numerator": 2,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "breaking_change_recall": {
+          "denominator": 2,
+          "numerator": 2,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "component_change_precision": {
+          "denominator": 787,
+          "numerator": 5,
+          "percentage": 0.6353240152477764,
+          "value": 0.0063532401524777635
+        },
+        "component_change_precision_successful_pipeline": {
+          "denominator": 787,
+          "numerator": 5,
+          "percentage": 0.6353240152477764,
+          "value": 0.0063532401524777635
+        },
+        "component_change_recall": {
+          "denominator": 5,
+          "numerator": 5,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "component_change_recall_successful_pipeline": {
+          "denominator": 5,
+          "numerator": 5,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "contract_impact_precision": {
+          "denominator": 787,
+          "numerator": 5,
+          "percentage": 0.6353240152477764,
+          "value": 0.0063532401524777635
+        },
+        "contract_impact_precision_successful_pipeline": {
+          "denominator": 787,
+          "numerator": 5,
+          "percentage": 0.6353240152477764,
+          "value": 0.0063532401524777635
+        },
+        "contract_impact_recall": {
+          "denominator": 6,
+          "numerator": 5,
+          "percentage": 83.33333333333334,
+          "value": 0.8333333333333334
+        },
+        "contract_impact_recall_successful_pipeline": {
+          "denominator": 6,
+          "numerator": 5,
+          "percentage": 83.33333333333334,
+          "value": 0.8333333333333334
+        },
+        "contract_verdict_accuracy": {
+          "denominator": 5,
+          "numerator": 3,
+          "percentage": 60.0,
+          "value": 0.6
+        },
+        "executable_regression_scope_precision": {
+          "denominator": 787,
+          "numerator": 5,
+          "percentage": 0.6353240152477764,
+          "value": 0.0063532401524777635
+        },
+        "executable_regression_scope_precision_successful_pipeline": {
+          "denominator": 787,
+          "numerator": 5,
+          "percentage": 0.6353240152477764,
+          "value": 0.0063532401524777635
+        },
+        "executable_regression_scope_recall": {
+          "denominator": 5,
+          "numerator": 5,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "executable_regression_scope_recall_successful_pipeline": {
+          "denominator": 5,
+          "numerator": 5,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "fallback_precision": {
+          "denominator": 783,
+          "numerator": 1,
+          "percentage": 0.1277139208173691,
+          "value": 0.001277139208173691
+        },
+        "fallback_rate": {
+          "denominator": 5,
+          "numerator": 1,
+          "percentage": 20.0,
+          "value": 0.2
+        },
+        "fallback_rate_successful_pipeline": {
+          "denominator": 3,
+          "numerator": 1,
+          "percentage": 33.33333333333333,
+          "value": 0.3333333333333333
+        },
+        "mean_executable_scope_reduction": {
+          "denominator": 5,
+          "numerator": 3.983050847457627,
+          "percentage": 79.66101694915254,
+          "value": 0.7966101694915254
+        },
+        "mean_executable_scope_reduction_breaking_cases": {
+          "denominator": 2,
+          "numerator": 0.9830508474576272,
+          "percentage": 49.152542372881356,
+          "value": 0.4915254237288136
+        },
+        "mean_executable_scope_reduction_breaking_successful_pipeline": {
+          "denominator": 2,
+          "numerator": 0.9830508474576272,
+          "percentage": 49.152542372881356,
+          "value": 0.4915254237288136
+        },
+        "mean_executable_scope_reduction_successful_pipeline": {
+          "denominator": 3,
+          "numerator": 1.9830508474576272,
+          "percentage": 66.10169491525424,
+          "value": 0.6610169491525424
+        },
+        "removed_operation_coverage": {
+          "denominator": 1,
+          "numerator": 1,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "system_error_rate": {
+          "denominator": 5,
+          "numerator": 2,
+          "percentage": 40.0,
+          "value": 0.4
+        },
+        "system_execution_success_rate": {
+          "denominator": 5,
+          "numerator": 3,
+          "percentage": 60.0,
+          "value": 0.6
+        }
+      }
+    },
+    "documentation_only": {
+      "breaking_cases": 0,
+      "cases": 3,
+      "metrics": {
+        "breaking_change_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "breaking_change_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "component_change_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "component_change_precision_successful_pipeline": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "component_change_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "component_change_recall_successful_pipeline": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "contract_impact_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "contract_impact_precision_successful_pipeline": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "contract_impact_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "contract_impact_recall_successful_pipeline": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "contract_verdict_accuracy": {
+          "denominator": 3,
+          "numerator": 3,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "executable_regression_scope_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "executable_regression_scope_precision_successful_pipeline": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "executable_regression_scope_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "executable_regression_scope_recall_successful_pipeline": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "fallback_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "fallback_rate": {
+          "denominator": 3,
+          "numerator": 0,
+          "percentage": 0.0,
+          "value": 0.0
+        },
+        "fallback_rate_successful_pipeline": {
+          "denominator": 3,
+          "numerator": 0,
+          "percentage": 0.0,
+          "value": 0.0
+        },
+        "mean_executable_scope_reduction": {
+          "denominator": 3,
+          "numerator": 3.0,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "mean_executable_scope_reduction_breaking_cases": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "mean_executable_scope_reduction_breaking_successful_pipeline": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "mean_executable_scope_reduction_successful_pipeline": {
+          "denominator": 3,
+          "numerator": 3.0,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "removed_operation_coverage": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "system_error_rate": {
+          "denominator": 3,
+          "numerator": 0,
+          "percentage": 0.0,
+          "value": 0.0
+        },
+        "system_execution_success_rate": {
+          "denominator": 3,
+          "numerator": 3,
+          "percentage": 100.0,
+          "value": 1.0
+        }
+      }
+    },
+    "mixed": {
+      "breaking_cases": 4,
+      "cases": 4,
+      "metrics": {
+        "breaking_change_precision": {
+          "denominator": 3,
+          "numerator": 3,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "breaking_change_recall": {
+          "denominator": 4,
+          "numerator": 3,
+          "percentage": 75.0,
+          "value": 0.75
+        },
+        "component_change_precision": {
+          "denominator": 1424,
+          "numerator": 31,
+          "percentage": 2.1769662921348316,
+          "value": 0.021769662921348316
+        },
+        "component_change_precision_successful_pipeline": {
+          "denominator": 1424,
+          "numerator": 31,
+          "percentage": 2.1769662921348316,
+          "value": 0.021769662921348316
+        },
+        "component_change_recall": {
+          "denominator": 46,
+          "numerator": 31,
+          "percentage": 67.3913043478261,
+          "value": 0.6739130434782609
+        },
+        "component_change_recall_successful_pipeline": {
+          "denominator": 31,
+          "numerator": 31,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "contract_impact_precision": {
+          "denominator": 1424,
+          "numerator": 31,
+          "percentage": 2.1769662921348316,
+          "value": 0.021769662921348316
+        },
+        "contract_impact_precision_successful_pipeline": {
+          "denominator": 1424,
+          "numerator": 31,
+          "percentage": 2.1769662921348316,
+          "value": 0.021769662921348316
+        },
+        "contract_impact_recall": {
+          "denominator": 48,
+          "numerator": 31,
+          "percentage": 64.58333333333334,
+          "value": 0.6458333333333334
+        },
+        "contract_impact_recall_successful_pipeline": {
+          "denominator": 33,
+          "numerator": 31,
+          "percentage": 93.93939393939394,
+          "value": 0.9393939393939394
+        },
+        "contract_verdict_accuracy": {
+          "denominator": 4,
+          "numerator": 3,
+          "percentage": 75.0,
+          "value": 0.75
+        },
+        "executable_regression_scope_precision": {
+          "denominator": 1424,
+          "numerator": 31,
+          "percentage": 2.1769662921348316,
+          "value": 0.021769662921348316
+        },
+        "executable_regression_scope_precision_successful_pipeline": {
+          "denominator": 1424,
+          "numerator": 31,
+          "percentage": 2.1769662921348316,
+          "value": 0.021769662921348316
+        },
+        "executable_regression_scope_recall": {
+          "denominator": 46,
+          "numerator": 31,
+          "percentage": 67.3913043478261,
+          "value": 0.6739130434782609
+        },
+        "executable_regression_scope_recall_successful_pipeline": {
+          "denominator": 31,
+          "numerator": 31,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "fallback_precision": {
+          "denominator": 1420,
+          "numerator": 27,
+          "percentage": 1.9014084507042253,
+          "value": 0.019014084507042252
+        },
+        "fallback_rate": {
+          "denominator": 4,
+          "numerator": 2,
+          "percentage": 50.0,
+          "value": 0.5
+        },
+        "fallback_rate_successful_pipeline": {
+          "denominator": 3,
+          "numerator": 2,
+          "percentage": 66.66666666666666,
+          "value": 0.6666666666666666
+        },
+        "mean_executable_scope_reduction": {
+          "denominator": 4,
+          "numerator": 1.9830508474576272,
+          "percentage": 49.57627118644068,
+          "value": 0.4957627118644068
+        },
+        "mean_executable_scope_reduction_breaking_cases": {
+          "denominator": 4,
+          "numerator": 1.9830508474576272,
+          "percentage": 49.57627118644068,
+          "value": 0.4957627118644068
+        },
+        "mean_executable_scope_reduction_breaking_successful_pipeline": {
+          "denominator": 3,
+          "numerator": 0.9830508474576272,
+          "percentage": 32.76836158192091,
+          "value": 0.3276836158192091
+        },
+        "mean_executable_scope_reduction_successful_pipeline": {
+          "denominator": 3,
+          "numerator": 0.9830508474576272,
+          "percentage": 32.76836158192091,
+          "value": 0.3276836158192091
+        },
+        "removed_operation_coverage": {
+          "denominator": 2,
+          "numerator": 2,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "system_error_rate": {
+          "denominator": 4,
+          "numerator": 1,
+          "percentage": 25.0,
+          "value": 0.25
+        },
+        "system_execution_success_rate": {
+          "denominator": 4,
+          "numerator": 3,
+          "percentage": 75.0,
+          "value": 0.75
+        }
+      }
+    },
+    "removed_operation": {
+      "breaking_cases": 3,
+      "cases": 3,
+      "metrics": {
+        "breaking_change_precision": {
+          "denominator": 3,
+          "numerator": 3,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "breaking_change_recall": {
+          "denominator": 3,
+          "numerator": 3,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "component_change_precision": {
+          "denominator": 1420,
+          "numerator": 27,
+          "percentage": 1.9014084507042253,
+          "value": 0.019014084507042252
+        },
+        "component_change_precision_successful_pipeline": {
+          "denominator": 1420,
+          "numerator": 27,
+          "percentage": 1.9014084507042253,
+          "value": 0.019014084507042252
+        },
+        "component_change_recall": {
+          "denominator": 27,
+          "numerator": 27,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "component_change_recall_successful_pipeline": {
+          "denominator": 27,
+          "numerator": 27,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "contract_impact_precision": {
+          "denominator": 1659,
+          "numerator": 27,
+          "percentage": 1.62748643761302,
+          "value": 0.0162748643761302
+        },
+        "contract_impact_precision_successful_pipeline": {
+          "denominator": 1659,
+          "numerator": 27,
+          "percentage": 1.62748643761302,
+          "value": 0.0162748643761302
+        },
+        "contract_impact_recall": {
+          "denominator": 30,
+          "numerator": 27,
+          "percentage": 90.0,
+          "value": 0.9
+        },
+        "contract_impact_recall_successful_pipeline": {
+          "denominator": 30,
+          "numerator": 27,
+          "percentage": 90.0,
+          "value": 0.9
+        },
+        "contract_verdict_accuracy": {
+          "denominator": 3,
+          "numerator": 3,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "executable_regression_scope_precision": {
+          "denominator": 1659,
+          "numerator": 27,
+          "percentage": 1.62748643761302,
+          "value": 0.0162748643761302
+        },
+        "executable_regression_scope_precision_successful_pipeline": {
+          "denominator": 1659,
+          "numerator": 27,
+          "percentage": 1.62748643761302,
+          "value": 0.0162748643761302
+        },
+        "executable_regression_scope_recall": {
+          "denominator": 27,
+          "numerator": 27,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "executable_regression_scope_recall_successful_pipeline": {
+          "denominator": 27,
+          "numerator": 27,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "fallback_precision": {
+          "denominator": 1659,
+          "numerator": 27,
+          "percentage": 1.62748643761302,
+          "value": 0.0162748643761302
+        },
+        "fallback_rate": {
+          "denominator": 3,
+          "numerator": 3,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "fallback_rate_successful_pipeline": {
+          "denominator": 3,
+          "numerator": 3,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "mean_executable_scope_reduction": {
+          "denominator": 3,
+          "numerator": 0.0,
+          "percentage": 0.0,
+          "value": 0.0
+        },
+        "mean_executable_scope_reduction_breaking_cases": {
+          "denominator": 3,
+          "numerator": 0.0,
+          "percentage": 0.0,
+          "value": 0.0
+        },
+        "mean_executable_scope_reduction_breaking_successful_pipeline": {
+          "denominator": 3,
+          "numerator": 0.0,
+          "percentage": 0.0,
+          "value": 0.0
+        },
+        "mean_executable_scope_reduction_successful_pipeline": {
+          "denominator": 3,
+          "numerator": 0.0,
+          "percentage": 0.0,
+          "value": 0.0
+        },
+        "removed_operation_coverage": {
+          "denominator": 3,
+          "numerator": 3,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "system_error_rate": {
+          "denominator": 3,
+          "numerator": 0,
+          "percentage": 0.0,
+          "value": 0.0
+        },
+        "system_execution_success_rate": {
+          "denominator": 3,
+          "numerator": 3,
+          "percentage": 100.0,
+          "value": 1.0
+        }
+      }
+    },
+    "request_schema": {
+      "breaking_cases": 3,
+      "cases": 6,
+      "metrics": {
+        "breaking_change_precision": {
+          "denominator": 2,
+          "numerator": 2,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "breaking_change_recall": {
+          "denominator": 3,
+          "numerator": 2,
+          "percentage": 66.66666666666666,
+          "value": 0.6666666666666666
+        },
+        "component_change_precision": {
+          "denominator": 5,
+          "numerator": 5,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "component_change_precision_successful_pipeline": {
+          "denominator": 5,
+          "numerator": 5,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "component_change_recall": {
+          "denominator": 5,
+          "numerator": 5,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "component_change_recall_successful_pipeline": {
+          "denominator": 5,
+          "numerator": 5,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "contract_impact_precision": {
+          "denominator": 6,
+          "numerator": 6,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "contract_impact_precision_successful_pipeline": {
+          "denominator": 6,
+          "numerator": 6,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "contract_impact_recall": {
+          "denominator": 6,
+          "numerator": 6,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "contract_impact_recall_successful_pipeline": {
+          "denominator": 6,
+          "numerator": 6,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "contract_verdict_accuracy": {
+          "denominator": 6,
+          "numerator": 4,
+          "percentage": 66.66666666666666,
+          "value": 0.6666666666666666
+        },
+        "executable_regression_scope_precision": {
+          "denominator": 6,
+          "numerator": 6,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "executable_regression_scope_precision_successful_pipeline": {
+          "denominator": 6,
+          "numerator": 6,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "executable_regression_scope_recall": {
+          "denominator": 6,
+          "numerator": 6,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "executable_regression_scope_recall_successful_pipeline": {
+          "denominator": 6,
+          "numerator": 6,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "fallback_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "fallback_rate": {
+          "denominator": 6,
+          "numerator": 0,
+          "percentage": 0.0,
+          "value": 0.0
+        },
+        "fallback_rate_successful_pipeline": {
+          "denominator": 5,
+          "numerator": 0,
+          "percentage": 0.0,
+          "value": 0.0
+        },
+        "mean_executable_scope_reduction": {
+          "denominator": 6,
+          "numerator": 5.953760186780105,
+          "percentage": 99.22933644633508,
+          "value": 0.9922933644633508
+        },
+        "mean_executable_scope_reduction_breaking_cases": {
+          "denominator": 3,
+          "numerator": 2.953760186780105,
+          "percentage": 98.45867289267018,
+          "value": 0.9845867289267017
+        },
+        "mean_executable_scope_reduction_breaking_successful_pipeline": {
+          "denominator": 3,
+          "numerator": 2.953760186780105,
+          "percentage": 98.45867289267018,
+          "value": 0.9845867289267017
+        },
+        "mean_executable_scope_reduction_successful_pipeline": {
+          "denominator": 5,
+          "numerator": 4.953760186780105,
+          "percentage": 99.0752037356021,
+          "value": 0.990752037356021
+        },
+        "removed_operation_coverage": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "system_error_rate": {
+          "denominator": 6,
+          "numerator": 1,
+          "percentage": 16.666666666666664,
+          "value": 0.16666666666666666
+        },
+        "system_execution_success_rate": {
+          "denominator": 6,
+          "numerator": 5,
+          "percentage": 83.33333333333334,
+          "value": 0.8333333333333334
+        }
+      }
+    },
+    "response_schema": {
+      "breaking_cases": 6,
+      "cases": 9,
+      "metrics": {
+        "breaking_change_precision": {
+          "denominator": 5,
+          "numerator": 5,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "breaking_change_recall": {
+          "denominator": 6,
+          "numerator": 5,
+          "percentage": 83.33333333333334,
+          "value": 0.8333333333333334
+        },
+        "component_change_precision": {
+          "denominator": 1449,
+          "numerator": 56,
+          "percentage": 3.864734299516908,
+          "value": 0.03864734299516908
+        },
+        "component_change_precision_successful_pipeline": {
+          "denominator": 1449,
+          "numerator": 56,
+          "percentage": 3.864734299516908,
+          "value": 0.03864734299516908
+        },
+        "component_change_recall": {
+          "denominator": 71,
+          "numerator": 56,
+          "percentage": 78.87323943661971,
+          "value": 0.7887323943661971
+        },
+        "component_change_recall_successful_pipeline": {
+          "denominator": 56,
+          "numerator": 56,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "contract_impact_precision": {
+          "denominator": 1449,
+          "numerator": 56,
+          "percentage": 3.864734299516908,
+          "value": 0.03864734299516908
+        },
+        "contract_impact_precision_successful_pipeline": {
+          "denominator": 1449,
+          "numerator": 56,
+          "percentage": 3.864734299516908,
+          "value": 0.03864734299516908
+        },
+        "contract_impact_recall": {
+          "denominator": 73,
+          "numerator": 56,
+          "percentage": 76.71232876712328,
+          "value": 0.7671232876712328
+        },
+        "contract_impact_recall_successful_pipeline": {
+          "denominator": 58,
+          "numerator": 56,
+          "percentage": 96.55172413793103,
+          "value": 0.9655172413793104
+        },
+        "contract_verdict_accuracy": {
+          "denominator": 9,
+          "numerator": 7,
+          "percentage": 77.77777777777779,
+          "value": 0.7777777777777778
+        },
+        "executable_regression_scope_precision": {
+          "denominator": 1449,
+          "numerator": 56,
+          "percentage": 3.864734299516908,
+          "value": 0.03864734299516908
+        },
+        "executable_regression_scope_precision_successful_pipeline": {
+          "denominator": 1449,
+          "numerator": 56,
+          "percentage": 3.864734299516908,
+          "value": 0.03864734299516908
+        },
+        "executable_regression_scope_recall": {
+          "denominator": 71,
+          "numerator": 56,
+          "percentage": 78.87323943661971,
+          "value": 0.7887323943661971
+        },
+        "executable_regression_scope_recall_successful_pipeline": {
+          "denominator": 56,
+          "numerator": 56,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "fallback_precision": {
+          "denominator": 1420,
+          "numerator": 27,
+          "percentage": 1.9014084507042253,
+          "value": 0.019014084507042252
+        },
+        "fallback_rate": {
+          "denominator": 9,
+          "numerator": 2,
+          "percentage": 22.22222222222222,
+          "value": 0.2222222222222222
+        },
+        "fallback_rate_successful_pipeline": {
+          "denominator": 7,
+          "numerator": 2,
+          "percentage": 28.57142857142857,
+          "value": 0.2857142857142857
+        },
+        "mean_executable_scope_reduction": {
+          "denominator": 9,
+          "numerator": 6.878219929583231,
+          "percentage": 76.42466588425812,
+          "value": 0.7642466588425813
+        },
+        "mean_executable_scope_reduction_breaking_cases": {
+          "denominator": 6,
+          "numerator": 3.878219929583231,
+          "percentage": 64.63699882638718,
+          "value": 0.6463699882638718
+        },
+        "mean_executable_scope_reduction_breaking_successful_pipeline": {
+          "denominator": 5,
+          "numerator": 2.878219929583231,
+          "percentage": 57.56439859166462,
+          "value": 0.5756439859166462
+        },
+        "mean_executable_scope_reduction_successful_pipeline": {
+          "denominator": 7,
+          "numerator": 4.878219929583231,
+          "percentage": 69.68885613690331,
+          "value": 0.6968885613690331
+        },
+        "removed_operation_coverage": {
+          "denominator": 2,
+          "numerator": 2,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "system_error_rate": {
+          "denominator": 9,
+          "numerator": 2,
+          "percentage": 22.22222222222222,
+          "value": 0.2222222222222222
+        },
+        "system_execution_success_rate": {
+          "denominator": 9,
+          "numerator": 7,
+          "percentage": 77.77777777777779,
+          "value": 0.7777777777777778
+        }
+      }
+    },
+    "shared_component": {
+      "breaking_cases": 7,
+      "cases": 13,
+      "metrics": {
+        "breaking_change_precision": {
+          "denominator": 6,
+          "numerator": 6,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "breaking_change_recall": {
+          "denominator": 7,
+          "numerator": 6,
+          "percentage": 85.71428571428571,
+          "value": 0.8571428571428571
+        },
+        "component_change_precision": {
+          "denominator": 1450,
+          "numerator": 57,
+          "percentage": 3.9310344827586206,
+          "value": 0.039310344827586205
+        },
+        "component_change_precision_successful_pipeline": {
+          "denominator": 1450,
+          "numerator": 57,
+          "percentage": 3.9310344827586206,
+          "value": 0.039310344827586205
+        },
+        "component_change_recall": {
+          "denominator": 72,
+          "numerator": 57,
+          "percentage": 79.16666666666666,
+          "value": 0.7916666666666666
+        },
+        "component_change_recall_successful_pipeline": {
+          "denominator": 57,
+          "numerator": 57,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "contract_impact_precision": {
+          "denominator": 1450,
+          "numerator": 57,
+          "percentage": 3.9310344827586206,
+          "value": 0.039310344827586205
+        },
+        "contract_impact_precision_successful_pipeline": {
+          "denominator": 1450,
+          "numerator": 57,
+          "percentage": 3.9310344827586206,
+          "value": 0.039310344827586205
+        },
+        "contract_impact_recall": {
+          "denominator": 74,
+          "numerator": 57,
+          "percentage": 77.02702702702703,
+          "value": 0.7702702702702703
+        },
+        "contract_impact_recall_successful_pipeline": {
+          "denominator": 59,
+          "numerator": 57,
+          "percentage": 96.61016949152543,
+          "value": 0.9661016949152542
+        },
+        "contract_verdict_accuracy": {
+          "denominator": 13,
+          "numerator": 11,
+          "percentage": 84.61538461538461,
+          "value": 0.8461538461538461
+        },
+        "executable_regression_scope_precision": {
+          "denominator": 1450,
+          "numerator": 57,
+          "percentage": 3.9310344827586206,
+          "value": 0.039310344827586205
+        },
+        "executable_regression_scope_precision_successful_pipeline": {
+          "denominator": 1450,
+          "numerator": 57,
+          "percentage": 3.9310344827586206,
+          "value": 0.039310344827586205
+        },
+        "executable_regression_scope_recall": {
+          "denominator": 72,
+          "numerator": 57,
+          "percentage": 79.16666666666666,
+          "value": 0.7916666666666666
+        },
+        "executable_regression_scope_recall_successful_pipeline": {
+          "denominator": 57,
+          "numerator": 57,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "fallback_precision": {
+          "denominator": 1420,
+          "numerator": 27,
+          "percentage": 1.9014084507042253,
+          "value": 0.019014084507042252
+        },
+        "fallback_rate": {
+          "denominator": 13,
+          "numerator": 2,
+          "percentage": 15.384615384615385,
+          "value": 0.15384615384615385
+        },
+        "fallback_rate_successful_pipeline": {
+          "denominator": 11,
+          "numerator": 2,
+          "percentage": 18.181818181818183,
+          "value": 0.18181818181818182
+        },
+        "mean_executable_scope_reduction": {
+          "denominator": 13,
+          "numerator": 10.874570294546734,
+          "percentage": 83.65054072728257,
+          "value": 0.8365054072728257
+        },
+        "mean_executable_scope_reduction_breaking_cases": {
+          "denominator": 7,
+          "numerator": 4.874570294546735,
+          "percentage": 69.63671849352478,
+          "value": 0.6963671849352479
+        },
+        "mean_executable_scope_reduction_breaking_successful_pipeline": {
+          "denominator": 6,
+          "numerator": 3.874570294546735,
+          "percentage": 64.57617157577891,
+          "value": 0.6457617157577892
+        },
+        "mean_executable_scope_reduction_successful_pipeline": {
+          "denominator": 11,
+          "numerator": 8.874570294546734,
+          "percentage": 80.67791176860666,
+          "value": 0.8067791176860667
+        },
+        "removed_operation_coverage": {
+          "denominator": 2,
+          "numerator": 2,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "system_error_rate": {
+          "denominator": 13,
+          "numerator": 2,
+          "percentage": 15.384615384615385,
+          "value": 0.15384615384615385
+        },
+        "system_execution_success_rate": {
+          "denominator": 13,
+          "numerator": 11,
+          "percentage": 84.61538461538461,
+          "value": 0.8461538461538461
+        }
+      }
+    }
+  },
+  "by_repository": {
+    "appwrite/specs": {
+      "breaking_cases": 2,
+      "metrics": {
+        "breaking_change_precision": {
+          "denominator": 2,
+          "numerator": 2,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "breaking_change_recall": {
+          "denominator": 2,
+          "numerator": 2,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "component_change_precision": {
+          "denominator": 1420,
+          "numerator": 27,
+          "percentage": 1.9014084507042253,
+          "value": 0.019014084507042252
+        },
+        "component_change_precision_successful_pipeline": {
+          "denominator": 1420,
+          "numerator": 27,
+          "percentage": 1.9014084507042253,
+          "value": 0.019014084507042252
+        },
+        "component_change_recall": {
+          "denominator": 27,
+          "numerator": 27,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "component_change_recall_successful_pipeline": {
+          "denominator": 27,
+          "numerator": 27,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "contract_impact_precision": {
+          "denominator": 1420,
+          "numerator": 27,
+          "percentage": 1.9014084507042253,
+          "value": 0.019014084507042252
+        },
+        "contract_impact_precision_successful_pipeline": {
+          "denominator": 1420,
+          "numerator": 27,
+          "percentage": 1.9014084507042253,
+          "value": 0.019014084507042252
+        },
+        "contract_impact_recall": {
+          "denominator": 29,
+          "numerator": 27,
+          "percentage": 93.10344827586206,
+          "value": 0.9310344827586207
+        },
+        "contract_impact_recall_successful_pipeline": {
+          "denominator": 29,
+          "numerator": 27,
+          "percentage": 93.10344827586206,
+          "value": 0.9310344827586207
+        },
+        "contract_verdict_accuracy": {
+          "denominator": 3,
+          "numerator": 3,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "executable_regression_scope_precision": {
+          "denominator": 1420,
+          "numerator": 27,
+          "percentage": 1.9014084507042253,
+          "value": 0.019014084507042252
+        },
+        "executable_regression_scope_precision_successful_pipeline": {
+          "denominator": 1420,
+          "numerator": 27,
+          "percentage": 1.9014084507042253,
+          "value": 0.019014084507042252
+        },
+        "executable_regression_scope_recall": {
+          "denominator": 27,
+          "numerator": 27,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "executable_regression_scope_recall_successful_pipeline": {
+          "denominator": 27,
+          "numerator": 27,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "fallback_precision": {
+          "denominator": 1420,
+          "numerator": 27,
+          "percentage": 1.9014084507042253,
+          "value": 0.019014084507042252
+        },
+        "fallback_rate": {
+          "denominator": 3,
+          "numerator": 2,
+          "percentage": 66.66666666666666,
+          "value": 0.6666666666666666
+        },
+        "fallback_rate_successful_pipeline": {
+          "denominator": 3,
+          "numerator": 2,
+          "percentage": 66.66666666666666,
+          "value": 0.6666666666666666
+        },
+        "mean_executable_scope_reduction": {
+          "denominator": 3,
+          "numerator": 1.0,
+          "percentage": 33.33333333333333,
+          "value": 0.3333333333333333
+        },
+        "mean_executable_scope_reduction_breaking_cases": {
+          "denominator": 2,
+          "numerator": 0.0,
+          "percentage": 0.0,
+          "value": 0.0
+        },
+        "mean_executable_scope_reduction_breaking_successful_pipeline": {
+          "denominator": 2,
+          "numerator": 0.0,
+          "percentage": 0.0,
+          "value": 0.0
+        },
+        "mean_executable_scope_reduction_successful_pipeline": {
+          "denominator": 3,
+          "numerator": 1.0,
+          "percentage": 33.33333333333333,
+          "value": 0.3333333333333333
+        },
+        "removed_operation_coverage": {
+          "denominator": 2,
+          "numerator": 2,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "system_error_rate": {
+          "denominator": 3,
+          "numerator": 0,
+          "percentage": 0.0,
+          "value": 0.0
+        },
+        "system_execution_success_rate": {
+          "denominator": 3,
+          "numerator": 3,
+          "percentage": 100.0,
+          "value": 1.0
+        }
+      },
+      "pairs": 3
+    },
+    "immich-app/immich": {
+      "breaking_cases": 3,
+      "metrics": {
+        "breaking_change_precision": {
+          "denominator": 3,
+          "numerator": 3,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "breaking_change_recall": {
+          "denominator": 3,
+          "numerator": 3,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "component_change_precision": {
+          "denominator": 25,
+          "numerator": 25,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "component_change_precision_successful_pipeline": {
+          "denominator": 25,
+          "numerator": 25,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "component_change_recall": {
+          "denominator": 25,
+          "numerator": 25,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "component_change_recall_successful_pipeline": {
+          "denominator": 25,
+          "numerator": 25,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "contract_impact_precision": {
+          "denominator": 264,
+          "numerator": 25,
+          "percentage": 9.469696969696969,
+          "value": 0.0946969696969697
+        },
+        "contract_impact_precision_successful_pipeline": {
+          "denominator": 264,
+          "numerator": 25,
+          "percentage": 9.469696969696969,
+          "value": 0.0946969696969697
+        },
+        "contract_impact_recall": {
+          "denominator": 26,
+          "numerator": 25,
+          "percentage": 96.15384615384616,
+          "value": 0.9615384615384616
+        },
+        "contract_impact_recall_successful_pipeline": {
+          "denominator": 26,
+          "numerator": 25,
+          "percentage": 96.15384615384616,
+          "value": 0.9615384615384616
+        },
+        "contract_verdict_accuracy": {
+          "denominator": 7,
+          "numerator": 7,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "executable_regression_scope_precision": {
+          "denominator": 264,
+          "numerator": 25,
+          "percentage": 9.469696969696969,
+          "value": 0.0946969696969697
+        },
+        "executable_regression_scope_precision_successful_pipeline": {
+          "denominator": 264,
+          "numerator": 25,
+          "percentage": 9.469696969696969,
+          "value": 0.0946969696969697
+        },
+        "executable_regression_scope_recall": {
+          "denominator": 25,
+          "numerator": 25,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "executable_regression_scope_recall_successful_pipeline": {
+          "denominator": 25,
+          "numerator": 25,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "fallback_precision": {
+          "denominator": 239,
+          "numerator": 0,
+          "percentage": 0.0,
+          "value": 0.0
+        },
+        "fallback_rate": {
+          "denominator": 7,
+          "numerator": 1,
+          "percentage": 14.285714285714285,
+          "value": 0.14285714285714285
+        },
+        "fallback_rate_successful_pipeline": {
+          "denominator": 7,
+          "numerator": 1,
+          "percentage": 14.285714285714285,
+          "value": 0.14285714285714285
+        },
+        "mean_executable_scope_reduction": {
+          "denominator": 7,
+          "numerator": 5.896350364963504,
+          "percentage": 84.23357664233578,
+          "value": 0.8423357664233577
+        },
+        "mean_executable_scope_reduction_breaking_cases": {
+          "denominator": 3,
+          "numerator": 1.8963503649635036,
+          "percentage": 63.21167883211679,
+          "value": 0.6321167883211679
+        },
+        "mean_executable_scope_reduction_breaking_successful_pipeline": {
+          "denominator": 3,
+          "numerator": 1.8963503649635036,
+          "percentage": 63.21167883211679,
+          "value": 0.6321167883211679
+        },
+        "mean_executable_scope_reduction_successful_pipeline": {
+          "denominator": 7,
+          "numerator": 5.896350364963504,
+          "percentage": 84.23357664233578,
+          "value": 0.8423357664233577
+        },
+        "removed_operation_coverage": {
+          "denominator": 1,
+          "numerator": 1,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "system_error_rate": {
+          "denominator": 7,
+          "numerator": 0,
+          "percentage": 0.0,
+          "value": 0.0
+        },
+        "system_execution_success_rate": {
+          "denominator": 7,
+          "numerator": 7,
+          "percentage": 100.0,
+          "value": 1.0
+        }
+      },
+      "pairs": 7
+    },
+    "netbirdio/netbird": {
+      "breaking_cases": 2,
+      "metrics": {
+        "breaking_change_precision": {
+          "denominator": 2,
+          "numerator": 2,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "breaking_change_recall": {
+          "denominator": 2,
+          "numerator": 2,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "component_change_precision": {
+          "denominator": 5,
+          "numerator": 5,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "component_change_precision_successful_pipeline": {
+          "denominator": 5,
+          "numerator": 5,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "component_change_recall": {
+          "denominator": 5,
+          "numerator": 5,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "component_change_recall_successful_pipeline": {
+          "denominator": 5,
+          "numerator": 5,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "contract_impact_precision": {
+          "denominator": 5,
+          "numerator": 5,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "contract_impact_precision_successful_pipeline": {
+          "denominator": 5,
+          "numerator": 5,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "contract_impact_recall": {
+          "denominator": 5,
+          "numerator": 5,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "contract_impact_recall_successful_pipeline": {
+          "denominator": 5,
+          "numerator": 5,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "contract_verdict_accuracy": {
+          "denominator": 4,
+          "numerator": 4,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "executable_regression_scope_precision": {
+          "denominator": 5,
+          "numerator": 5,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "executable_regression_scope_precision_successful_pipeline": {
+          "denominator": 5,
+          "numerator": 5,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "executable_regression_scope_recall": {
+          "denominator": 5,
+          "numerator": 5,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "executable_regression_scope_recall_successful_pipeline": {
+          "denominator": 5,
+          "numerator": 5,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "fallback_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "fallback_rate": {
+          "denominator": 4,
+          "numerator": 0,
+          "percentage": 0.0,
+          "value": 0.0
+        },
+        "fallback_rate_successful_pipeline": {
+          "denominator": 4,
+          "numerator": 0,
+          "percentage": 0.0,
+          "value": 0.0
+        },
+        "mean_executable_scope_reduction": {
+          "denominator": 4,
+          "numerator": 3.978219929583231,
+          "percentage": 99.45549823958078,
+          "value": 0.9945549823958078
+        },
+        "mean_executable_scope_reduction_breaking_cases": {
+          "denominator": 2,
+          "numerator": 1.978219929583231,
+          "percentage": 98.91099647916155,
+          "value": 0.9891099647916155
+        },
+        "mean_executable_scope_reduction_breaking_successful_pipeline": {
+          "denominator": 2,
+          "numerator": 1.978219929583231,
+          "percentage": 98.91099647916155,
+          "value": 0.9891099647916155
+        },
+        "mean_executable_scope_reduction_successful_pipeline": {
+          "denominator": 4,
+          "numerator": 3.978219929583231,
+          "percentage": 99.45549823958078,
+          "value": 0.9945549823958078
+        },
+        "removed_operation_coverage": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "system_error_rate": {
+          "denominator": 4,
+          "numerator": 0,
+          "percentage": 0.0,
+          "value": 0.0
+        },
+        "system_execution_success_rate": {
+          "denominator": 4,
+          "numerator": 4,
+          "percentage": 100.0,
+          "value": 1.0
+        }
+      },
+      "pairs": 4
+    },
+    "supabase/auth": {
+      "breaking_cases": 2,
+      "metrics": {
+        "breaking_change_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "breaking_change_recall": {
+          "denominator": 2,
+          "numerator": 0,
+          "percentage": 0.0,
+          "value": 0.0
+        },
+        "component_change_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "component_change_precision_successful_pipeline": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "component_change_recall": {
+          "denominator": 15,
+          "numerator": 0,
+          "percentage": 0.0,
+          "value": 0.0
+        },
+        "component_change_recall_successful_pipeline": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "contract_impact_precision": {
+          "denominator": 1,
+          "numerator": 1,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "contract_impact_precision_successful_pipeline": {
+          "denominator": 1,
+          "numerator": 1,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "contract_impact_recall": {
+          "denominator": 16,
+          "numerator": 1,
+          "percentage": 6.25,
+          "value": 0.0625
+        },
+        "contract_impact_recall_successful_pipeline": {
+          "denominator": 1,
+          "numerator": 1,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "contract_verdict_accuracy": {
+          "denominator": 5,
+          "numerator": 0,
+          "percentage": 0.0,
+          "value": 0.0
+        },
+        "executable_regression_scope_precision": {
+          "denominator": 1,
+          "numerator": 1,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "executable_regression_scope_precision_successful_pipeline": {
+          "denominator": 1,
+          "numerator": 1,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "executable_regression_scope_recall": {
+          "denominator": 16,
+          "numerator": 1,
+          "percentage": 6.25,
+          "value": 0.0625
+        },
+        "executable_regression_scope_recall_successful_pipeline": {
+          "denominator": 1,
+          "numerator": 1,
+          "percentage": 100.0,
+          "value": 1.0
+        },
+        "fallback_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "fallback_rate": {
+          "denominator": 5,
+          "numerator": 0,
+          "percentage": 0.0,
+          "value": 0.0
+        },
+        "fallback_rate_successful_pipeline": {
+          "denominator": 1,
+          "numerator": 0,
+          "percentage": 0.0,
+          "value": 0.0
+        },
+        "mean_executable_scope_reduction": {
+          "denominator": 5,
+          "numerator": 4.9743589743589745,
+          "percentage": 99.48717948717949,
+          "value": 0.9948717948717949
+        },
+        "mean_executable_scope_reduction_breaking_cases": {
+          "denominator": 2,
+          "numerator": 1.9743589743589745,
+          "percentage": 98.71794871794873,
+          "value": 0.9871794871794872
+        },
+        "mean_executable_scope_reduction_breaking_successful_pipeline": {
+          "denominator": 1,
+          "numerator": 0.9743589743589743,
+          "percentage": 97.43589743589743,
+          "value": 0.9743589743589743
+        },
+        "mean_executable_scope_reduction_successful_pipeline": {
+          "denominator": 1,
+          "numerator": 0.9743589743589743,
+          "percentage": 97.43589743589743,
+          "value": 0.9743589743589743
+        },
+        "removed_operation_coverage": {
+          "denominator": 0,
+          "numerator": 0,
+          "percentage": null,
+          "value": null
+        },
+        "system_error_rate": {
+          "denominator": 5,
+          "numerator": 4,
+          "percentage": 80.0,
+          "value": 0.8
+        },
+        "system_execution_success_rate": {
+          "denominator": 5,
+          "numerator": 1,
+          "percentage": 20.0,
+          "value": 0.2
+        }
+      },
+      "pairs": 5
+    }
+  },
+  "dataset": {
+    "change_category_membership_is_non_exclusive": true,
+    "headline_change_type_distribution": {
+      "documentation_only": 3,
+      "endpoint_added": 5,
+      "endpoint_removed": 3,
+      "mixed_change": 4,
+      "request_parameter_removed": 1,
+      "request_schema_changed": 5,
+      "response_property_added": 4,
+      "response_property_removed": 4,
+      "response_schema_changed": 4,
+      "shared_component_changed": 13
+    },
+    "headline_pairs": 19,
+    "raw_change_type_distribution": {
+      "documentation_only": 4,
+      "endpoint_added": 5,
+      "endpoint_removed": 3,
+      "mixed_change": 5,
+      "request_parameter_removed": 1,
+      "request_schema_changed": 5,
+      "response_property_added": 4,
+      "response_property_removed": 4,
+      "response_schema_changed": 4,
+      "response_status_added": 1,
+      "shared_component_changed": 13
+    },
+    "repositories": 4,
+    "review_status_counts": {
+      "ambiguous": 1,
+      "confirmed": 17,
+      "probable": 2
+    },
+    "total_pairs": 20
+  },
+  "metric_definitions": {
+    "component_metrics": "Executable scope micro recall/precision for shared_component_changed headline cases.",
+    "contract_impact": "Guardian selected Head operations compared with ContractAffectedScope, including removed Base operations.",
+    "end_to_end_scope_metrics": "Headline metrics count deterministic pipeline ERROR as missing scope evidence.",
+    "executable_scope": "Guardian selected Head operations compared with frozen RuntimeExecutableScope.",
+    "mean_scope_reduction": "Mean of 1 - selected/head operations over headline cases; breaking-only value is supplemental.",
+    "removed_operation_coverage": "Removed Ground Truth operations with exact normalized METHOD/path evidence.",
+    "successful_pipeline_metrics": "Supplemental selector view excludes Cases where oasdiff failed before normalization/scope selection."
+  },
+  "metrics": {
+    "breaking_change_precision": {
+      "denominator": 7,
+      "numerator": 7,
+      "percentage": 100.0,
+      "value": 1.0
+    },
+    "breaking_change_recall": {
+      "denominator": 9,
+      "numerator": 7,
+      "percentage": 77.77777777777779,
+      "value": 0.7777777777777778
+    },
+    "component_change_precision": {
+      "denominator": 1450,
+      "numerator": 57,
+      "percentage": 3.9310344827586206,
+      "value": 0.039310344827586205
+    },
+    "component_change_precision_successful_pipeline": {
+      "denominator": 1450,
+      "numerator": 57,
+      "percentage": 3.9310344827586206,
+      "value": 0.039310344827586205
+    },
+    "component_change_recall": {
+      "denominator": 72,
+      "numerator": 57,
+      "percentage": 79.16666666666666,
+      "value": 0.7916666666666666
+    },
+    "component_change_recall_successful_pipeline": {
+      "denominator": 57,
+      "numerator": 57,
+      "percentage": 100.0,
+      "value": 1.0
+    },
+    "contract_impact_precision": {
+      "denominator": 1690,
+      "numerator": 58,
+      "percentage": 3.4319526627218933,
+      "value": 0.03431952662721893
+    },
+    "contract_impact_precision_successful_pipeline": {
+      "denominator": 1690,
+      "numerator": 58,
+      "percentage": 3.4319526627218933,
+      "value": 0.03431952662721893
+    },
+    "contract_impact_recall": {
+      "denominator": 76,
+      "numerator": 58,
+      "percentage": 76.31578947368422,
+      "value": 0.7631578947368421
+    },
+    "contract_impact_recall_successful_pipeline": {
+      "denominator": 61,
+      "numerator": 58,
+      "percentage": 95.08196721311475,
+      "value": 0.9508196721311475
+    },
+    "contract_verdict_accuracy": {
+      "denominator": 19,
+      "numerator": 14,
+      "percentage": 73.68421052631578,
+      "value": 0.7368421052631579
+    },
+    "executable_regression_scope_precision": {
+      "denominator": 1690,
+      "numerator": 58,
+      "percentage": 3.4319526627218933,
+      "value": 0.03431952662721893
+    },
+    "executable_regression_scope_precision_successful_pipeline": {
+      "denominator": 1690,
+      "numerator": 58,
+      "percentage": 3.4319526627218933,
+      "value": 0.03431952662721893
+    },
+    "executable_regression_scope_recall": {
+      "denominator": 73,
+      "numerator": 58,
+      "percentage": 79.45205479452055,
+      "value": 0.7945205479452054
+    },
+    "executable_regression_scope_recall_successful_pipeline": {
+      "denominator": 58,
+      "numerator": 58,
+      "percentage": 100.0,
+      "value": 1.0
+    },
+    "fallback_precision": {
+      "denominator": 1659,
+      "numerator": 27,
+      "percentage": 1.62748643761302,
+      "value": 0.0162748643761302
+    },
+    "fallback_rate": {
+      "denominator": 19,
+      "numerator": 3,
+      "percentage": 15.789473684210526,
+      "value": 0.15789473684210525
+    },
+    "fallback_rate_successful_pipeline": {
+      "denominator": 15,
+      "numerator": 3,
+      "percentage": 20.0,
+      "value": 0.2
+    },
+    "mean_executable_scope_reduction": {
+      "denominator": 19,
+      "numerator": 15.848929268905708,
+      "percentage": 83.41541720476688,
+      "value": 0.8341541720476688
+    },
+    "mean_executable_scope_reduction_breaking_cases": {
+      "denominator": 9,
+      "numerator": 5.848929268905709,
+      "percentage": 64.98810298784122,
+      "value": 0.6498810298784121
+    },
+    "mean_executable_scope_reduction_breaking_successful_pipeline": {
+      "denominator": 8,
+      "numerator": 4.848929268905709,
+      "percentage": 60.61161586132137,
+      "value": 0.6061161586132137
+    },
+    "mean_executable_scope_reduction_successful_pipeline": {
+      "denominator": 15,
+      "numerator": 11.848929268905708,
+      "percentage": 78.99286179270473,
+      "value": 0.7899286179270473
+    },
+    "removed_operation_coverage": {
+      "denominator": 3,
+      "numerator": 3,
+      "percentage": 100.0,
+      "value": 1.0
+    },
+    "system_error_rate": {
+      "denominator": 19,
+      "numerator": 4,
+      "percentage": 21.052631578947366,
+      "value": 0.21052631578947367
+    },
+    "system_execution_success_rate": {
+      "denominator": 19,
+      "numerator": 15,
+      "percentage": 78.94736842105263,
+      "value": 0.7894736842105263
+    }
+  },
+  "miss_analysis": {
+    "case_count": 9,
+    "classification_counts": {
+      "COMPONENT_MAPPING_LIMITATION": 2,
+      "GROUND_TRUTH_AMBIGUOUS": 1,
+      "GUARDIAN_SCOPE_OVER_SELECTION": 3,
+      "OASDIFF_FALSE_NEGATIVE": 1,
+      "OTHER": 4,
+      "REMOVED_OPERATION_NON_EXECUTABLE": 3
+    },
+    "component_change_cases": [
+      "rw_immich_002_api_key_response_fields_added",
+      "rw_immich_004_tag_name_pattern_narrowed",
+      "rw_immich_006_asset_face_response_removed",
+      "rw_immich_007_upload_duration_maximum_widened",
+      "rw_supabase_003_oauth_client_optional_fields_added",
+      "rw_supabase_004_webauthn_schema_rework",
+      "rw_netbird_002_bundle_parameters_fields_added",
+      "rw_netbird_003_policy_ports_documentation_only",
+      "rw_netbird_004_agent_network_settings_rework",
+      "rw_netbird_005_proxy_cluster_response_reworked",
+      "rw_appwrite_001_empty_array_examples_preserved",
+      "rw_appwrite_002_migration_cutover_replaced",
+      "rw_appwrite_003_usage_project_and_health_update"
+    ],
+    "normalization_error_cases": [],
+    "oasdiff_disagreements": [
+      "rw_supabase_005_authorize_flow_type_removed"
+    ],
+    "over_selection_cases": [
+      "rw_appwrite_002_migration_cutover_replaced",
+      "rw_appwrite_003_usage_project_and_health_update",
+      "rw_immich_005_server_theme_endpoint_removed"
+    ],
+    "record_count": 14,
+    "removed_operation_cases": [
+      "rw_immich_005_server_theme_endpoint_removed",
+      "rw_appwrite_002_migration_cutover_replaced",
+      "rw_appwrite_003_usage_project_and_health_update"
+    ],
+    "system_error_cases": [
+      "rw_supabase_001_oauth_grants_endpoints_added",
+      "rw_supabase_002_oauth_client_update_endpoint_added",
+      "rw_supabase_003_oauth_client_optional_fields_added",
+      "rw_supabase_004_webauthn_schema_rework"
+    ],
+    "true_selector_false_negatives": []
+  },
+  "runtime_validation": {
+    "confirmed_suitable_pairs": [],
+    "feasibility": "candidate_only_not_runtime_validated",
+    "status": "not_run_e3_b_contract_scope_only",
+    "supabase_candidates": [
+      {
+        "case_id": "rw_supabase_005_authorize_flow_type_removed",
+        "status": "plausible_pending_service_start_and_version_alignment"
+      },
+      {
+        "case_id": "rw_supabase_003_oauth_client_optional_fields_added",
+        "status": "blocked_by_oasdiff_spec_load_error_in_e3_b"
+      },
+      {
+        "case_id": "rw_supabase_001_oauth_grants_endpoints_added",
+        "status": "blocked_by_oasdiff_spec_load_error_in_e3_b"
+      }
+    ]
+  },
+  "stage": "E3-B Real-world Contract + Scope System Evaluation",
+  "system_error_analysis": {
+    "case_count": 4,
+    "cases": [
+      {
+        "case_id": "rw_supabase_001_oauth_grants_endpoints_added",
+        "cause": "oasdiff could not load Base #/components/responses/UnauthorizedResponse (expected a schema reference object)",
+        "exit_code": 102,
+        "included_in_headline_metrics": false
+      },
+      {
+        "case_id": "rw_supabase_002_oauth_client_update_endpoint_added",
+        "cause": "oasdiff could not load Base #/components/responses/UnauthorizedResponse (expected a schema reference object)",
+        "exit_code": 102,
+        "included_in_headline_metrics": false
+      },
+      {
+        "case_id": "rw_supabase_003_oauth_client_optional_fields_added",
+        "cause": "oasdiff could not load Base #/components/responses/UnauthorizedResponse (expected a schema reference object)",
+        "exit_code": 102,
+        "included_in_headline_metrics": false
+      },
+      {
+        "case_id": "rw_supabase_004_webauthn_schema_rework",
+        "cause": "oasdiff could not load Base #/components/responses/UnauthorizedResponse (expected a schema reference object)",
+        "exit_code": 102,
+        "included_in_headline_metrics": false
+      }
+    ],
+    "diagnostic_replay_in_headline_metrics": false,
+    "primary_raw_results_unchanged": true
+  }
+}

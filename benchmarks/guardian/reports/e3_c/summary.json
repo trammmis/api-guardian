@@ -1,0 +1,206 @@
+{
+  "cases": {
+    "runtime_supabase_006_id_token_request_fields_removed": {
+      "affected_operation": "POST /token",
+      "end_to_end_runtime_difference_seconds": -10.917888999996649,
+      "http_request_reduction": 0.9349206349206349,
+      "operations_reduction": 0.9736842105263158,
+      "regression_runtime_reduction": 0.6456733866465274,
+      "systems": {
+        "api_guardian": {
+          "completed_runs": 5,
+          "deterministic_agreement": true,
+          "error_runs": 0,
+          "measured_runs": 5,
+          "median_http_requests": 82.0,
+          "median_runtime_seconds": 5.991417200002616,
+          "non_error_verdict_runs": 0,
+          "operations_tested": [
+            1
+          ],
+          "p95_runtime_seconds": 6.19529862000054,
+          "selected_operations": [
+            "POST /token"
+          ],
+          "verdict_tuples": [
+            "pass/error/error"
+          ]
+        },
+        "full_schemathesis": {
+          "completed_runs": 5,
+          "deterministic_agreement": true,
+          "error_runs": 5,
+          "measured_runs": 5,
+          "median_http_requests": 1260.0,
+          "median_runtime_seconds": 16.909306199999264,
+          "non_error_verdict_runs": 0,
+          "operations_tested": [
+            38
+          ],
+          "p95_runtime_seconds": 19.912860980001277,
+          "selected_operations": [
+            "POST /token|POST /logout|GET /verify|POST /verify|GET /authorize|POST /signup|POST /recover|POST /magiclink|POST /otp|GET /user|PUT /user|POST /reauthenticate|POST /factors|POST /factors/{factorId}/challenge|POST /factors/{factorId}/verify|DELETE /factors/{factorId}|GET /callback|POST /callback|POST /sso|GET /saml/metadata|POST /saml/acs|POST /invite|POST /generate_link|GET /admin/audit|GET /admin/users|GET /admin/users/{userId}|PUT /admin/users/{userId}|DELETE /admin/users/{userId}|GET /admin/users/{userId}/factors|PUT /admin/users/{userId}/factors/{factorId}|DELETE /admin/users/{userId}/factors/{factorId}|GET /admin/sso/providers|POST /admin/sso/providers|GET /admin/sso/providers/{ssoProviderId}|PUT /admin/sso/providers/{ssoProviderId}|DELETE /admin/sso/providers/{ssoProviderId}|GET /health|GET /settings"
+          ],
+          "verdict_tuples": [
+            "n/a/error/error"
+          ]
+        },
+        "oasdiff_plus_full": {
+          "completed_runs": 5,
+          "deterministic_agreement": true,
+          "error_runs": 5,
+          "measured_runs": 5,
+          "median_http_requests": 1260.0,
+          "median_runtime_seconds": 16.560262799997872,
+          "non_error_verdict_runs": 0,
+          "operations_tested": [
+            38
+          ],
+          "p95_runtime_seconds": 16.968953319999855,
+          "selected_operations": [
+            "POST /token|POST /logout|GET /verify|POST /verify|GET /authorize|POST /signup|POST /recover|POST /magiclink|POST /otp|GET /user|PUT /user|POST /reauthenticate|POST /factors|POST /factors/{factorId}/challenge|POST /factors/{factorId}/verify|DELETE /factors/{factorId}|GET /callback|POST /callback|POST /sso|GET /saml/metadata|POST /saml/acs|POST /invite|POST /generate_link|GET /admin/audit|GET /admin/users|GET /admin/users/{userId}|PUT /admin/users/{userId}|DELETE /admin/users/{userId}|GET /admin/users/{userId}/factors|PUT /admin/users/{userId}/factors/{factorId}|DELETE /admin/users/{userId}/factors/{factorId}|GET /admin/sso/providers|POST /admin/sso/providers|GET /admin/sso/providers/{ssoProviderId}|PUT /admin/sso/providers/{ssoProviderId}|DELETE /admin/sso/providers/{ssoProviderId}|GET /health|GET /settings"
+          ],
+          "verdict_tuples": [
+            "pass/error/error"
+          ]
+        },
+        "oracle_scope": {
+          "completed_runs": 5,
+          "deterministic_agreement": true,
+          "error_runs": 0,
+          "measured_runs": 5,
+          "median_http_requests": 82.0,
+          "median_runtime_seconds": 5.526574399998935,
+          "non_error_verdict_runs": 0,
+          "operations_tested": [
+            1
+          ],
+          "p95_runtime_seconds": 5.598750539999309,
+          "selected_operations": [
+            "POST /token"
+          ],
+          "verdict_tuples": [
+            "n/a/error/error"
+          ]
+        }
+      }
+    },
+    "rw_supabase_005_authorize_flow_type_removed": {
+      "affected_operation": "GET /authorize",
+      "end_to_end_runtime_difference_seconds": -5.1033069000041,
+      "http_request_reduction": 0.9538784067085954,
+      "operations_reduction": 0.9743589743589743,
+      "regression_runtime_reduction": 0.30228276398860987,
+      "systems": {
+        "api_guardian": {
+          "completed_runs": 5,
+          "deterministic_agreement": true,
+          "error_runs": 0,
+          "measured_runs": 5,
+          "median_http_requests": 66.0,
+          "median_runtime_seconds": 11.779253099997732,
+          "non_error_verdict_runs": 5,
+          "operations_tested": [
+            1
+          ],
+          "p95_runtime_seconds": 11.875139480001234,
+          "selected_operations": [
+            "GET /authorize"
+          ],
+          "verdict_tuples": [
+            "pass/pass/pass"
+          ]
+        },
+        "full_schemathesis": {
+          "completed_runs": 5,
+          "deterministic_agreement": true,
+          "error_runs": 5,
+          "measured_runs": 5,
+          "median_http_requests": 1431.0,
+          "median_runtime_seconds": 16.88256000000183,
+          "non_error_verdict_runs": 0,
+          "operations_tested": [
+            39
+          ],
+          "p95_runtime_seconds": 17.13898586000214,
+          "selected_operations": [
+            "POST /token|POST /logout|GET /verify|POST /verify|GET /authorize|POST /signup|POST /recover|POST /resend|POST /magiclink|POST /otp|GET /user|PUT /user|POST /reauthenticate|POST /factors|POST /factors/{factorId}/challenge|POST /factors/{factorId}/verify|DELETE /factors/{factorId}|GET /callback|POST /callback|POST /sso|GET /saml/metadata|POST /saml/acs|POST /invite|POST /generate_link|GET /admin/audit|GET /admin/users|GET /admin/users/{userId}|PUT /admin/users/{userId}|DELETE /admin/users/{userId}|GET /admin/users/{userId}/factors|PUT /admin/users/{userId}/factors/{factorId}|DELETE /admin/users/{userId}/factors/{factorId}|GET /admin/sso/providers|POST /admin/sso/providers|GET /admin/sso/providers/{ssoProviderId}|PUT /admin/sso/providers/{ssoProviderId}|DELETE /admin/sso/providers/{ssoProviderId}|GET /health|GET /settings"
+          ],
+          "verdict_tuples": [
+            "n/a/error/error"
+          ]
+        },
+        "oasdiff_plus_full": {
+          "completed_runs": 5,
+          "deterministic_agreement": true,
+          "error_runs": 5,
+          "measured_runs": 5,
+          "median_http_requests": 1431.0,
+          "median_runtime_seconds": 17.16864330000317,
+          "non_error_verdict_runs": 0,
+          "operations_tested": [
+            39
+          ],
+          "p95_runtime_seconds": 17.43699416000236,
+          "selected_operations": [
+            "POST /token|POST /logout|GET /verify|POST /verify|GET /authorize|POST /signup|POST /recover|POST /resend|POST /magiclink|POST /otp|GET /user|PUT /user|POST /reauthenticate|POST /factors|POST /factors/{factorId}/challenge|POST /factors/{factorId}/verify|DELETE /factors/{factorId}|GET /callback|POST /callback|POST /sso|GET /saml/metadata|POST /saml/acs|POST /invite|POST /generate_link|GET /admin/audit|GET /admin/users|GET /admin/users/{userId}|PUT /admin/users/{userId}|DELETE /admin/users/{userId}|GET /admin/users/{userId}/factors|PUT /admin/users/{userId}/factors/{factorId}|DELETE /admin/users/{userId}/factors/{factorId}|GET /admin/sso/providers|POST /admin/sso/providers|GET /admin/sso/providers/{ssoProviderId}|PUT /admin/sso/providers/{ssoProviderId}|DELETE /admin/sso/providers/{ssoProviderId}|GET /health|GET /settings"
+          ],
+          "verdict_tuples": [
+            "pass/error/error"
+          ]
+        },
+        "oracle_scope": {
+          "completed_runs": 5,
+          "deterministic_agreement": true,
+          "error_runs": 0,
+          "measured_runs": 5,
+          "median_http_requests": 66.0,
+          "median_runtime_seconds": 11.374213499999314,
+          "non_error_verdict_runs": 5,
+          "operations_tested": [
+            1
+          ],
+          "p95_runtime_seconds": 11.505346760000975,
+          "selected_operations": [
+            "GET /authorize"
+          ],
+          "verdict_tuples": [
+            "n/a/pass/pass"
+          ]
+        }
+      }
+    }
+  },
+  "conclusion_label": "PARTIALLY_VALIDATED",
+  "measured_run_count": 40,
+  "metrics": {
+    "end_to_end_execution_success_rate": {
+      "denominator": 10,
+      "numerator": 10,
+      "value": 1.0
+    },
+    "final_verdict_reproducibility": {
+      "denominator": 2,
+      "numerator": 2,
+      "value": 1.0
+    },
+    "regression_verdict_agreement": {
+      "denominator": 2,
+      "numerator": 2,
+      "value": 1.0
+    },
+    "scope_precision": {
+      "denominator": 2,
+      "numerator": 2,
+      "value": 1.0
+    },
+    "scope_recall": {
+      "denominator": 2,
+      "numerator": 2,
+      "value": 1.0
+    }
+  },
+  "raw_run_count": 48,
+  "stage": "E3-C",
+  "warmup_run_count": 8
+}

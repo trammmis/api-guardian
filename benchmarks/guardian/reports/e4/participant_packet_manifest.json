@@ -1,0 +1,802 @@
+{
+  "assignment_records": [
+    {
+      "case_id": "e4_001_users_id_type_lag",
+      "condition": "A",
+      "participant_sequence": "S01",
+      "visible_report_number": 1
+    },
+    {
+      "case_id": "e4_002_users_required_email_missing",
+      "condition": "B",
+      "participant_sequence": "S01",
+      "visible_report_number": 2
+    },
+    {
+      "case_id": "e4_003_orders_status_enum_lag",
+      "condition": "A",
+      "participant_sequence": "S01",
+      "visible_report_number": 3
+    },
+    {
+      "case_id": "e4_004_required_query_added",
+      "condition": "B",
+      "participant_sequence": "S01",
+      "visible_report_number": 4
+    },
+    {
+      "case_id": "e4_005_wrong_user_semantic_control",
+      "condition": "A",
+      "participant_sequence": "S01",
+      "visible_report_number": 5
+    },
+    {
+      "case_id": "e4_006_clean_aligned_breaking_contract",
+      "condition": "B",
+      "participant_sequence": "S01",
+      "visible_report_number": 6
+    },
+    {
+      "case_id": "e4_007_documentation_only_pass",
+      "condition": "A",
+      "participant_sequence": "S01",
+      "visible_report_number": 7
+    },
+    {
+      "case_id": "e4_008_immich_endpoint_removed",
+      "condition": "B",
+      "participant_sequence": "S01",
+      "visible_report_number": 8
+    },
+    {
+      "case_id": "e4_009_netbird_shared_component",
+      "condition": "A",
+      "participant_sequence": "S01",
+      "visible_report_number": 9
+    },
+    {
+      "case_id": "e4_010_appwrite_mixed_cutover",
+      "condition": "B",
+      "participant_sequence": "S01",
+      "visible_report_number": 10
+    },
+    {
+      "case_id": "e4_011_supabase_policy_disagreement",
+      "condition": "A",
+      "participant_sequence": "S01",
+      "visible_report_number": 11
+    },
+    {
+      "case_id": "e4_012_supabase_runtime_tool_error",
+      "condition": "B",
+      "participant_sequence": "S01",
+      "visible_report_number": 12
+    },
+    {
+      "case_id": "e4_013_supabase_oasdiff_load_error",
+      "condition": "A",
+      "participant_sequence": "S01",
+      "visible_report_number": 13
+    },
+    {
+      "case_id": "e4_003_orders_status_enum_lag",
+      "condition": "A",
+      "participant_sequence": "S02",
+      "visible_report_number": 1
+    },
+    {
+      "case_id": "e4_004_required_query_added",
+      "condition": "B",
+      "participant_sequence": "S02",
+      "visible_report_number": 2
+    },
+    {
+      "case_id": "e4_005_wrong_user_semantic_control",
+      "condition": "A",
+      "participant_sequence": "S02",
+      "visible_report_number": 3
+    },
+    {
+      "case_id": "e4_006_clean_aligned_breaking_contract",
+      "condition": "B",
+      "participant_sequence": "S02",
+      "visible_report_number": 4
+    },
+    {
+      "case_id": "e4_007_documentation_only_pass",
+      "condition": "A",
+      "participant_sequence": "S02",
+      "visible_report_number": 5
+    },
+    {
+      "case_id": "e4_008_immich_endpoint_removed",
+      "condition": "B",
+      "participant_sequence": "S02",
+      "visible_report_number": 6
+    },
+    {
+      "case_id": "e4_009_netbird_shared_component",
+      "condition": "A",
+      "participant_sequence": "S02",
+      "visible_report_number": 7
+    },
+    {
+      "case_id": "e4_010_appwrite_mixed_cutover",
+      "condition": "B",
+      "participant_sequence": "S02",
+      "visible_report_number": 8
+    },
+    {
+      "case_id": "e4_011_supabase_policy_disagreement",
+      "condition": "A",
+      "participant_sequence": "S02",
+      "visible_report_number": 9
+    },
+    {
+      "case_id": "e4_012_supabase_runtime_tool_error",
+      "condition": "B",
+      "participant_sequence": "S02",
+      "visible_report_number": 10
+    },
+    {
+      "case_id": "e4_013_supabase_oasdiff_load_error",
+      "condition": "A",
+      "participant_sequence": "S02",
+      "visible_report_number": 11
+    },
+    {
+      "case_id": "e4_001_users_id_type_lag",
+      "condition": "A",
+      "participant_sequence": "S02",
+      "visible_report_number": 12
+    },
+    {
+      "case_id": "e4_002_users_required_email_missing",
+      "condition": "B",
+      "participant_sequence": "S02",
+      "visible_report_number": 13
+    },
+    {
+      "case_id": "e4_005_wrong_user_semantic_control",
+      "condition": "A",
+      "participant_sequence": "S03",
+      "visible_report_number": 1
+    },
+    {
+      "case_id": "e4_006_clean_aligned_breaking_contract",
+      "condition": "B",
+      "participant_sequence": "S03",
+      "visible_report_number": 2
+    },
+    {
+      "case_id": "e4_007_documentation_only_pass",
+      "condition": "A",
+      "participant_sequence": "S03",
+      "visible_report_number": 3
+    },
+    {
+      "case_id": "e4_008_immich_endpoint_removed",
+      "condition": "B",
+      "participant_sequence": "S03",
+      "visible_report_number": 4
+    },
+    {
+      "case_id": "e4_009_netbird_shared_component",
+      "condition": "A",
+      "participant_sequence": "S03",
+      "visible_report_number": 5
+    },
+    {
+      "case_id": "e4_010_appwrite_mixed_cutover",
+      "condition": "B",
+      "participant_sequence": "S03",
+      "visible_report_number": 6
+    },
+    {
+      "case_id": "e4_011_supabase_policy_disagreement",
+      "condition": "A",
+      "participant_sequence": "S03",
+      "visible_report_number": 7
+    },
+    {
+      "case_id": "e4_012_supabase_runtime_tool_error",
+      "condition": "B",
+      "participant_sequence": "S03",
+      "visible_report_number": 8
+    },
+    {
+      "case_id": "e4_013_supabase_oasdiff_load_error",
+      "condition": "A",
+      "participant_sequence": "S03",
+      "visible_report_number": 9
+    },
+    {
+      "case_id": "e4_001_users_id_type_lag",
+      "condition": "A",
+      "participant_sequence": "S03",
+      "visible_report_number": 10
+    },
+    {
+      "case_id": "e4_002_users_required_email_missing",
+      "condition": "B",
+      "participant_sequence": "S03",
+      "visible_report_number": 11
+    },
+    {
+      "case_id": "e4_003_orders_status_enum_lag",
+      "condition": "A",
+      "participant_sequence": "S03",
+      "visible_report_number": 12
+    },
+    {
+      "case_id": "e4_004_required_query_added",
+      "condition": "B",
+      "participant_sequence": "S03",
+      "visible_report_number": 13
+    },
+    {
+      "case_id": "e4_007_documentation_only_pass",
+      "condition": "A",
+      "participant_sequence": "S04",
+      "visible_report_number": 1
+    },
+    {
+      "case_id": "e4_008_immich_endpoint_removed",
+      "condition": "B",
+      "participant_sequence": "S04",
+      "visible_report_number": 2
+    },
+    {
+      "case_id": "e4_009_netbird_shared_component",
+      "condition": "A",
+      "participant_sequence": "S04",
+      "visible_report_number": 3
+    },
+    {
+      "case_id": "e4_010_appwrite_mixed_cutover",
+      "condition": "B",
+      "participant_sequence": "S04",
+      "visible_report_number": 4
+    },
+    {
+      "case_id": "e4_011_supabase_policy_disagreement",
+      "condition": "A",
+      "participant_sequence": "S04",
+      "visible_report_number": 5
+    },
+    {
+      "case_id": "e4_012_supabase_runtime_tool_error",
+      "condition": "B",
+      "participant_sequence": "S04",
+      "visible_report_number": 6
+    },
+    {
+      "case_id": "e4_013_supabase_oasdiff_load_error",
+      "condition": "A",
+      "participant_sequence": "S04",
+      "visible_report_number": 7
+    },
+    {
+      "case_id": "e4_001_users_id_type_lag",
+      "condition": "A",
+      "participant_sequence": "S04",
+      "visible_report_number": 8
+    },
+    {
+      "case_id": "e4_002_users_required_email_missing",
+      "condition": "B",
+      "participant_sequence": "S04",
+      "visible_report_number": 9
+    },
+    {
+      "case_id": "e4_003_orders_status_enum_lag",
+      "condition": "A",
+      "participant_sequence": "S04",
+      "visible_report_number": 10
+    },
+    {
+      "case_id": "e4_004_required_query_added",
+      "condition": "B",
+      "participant_sequence": "S04",
+      "visible_report_number": 11
+    },
+    {
+      "case_id": "e4_005_wrong_user_semantic_control",
+      "condition": "A",
+      "participant_sequence": "S04",
+      "visible_report_number": 12
+    },
+    {
+      "case_id": "e4_006_clean_aligned_breaking_contract",
+      "condition": "B",
+      "participant_sequence": "S04",
+      "visible_report_number": 13
+    },
+    {
+      "case_id": "e4_009_netbird_shared_component",
+      "condition": "A",
+      "participant_sequence": "S05",
+      "visible_report_number": 1
+    },
+    {
+      "case_id": "e4_010_appwrite_mixed_cutover",
+      "condition": "B",
+      "participant_sequence": "S05",
+      "visible_report_number": 2
+    },
+    {
+      "case_id": "e4_011_supabase_policy_disagreement",
+      "condition": "A",
+      "participant_sequence": "S05",
+      "visible_report_number": 3
+    },
+    {
+      "case_id": "e4_012_supabase_runtime_tool_error",
+      "condition": "B",
+      "participant_sequence": "S05",
+      "visible_report_number": 4
+    },
+    {
+      "case_id": "e4_013_supabase_oasdiff_load_error",
+      "condition": "A",
+      "participant_sequence": "S05",
+      "visible_report_number": 5
+    },
+    {
+      "case_id": "e4_001_users_id_type_lag",
+      "condition": "A",
+      "participant_sequence": "S05",
+      "visible_report_number": 6
+    },
+    {
+      "case_id": "e4_002_users_required_email_missing",
+      "condition": "B",
+      "participant_sequence": "S05",
+      "visible_report_number": 7
+    },
+    {
+      "case_id": "e4_003_orders_status_enum_lag",
+      "condition": "A",
+      "participant_sequence": "S05",
+      "visible_report_number": 8
+    },
+    {
+      "case_id": "e4_004_required_query_added",
+      "condition": "B",
+      "participant_sequence": "S05",
+      "visible_report_number": 9
+    },
+    {
+      "case_id": "e4_005_wrong_user_semantic_control",
+      "condition": "A",
+      "participant_sequence": "S05",
+      "visible_report_number": 10
+    },
+    {
+      "case_id": "e4_006_clean_aligned_breaking_contract",
+      "condition": "B",
+      "participant_sequence": "S05",
+      "visible_report_number": 11
+    },
+    {
+      "case_id": "e4_007_documentation_only_pass",
+      "condition": "A",
+      "participant_sequence": "S05",
+      "visible_report_number": 12
+    },
+    {
+      "case_id": "e4_008_immich_endpoint_removed",
+      "condition": "B",
+      "participant_sequence": "S05",
+      "visible_report_number": 13
+    },
+    {
+      "case_id": "e4_002_users_required_email_missing",
+      "condition": "A",
+      "participant_sequence": "S06",
+      "visible_report_number": 1
+    },
+    {
+      "case_id": "e4_003_orders_status_enum_lag",
+      "condition": "B",
+      "participant_sequence": "S06",
+      "visible_report_number": 2
+    },
+    {
+      "case_id": "e4_004_required_query_added",
+      "condition": "A",
+      "participant_sequence": "S06",
+      "visible_report_number": 3
+    },
+    {
+      "case_id": "e4_005_wrong_user_semantic_control",
+      "condition": "B",
+      "participant_sequence": "S06",
+      "visible_report_number": 4
+    },
+    {
+      "case_id": "e4_006_clean_aligned_breaking_contract",
+      "condition": "A",
+      "participant_sequence": "S06",
+      "visible_report_number": 5
+    },
+    {
+      "case_id": "e4_007_documentation_only_pass",
+      "condition": "B",
+      "participant_sequence": "S06",
+      "visible_report_number": 6
+    },
+    {
+      "case_id": "e4_008_immich_endpoint_removed",
+      "condition": "A",
+      "participant_sequence": "S06",
+      "visible_report_number": 7
+    },
+    {
+      "case_id": "e4_009_netbird_shared_component",
+      "condition": "B",
+      "participant_sequence": "S06",
+      "visible_report_number": 8
+    },
+    {
+      "case_id": "e4_010_appwrite_mixed_cutover",
+      "condition": "A",
+      "participant_sequence": "S06",
+      "visible_report_number": 9
+    },
+    {
+      "case_id": "e4_011_supabase_policy_disagreement",
+      "condition": "B",
+      "participant_sequence": "S06",
+      "visible_report_number": 10
+    },
+    {
+      "case_id": "e4_012_supabase_runtime_tool_error",
+      "condition": "A",
+      "participant_sequence": "S06",
+      "visible_report_number": 11
+    },
+    {
+      "case_id": "e4_013_supabase_oasdiff_load_error",
+      "condition": "B",
+      "participant_sequence": "S06",
+      "visible_report_number": 12
+    },
+    {
+      "case_id": "e4_001_users_id_type_lag",
+      "condition": "B",
+      "participant_sequence": "S06",
+      "visible_report_number": 13
+    },
+    {
+      "case_id": "e4_004_required_query_added",
+      "condition": "A",
+      "participant_sequence": "S07",
+      "visible_report_number": 1
+    },
+    {
+      "case_id": "e4_005_wrong_user_semantic_control",
+      "condition": "B",
+      "participant_sequence": "S07",
+      "visible_report_number": 2
+    },
+    {
+      "case_id": "e4_006_clean_aligned_breaking_contract",
+      "condition": "A",
+      "participant_sequence": "S07",
+      "visible_report_number": 3
+    },
+    {
+      "case_id": "e4_007_documentation_only_pass",
+      "condition": "B",
+      "participant_sequence": "S07",
+      "visible_report_number": 4
+    },
+    {
+      "case_id": "e4_008_immich_endpoint_removed",
+      "condition": "A",
+      "participant_sequence": "S07",
+      "visible_report_number": 5
+    },
+    {
+      "case_id": "e4_009_netbird_shared_component",
+      "condition": "B",
+      "participant_sequence": "S07",
+      "visible_report_number": 6
+    },
+    {
+      "case_id": "e4_010_appwrite_mixed_cutover",
+      "condition": "A",
+      "participant_sequence": "S07",
+      "visible_report_number": 7
+    },
+    {
+      "case_id": "e4_011_supabase_policy_disagreement",
+      "condition": "B",
+      "participant_sequence": "S07",
+      "visible_report_number": 8
+    },
+    {
+      "case_id": "e4_012_supabase_runtime_tool_error",
+      "condition": "A",
+      "participant_sequence": "S07",
+      "visible_report_number": 9
+    },
+    {
+      "case_id": "e4_013_supabase_oasdiff_load_error",
+      "condition": "B",
+      "participant_sequence": "S07",
+      "visible_report_number": 10
+    },
+    {
+      "case_id": "e4_001_users_id_type_lag",
+      "condition": "B",
+      "participant_sequence": "S07",
+      "visible_report_number": 11
+    },
+    {
+      "case_id": "e4_002_users_required_email_missing",
+      "condition": "A",
+      "participant_sequence": "S07",
+      "visible_report_number": 12
+    },
+    {
+      "case_id": "e4_003_orders_status_enum_lag",
+      "condition": "B",
+      "participant_sequence": "S07",
+      "visible_report_number": 13
+    },
+    {
+      "case_id": "e4_006_clean_aligned_breaking_contract",
+      "condition": "A",
+      "participant_sequence": "S08",
+      "visible_report_number": 1
+    },
+    {
+      "case_id": "e4_007_documentation_only_pass",
+      "condition": "B",
+      "participant_sequence": "S08",
+      "visible_report_number": 2
+    },
+    {
+      "case_id": "e4_008_immich_endpoint_removed",
+      "condition": "A",
+      "participant_sequence": "S08",
+      "visible_report_number": 3
+    },
+    {
+      "case_id": "e4_009_netbird_shared_component",
+      "condition": "B",
+      "participant_sequence": "S08",
+      "visible_report_number": 4
+    },
+    {
+      "case_id": "e4_010_appwrite_mixed_cutover",
+      "condition": "A",
+      "participant_sequence": "S08",
+      "visible_report_number": 5
+    },
+    {
+      "case_id": "e4_011_supabase_policy_disagreement",
+      "condition": "B",
+      "participant_sequence": "S08",
+      "visible_report_number": 6
+    },
+    {
+      "case_id": "e4_012_supabase_runtime_tool_error",
+      "condition": "A",
+      "participant_sequence": "S08",
+      "visible_report_number": 7
+    },
+    {
+      "case_id": "e4_013_supabase_oasdiff_load_error",
+      "condition": "B",
+      "participant_sequence": "S08",
+      "visible_report_number": 8
+    },
+    {
+      "case_id": "e4_001_users_id_type_lag",
+      "condition": "B",
+      "participant_sequence": "S08",
+      "visible_report_number": 9
+    },
+    {
+      "case_id": "e4_002_users_required_email_missing",
+      "condition": "A",
+      "participant_sequence": "S08",
+      "visible_report_number": 10
+    },
+    {
+      "case_id": "e4_003_orders_status_enum_lag",
+      "condition": "B",
+      "participant_sequence": "S08",
+      "visible_report_number": 11
+    },
+    {
+      "case_id": "e4_004_required_query_added",
+      "condition": "A",
+      "participant_sequence": "S08",
+      "visible_report_number": 12
+    },
+    {
+      "case_id": "e4_005_wrong_user_semantic_control",
+      "condition": "B",
+      "participant_sequence": "S08",
+      "visible_report_number": 13
+    },
+    {
+      "case_id": "e4_008_immich_endpoint_removed",
+      "condition": "A",
+      "participant_sequence": "S09",
+      "visible_report_number": 1
+    },
+    {
+      "case_id": "e4_009_netbird_shared_component",
+      "condition": "B",
+      "participant_sequence": "S09",
+      "visible_report_number": 2
+    },
+    {
+      "case_id": "e4_010_appwrite_mixed_cutover",
+      "condition": "A",
+      "participant_sequence": "S09",
+      "visible_report_number": 3
+    },
+    {
+      "case_id": "e4_011_supabase_policy_disagreement",
+      "condition": "B",
+      "participant_sequence": "S09",
+      "visible_report_number": 4
+    },
+    {
+      "case_id": "e4_012_supabase_runtime_tool_error",
+      "condition": "A",
+      "participant_sequence": "S09",
+      "visible_report_number": 5
+    },
+    {
+      "case_id": "e4_013_supabase_oasdiff_load_error",
+      "condition": "B",
+      "participant_sequence": "S09",
+      "visible_report_number": 6
+    },
+    {
+      "case_id": "e4_001_users_id_type_lag",
+      "condition": "B",
+      "participant_sequence": "S09",
+      "visible_report_number": 7
+    },
+    {
+      "case_id": "e4_002_users_required_email_missing",
+      "condition": "A",
+      "participant_sequence": "S09",
+      "visible_report_number": 8
+    },
+    {
+      "case_id": "e4_003_orders_status_enum_lag",
+      "condition": "B",
+      "participant_sequence": "S09",
+      "visible_report_number": 9
+    },
+    {
+      "case_id": "e4_004_required_query_added",
+      "condition": "A",
+      "participant_sequence": "S09",
+      "visible_report_number": 10
+    },
+    {
+      "case_id": "e4_005_wrong_user_semantic_control",
+      "condition": "B",
+      "participant_sequence": "S09",
+      "visible_report_number": 11
+    },
+    {
+      "case_id": "e4_006_clean_aligned_breaking_contract",
+      "condition": "A",
+      "participant_sequence": "S09",
+      "visible_report_number": 12
+    },
+    {
+      "case_id": "e4_007_documentation_only_pass",
+      "condition": "B",
+      "participant_sequence": "S09",
+      "visible_report_number": 13
+    },
+    {
+      "case_id": "e4_010_appwrite_mixed_cutover",
+      "condition": "A",
+      "participant_sequence": "S10",
+      "visible_report_number": 1
+    },
+    {
+      "case_id": "e4_011_supabase_policy_disagreement",
+      "condition": "B",
+      "participant_sequence": "S10",
+      "visible_report_number": 2
+    },
+    {
+      "case_id": "e4_012_supabase_runtime_tool_error",
+      "condition": "A",
+      "participant_sequence": "S10",
+      "visible_report_number": 3
+    },
+    {
+      "case_id": "e4_013_supabase_oasdiff_load_error",
+      "condition": "B",
+      "participant_sequence": "S10",
+      "visible_report_number": 4
+    },
+    {
+      "case_id": "e4_001_users_id_type_lag",
+      "condition": "B",
+      "participant_sequence": "S10",
+      "visible_report_number": 5
+    },
+    {
+      "case_id": "e4_002_users_required_email_missing",
+      "condition": "A",
+      "participant_sequence": "S10",
+      "visible_report_number": 6
+    },
+    {
+      "case_id": "e4_003_orders_status_enum_lag",
+      "condition": "B",
+      "participant_sequence": "S10",
+      "visible_report_number": 7
+    },
+    {
+      "case_id": "e4_004_required_query_added",
+      "condition": "A",
+      "participant_sequence": "S10",
+      "visible_report_number": 8
+    },
+    {
+      "case_id": "e4_005_wrong_user_semantic_control",
+      "condition": "B",
+      "participant_sequence": "S10",
+      "visible_report_number": 9
+    },
+    {
+      "case_id": "e4_006_clean_aligned_breaking_contract",
+      "condition": "A",
+      "participant_sequence": "S10",
+      "visible_report_number": 10
+    },
+    {
+      "case_id": "e4_007_documentation_only_pass",
+      "condition": "B",
+      "participant_sequence": "S10",
+      "visible_report_number": 11
+    },
+    {
+      "case_id": "e4_008_immich_endpoint_removed",
+      "condition": "A",
+      "participant_sequence": "S10",
+      "visible_report_number": 12
+    },
+    {
+      "case_id": "e4_009_netbird_shared_component",
+      "condition": "B",
+      "participant_sequence": "S10",
+      "visible_report_number": 13
+    }
+  ],
+  "human_collection_started": false,
+  "mapping_is_researcher_only": true,
+  "packet_count": 10,
+  "packet_sha256": {
+    "S01.md": "c24fd5a4174a8becfeabe874b77c12728dfa2eb6500c96a445df53e0c086d1a7",
+    "S02.md": "b147028d1098677a5e76f0175ff9ff0719f15330f849bc23daad52efe4844b59",
+    "S03.md": "b3223a17035d01beb0c9d90e3eff4177cb4e29cba3c66f48c6ae3be07d38cbfd",
+    "S04.md": "e13030fe9a156a849995cfa738a86d90621d0a9029403c5163ea75e94858bc17",
+    "S05.md": "7bc80a9889d7f48cf5231aafba2b46d49904cb8c145b4ad95f182a90682d879a",
+    "S06.md": "d6fd4c7ab603a986bc8753b162f00d8ce6bff8e71d01f605b1679ddc410dd7f5",
+    "S07.md": "a509a8b3e7d2eb2df956b7ed8c6890e060898080e89956d2528d7f9e116f1cd5",
+    "S08.md": "34ba3490881904850c2d5f10584bbf83610627526cba7264b1eb4ecc92e97026",
+    "S09.md": "5467501239ff727fe5fdb9eb3bc7e0883357d1f3abb88ce83becf7616b040629",
+    "S10.md": "c3d253aae31bd7a536a2b0ff0c6ad407ab17ed5118aa7d4229c1a92e6711ca47"
+  },
+  "reports_per_packet": 13,
+  "stage": "E4_A_PARTICIPANT_PACKET_FREEZE",
+  "visible_packet_prohibited_terms_check": "passed"
+}

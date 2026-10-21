@@ -1,0 +1,38 @@
+{
+  "oasdiff version 1.27.0": {
+    "exit_code": 0,
+    "load_succeeded": true,
+    "safe_error_summary": null,
+    "safe_stdout_summary": "valid JSON",
+    "structured_output": [
+      {
+        "comment": "This is a warning because some clients may return an error when receiving an unexpected parameter. It is recommended to deprecate the parameter first.",
+        "fingerprint": "8edf15cee5dc",
+        "id": "request-parameter-removed",
+        "level": 2,
+        "operation": "GET",
+        "path": "/authorize",
+        "section": "paths",
+        "text": "deleted the `query` request parameter `flow_type`"
+      }
+    ]
+  },
+  "oasdiff version 1.28.0": {
+    "exit_code": 0,
+    "load_succeeded": true,
+    "safe_error_summary": null,
+    "safe_stdout_summary": "valid JSON",
+    "structured_output": [
+      {
+        "comment": "This is a warning because some clients may return an error when receiving an unexpected parameter. It is recommended to deprecate the parameter first.",
+        "fingerprint": "8edf15cee5dc",
+        "id": "request-parameter-removed",
+        "level": 2,
+        "operation": "GET",
+        "path": "/authorize",
+        "section": "paths",
+        "text": "deleted the `query` request parameter `flow_type`"
+      }
+    ]
+  }
+}

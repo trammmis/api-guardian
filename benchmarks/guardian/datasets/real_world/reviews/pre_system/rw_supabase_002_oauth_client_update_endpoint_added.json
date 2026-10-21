@@ -1,0 +1,38 @@
+{
+  "ambiguity_reason": null,
+  "base_commit": "cf39a8ae2cc386f2672f0ecbb8d84dd77f04e56f",
+  "base_openapi_version": "3.0.3",
+  "base_operation_count": 51,
+  "base_spec_bytes": 106370,
+  "base_spec_path": "openapi.yaml",
+  "base_spec_sha256": "9111cd4c70ebdf1c97717d2017397814e80eb49390c0d0cbb3e38e58dd36b19f",
+  "breaking_changes": [],
+  "case_id": "rw_supabase_002_oauth_client_update_endpoint_added",
+  "change_types": [
+    "endpoint_added"
+  ],
+  "commit_date_head": "2025-10-30T09:32:36+03:00",
+  "commit_message_head": "feat(oauthserver): add OAuth client admin update endpoint (#2231)",
+  "contract_affected_operations": [],
+  "evidence": [
+    "PUT /admin/oauth/clients/{client_id} is added and the operation count increases from 51 to 52."
+  ],
+  "external_refs": [],
+  "ground_truth_contract_verdict": "pass",
+  "head_commit": "6296a5a226b3c60bcd9d20786750a808af9cd529",
+  "head_openapi_version": "3.0.3",
+  "head_operation_count": 52,
+  "head_spec_bytes": 108612,
+  "head_spec_path": "openapi.yaml",
+  "head_spec_sha256": "66dfc674e7eb9dfed2b79de2ab5b57b0e8a28aee9e3e78ab4639d0782cc7d82b",
+  "license": "MIT",
+  "notes": [
+    "Marked runtime_candidate for a later separately approved E3-C review."
+  ],
+  "repo": "supabase/auth",
+  "review_confidence": "high",
+  "review_status": "confirmed",
+  "reviewer": "ai_assisted_initial_review",
+  "runtime_executable_operations": [],
+  "schema_version": "guardian-e3-b-pre-system-review-v1"
+}

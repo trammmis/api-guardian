@@ -1,0 +1,7 @@
+{"Initialize":{"schemathesis_version":"4.24.3"}}
+{"LoadingFinished":{"statistic":{"operations":{"total":3,"selected":1}}}}
+{"ScenarioFinished":{"phase":"Examples","status":"skip","elapsed_time":0.001,"recorder":{"label":"GET /items/{item_id}","checks":{},"interactions":{}}}}
+{"ScenarioFinished":{"phase":"Coverage","status":"success","elapsed_time":0.125,"recorder":{"label":"GET /items/{item_id}","checks":{},"interactions":{}}}}
+{"SuiteFinished":{"phase":"Coverage","status":"success"}}
+{"PhaseFinished":{"phase":{"name":"Coverage","is_enabled":true},"status":"success"}}
+{"EngineFinished":{"stop_reason":"completed"}}

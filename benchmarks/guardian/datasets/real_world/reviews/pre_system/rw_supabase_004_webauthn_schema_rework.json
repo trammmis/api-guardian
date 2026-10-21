@@ -1,0 +1,91 @@
+{
+  "ambiguity_reason": null,
+  "base_commit": "1f804a2795012a1a165ff07afdb9dd98ad8ff291",
+  "base_openapi_version": "3.0.3",
+  "base_operation_count": 51,
+  "base_spec_bytes": 102091,
+  "base_spec_path": "openapi.yaml",
+  "base_spec_sha256": "f782805361eda42f763008a37671ab05d1270b67168f828575ed04d05aba627f",
+  "breaking_changes": [
+    {
+      "base_fact": "MFAFactorSchema contains web_authn_credential.",
+      "change_type": "response_property_renamed",
+      "compatibility_reason": "A response consumer using the old property name loses that field.",
+      "head_fact": "The property is removed and webauthn_credential is added.",
+      "operation": null,
+      "schema_name": "MFAFactorSchema"
+    },
+    {
+      "base_fact": "WebAuthnChallengeResponse requires credential_options.",
+      "change_type": "response_shape_replaced",
+      "compatibility_reason": "The challenge response shape is replaced rather than additively extended.",
+      "head_fact": "credential_options is removed and a required discriminated webauthn object is added.",
+      "operation": null,
+      "schema_name": "WebAuthnChallengeResponse"
+    }
+  ],
+  "case_id": "rw_supabase_004_webauthn_schema_rework",
+  "change_types": [
+    "response_schema_changed",
+    "response_property_removed",
+    "shared_component_changed",
+    "mixed_change"
+  ],
+  "commit_date_head": "2025-09-24T16:17:31+03:00",
+  "commit_message_head": "feat: webauthn support schema changes, update openapi.yaml (#2163)",
+  "contract_affected_operations": [
+    "POST /token",
+    "POST /verify",
+    "POST /signup",
+    "GET /user",
+    "PUT /user",
+    "POST /factors/{factorId}/challenge",
+    "POST /factors/{factorId}/verify",
+    "POST /invite",
+    "GET /admin/users",
+    "GET /admin/users/{userId}",
+    "PUT /admin/users/{userId}",
+    "DELETE /admin/users/{userId}",
+    "GET /admin/users/{userId}/factors",
+    "PUT /admin/users/{userId}/factors/{factorId}",
+    "DELETE /admin/users/{userId}/factors/{factorId}"
+  ],
+  "evidence": [
+    "The OpenAPI component diff directly shows both removed response properties and new replacements.",
+    "Independent transitive fragment-reference review maps MFAFactorSchema to 14 operations and WebAuthnChallengeResponse to POST /factors/{factorId}/challenge."
+  ],
+  "external_refs": [],
+  "ground_truth_contract_verdict": "fail",
+  "head_commit": "68cb8d2ba3ded878c68d7cb76465bfaaac58436a",
+  "head_openapi_version": "3.0.3",
+  "head_operation_count": 51,
+  "head_spec_bytes": 103153,
+  "head_spec_path": "openapi.yaml",
+  "head_spec_sha256": "a222d9459767fe262ed50daab76b9f3dd455524e8168bd32e49142fa24408b69",
+  "license": "MIT",
+  "notes": [
+    "Marked runtime_candidate for a later separately approved E3-C review."
+  ],
+  "repo": "supabase/auth",
+  "review_confidence": "high",
+  "review_status": "confirmed",
+  "reviewer": "ai_assisted_initial_review",
+  "runtime_executable_operations": [
+    "POST /token",
+    "POST /verify",
+    "POST /signup",
+    "GET /user",
+    "PUT /user",
+    "POST /factors/{factorId}/challenge",
+    "POST /factors/{factorId}/verify",
+    "POST /invite",
+    "GET /admin/users",
+    "GET /admin/users/{userId}",
+    "PUT /admin/users/{userId}",
+    "DELETE /admin/users/{userId}",
+    "GET /admin/users/{userId}/factors",
+    "PUT /admin/users/{userId}/factors/{factorId}",
+    "DELETE /admin/users/{userId}/factors/{factorId}"
+  ],
+  "schema_version": "guardian-e3-b-pre-system-review-v1"
+}

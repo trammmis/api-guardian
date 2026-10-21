@@ -1,0 +1,18 @@
+{
+  "case_count": 50,
+  "cases_sha256": "b61b1d3c6c61893dd893605e488abbe474c4e1c3458555d8af8da9798e5b9497",
+  "category_correct_count": 44,
+  "latency_seconds": {
+    "mean": 2.686048448000006,
+    "median": 2.689944999999909,
+    "p95": 3.1822869000000082
+  },
+  "provider_error_count": 0,
+  "raw_results_sha256": "d4b4d393288725bd8dbab862f890214713eabcd7ed322f0534049b523f6f95d4",
+  "stage": "E4_A_AUTOMATED_LLM_EVAL",
+  "status": "raw_execution_complete_review_pending",
+  "structured_output_success_count": 50,
+  "success_count": 50,
+  "token_usage": null,
+  "token_usage_reason": "Production structured-output abstraction does not expose provider usage metadata."
+}

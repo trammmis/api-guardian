@@ -1,0 +1,26 @@
+openapi: 3.0.3
+info:
+  title: API Guardian Phase 0 Fixture
+  version: 2.0.0
+paths:
+  /items/{item_id}:
+    get:
+      operationId: getItem
+      parameters:
+        - name: item_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Item found
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - id
+                properties:
+                  id:
+                    type: integer

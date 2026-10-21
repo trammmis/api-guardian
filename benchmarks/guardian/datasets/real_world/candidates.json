@@ -1,0 +1,463 @@
+{
+  "schema_version": "guardian-e3-a-candidates-v1",
+  "stage": "E3-A Candidate Discovery",
+  "generated_at": "2026-09-06T21:07:00.3517524+08:00",
+  "verification_status": "candidate_metadata_verified; version pairs and ground truth not yet constructed",
+  "guardian_git_commit": "bcc2c8c1303a1eaae9a99dce73c0fe72dc2fc46d",
+  "audit_method": {
+    "repository_access": "Public GitHub HTML, raw content, and anonymous GitHub REST metadata only; no repository was cloned.",
+    "spec_structure": "Each accessible candidate artifact was read without persisting it, parsed as JSON/YAML, and inspected for version, operations, size, and non-fragment $ref values.",
+    "history": "For viable and high-value backup artifacts, GitHub path-scoped commit history was inspected. Counts are path-specific, not total repository commits.",
+    "stars_note": "Stars are descriptive snapshots observed on 2026-09-06 and are not used for selection or evaluation.",
+    "rate_limit_note": "Anonymous GitHub REST rate limiting was reached after the viable candidates had been audited. Rejected candidates therefore retain null history fields when an earlier exclusion gate was already decisive."
+  },
+  "guardian_candidate_gates": {
+    "required_document_version": "OpenAPI 3.x; current prepare_openapi_spec requires a top-level openapi string and rejects Swagger 2.0 documents.",
+    "max_single_spec_bytes": 5242880,
+    "external_refs": "rejected by current Guardian V1",
+    "history": "committed and path-stable enough to materialize immutable revisions",
+    "runtime": "optional in E3; no public production target may be tested"
+  },
+  "production_core_hashes_before": {
+    "app/services/guardian/oasdiff.py": "f2628a647de1fe7e9bc20796f49fb2df0c673b258c6fd0d9ee58d55b00a77043",
+    "app/services/guardian/scope.py": "9c93058ec5b3d358f5dfe2ddc81415cd276fe7cf448b527124cd629e856f2787",
+    "app/services/guardian/schemathesis.py": "6ab64de45e57ddb2e02dca7ad250059df1fef64b7c4add3fdbbcb5cde1af39e5",
+    "app/services/guardian/nodes.py": "5bb6868a9d32c1c80fda5adc5b8d5f1def9f6fac8d2408bda96fba7b22142001",
+    "app/services/guardian/graph.py": "9151a5cf7616902bb6201041b3d7c547ca737b5763601d1c7b38abce69c307fd",
+    "app/services/guardian/models.py": "b75110edb4ca89bf4a012a7831078b209983145e96915ade767042e8b92d925c",
+    "app/services/guardian/security.py": "0c7e2ce96e0b8e7e8573085f72d13ae2161c6874c1db653a323087a860d01527",
+    "app/services/guardian/errors.py": "137cfd87b19484cb5fed3d4f3763e35e92f07be143f7b036ccfe5b65f2fcbce4"
+  },
+  "production_core_hashes_after": {
+    "app/services/guardian/oasdiff.py": "f2628a647de1fe7e9bc20796f49fb2df0c673b258c6fd0d9ee58d55b00a77043",
+    "app/services/guardian/scope.py": "9c93058ec5b3d358f5dfe2ddc81415cd276fe7cf448b527124cd629e856f2787",
+    "app/services/guardian/schemathesis.py": "6ab64de45e57ddb2e02dca7ad250059df1fef64b7c4add3fdbbcb5cde1af39e5",
+    "app/services/guardian/nodes.py": "5bb6868a9d32c1c80fda5adc5b8d5f1def9f6fac8d2408bda96fba7b22142001",
+    "app/services/guardian/graph.py": "9151a5cf7616902bb6201041b3d7c547ca737b5763601d1c7b38abce69c307fd",
+    "app/services/guardian/models.py": "b75110edb4ca89bf4a012a7831078b209983145e96915ade767042e8b92d925c",
+    "app/services/guardian/security.py": "0c7e2ce96e0b8e7e8573085f72d13ae2161c6874c1db653a323087a860d01527",
+    "app/services/guardian/errors.py": "137cfd87b19484cb5fed3d4f3763e35e92f07be143f7b036ccfe5b65f2fcbce4"
+  },
+  "production_core_hash_match": true,
+  "frozen_benchmark_artifacts": {
+    "benchmarks/guardian/reports/e2/latest/runtime_raw_results.jsonl": "f93f33a01a6d97f92a162eca5b41b2f11746c76f8ab7785e23d839e5f08ad196",
+    "benchmarks/guardian/reports/e2/latest/contract_raw_results.jsonl": "349023d9464935fcc6ec9006189bf59d124bf3df79f870bcbb4fddaf3aca957a",
+    "benchmarks/guardian/reports/e2_5/scaling/raw_results.jsonl": "ec2426b72dd927ae1ae04f7ee59c17081ee164f04964e2a842f4f1bd17bca858",
+    "benchmarks/guardian/reports/e2_5/miss_analysis/miss_summary.json": "6c29218475ca29a0cfbd648a287806b3da43e59973d92ae748989fad972cede5",
+    "benchmarks/guardian/reports/e2_5/scaling/summary.json": "bfb088d25f9739f2ddd4fbb10738ebb5fb3cf664f00f46c46b9f4f44acad0b3f"
+  },
+  "candidates": [
+    {
+      "repo_name": "immich-app/immich",
+      "repo_url": "https://github.com/immich-app/immich",
+      "license": "AGPL-3.0",
+      "primary_language": "TypeScript",
+      "stars": 113509,
+      "openapi_paths": [
+        "open-api/immich-openapi-specs.json"
+      ],
+      "openapi_version": "3.0.0",
+      "spec_bytes": 924312,
+      "self_contained": true,
+      "external_ref_status": "none_detected; 720 refs were fragment-local",
+      "first_spec_commit": "2439c5ab57e8c96f2db982f62b52edff4e723bbf",
+      "latest_spec_commit": "da8131d5c2ec32852d4b3d6d5a410eb3f48605e6",
+      "number_of_spec_changes": 567,
+      "spec_history_quality": "rich",
+      "approx_operations": 275,
+      "tags_available": true,
+      "docker_available": true,
+      "local_start_complexity": "hard",
+      "runtime_candidate": false,
+      "selection_status": "selected",
+      "selection_reason": "A real maintained application with a committed, self-contained OpenAPI 3 artifact, 567 path-scoped history entries, and a moderate 275-operation surface. It is strong for contract and scope validation.",
+      "rejection_reason": null,
+      "audit_notes": "Runtime is not recommended initially because historical Immich startup involves several services and version-specific migrations. E3-B should use nearby commits to avoid generated-spec noise.",
+      "evidence_urls": [
+        "https://github.com/immich-app/immich/blob/main/LICENSE",
+        "https://github.com/immich-app/immich/blob/main/open-api/immich-openapi-specs.json",
+        "https://github.com/immich-app/immich/commits/main/open-api/immich-openapi-specs.json"
+      ]
+    },
+    {
+      "repo_name": "supabase/auth",
+      "repo_url": "https://github.com/supabase/auth",
+      "license": "MIT",
+      "primary_language": "Go",
+      "stars": 2556,
+      "openapi_paths": [
+        "openapi.yaml"
+      ],
+      "openapi_version": "3.0.3",
+      "spec_bytes": 136129,
+      "self_contained": true,
+      "external_ref_status": "none_detected; 193 refs were fragment-local",
+      "first_spec_commit": "80fd43270fdbcb79e7a2e0b5bce484bd29d9ab49",
+      "latest_spec_commit": "2d4680ef054bedc898da1dbac1b6a7cb9cf5b5af",
+      "number_of_spec_changes": 47,
+      "spec_history_quality": "medium",
+      "approx_operations": 59,
+      "tags_available": true,
+      "docker_available": true,
+      "local_start_complexity": "medium",
+      "runtime_candidate": true,
+      "selection_status": "selected",
+      "selection_reason": "The artifact is small, self-contained, version-controlled, and tied to a real Go authentication service. Its 59-operation surface complements the larger selected repositories.",
+      "rejection_reason": null,
+      "audit_notes": "The repository documents a local Postgres plus Docker development flow. E3-C feasibility still depends on finding historical operations callable without injecting user credentials into Guardian.",
+      "evidence_urls": [
+        "https://github.com/supabase/auth/blob/master/LICENSE",
+        "https://github.com/supabase/auth/blob/master/openapi.yaml",
+        "https://github.com/supabase/auth/commits/master/openapi.yaml",
+        "https://github.com/supabase/auth/blob/master/README.md"
+      ]
+    },
+    {
+      "repo_name": "appwrite/specs",
+      "repo_url": "https://github.com/appwrite/specs",
+      "license": "BSD-3-Clause",
+      "primary_language": "Specification data; source product is primarily PHP",
+      "stars": 2,
+      "openapi_paths": [
+        "specs/1.9.x/open-api3-1.9.x-server.json",
+        "specs/{0.6.x..1.8.x}/open-api3-{version}-server.json"
+      ],
+      "openapi_version": "3.0.0",
+      "spec_bytes": 5127762,
+      "self_contained": true,
+      "external_ref_status": "none_detected; 1025 refs were fragment-local",
+      "first_spec_commit": "7bc9eb0603c176b1647aa846fe487f5017919387",
+      "latest_spec_commit": "7e76b048625236d2cfd129b4d66f899c7010f551",
+      "number_of_spec_changes": 28,
+      "spec_history_quality": "rich_across_version_directories",
+      "approx_operations": 783,
+      "tags_available": false,
+      "docker_available": false,
+      "local_start_complexity": "hard",
+      "runtime_candidate": false,
+      "selection_status": "selected",
+      "selection_reason": "The official repository keeps many released API generations from 0.6.x through 1.9.x and offers a large real API surface while remaining just below Guardian's 5 MiB limit.",
+      "rejection_reason": null,
+      "audit_notes": "The 28 history entries apply only to the audited 1.9.x server file. E3-B may compare version-specific paths, but every materialized pair must be checked against the 5 MiB limit; the current file is only 115118 bytes below it. Runtime would require the separate appwrite/appwrite repository.",
+      "evidence_urls": [
+        "https://github.com/appwrite/specs",
+        "https://github.com/appwrite/specs/blob/main/LICENSE",
+        "https://github.com/appwrite/specs/blob/main/specs/1.9.x/open-api3-1.9.x-server.json",
+        "https://github.com/appwrite/specs/commits/main/specs/1.9.x/open-api3-1.9.x-server.json"
+      ]
+    },
+    {
+      "repo_name": "netbirdio/netbird",
+      "repo_url": "https://github.com/netbirdio/netbird",
+      "license": "BSD-3-Clause for the audited shared/ path; top-level management/, signal/, relay/, and combined/ are AGPL-3.0",
+      "primary_language": "Go",
+      "stars": 28945,
+      "openapi_paths": [
+        "shared/management/http/api/openapi.yml"
+      ],
+      "openapi_version": "3.1.0",
+      "spec_bytes": 500736,
+      "self_contained": true,
+      "external_ref_status": "none_detected; 1389 refs were fragment-local",
+      "first_spec_commit": "abd152ee5a66abbe2b04dbe1bbd9fa14fbdc1977",
+      "latest_spec_commit": "76ea72237f3346ff157aa8374b9fa800d6498976",
+      "number_of_spec_changes": 68,
+      "spec_history_quality": "rich_recent",
+      "approx_operations": 240,
+      "tags_available": true,
+      "docker_available": true,
+      "local_start_complexity": "hard",
+      "runtime_candidate": false,
+      "selection_status": "selected",
+      "selection_reason": "A maintained Go project with a committed OpenAPI 3.1 artifact, substantial recent history, and a 240-operation surface suitable for testing direct and shared-schema changes.",
+      "rejection_reason": null,
+      "audit_notes": "The repository has split licensing and a network-management runtime. Contract-only validation is recommended; runtime startup and safe isolation would be disproportionately complex.",
+      "evidence_urls": [
+        "https://github.com/netbirdio/netbird/blob/main/LICENSE",
+        "https://github.com/netbirdio/netbird/blob/main/shared/management/http/api/openapi.yml",
+        "https://github.com/netbirdio/netbird/commits/main/shared/management/http/api/openapi.yml",
+        "https://github.com/netbirdio/netbird/blob/main/AGENTS.md"
+      ]
+    },
+    {
+      "repo_name": "goauthentik/authentik",
+      "repo_url": "https://github.com/goauthentik/authentik",
+      "license": "MIT for core content with documented repository exceptions for website and enterprise content",
+      "primary_language": "Python",
+      "stars": 25380,
+      "openapi_paths": [
+        "schema.yml"
+      ],
+      "openapi_version": "3.0.3",
+      "spec_bytes": 1803097,
+      "self_contained": true,
+      "external_ref_status": "none_detected; 5941 refs were fragment-local",
+      "first_spec_commit": "1324d03815266a4237d2a718d57a75d6d53e7de4",
+      "latest_spec_commit": "c759b3a3de8ce4f128dd9271b303cfe697b5a138",
+      "number_of_spec_changes": 865,
+      "spec_history_quality": "very_rich",
+      "approx_operations": 1193,
+      "tags_available": true,
+      "docker_available": true,
+      "local_start_complexity": "hard",
+      "runtime_candidate": false,
+      "selection_status": "backup",
+      "selection_reason": "This is the strongest backup for a Python and very-large-surface case: the committed schema has 865 history entries and 1193 operations while remaining below the size cap.",
+      "rejection_reason": null,
+      "audit_notes": "The generated schema and mixed core/enterprise surface can produce very large diffs and requires careful license and Ground Truth review. Use it if a selected repository yields too few clean adjacent pairs.",
+      "evidence_urls": [
+        "https://github.com/goauthentik/authentik/blob/main/LICENSE",
+        "https://github.com/goauthentik/authentik/blob/main/schema.yml",
+        "https://github.com/goauthentik/authentik/commits/main/schema.yml",
+        "https://github.com/goauthentik/authentik/blob/main/Makefile"
+      ]
+    },
+    {
+      "repo_name": "gotify/server",
+      "repo_url": "https://github.com/gotify/server",
+      "license": "MIT",
+      "primary_language": "Go",
+      "stars": 15855,
+      "openapi_paths": [
+        "docs/spec.json"
+      ],
+      "openapi_version": "Swagger 2.0",
+      "spec_bytes": 94742,
+      "self_contained": true,
+      "external_ref_status": "none_detected; 165 refs were fragment-local",
+      "first_spec_commit": "e13aff389b93390faef636743e167918e2092d0b",
+      "latest_spec_commit": "d8b34c068f59dcc26c6ba8cbfdd03bdd3ddcb226",
+      "number_of_spec_changes": 61,
+      "spec_history_quality": "rich",
+      "approx_operations": 42,
+      "tags_available": true,
+      "docker_available": true,
+      "local_start_complexity": "easy",
+      "runtime_candidate": false,
+      "selection_status": "rejected",
+      "selection_reason": null,
+      "rejection_reason": "Current Guardian prepare_openapi_spec requires OpenAPI 3.x and rejects this Swagger 2.0 document before oasdiff. Converting it would change the evaluated input and violate the E3 freeze.",
+      "audit_notes": "It would otherwise be a strong small Go runtime candidate and should be reconsidered only in a future evaluation whose protocol explicitly supports conversion or Swagger 2.0.",
+      "evidence_urls": [
+        "https://github.com/gotify/server/blob/master/LICENSE",
+        "https://github.com/gotify/server/blob/master/docs/spec.json",
+        "https://github.com/gotify/server/commits/master/docs/spec.json"
+      ]
+    },
+    {
+      "repo_name": "kubernetes/kubernetes",
+      "repo_url": "https://github.com/kubernetes/kubernetes",
+      "license": "Apache-2.0",
+      "primary_language": "Go",
+      "stars": 126415,
+      "openapi_paths": [
+        "api/openapi-spec/swagger.json"
+      ],
+      "openapi_version": "Swagger 2.0",
+      "spec_bytes": 4475944,
+      "self_contained": true,
+      "external_ref_status": "none_detected; 10647 refs were fragment-local",
+      "first_spec_commit": "cf181f91a7bd6ec5c9ea0e5817e7810542acb065",
+      "latest_spec_commit": "8ff142871554dbdb051fa24694ff372b2c34b42e",
+      "number_of_spec_changes": 1916,
+      "spec_history_quality": "very_rich",
+      "approx_operations": 1202,
+      "tags_available": true,
+      "docker_available": true,
+      "local_start_complexity": "hard",
+      "runtime_candidate": false,
+      "selection_status": "rejected",
+      "selection_reason": null,
+      "rejection_reason": "The monolithic committed artifact is Swagger 2.0, while frozen Guardian input validation requires OpenAPI 3.x. The v3 directory is split into many documents rather than one self-contained API surface.",
+      "audit_notes": "The artifact is within the size cap and historically rich, but it cannot enter E3-B without changing the product boundary or preprocessing third-party input.",
+      "evidence_urls": [
+        "https://github.com/kubernetes/kubernetes/blob/master/LICENSE",
+        "https://github.com/kubernetes/kubernetes/blob/master/api/openapi-spec/swagger.json",
+        "https://github.com/kubernetes/kubernetes/commits/master/api/openapi-spec/swagger.json"
+      ]
+    },
+    {
+      "repo_name": "stripe/openapi",
+      "repo_url": "https://github.com/stripe/openapi",
+      "license": "MIT",
+      "primary_language": "Specification data",
+      "stars": 501,
+      "openapi_paths": [
+        "openapi/spec3.json"
+      ],
+      "openapi_version": "OpenAPI 3.x",
+      "spec_bytes": 8028700,
+      "self_contained": null,
+      "external_ref_status": "not_fully_audited_after_size_gate",
+      "first_spec_commit": null,
+      "latest_spec_commit": null,
+      "number_of_spec_changes": null,
+      "spec_history_quality": "rich_but_excluded_before_deep_history_audit",
+      "approx_operations": null,
+      "tags_available": true,
+      "docker_available": false,
+      "local_start_complexity": "unknown",
+      "runtime_candidate": false,
+      "selection_status": "rejected",
+      "selection_reason": null,
+      "rejection_reason": "The audited public spec is 8028700 bytes, exceeding Guardian's frozen 5 MiB per-Spec limit.",
+      "audit_notes": "The audit read only enough bytes to prove the size-gate failure and did not persist the artifact. Stripe does not provide a local implementation in this repository.",
+      "evidence_urls": [
+        "https://github.com/stripe/openapi",
+        "https://github.com/stripe/openapi/blob/master/openapi/spec3.json"
+      ]
+    },
+    {
+      "repo_name": "github/rest-api-description",
+      "repo_url": "https://github.com/github/rest-api-description",
+      "license": "MIT",
+      "primary_language": "Specification data",
+      "stars": 1634,
+      "openapi_paths": [
+        "descriptions/api.github.com/api.github.com.json"
+      ],
+      "openapi_version": "OpenAPI 3.x",
+      "spec_bytes": 12927758,
+      "self_contained": null,
+      "external_ref_status": "not_fully_audited_after_size_gate",
+      "first_spec_commit": null,
+      "latest_spec_commit": null,
+      "number_of_spec_changes": null,
+      "spec_history_quality": "rich_but_excluded_before_deep_history_audit",
+      "approx_operations": null,
+      "tags_available": true,
+      "docker_available": false,
+      "local_start_complexity": "unknown",
+      "runtime_candidate": false,
+      "selection_status": "rejected",
+      "selection_reason": null,
+      "rejection_reason": "The audited api.github.com description is 12927758 bytes, exceeding Guardian's frozen 5 MiB per-Spec limit.",
+      "audit_notes": "GitHub publishes bundled and dereferenced descriptions, but the audited complete product artifact is over the current product limit and no public production endpoint may be used for testing.",
+      "evidence_urls": [
+        "https://github.com/github/rest-api-description",
+        "https://github.com/github/rest-api-description/blob/main/descriptions/api.github.com/api.github.com.json",
+        "https://docs.github.com/en/rest/about-the-rest-api/about-the-openapi-description-for-the-rest-api"
+      ]
+    },
+    {
+      "repo_name": "portainer/portainer",
+      "repo_url": "https://github.com/portainer/portainer",
+      "license": "Zlib",
+      "primary_language": "TypeScript",
+      "stars": 38442,
+      "openapi_paths": [
+        "dist/docs/openapi.yaml (generated, not committed on audited branch)",
+        "dist/docs/swagger.yaml (generated, not committed on audited branch)"
+      ],
+      "openapi_version": "OpenAPI 3.x generated from Swagger annotations",
+      "spec_bytes": null,
+      "self_contained": null,
+      "external_ref_status": "unavailable_without_generation",
+      "first_spec_commit": null,
+      "latest_spec_commit": null,
+      "number_of_spec_changes": null,
+      "spec_history_quality": "insufficient_path_stability",
+      "approx_operations": null,
+      "tags_available": true,
+      "docker_available": true,
+      "local_start_complexity": "easy",
+      "runtime_candidate": false,
+      "selection_status": "rejected",
+      "selection_reason": null,
+      "rejection_reason": "The current documented OpenAPI/Swagger artifacts are build outputs and returned 404 at their documented dist paths on the audited branch. This prevents direct immutable Git materialization of historical Spec pairs.",
+      "audit_notes": "An older api/swagger.yaml path also returned 404 on the current branch. Generating the artifact per commit would introduce a toolchain-dependent transformation outside E3-A's direct-history protocol.",
+      "evidence_urls": [
+        "https://github.com/portainer/portainer",
+        "https://github.com/portainer/portainer/blob/develop/README.md"
+      ]
+    },
+    {
+      "repo_name": "paperless-ngx/paperless-ngx",
+      "repo_url": "https://github.com/paperless-ngx/paperless-ngx",
+      "license": "GPL-3.0",
+      "primary_language": "Python",
+      "stars": 44887,
+      "openapi_paths": [
+        "Runtime endpoint /api/schema/view/; no stable committed OpenAPI artifact found"
+      ],
+      "openapi_version": null,
+      "spec_bytes": null,
+      "self_contained": null,
+      "external_ref_status": "unavailable_without_running_generator",
+      "first_spec_commit": null,
+      "latest_spec_commit": null,
+      "number_of_spec_changes": null,
+      "spec_history_quality": "no_committed_artifact_found",
+      "approx_operations": null,
+      "tags_available": true,
+      "docker_available": true,
+      "local_start_complexity": "medium",
+      "runtime_candidate": false,
+      "selection_status": "rejected",
+      "selection_reason": null,
+      "rejection_reason": "The project exposes generated API documentation at runtime, but E3 requires a path-stable committed Spec that can be restored directly from Git history.",
+      "audit_notes": "The project is real and Dockerized, but reconstructing a Spec for each commit would mix build reproducibility with contract-history evaluation.",
+      "evidence_urls": [
+        "https://github.com/paperless-ngx/paperless-ngx",
+        "https://github.com/paperless-ngx/paperless-ngx/blob/dev/docs/api.md"
+      ]
+    },
+    {
+      "repo_name": "meilisearch/open-api",
+      "repo_url": "https://github.com/meilisearch/open-api",
+      "license": "MIT",
+      "primary_language": "Specification documentation",
+      "stars": 6,
+      "openapi_paths": [],
+      "openapi_version": null,
+      "spec_bytes": null,
+      "self_contained": null,
+      "external_ref_status": "no_current_artifact_found",
+      "first_spec_commit": null,
+      "latest_spec_commit": null,
+      "number_of_spec_changes": null,
+      "spec_history_quality": "archived_without_a_current_committed_openapi_artifact",
+      "approx_operations": null,
+      "tags_available": false,
+      "docker_available": false,
+      "local_start_complexity": "unknown",
+      "runtime_candidate": false,
+      "selection_status": "rejected",
+      "selection_reason": null,
+      "rejection_reason": "The candidate repository is archived and the expected openapi.yml path is absent. Current downloadable API descriptions are published through documentation/build infrastructure rather than a stable artifact in this repository.",
+      "audit_notes": "The Meilisearch product remains relevant, but this specific repository does not satisfy E3's immutable in-repository Spec requirement.",
+      "evidence_urls": [
+        "https://github.com/meilisearch/open-api",
+        "https://specs.meilisearch.dev/specifications/"
+      ]
+    }
+  ],
+  "recommended_repositories": [
+    {
+      "rank": 1,
+      "repo_name": "immich-app/immich",
+      "role": "medium-large real application with exceptionally rich recent Spec history"
+    },
+    {
+      "rank": 2,
+      "repo_name": "supabase/auth",
+      "role": "smaller Go service and the best optional runtime feasibility candidate"
+    },
+    {
+      "rank": 3,
+      "repo_name": "netbirdio/netbird",
+      "role": "OpenAPI 3.1 and shared-schema-heavy Go API"
+    },
+    {
+      "rank": 4,
+      "repo_name": "appwrite/specs",
+      "role": "official multi-version large API corpus near the Guardian size boundary"
+    }
+  ],
+  "backup_repositories": [
+    {
+      "repo_name": "goauthentik/authentik",
+      "activation_condition": "Use if a selected repository cannot yield at least three high-quality adjacent pairs, or if a very-large Python API stratum is desired."
+    }
+  ]
+}

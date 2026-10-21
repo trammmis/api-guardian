@@ -1,0 +1,13 @@
+{
+  "stage": "E4_A_HUMAN_STUDY_EXECUTION_FREEZE",
+  "checked_at_utc": "2026-09-15T05:30:00+00:00",
+  "preflight_manifest": "benchmarks/guardian/reports/e4/production_freeze_preflight.json",
+  "preflight_manifest_sha256": "3ff27912a50d308e2c057399135895e4918382ec5b130a8545819fdba9b8cfc8",
+  "checked_file_count": 14,
+  "hash_match_count": 14,
+  "hash_mismatch_count": 0,
+  "production_modified_for_e4_a": false,
+  "prompt_modified_for_e4_a": false,
+  "schema_modified_for_e4_a": false,
+  "model_configuration_modified_for_e4_a": false
+}

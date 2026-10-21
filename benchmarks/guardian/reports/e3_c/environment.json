@@ -1,0 +1,14 @@
+{
+  "cold_environment_cost_included_in_scan_latency": false,
+  "docker_server_version": "29.7.2",
+  "postgres_image": "postgres:16",
+  "postgres_image_size_bytes": 160260290,
+  "temporary_containers_remaining": 0,
+  "new_persistent_volume_created": false,
+  "guardian_git_commit": "bcc2c8c1303a1eaae9a99dce73c0fe72dc2fc46d",
+  "logical_cpu_count": 16,
+  "machine": "AMD64",
+  "os": "Windows 11 10.0.22621",
+  "python": "3.13.12",
+  "recorded_at": "2026-09-14T11:39:04.735259+00:00"
+}

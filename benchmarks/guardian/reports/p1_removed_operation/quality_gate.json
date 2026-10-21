@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-09-08T08:50:53.4002719Z",
+  "production_core_hashes_match": true,
+  "frozen_artifact_hashes_match": true,
+  "commands": [
+    {
+      "command": "uv run pytest tests/guardian benchmarks/guardian/test_p1_removed_operation.py -q",
+      "exit_code": 0,
+      "result": "99 passed, 12 skipped, 2 warnings in 41.88s"
+    },
+    {
+      "command": "uv run ruff check app/services/guardian benchmarks/guardian/p1_removed_operation.py benchmarks/guardian/p1_runner.py benchmarks/guardian/run_p1.py benchmarks/guardian/test_p1_removed_operation.py",
+      "exit_code": 0,
+      "result": "All checks passed"
+    },
+    {
+      "command": "uv run ruff format --check app/services/guardian benchmarks/guardian/p1_removed_operation.py benchmarks/guardian/p1_runner.py benchmarks/guardian/run_p1.py benchmarks/guardian/test_p1_removed_operation.py",
+      "exit_code": 0,
+      "result": "20 files already formatted"
+    },
+    {
+      "command": "uv run pyright app/services/guardian benchmarks/guardian/p1_removed_operation.py benchmarks/guardian/p1_runner.py benchmarks/guardian/run_p1.py benchmarks/guardian/test_p1_removed_operation.py",
+      "exit_code": 0,
+      "result": "0 errors, 0 warnings, 0 informations"
+    }
+  ],
+  "warnings": [
+    "Two upstream dependency deprecation warnings were emitted by websockets/uvicorn during Guardian integration tests."
+  ]
+}

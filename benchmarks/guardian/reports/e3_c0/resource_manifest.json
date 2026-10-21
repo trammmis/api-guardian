@@ -1,0 +1,89 @@
+{
+  "stage": "E3-C0 Real-world Runtime Feasibility Gate",
+  "recorded_at": "2026-09-14T14:59:05+08:00",
+  "environment": {
+    "os": "Microsoft Windows 11 Home China 10.0.22621",
+    "cpu": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+    "logical_cpu_count": 16,
+    "ram_bytes": 16893382656,
+    "python": "3.13.12",
+    "docker_server": "29.7.2",
+    "guardian_git_commit": "bcc2c8c1303a1eaae9a99dce73c0fe72dc2fc46d"
+  },
+  "disk": {
+    "preflight_c_free_gib_observed": 7.32,
+    "preflight_d_free_gib_observed": 71.91,
+    "final_c_free_bytes": 9268215808,
+    "final_d_free_bytes": 75744198656,
+    "minimum_free_space_gate_bytes": 5368709120,
+    "gate_passed": true
+  },
+  "downloaded_or_generated_assets": [
+    {
+      "name": "official Go 1.20.14 windows-amd64 archive",
+      "bytes": 114273182,
+      "sha256": "0e0d0190406ead891d94ecf00f961bb5cfa15ddd47499d2649f12eee80aee110"
+    },
+    {
+      "name": "extracted Go 1.20.14 toolchain",
+      "bytes": 258987034
+    },
+    {
+      "name": "shared Go module and build cache",
+      "bytes": 939565169
+    },
+    {
+      "name": "Supabase 005 source plus binary workspace",
+      "bytes": 34825852
+    },
+    {
+      "name": "Supabase runtime candidate 006 source plus binary workspace",
+      "bytes": 35039125
+    }
+  ],
+  "docker": {
+    "image_before_bytes_human": "4.633GB",
+    "image_after_bytes_human": "4.633GB",
+    "new_image_pulled": false,
+    "postgres_image_reused": "postgres:16",
+    "temporary_containers": [
+      "api-guardian-e3c0-supabase-pg",
+      "api-guardian-e3c0-supabase-pg-002"
+    ],
+    "temporary_containers_removed": true,
+    "user_container_preserved": "api-guardian-phase4-postgres",
+    "volumes_created": 0,
+    "docker_build_attempt": {
+      "performed": true,
+      "result": "failed_before_build",
+      "reason": "configured registry mirror docker.m.daocloud.io returned HTTP 401",
+      "impact_on_feasibility": "none; exact-commit local Go builds succeeded",
+      "build_cache_added_bytes_approx": 1634000
+    }
+  },
+  "secrets": {
+    "real_credentials_used": false,
+    "credentials_persisted": false,
+    "public_production_api_called": false
+  },
+  "integrity": {
+    "production_core_hashes_match_preflight": true,
+    "production_core_sha256": {
+      "app/services/guardian/oasdiff.py": "f2628a647de1fe7e9bc20796f49fb2df0c673b258c6fd0d9ee58d55b00a77043",
+      "app/services/guardian/scope.py": "0c0627bb1bb838b124fb0bc0d5fe80fd8aa2183a8dae60f73b86e5e84341b669",
+      "app/services/guardian/schemathesis.py": "6ab64de45e57ddb2e02dca7ad250059df1fef64b7c4add3fdbbcb5cde1af39e5",
+      "app/services/guardian/nodes.py": "d08232832d556134dca05df94e2c466bd1bb4b753d3d143ddf184a975bbe61c7",
+      "app/services/guardian/graph.py": "9151a5cf7616902bb6201041b3d7c547ca737b5763601d1c7b38abce69c307fd",
+      "app/services/guardian/models.py": "b75110edb4ca89bf4a012a7831078b209983145e96915ade767042e8b92d925c",
+      "app/services/guardian/security.py": "0c7e2ce96e0b8e7e8573085f72d13ae2161c6874c1db653a323087a860d01527",
+      "app/services/guardian/errors.py": "137cfd87b19484cb5fed3d4f3763e35e92f07be143f7b036ccfe5b65f2fcbce4",
+      "app/services/guardian/state.py": "9c8325a56554e4588c009ab26952a039f55363e62d00cfefa5424bea1ece42c8"
+    },
+    "ground_truth_v2_aggregate_sha256": "7791a45bc20103f86ecfc099591035a476bfb414c3db08b4f6201284cd4ddb94",
+    "ground_truth_v2_file_sha256": "917c21c4c5eb642c00e6d3399c40b73dc8b9432c328eae7c85f1d7039dd6bf54",
+    "ground_truth_v2_review_records_sha256": "8a3523af0315d377fe30b59d29e6fe5efe7b3927bf354c6b2f4f1e699701d2ec",
+    "p1_integration_artifacts_match_preflight": true,
+    "e3_c_formal_benchmark_run": false,
+    "recommendation": "GO_E3_C"
+  }
+}

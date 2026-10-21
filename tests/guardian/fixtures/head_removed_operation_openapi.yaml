@@ -1,0 +1,11 @@
+openapi: 3.0.3
+info:
+  title: API Guardian Removed Operation Fixture
+  version: 2.0.0
+paths:
+  /health:
+    get:
+      operationId: getHealth
+      responses:
+        "200":
+          description: Healthy

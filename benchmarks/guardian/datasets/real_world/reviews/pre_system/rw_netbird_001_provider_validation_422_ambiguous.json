@@ -1,0 +1,47 @@
+{
+  "ambiguity_reason": "Adding a response status is structurally additive, while the accompanying behavior text describes a newly rejecting validation path; compatibility depends on whether behavioral acceptance is part of Ground Truth.",
+  "base_commit": "ebc259e30b42e98f46952e9f61f80a09c6e4432f",
+  "base_openapi_version": "3.1.0",
+  "base_operation_count": 238,
+  "base_spec_bytes": 494373,
+  "base_spec_path": "shared/management/http/api/openapi.yml",
+  "base_spec_sha256": "d9b6203061ab6a192434d5a00bba6d5eebe036dc9b7e0bb031d63b8c4607b5c5",
+  "breaking_changes": [],
+  "case_id": "rw_netbird_001_provider_validation_422_ambiguous",
+  "change_types": [
+    "response_status_added",
+    "documentation_only",
+    "mixed_change"
+  ],
+  "commit_date_head": "2026-09-02T21:46:47+02:00",
+  "commit_message_head": "[management] Check a provider's url and credential before saving it (#7301)",
+  "contract_affected_operations": [
+    "POST /api/agent-network/providers",
+    "PUT /api/agent-network/providers/{providerId}"
+  ],
+  "evidence": [
+    "Both provider write operations add a documented 422 response.",
+    "Descriptions state that new credential/upstream validation may now reject a write that would previously be stored."
+  ],
+  "external_refs": [],
+  "ground_truth_contract_verdict": null,
+  "head_commit": "6aaeed744e8c05f4974f6207a68dd18b00763f6c",
+  "head_openapi_version": "3.1.0",
+  "head_operation_count": 238,
+  "head_spec_bytes": 496435,
+  "head_spec_path": "shared/management/http/api/openapi.yml",
+  "head_spec_sha256": "cdac89eba7491ff8119eb7d912567c2c7e55a5fe5f82a2e43f3976f6d8628716",
+  "license": "BSD-3-Clause for shared/",
+  "notes": [
+    "Excluded from headline accuracy until a human reviewer chooses the behavioral contract convention."
+  ],
+  "repo": "netbirdio/netbird",
+  "review_confidence": "medium",
+  "review_status": "ambiguous",
+  "reviewer": "ai_assisted_initial_review",
+  "runtime_executable_operations": [
+    "POST /api/agent-network/providers",
+    "PUT /api/agent-network/providers/{providerId}"
+  ],
+  "schema_version": "guardian-e3-b-pre-system-review-v1"
+}

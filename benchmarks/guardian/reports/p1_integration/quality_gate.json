@@ -1,0 +1,73 @@
+{
+  "checked_at": "2026-09-14T06:02:59.9428621Z",
+  "integration_status": "PASS",
+  "commands": [
+    {
+      "command": "uv run pytest -q tests/guardian",
+      "exit_code": 0,
+      "result": "112 passed, 2 skipped, 2 upstream dependency deprecation warnings in 49.78s"
+    },
+    {
+      "command": "uv run pytest -q benchmarks/guardian/test_p1_removed_operation.py",
+      "exit_code": 0,
+      "result": "10 passed in 3.47s"
+    },
+    {
+      "command": "uv run pytest -q tests/guardian/test_scope.py tests/guardian/test_graph.py tests/guardian/test_evaluation.py",
+      "exit_code": 0,
+      "result": "25 passed in 6.11s"
+    },
+    {
+      "command": "uv run pytest -q tests/guardian/test_phase3.py::test_postgres_checkpoint_interrupt_and_resume_matches_uninterrupted tests/guardian/test_phase3.py::test_phase4_checkpoint_resumes_analysis_after_deterministic_verdict",
+      "exit_code": 0,
+      "result": "2 passed in 13.85s against real PostgreSQL"
+    },
+    {
+      "command": "uv run pytest -q tests/guardian/test_phase3.py::test_real_http_main_demo_contract_and_runtime_fail",
+      "exit_code": 0,
+      "result": "1 passed in 13.62s with real oasdiff 1.28.0, Schemathesis 4.24.3, HTTP fixture, and PostgreSQL"
+    },
+    {
+      "command": "uv run ruff check <Guardian and P1-I paths>",
+      "exit_code": 0,
+      "result": "All checks passed"
+    },
+    {
+      "command": "uv run ruff format --check <Guardian and P1-I paths>",
+      "exit_code": 0,
+      "result": "41 files already formatted"
+    },
+    {
+      "command": "uv run pyright <Guardian and P1-I paths>",
+      "exit_code": 0,
+      "result": "0 errors, 0 warnings, 0 informations"
+    },
+    {
+      "command": "uv run python -m evals.guardian.harness",
+      "exit_code": 0,
+      "result": "10 cases; contract=1.0, scope_recall=1.0, scope_precision=0.6, regression=1.0, final=1.0, error_classification=1.0"
+    }
+  ],
+  "replays": {
+    "p1_frozen_cases": 23,
+    "p1_contract_verdict_agreement": "23/23",
+    "p1_executable_recall_before": "31/31",
+    "p1_executable_recall_after": "31/31",
+    "e2_e2_5_contract_agreement": "60/60",
+    "e2_e2_5_oasdiff_stability": "60/60",
+    "e3_b_contract_agreement": "19/19",
+    "e3_b_executable_recall_before": "58/73",
+    "e3_b_executable_recall_after": "58/73"
+  },
+  "integrity": {
+    "frozen_artifact_hashes_match": true,
+    "ground_truth_v2_aggregate_hash_match": true,
+    "forbidden_production_core_hashes_unchanged": true,
+    "checkpoint_recovery_passed": true,
+    "security_boundary_regression_detected": false
+  },
+  "warnings": [
+    "Two upstream websockets/uvicorn deprecation warnings remain; they are unrelated to P1-I.",
+    "The all-Guardian run skipped two environment-gated real E2E tests. The deterministic real-tool HTTP test was then executed separately and passed; the paid DeepSeek E2E was not rerun because P1-I does not modify LLM behavior."
+  ]
+}

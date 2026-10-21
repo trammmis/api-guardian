@@ -1,0 +1,12 @@
+[
+  {
+    "id": "api-path-removed-without-deprecation",
+    "text": "api path removed without deprecation",
+    "level": 3,
+    "operation": "GET",
+    "operationId": "getLegacy",
+    "path": "/legacy",
+    "section": "paths",
+    "fingerprint": "removed-operation-fixture"
+  }
+]

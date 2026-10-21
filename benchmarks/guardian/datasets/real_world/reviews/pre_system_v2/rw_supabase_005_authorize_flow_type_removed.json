@@ -1,0 +1,52 @@
+{
+  "ambiguity_reason": null,
+  "base_commit": "19545601676675a923bb9850499717e89cf91a0b",
+  "base_openapi_version": "3.0.3",
+  "base_operation_count": 39,
+  "base_spec_bytes": 64917,
+  "base_spec_path": "openapi.yaml",
+  "base_spec_sha256": "c93e8e4ad65515e50b3babfc99cc07d5694249420e04858a64120c268a9238f4",
+  "breaking_changes": [
+    {
+      "base_fact": "GET /authorize documents optional query parameter flow_type.",
+      "change_type": "request_parameter_removed",
+      "compatibility_reason": "Existing callers using a previously documented parameter no longer have that request represented by the Head contract.",
+      "head_fact": "The flow_type query parameter is absent.",
+      "operation": "GET /authorize",
+      "schema_name": null
+    }
+  ],
+  "case_id": "rw_supabase_005_authorize_flow_type_removed",
+  "change_types": [
+    "request_parameter_removed"
+  ],
+  "commit_date_head": "2023-04-10T21:04:49+08:00",
+  "commit_message_head": "Refactor: remove flow_type param from oauth (#1027)",
+  "contract_affected_operations": [
+    "GET /authorize"
+  ],
+  "evidence": [
+    "The parameter set difference for GET /authorize is exactly removal of ('flow_type', 'query').",
+    "A signup example also drops flow_type, but examples are not used as breaking evidence."
+  ],
+  "external_refs": [],
+  "ground_truth_contract_verdict": "fail",
+  "head_commit": "f4c3cdb020e6808333ec460470f9e081f0d9bc93",
+  "head_openapi_version": "3.0.3",
+  "head_operation_count": 39,
+  "head_spec_bytes": 64525,
+  "head_spec_path": "openapi.yaml",
+  "head_spec_sha256": "2aee71c180222191e49fb3df2edea8820c0bb49ab1909f20fe9b408cc731e6b6",
+  "license": "MIT",
+  "notes": [
+    "Marked runtime_candidate for a later separately approved E3-C review."
+  ],
+  "repo": "supabase/auth",
+  "review_confidence": "high",
+  "review_status": "confirmed",
+  "reviewer": "ai_assisted_initial_review",
+  "runtime_executable_operations": [
+    "GET /authorize"
+  ],
+  "schema_version": "guardian-e3-b-pre-system-review-v1"
+}

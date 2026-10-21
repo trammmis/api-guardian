@@ -1,0 +1,28 @@
+{
+  "version": "e4_scoring_rules_v1",
+  "frozen_before_condition_b_generation": true,
+  "free_text_affects_primary_correctness": false,
+  "root_cause_score": "1 iff selected option is in correct_root_cause_options, otherwise 0",
+  "next_action_score": "1 iff selected option is in correct_next_action_options, otherwise 0",
+  "cases": [
+    {"case_id":"e4_001_users_id_type_lag","correct_root_cause_options":["implementation_contract_mismatch"],"correct_next_action_options":["update_implementation_to_head_schema"]},
+    {"case_id":"e4_002_users_required_email_missing","correct_root_cause_options":["implementation_contract_mismatch"],"correct_next_action_options":["update_implementation_to_head_schema"]},
+    {"case_id":"e4_003_orders_status_enum_lag","correct_root_cause_options":["implementation_contract_mismatch"],"correct_next_action_options":["update_implementation_to_head_schema"]},
+    {"case_id":"e4_004_required_query_added","correct_root_cause_options":["client_migration_required"],"correct_next_action_options":["plan_consumer_migration_or_versioning"]},
+    {"case_id":"e4_005_wrong_user_semantic_control","correct_root_cause_options":["insufficient_evidence"],"correct_next_action_options":["do_not_claim_runtime_root_cause"]},
+    {"case_id":"e4_006_clean_aligned_breaking_contract","correct_root_cause_options":["client_migration_required"],"correct_next_action_options":["plan_consumer_migration_or_versioning"]},
+    {"case_id":"e4_007_documentation_only_pass","correct_root_cause_options":["no_actionable_regression"],"correct_next_action_options":["no_corrective_action"]},
+    {"case_id":"e4_008_immich_endpoint_removed","correct_root_cause_options":["client_migration_required"],"correct_next_action_options":["plan_consumer_migration_or_versioning"]},
+    {"case_id":"e4_009_netbird_shared_component","correct_root_cause_options":["mixed_contract_change"],"correct_next_action_options":["review_all_affected_operations"]},
+    {"case_id":"e4_010_appwrite_mixed_cutover","correct_root_cause_options":["mixed_contract_change"],"correct_next_action_options":["review_all_affected_operations"]},
+    {"case_id":"e4_011_supabase_policy_disagreement","correct_root_cause_options":["contract_policy_disagreement"],"correct_next_action_options":["manual_compatibility_review"]},
+    {"case_id":"e4_012_supabase_runtime_tool_error","correct_root_cause_options":["tool_execution_error","insufficient_evidence"],"correct_next_action_options":["investigate_schemathesis_execution"]},
+    {"case_id":"e4_013_supabase_oasdiff_load_error","correct_root_cause_options":["contract_tool_compatibility"],"correct_next_action_options":["validate_spec_and_tool_compatibility"]}
+  ],
+  "confidence_calibration": {
+    "input_scale":"0_to_100",
+    "normalized_probability":"confidence / 100",
+    "brier_error":"(normalized_probability - binary_correctness)^2",
+    "additional_summary":["mean_confidence_correct","mean_confidence_incorrect"]
+  }
+}

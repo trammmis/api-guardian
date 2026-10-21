@@ -1,0 +1,8 @@
+{
+  "analysis_items": 18,
+  "participant_exposure_started": false,
+  "review_method": "ai_assisted_postfreeze_semantic_audit_not_human",
+  "serious_hallucinations": 0,
+  "successful_items": 18,
+  "unsupported_claims": 0
+}

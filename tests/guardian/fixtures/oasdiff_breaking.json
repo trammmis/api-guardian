@@ -1,0 +1,22 @@
+[
+  {
+    "id": "response-property-type-changed",
+    "text": "the `id` response's property `type` changed from `string` to `integer` for status `200`",
+    "level": 3,
+    "operation": "GET",
+    "operationId": "getItem",
+    "path": "/items/{item_id}",
+    "section": "paths",
+    "baseSource": {
+      "file": "C:\\raw-oasdiff-source\\baseline_openapi.yaml",
+      "line": 26,
+      "column": 21
+    },
+    "revisionSource": {
+      "file": "C:\\raw-oasdiff-source\\head_breaking_openapi.yaml",
+      "line": 26,
+      "column": 21
+    },
+    "fingerprint": "3fc82f02994a"
+  }
+]

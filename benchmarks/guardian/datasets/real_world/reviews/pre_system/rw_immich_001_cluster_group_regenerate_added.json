@@ -1,0 +1,39 @@
+{
+  "ambiguity_reason": null,
+  "base_commit": "351be9576996230ed8390abfc454d1fc81a78b62",
+  "base_openapi_version": "3.0.0",
+  "base_operation_count": 274,
+  "base_spec_bytes": 835149,
+  "base_spec_path": "open-api/immich-openapi-specs.json",
+  "base_spec_sha256": "f70e7154d274c2de77451bb054c88ae9c94311188aaa1f2e09d05c678ebce39c",
+  "breaking_changes": [],
+  "case_id": "rw_immich_001_cluster_group_regenerate_added",
+  "change_types": [
+    "endpoint_added"
+  ],
+  "commit_date_head": "2026-08-27T16:38:07+02:00",
+  "commit_message_head": "feat: allow users to re-run facial recognition for their group (#30965)",
+  "contract_affected_operations": [],
+  "evidence": [
+    "OpenAPI paths adds POST /cluster-groups/{id}/regenerate-people and removes no operation.",
+    "The adjacent commit message is 'feat: allow users to re-run facial recognition for their group (#30965)'."
+  ],
+  "external_refs": [],
+  "ground_truth_contract_verdict": "pass",
+  "head_commit": "c7d24321bf30ba83ebb4d4ae43bf9742c91b847f",
+  "head_openapi_version": "3.0.0",
+  "head_operation_count": 275,
+  "head_spec_bytes": 836321,
+  "head_spec_path": "open-api/immich-openapi-specs.json",
+  "head_spec_sha256": "ecf7abe24841ba9a759bfd3d94c81bf79115c37941c78d61385618c4e679f5e9",
+  "license": "AGPL-3.0",
+  "notes": [
+    "An added operation does not invalidate existing callers."
+  ],
+  "repo": "immich-app/immich",
+  "review_confidence": "high",
+  "review_status": "confirmed",
+  "reviewer": "ai_assisted_initial_review",
+  "runtime_executable_operations": [],
+  "schema_version": "guardian-e3-b-pre-system-review-v1"
+}

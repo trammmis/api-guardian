@@ -1,0 +1,122 @@
+{
+  "aggregate": {
+    "dependency_graph_precision": {
+      "denominator": 27,
+      "numerator": 27,
+      "percentage": 100.0,
+      "value": 1.0
+    },
+    "dependency_graph_recall": {
+      "denominator": 27,
+      "numerator": 27,
+      "percentage": 100.0,
+      "value": 1.0
+    }
+  },
+  "cases": [
+    {
+      "case_id": "rw_appwrite_002_migration_cutover_replaced",
+      "changed_components_from_pre_system_ground_truth": [
+        "frameworkAdapter"
+      ],
+      "diagnostic_operations": [
+        "GET /sites/frameworks"
+      ],
+      "ground_truth_executable_operations": [
+        "GET /sites/frameworks"
+      ],
+      "method": "benchmark-only transitive local-fragment $ref dependency graph",
+      "precision": {
+        "denominator": 1,
+        "numerator": 1,
+        "percentage": 100.0,
+        "value": 1.0
+      },
+      "recall": {
+        "denominator": 1,
+        "numerator": 1,
+        "percentage": 100.0,
+        "value": 1.0
+      }
+    },
+    {
+      "case_id": "rw_appwrite_003_usage_project_and_health_update",
+      "changed_components_from_pre_system_ground_truth": [
+        "project",
+        "usageEventList",
+        "usageGaugeList"
+      ],
+      "diagnostic_operations": [
+        "GET /organization/projects",
+        "GET /organization/projects/{projectId}",
+        "GET /project",
+        "GET /usage/events",
+        "GET /usage/gauges",
+        "PATCH /organization/projects/{projectId}",
+        "PATCH /project/auth-methods/{methodId}",
+        "PATCH /project/policies/deny-aliased-email",
+        "PATCH /project/policies/deny-corporate-email",
+        "PATCH /project/policies/deny-disposable-email",
+        "PATCH /project/policies/deny-free-email",
+        "PATCH /project/policies/membership-privacy",
+        "PATCH /project/policies/password-dictionary",
+        "PATCH /project/policies/password-history",
+        "PATCH /project/policies/password-personal-data",
+        "PATCH /project/policies/session-alert",
+        "PATCH /project/policies/session-duration",
+        "PATCH /project/policies/session-invalidation",
+        "PATCH /project/policies/session-limit",
+        "PATCH /project/policies/user-limit",
+        "PATCH /project/protocols/{protocolId}",
+        "PATCH /project/services/{serviceId}",
+        "PATCH /project/smtp",
+        "POST /organization/projects",
+        "PUT /project/labels",
+        "PUT /project/oauth2-server"
+      ],
+      "ground_truth_executable_operations": [
+        "GET /organization/projects",
+        "GET /organization/projects/{projectId}",
+        "GET /project",
+        "GET /usage/events",
+        "GET /usage/gauges",
+        "PATCH /organization/projects/{projectId}",
+        "PATCH /project/auth-methods/{methodId}",
+        "PATCH /project/policies/deny-aliased-email",
+        "PATCH /project/policies/deny-corporate-email",
+        "PATCH /project/policies/deny-disposable-email",
+        "PATCH /project/policies/deny-free-email",
+        "PATCH /project/policies/membership-privacy",
+        "PATCH /project/policies/password-dictionary",
+        "PATCH /project/policies/password-history",
+        "PATCH /project/policies/password-personal-data",
+        "PATCH /project/policies/session-alert",
+        "PATCH /project/policies/session-duration",
+        "PATCH /project/policies/session-invalidation",
+        "PATCH /project/policies/session-limit",
+        "PATCH /project/policies/user-limit",
+        "PATCH /project/protocols/{protocolId}",
+        "PATCH /project/services/{serviceId}",
+        "PATCH /project/smtp",
+        "POST /organization/projects",
+        "PUT /project/labels",
+        "PUT /project/oauth2-server"
+      ],
+      "method": "benchmark-only transitive local-fragment $ref dependency graph",
+      "precision": {
+        "denominator": 26,
+        "numerator": 26,
+        "percentage": 100.0,
+        "value": 1.0
+      },
+      "recall": {
+        "denominator": 26,
+        "numerator": 26,
+        "percentage": 100.0,
+        "value": 1.0
+      }
+    }
+  ],
+  "production_selector_modified": false,
+  "scope": "SUPPLEMENTAL DIAGNOSTIC ONLY"
+}

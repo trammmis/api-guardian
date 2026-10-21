@@ -1,0 +1,40 @@
+{
+  "guardian_pytest": {
+    "command": "uv run pytest tests/guardian -q",
+    "passed": 112,
+    "skipped": 2,
+    "warnings": 2,
+    "status": "pass"
+  },
+  "ruff_check": {
+    "files": 41,
+    "status": "pass"
+  },
+  "ruff_format_check": {
+    "files": 41,
+    "status": "pass"
+  },
+  "pyright": {
+    "errors": 0,
+    "warnings": 0,
+    "status": "pass"
+  },
+  "deterministic_evaluation": {
+    "contract_verdict_accuracy": 1.0,
+    "scope_recall": 1.0,
+    "scope_precision": 0.6,
+    "regression_verdict_accuracy": 1.0,
+    "final_verdict_accuracy": 1.0,
+    "error_classification_accuracy": 1.0,
+    "status": "pass"
+  },
+  "real_postgres_persistence_checkpoint": {
+    "scan_rows": 1,
+    "report_rows": 1,
+    "checkpoint_rows": 12,
+    "secret_or_raw_artifact_leakage": 0,
+    "status": "pass"
+  },
+  "production_core_unchanged": true,
+  "overall": "pass"
+}
